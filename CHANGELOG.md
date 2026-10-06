@@ -1,0 +1,100 @@
+# CHANGELOG — 05–06/10/2026
+
+## Mở rộng references và in đậm kết quả — 06/10/2026
+
+- Bỏ hai báo cáo nội bộ khỏi bibliography theo góp ý PDF; kết quả tự nghiên cứu vẫn được dẫn về bảng/phụ lục provenance của source.
+- Cố định [1] là Aghajanian et al., *Longitudinal structural MRI-based deep learning and radiomics features for predicting Alzheimer’s disease progression*, baseline trực tiếp để phát triển phương pháp.
+- Danh mục cuối có 57 nguồn được trích dẫn: 51 bài tạp chí/hội nghị quốc tế và 6 preprint arXiv ghi rõ trạng thái. Thêm 21 nguồn cho CNN/C3D, LSTM, Transformer/ViT/UNETR/CrossFormer, multimodal/CP, ADNI MRI, neural Cox/Cox-EN/RSF và các thư viện PyTorch, MONAI, NumPy, pandas, scikit-learn, scikit-survival, TorchSurv, Matplotlib.
+- Thay bibliography entry tài liệu metric bằng bài JMLR về scikit-survival; chi tiết triển khai 0.28.0 được dẫn bằng footnote tới source cố định theo version.
+- Rà soát import/requirements thực tế, loại thư viện cài sẵn trong môi trường khỏi bằng chứng sử dụng. Chương 3 bổ sung mô tả vai trò thư viện; phân biệt TorchSurv nguyên mẫu với Cox/Breslow tự triển khai trong mô hình cuối.
+- Chương 2 bổ sung nền tảng Transformer/ViT và ảnh 3D, phân biệt UNETR segmentation với survival task và CrossFormer gốc với bản 3D của project.
+- In đậm toàn dòng tốt nhất trong các bảng so sánh hiệu năng. Benchmark dùng mean của ba seed và in đậm cả hai dòng đồng hạng; giữ nguyên score và sample SD.
+- Giữ ký hiệu route trong ngoặc. Bản cuối 69 trang: 13 front matter, 49 nội dung chính và 7 bibliography; 16 hình vector. Biên dịch ổn định, không thiếu citation/reference hoặc tràn lề; tất cả 69 trang đã được kiểm tra trực quan.
+
+## Cập nhật ký hiệu route — 06/10/2026
+
+- Theo yêu cầu bổ sung, đặt ngoặc quanh các directed route: `(MR→M)`, `(MR→R)`, `(MC→M)`, `(MC→C)`, `(RC→R)` và `(RC→C)`.
+- Đồng bộ trong bốn hình full pairwise, gated route, RC-Free routing và overall pipeline; cập nhật cả PDF/SVG/drawio và source sinh hình.
+- Công thức, nội dung và caption dùng ký hiệu route tương ứng trong ngoặc; phần cộng trong hình kiến trúc trở thành `M + (MR→M) + (MC→M)`.
+- Giữ nguyên mô hình và số liệu; biên dịch lại bản65 trang, kiểm tra bảy trang thay đổi và cập nhật gói source/PDF.
+
+## Tiêu đề và front matter
+
+- Đổi bìa, title pages, macro title, metadata/hyperref, hai abstract và README sang **Longitudinal Learning with Tensor Fusion for Predicting Progression of Alzheimer’s Disease**.
+- Giữ thông tin sinh viên, ngành và giảng viên từ source gốc; dùng mẫu khóa luận Nguyễn Phương Trang để đối chiếu cấu trúc bìa và trình bày.
+- Xóa trạng thái cũ cho rằng chưa có chương kết quả; cập nhật abstract và cam đoan theo phạm vi validation hiện có.
+
+## Cấu trúc và câu chuyện nghiên cứu
+
+- Giữ năm chương; README cũ ghi sáu chương nhưng `main.tex` thực sự include năm chương. Chương 6 cũ chứa các kế hoạch chưa thực hiện nên không chuyển chúng thành phương pháp/kết quả đã chạy.
+- Dẫn từ MRI Only → Longitudinal MRI → Multimodal Concatenation → Dynamic Pairwise Fusion → CP-Factorized Pairwise Fusion → fusion ablation → RC-Free Pairwise Fusion.
+- Bổ sung phân biệt research question, hypothesis, controlled comparison và exploratory milestone. Không mô tả CP hoặc RC-Free như lựa chọn đã có từ đầu.
+- Dùng tên mô hình mô tả; mã experiment cũ chỉ xuất hiện trong provenance/các báo cáo nguồn.
+
+## Sửa nội dung theo code và báo cáo
+
+- Phân biệt `p=s3` với `L=baseline+18 calendar months`; survival duration tính từ MRI thứ ba nhưng cohort cần không chuyển đổi qua `L`.
+- Xác định endpoint thật là ngưỡng MMSE<24 hoặc CDR-global≥1 sau landmark; không mô tả như AD diagnosis đã được thẩm định.
+- Nêu clinical nearest-valid ±90 ngày và 294 offsets MMSE/CDR dương đã chấp nhận; không đổi dữ liệu đóng băng hoặc tuyên bố toàn bộ đầu vào có sẵn tại `p`.
+- Sửa λ thành scalar học trực tiếp, init0.1, không softplus; identity residual giữ embedding gốc, không có learned identity projection.
+- Nêu CP chỉ thay bilinear first layer; bias/output shape/post-MLP được giữ; ranks MR/MC/RC=8/8/4, kiến trúc cuối giữ MR/MC=8/8.
+- Làm rõ physical-minibatch Cox risk sets, gradient accumulation, raw log-risk và khác biệt clinical masks/visit masks.
+- Sửa nhãn MRI initialization bị đảo trong bản cũ: MedicalNet0.733333, random0.787500.
+- Phân biệt concat Cox batch8 với các phase ResNet batch6; không quy mọi delta lịch sử chỉ cho modality/fusion.
+- Tính sample SD chính xác; hai RC-Free variants có mean bằng nhau. Tách classical baseline do validation selection và tied-time concordance khác.
+- Báo parameter reduction đúng phạm vi: 98.383951% first-layer interaction core, khoảng0.669365% toàn mô hình full→CP.
+- Bỏ historical test metrics khỏi các bảng/chart và narrative selection; công bố lịch sử test và trạng thái formal final evaluation chưa chạy.
+
+## Hình và source tham chiếu
+
+Mỗi chương có hình; Methodology chứa nhiều sơ đồ chi tiết nhất. Toàn bộ hình nghiên cứu được dựng mới dưới dạng vector PDF/SVG, giữ editable `.drawio` cho các schematic. Style pastel nhất quán, ký hiệu/chữ vẫn phân biệt khi in grayscale. Không sao chép figure có copyright từ paper.
+
+| New figure | Nội dung |
+|---|---|
+| mci-progression-timeline.pdf | Ba MRI, prediction reference, eligibility landmark, event/censor |
+| fusion-taxonomy.pdf | Các chiến lược fusion và logic dẫn tới framework |
+| cohort-construction.pdf | Cohort waterfall899→843→631→536→359 và split |
+| modality-preprocessing.pdf | MRI/radiomics/clinical branches và dimensions |
+| architecture-evolution.pdf | Tiến trình xây dựng model |
+| full-pairwise-graph.pdf | Full reference3pairs/6routes |
+| outer-vs-cp.pdf | Full first bilinear layer so với CP weight parameterization |
+| gated-residual-route.pdf | Projection, gate, global λ, identity và LayerNorm |
+| rc-free-routing.pdf | Ba hàng output và4routes còn hoạt động |
+| final-pipeline.pdf | Main architecture: per-visit fusion→threevisits→T-LSTM→attention→Cox |
+| temporal-model.pdf | Khoảng visit, hidden states, attention và rawrisk |
+| performance-evolution.pdf | Milestones tách theo protocol |
+| cp-parameter-reduction.pdf | Interactioncore, fullblocks và wholemodel phạm vi riêng |
+| ablation-deltas.pdf | Sáu thay đổi so với fullCP, một seed |
+| standardized-benchmark.pdf | Ba seed, mean/sampleSD |
+| mri-hub-topology.pdf | MRI-hub giữ đủ3modality, không directRC |
+
+Nguồn hình đã tìm gồm `KLTN/pileline.drawio`, `KLTN/Untitled Diagram.drawio`, `KLTN/pileline.drawio.png`, các hình residual MRI/radiomics/clinical ở root, `KLTN/week7/pileline-Trang-*.drawio.png`, `KLTN/week12/Sơ đồ luồng residual A6 theo M, R, C.png`, và các chart trong báo cáo tuần12. Các hình được redrawn/simplified, sửa routing RC-Free và thống nhất visual style. Mapping chi tiết từng hình tới nguồn nằm trong `figures_source/figure_provenance.json`; data cho chart có archive/member path trong `figures_source/results_data.json`.
+
+## Bảng, typography và bibliography
+
+- Dùng booktabs/tabularx, tên mô hình ngắn, tách bảng classical, MRI milestones, ablation, benchmark, parameters và research questions.
+- Không shrink cả bảng bằng resizebox; điều chỉnh chiều cột/font hợp lý và kiểm tra bản PDF thực tế.
+- Giữ A4/margins và cỡ chữ13pt từ bản gốc; giảm khoảng trắng đầu chapter, giới hạn TOC tới subsection.
+- Sửa metadata của Cox/PCA/Breslow; bổ sung ReLU, Adam và nguồn nghiên cứu của metric; xác minh paper Aghajanian và hai nguồn gated residual/scaling. Danh mục mở rộng cuối cùng và chính sách bỏ báo cáo nội bộ được ghi trong cập nhật references phía trên.
+- Chuyển build từ BibLaTeX/Biber sang natbib/BibTeX numeric để source biên dịch được với XeLaTeX hoặc portable Tectonic; DOI/URL vẫn được giữ trong bibliography.
+
+## QA và issues chưa được nghiên cứu giải quyết
+
+- Hoàn thiện float placement: bảng câu hỏi nghiên cứu nằm trước mục tiêu; hình temporal đứng trước Cox objective; các chart kết quả không trôi vào section sau; bảng trả lời RQ và trạng thái formal test nằm chung một trang.
+- Đồng nhất trục tensor CP thành `H × dx × dy` và ký hiệu pair feature sau post-MLP thành `E_p` trong sơ đồ gated route.
+- Rút chiều cao chart milestones bằng khoảng cách panel, giữ font tối thiểu9.5pt và toàn bộ số liệu; bỏ trang gần trống mà không thu nhỏ chữ.
+- Bản cuối có **69 trang tổng cộng**, gồm 13 trang front matter, 49 trang nội dung chính và 7 trang bibliography;16 hình vector theo các chương là1/1/9/4/1.
+- Biên dịch bằng Tectonic/XeTeX + BibTeX; không lỗi LaTeX/BibTeX, thiếu references/citations, overfull hoặc missing glyph. Một Underfull hbox nhẹ được kiểm tra trực quan và không ảnh hưởng khả năng đọc.
+- Kiểm tra từng trang PDF, bổ sung proof grayscale cho sơ đồ kỹ thuật và cả bốn chart; xác nhận font sử dụng được nhúng,16 PDF/SVG/drawio hợp lệ và10 nguồn chính giữ nguyên checksum.
+- Bổ sung script build Windows tự tạo fontconfig khi cần, hướng dẫn biên dịch, QA report và provenance của kiểm tra tích hợp.
+- Giải nén ZIP vào thư mục mới rồi biên dịch bằng script đi kèm: cả 69 trang có text và ảnh render trùng bản đã duyệt. Gói cuối kiểm tra CRC, giữ nguyên toàn bộ input đã dùng trong build thử và chứa PDF giống hệt file xuất riêng.
+
+Kết quả kiểm tra source, citation, labels, logs, số trang và kiểm tra trực quan cuối cùng được ghi trong `QUALITY_CHECK.md` và `qa_report.json`. Đây là các giới hạn nghiên cứu còn lại, không phải placeholder trong tài liệu:
+
+- Formal final evaluation chưa thực hiện; lịch sử test cần được công bố và external validation cần thiết.
+- Endpoint proxy và cohort điều kiện18tháng chưa tương đương AD diagnosis/prospective baseline cohort.
+- Clinical ±90ngày cần kiểm chứng availability theo thời điểm cho triển khai tiến cứu.
+- Ba seed trên một split và nhiều lần dùng validation chưa cung cấp bằng chứng statistical superiority.
+- Chưa có đồng nhất mọi baseline, missingmodality/external validation, controlledranksweep hoặc latency/memory benchmark.
+
+Source/report gốc và dữ liệu giữ nguyên; không huấn luyện lại và không sửa frozen preprocessing.

@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160mm" height="106.186mm" viewBox="0 0 453.5433 301">
+<rect width="100%" height="100%" fill="white"/>
+<rect x="27" y="12" width="92" height="38" rx="4" fill="#E8F3F8" stroke="#6590A5" stroke-width="1"/>
+<text x="73.0" y="28.5" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="middle" fill="#263B4D">Visit 1</text>
+<text x="73.0" y="40.9" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#263B4D">x_1 ∈ ℝ¹²⁸</text>
+<rect x="27" y="86" width="92" height="42" rx="4" fill="#E8F3F8" stroke="#6590A5" stroke-width="1"/>
+<text x="73.0" y="104.5" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="middle" fill="#263B4D">T-LSTM</text>
+<text x="73.0" y="116.9" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#263B4D">h_1 ∈ ℝ¹²⁸</text>
+<polyline points="73,50 73,86" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="73,86 75.5,81.0 70.5,81.0" fill="#5C6B79"/>
+<rect x="27" y="163" width="92" height="38" rx="4" fill="#E8F3F8" stroke="#6590A5" stroke-width="1"/>
+<text x="73.0" y="179.5" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="middle" fill="#263B4D">Attention</text>
+<text x="73.0" y="191.9" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#263B4D">α_1</text>
+<polyline points="73,128 73,163" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="73,163 75.5,158.0 70.5,158.0" fill="#5C6B79"/>
+<polyline points="119,107 180,107" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="180,107 175.0,104.5 175.0,109.5" fill="#5C6B79"/>
+<rect x="180" y="12" width="92" height="38" rx="4" fill="#E8F3F8" stroke="#6590A5" stroke-width="1"/>
+<text x="226.0" y="28.5" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="middle" fill="#263B4D">Visit 2</text>
+<text x="226.0" y="40.9" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#263B4D">x_2 ∈ ℝ¹²⁸</text>
+<rect x="180" y="86" width="92" height="42" rx="4" fill="#E8F3F8" stroke="#6590A5" stroke-width="1"/>
+<text x="226.0" y="104.5" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="middle" fill="#263B4D">T-LSTM</text>
+<text x="226.0" y="116.9" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#263B4D">h_2 ∈ ℝ¹²⁸</text>
+<polyline points="226,50 226,86" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="226,86 228.5,81.0 223.5,81.0" fill="#5C6B79"/>
+<rect x="180" y="163" width="92" height="38" rx="4" fill="#E8F3F8" stroke="#6590A5" stroke-width="1"/>
+<text x="226.0" y="179.5" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="middle" fill="#263B4D">Attention</text>
+<text x="226.0" y="191.9" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#263B4D">α_2</text>
+<polyline points="226,128 226,163" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="226,163 228.5,158.0 223.5,158.0" fill="#5C6B79"/>
+<polyline points="272,107 333,107" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="333,107 328.0,104.5 328.0,109.5" fill="#5C6B79"/>
+<rect x="333" y="12" width="92" height="38" rx="4" fill="#E8F3F8" stroke="#6590A5" stroke-width="1"/>
+<text x="379.0" y="28.5" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="middle" fill="#263B4D">Visit 3</text>
+<text x="379.0" y="40.9" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#263B4D">x_3 ∈ ℝ¹²⁸</text>
+<rect x="333" y="86" width="92" height="42" rx="4" fill="#E8F3F8" stroke="#6590A5" stroke-width="1"/>
+<text x="379.0" y="104.5" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="middle" fill="#263B4D">T-LSTM</text>
+<text x="379.0" y="116.9" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#263B4D">h_3 ∈ ℝ¹²⁸</text>
+<polyline points="379,50 379,86" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="379,86 381.5,81.0 376.5,81.0" fill="#5C6B79"/>
+<rect x="333" y="163" width="92" height="38" rx="4" fill="#E8F3F8" stroke="#6590A5" stroke-width="1"/>
+<text x="379.0" y="179.5" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="middle" fill="#263B4D">Attention</text>
+<text x="379.0" y="191.9" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#263B4D">α_3</text>
+<polyline points="379,128 379,163" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="379,163 381.5,158.0 376.5,158.0" fill="#5C6B79"/>
+<text x="150" y="73.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#263B4D">Δt₂</text>
+<text x="303" y="73.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#263B4D">Δt₃</text>
+<rect x="105" y="233" width="141" height="38" rx="4" fill="#E8F3F8" stroke="#6590A5" stroke-width="1"/>
+<text x="175.5" y="249.625" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="700" text-anchor="middle" fill="#263B4D">z = Σ α_t h_t</text>
+<text x="175.5" y="261.40500000000003" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#263B4D">Softmax theo visits</text>
+<rect x="273" y="233" width="151" height="38" rx="4" fill="#EEF0F2" stroke="#77838F" stroke-width="1"/>
+<text x="348.5" y="249.5" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="middle" fill="#263B4D">Cox head</text>
+<text x="348.5" y="261.9" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#263B4D">Raw log-risk η</text>
+<polyline points="246,252 273,252" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="273,252 268.0,249.5 268.0,254.5" fill="#5C6B79"/>
+<polyline points="73,201 73,219 175,219 175,233" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="175,233 177.5,228.0 172.5,228.0" fill="#5C6B79"/>
+<polyline points="226,201 226,219 175,219" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
+<polyline points="379,201 379,219 226,219" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
+<text x="227" y="292.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#263B4D">Δt₁ = 0; Δt₂, Δt₃ là khoảng cách giữa MRI liên tiếp (năm).</text>
+</svg>

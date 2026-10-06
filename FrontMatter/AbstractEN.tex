@@ -1,0 +1,12 @@
+\chapter*{ABSTRACT}
+\addcontentsline{toc}{chapter}{ABSTRACT}
+
+This thesis, \emph{\ThesisTitle}, studies longitudinal multimodal survival prediction of MCI progression. Starting from the CNN--T-LSTM framework of Aghajanian et al., the research develops MRI baselines, multimodal concatenation, explicit pairwise interaction, and a compact fusion architecture rather than assuming tensor factorization from the outset.
+
+The frozen ADNI cohort contains 359 participants, including 106 events. Three MRI visits are selected within an 18-month eligibility window. The third MRI defines the model's prediction reference time; event ascertainment begins after the eligibility landmark. The operational endpoint uses MMSE/CDR thresholds. Clinical features follow a retrospective nearest-date alignment within $\pm90$ days of each MRI, which limits claims about prospective availability at the reference time.
+
+MRI--Radiomics (MR), MRI--Clinical (MC), and Radiomics--Clinical (RC) interactions were first modeled through outer products and dynamic gated residual routing. CP then factorizes the bilinear \emph{weight tensor}, while the subsequent pair-specific MLP remains unchanged. The full three-pair interaction core falls from 229,696 to 3,712 parameters; three-seed mean validation C-index changes from 0.8344 to 0.8278. Ablation motivates the selected RC-Free Pairwise Fusion architecture, retaining every modality and only the MR/MC interactions. Its four routes use input-dependent sigmoid gates and learnable global route scales, followed by T-LSTM, temporal attention, and a Cox risk head.
+
+In the standardized benchmark, RC-Free Pairwise Fusion achieves validation C-index $0.8347\pm0.0237$ (sample SD over three seeds). The result supports a compact competitive architecture, without establishing statistical superiority. Classical survival baselines remain strong under their own selection and concordance conventions. Architecture selection uses validation evidence; historical test access is disclosed as a limitation. Formal held-out final evaluation has not yet been performed.
+
+\textbf{Keywords:} Alzheimer's disease, MCI, longitudinal MRI, radiomics, tensor fusion, CP factorization, gated residual routing, T-LSTM, survival analysis.

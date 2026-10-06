@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160mm" height="128.411mm" viewBox="0 0 453.5433 364">
+<rect width="100%" height="100%" fill="white"/>
+<text x="16" y="17.4" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="start" fill="#263B4D">a  Ba first bilinear layers (MR, MC, RC; gồm bias)</text>
+<text x="16" y="60.4" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="400" text-anchor="start" fill="#263B4D">Full outer-product</text>
+<rect x="155" y="44" width="248.07168000000001" height="26" rx="0" fill="#FAE9ED" stroke="#A87984" stroke-width="1"/>
+<text x="279.03584" y="60.51499999999999" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="700" text-anchor="middle" fill="#263B4D"></text>
+<text x="409.07168" y="59.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="start" fill="#263B4D">229,696</text>
+<text x="16" y="107.4" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="400" text-anchor="start" fill="#263B4D">CP-factorized</text>
+<rect x="155" y="91" width="4.00896" height="26" rx="0" fill="#EEEAF6" stroke="#86759D" stroke-width="1"/>
+<text x="157.00448" y="107.515" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="700" text-anchor="middle" fill="#263B4D"></text>
+<text x="165.00896" y="106.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="start" fill="#263B4D">3,712</text>
+<polyline points="155.0,124 155.0,130" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
+<text x="155.0" y="141.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#263B4D">0k</text>
+<polyline points="263.0,124 263.0,130" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
+<text x="263.0" y="141.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#263B4D">100k</text>
+<polyline points="371.0,124 371.0,130" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
+<text x="371.0" y="141.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#263B4D">200k</text>
+<polyline points="155,127 425,127" fill="none" stroke="#5C6B79" stroke-width="0.8" stroke-linejoin="round"/>
+<text x="16" y="163.4" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="start" fill="#263B4D">Giảm 98.384% trong tensor trọng số tương tác đầu tiên.</text>
+<text x="16" y="195.4" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="start" fill="#263B4D">b  Toàn bộ mô hình: backbone MRI chiếm phần lớn tham số</text>
+<text x="16" y="238.4" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="400" text-anchor="start" fill="#263B4D">Full Pairwise</text>
+<rect x="155" y="222" width="227.88635175" height="26" rx="0" fill="#FAE9ED" stroke="#A87984" stroke-width="1"/>
+<text x="268.943175875" y="238.51500000000001" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="700" text-anchor="middle" fill="#263B4D"></text>
+<text x="387.88635175" y="237.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="start" fill="#263B4D">33.761 M</text>
+<text x="16" y="284.4" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="400" text-anchor="start" fill="#263B4D">CP Pairwise</text>
+<rect x="155" y="268" width="226.36095974999998" height="26" rx="0" fill="#EEEAF6" stroke="#86759D" stroke-width="1"/>
+<text x="268.180479875" y="284.51500000000004" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="700" text-anchor="middle" fill="#263B4D"></text>
+<text x="386.36095975" y="283.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="start" fill="#263B4D">33.535 M</text>
+<polyline points="155,307 425,307" fill="none" stroke="#5C6B79" stroke-width="0.8" stroke-linejoin="round"/>
+<polyline points="155.0,304 155.0,310" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
+<text x="155.0" y="321.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#263B4D">0M</text>
+<polyline points="222.5,304 222.5,310" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
+<text x="222.5" y="321.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#263B4D">10M</text>
+<polyline points="290.0,304 290.0,310" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
+<text x="290.0" y="321.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#263B4D">20M</text>
+<polyline points="357.5,304 357.5,310" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
+<text x="357.5" y="321.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#263B4D">30M</text>
+<polyline points="425.0,304 425.0,310" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
+<text x="425.0" y="321.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#263B4D">40M</text>
+<text x="16" y="350.4" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="start" fill="#263B4D">Giảm 0.669% tổng tham số; post-MLP giữ nguyên.</text>
+</svg>

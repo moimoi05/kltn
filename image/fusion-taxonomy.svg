@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160mm" height="106.892mm" viewBox="0 0 453.5433 303">
+<rect width="100%" height="100%" fill="white"/>
+<rect x="13" y="119" width="96" height="52" rx="4" fill="#FFFFFF" stroke="#A2ADB7" stroke-width="1"/>
+<text x="61.0" y="142.5" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="middle" fill="#263B4D">Multimodal</text>
+<text x="61.0" y="154.9" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#263B4D">M · R · C</text>
+<rect x="146" y="13" width="291" height="45" rx="4" fill="#EEF0F2" stroke="#77838F" stroke-width="1"/>
+<text x="291.5" y="33.0" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="middle" fill="#263B4D">Concatenation</text>
+<text x="291.5" y="45.4" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#263B4D">Ghép các đặc trưng</text>
+<polyline points="109,145 127,145 127,35.5 146,35.5" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="146,35.5 141.0,33.0 141.0,38.0" fill="#5C6B79"/>
+<rect x="146" y="69" width="291" height="45" rx="4" fill="#EEF0F2" stroke="#77838F" stroke-width="1"/>
+<text x="291.5" y="89.0" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="middle" fill="#263B4D">Element-wise</text>
+<text x="291.5" y="101.4" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#263B4D">Tương tác theo phần tử</text>
+<polyline points="109,145 127,145 127,91.5 146,91.5" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="146,91.5 141.0,89.0 141.0,94.0" fill="#5C6B79"/>
+<rect x="146" y="125" width="291" height="45" rx="4" fill="#FAE9ED" stroke="#A87984" stroke-width="1"/>
+<text x="291.5" y="145.0" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="middle" fill="#263B4D">Bilinear / outer product</text>
+<text x="291.5" y="157.4" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#263B4D">Tương tác bậc hai đầy đủ</text>
+<polyline points="109,145 127,145 127,147.5 146,147.5" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="146,147.5 141.0,145.0 141.0,150.0" fill="#5C6B79"/>
+<rect x="146" y="181" width="291" height="45" rx="4" fill="#FAE9ED" stroke="#A87984" stroke-width="1"/>
+<text x="291.5" y="201.0" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="middle" fill="#263B4D">Low-rank CP</text>
+<text x="291.5" y="213.4" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#263B4D">Factorize tensor trọng số</text>
+<polyline points="109,145 127,145 127,203.5 146,203.5" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="146,203.5 141.0,201.0 141.0,206.0" fill="#5C6B79"/>
+<rect x="146" y="237" width="291" height="45" rx="4" fill="#EEEAF6" stroke="#86759D" stroke-width="1"/>
+<text x="291.5" y="257.0" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="middle" fill="#263B4D">Gated residual</text>
+<text x="291.5" y="269.4" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#263B4D">Điều tiết đóng góp từng route</text>
+<polyline points="109,145 127,145 127,259.5 146,259.5" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="146,259.5 141.0,257.0 141.0,262.0" fill="#5C6B79"/>
+<text x="13" y="295.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="start" fill="#263B4D">Thesis kết hợp CP cho pairwise interaction và gated residual cho routing.</text>
+</svg>

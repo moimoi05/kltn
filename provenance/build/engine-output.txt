@@ -1,0 +1,34 @@
+note: Running TeX ...
+warning: accessing absolute path `C:/WINDOWS/Fonts\timesi.ttf`; build may not be reproducible in other environments
+warning: accessing absolute path `C:/WINDOWS/Fonts\timesbd.ttf`; build may not be reproducible in other environments
+warning: accessing absolute path `C:/WINDOWS/Fonts\times.ttf`; build may not be reproducible in other environments
+warning: accessing absolute path `C:/WINDOWS/Fonts\timesbi.ttf`; build may not be reproducible in other environments
+warning: accessing absolute path `C:/WINDOWS/Fonts\arialbd.ttf`; build may not be reproducible in other environments
+warning: accessing absolute path `C:/WINDOWS/Fonts\ARIALN.TTF`; build may not be reproducible in other environments
+warning: accessing absolute path `C:/WINDOWS/Fonts\ARIALNI.TTF`; build may not be reproducible in other environments
+warning: accessing absolute path `C:/WINDOWS/Fonts\ariblk.ttf`; build may not be reproducible in other environments
+warning: accessing absolute path `C:/WINDOWS/Fonts\arialbi.ttf`; build may not be reproducible in other environments
+warning: accessing absolute path `C:/WINDOWS/Fonts\ARIALNBI.TTF`; build may not be reproducible in other environments
+warning: accessing absolute path `C:/WINDOWS/Fonts\ariali.ttf`; build may not be reproducible in other environments
+warning: accessing absolute path `C:/WINDOWS/Fonts\arial.ttf`; build may not be reproducible in other environments
+warning: accessing absolute path `C:/WINDOWS/Fonts\ARIALNB.TTF`; build may not be reproducible in other environments
+warning: accessing absolute path `C:/WINDOWS/Fonts\consola.ttf`; build may not be reproducible in other environments
+warning: accessing absolute path `C:/WINDOWS/Fonts\consolaz.ttf`; build may not be reproducible in other environments
+warning: accessing absolute path `C:/WINDOWS/Fonts\consolai.ttf`; build may not be reproducible in other environments
+warning: accessing absolute path `C:/WINDOWS/Fonts\consolab.ttf`; build may not be reproducible in other environments
+warning: chapters/chapter3:53: Underfull \hbox (badness 1158) in paragraph at lines 52--53
+note: Running BibTeX on main.aux ...
+note: Rerunning TeX because bibtex was run ...
+warning: chapters/chapter3:53: Underfull \hbox (badness 1158) in paragraph at lines 52--53
+warning: warnings were issued by the TeX engine; use --print and/or --keep-logs for details.
+note: Running xdvipdfmx ...
+note: Writing `main.bbl` (25.8662109375 KiB)
+note: Writing `main.pdf` (2.0102720260620117 MiB)
+note: Writing `main.out` (15.5576171875 KiB)
+note: Writing `main.blg` (194 B)
+note: Writing `main.lof` (2.0419921875 KiB)
+note: Writing `main.lot` (2.3154296875 KiB)
+note: Writing `main.aux` (32.736328125 KiB)
+note: Writing `main.toc` (6.8193359375 KiB)
+note: Writing `main.log` (42.2314453125 KiB)
+PDF created: Nguyen_Phuong_Nam_Thesis_RCFree_Revised.pdf

@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160mm" height="143.228mm" viewBox="0 0 453.5433 406">
+<rect width="100%" height="100%" fill="white"/>
+<rect x="16" y="12" width="128" height="42" rx="4" fill="#E7F0FA" stroke="#567DA3" stroke-width="1"/>
+<text x="80.0" y="30.5" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="middle" fill="#263B4D">Original modality</text>
+<text x="80.0" y="42.9" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#263B4D">U_d (identity)</text>
+<rect x="287" y="12" width="151" height="42" rx="4" fill="#FAE9ED" stroke="#A87984" stroke-width="1"/>
+<text x="362.5" y="30.5" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="middle" fill="#263B4D">Pair feature</text>
+<text x="362.5" y="42.9" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#263B4D">E_p</text>
+<rect x="287" y="77" width="151" height="42" rx="4" fill="#FAE9ED" stroke="#A87984" stroke-width="1"/>
+<text x="362.5" y="95.625" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="700" text-anchor="middle" fill="#263B4D">Directed projection</text>
+<text x="362.5" y="107.405" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#263B4D">Linear + LN → Ê_(p→d)</text>
+<polyline points="362,54 362,77" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="362,77 364.5,72.0 359.5,72.0" fill="#5C6B79"/>
+<rect x="16" y="77" width="128" height="42" rx="4" fill="#EEEAF6" stroke="#86759D" stroke-width="1"/>
+<text x="80.0" y="95.5" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="middle" fill="#263B4D">Gate context</text>
+<text x="80.0" y="107.9" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#263B4D">LN(U_d)</text>
+<polyline points="80,54 80,77" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="80,77 82.5,72.0 77.5,72.0" fill="#5C6B79"/>
+<rect x="178" y="145" width="260" height="52" rx="4" fill="#EEEAF6" stroke="#86759D" stroke-width="1"/>
+<text x="308.0" y="162.735" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="700" text-anchor="middle" fill="#263B4D">Dynamic scalar gate g_(p→d)</text>
+<text x="308.0" y="174.51500000000001" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#263B4D">concat[LN(U_d), Ê_(p→d)] → MLP → sigmoid</text>
+<text x="308.0" y="186.29500000000002" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#263B4D">Riêng từng đối tượng, visit và route</text>
+<polyline points="144,98 162,98 162,164 178,164" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="178,164 173.0,161.5 173.0,166.5" fill="#5C6B79"/>
+<polyline points="362,119 362,145" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="362,145 364.5,140.0 359.5,140.0" fill="#5C6B79"/>
+<circle cx="362" cy="238" r="14" fill="#EEEAF6" stroke="#86759D" stroke-width="1"/>
+<text x="362" y="242.42" font-family="Arial, DejaVu Sans, sans-serif" font-size="13" font-weight="400" text-anchor="middle" fill="#263B4D">×</text>
+<polyline points="362,197 362,224" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="362,224 364.5,219.0 359.5,219.0" fill="#5C6B79"/>
+<polyline points="438,98 447,98 447,238 376,238" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="376,238 381.0,240.5 381.0,235.5" fill="#5C6B79"/>
+<rect x="178" y="216" width="135" height="44" rx="4" fill="#EEEAF6" stroke="#86759D" stroke-width="1"/>
+<text x="245.5" y="235.625" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="700" text-anchor="middle" fill="#263B4D">Global route scale λ</text>
+<text x="245.5" y="247.405" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#263B4D">Learnable; init 0.1</text>
+<polyline points="313,238 348,238" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="348,238 343.0,235.5 343.0,240.5" fill="#5C6B79"/>
+<text x="434" y="281.4" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="end" fill="#263B4D">λ × g × Ê</text>
+<circle cx="227" cy="300" r="14" fill="#EEEAF6" stroke="#86759D" stroke-width="1"/>
+<text x="227" y="304.76" font-family="Arial, DejaVu Sans, sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#263B4D">+</text>
+<polyline points="16,33 7,33 7,300 213,300" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="213,300 208.0,297.5 208.0,302.5" fill="#5C6B79"/>
+<polyline points="362,252 362,300 241,300" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="241,300 246.0,302.5 246.0,297.5" fill="#5C6B79"/>
+<rect x="168" y="332" width="118" height="38" rx="4" fill="#EEEAF6" stroke="#86759D" stroke-width="1"/>
+<text x="227.0" y="354.7" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="middle" fill="#263B4D">LayerNorm</text>
+<polyline points="227,314 227,332" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="227,332 229.5,327.0 224.5,327.0" fill="#5C6B79"/>
+<rect x="313" y="332" width="125" height="38" rx="4" fill="#E7F0FA" stroke="#567DA3" stroke-width="1"/>
+<text x="375.5" y="348.62500000000006" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="700" text-anchor="middle" fill="#263B4D">Updated modality</text>
+<text x="375.5" y="360.40500000000003" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#263B4D">Z_d</text>
+<polyline points="286,351 313,351" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="313,351 308.0,348.5 308.0,353.5" fill="#5C6B79"/>
+<text x="16" y="394.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="start" fill="#263B4D">λ không bị ràng buộc dấu; U_d không qua thêm identity projection.</text>
+</svg>

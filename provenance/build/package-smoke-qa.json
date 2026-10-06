@@ -1,0 +1,62 @@
+{
+  "source": {
+    "chapter_count": 5,
+    "figures_per_chapter": {
+      "chapters/chapter1.tex": 1,
+      "chapters/chapter2.tex": 1,
+      "chapters/chapter3.tex": 9,
+      "chapters/chapter4.tex": 4,
+      "chapters/chapter5.tex": 1
+    },
+    "figure_count": 16,
+    "citation_keys_used": 57,
+    "missing_citations": [],
+    "unused_bibliography_keys": [],
+    "non_paper_bibliography_entries": [],
+    "internal_project_citations": [],
+    "duplicate_bibliography_keys": [],
+    "duplicate_labels": [],
+    "undefined_source_references": [],
+    "missing_graphics": [],
+    "todo_fixme": false,
+    "old_experiment_final_name": false,
+    "resizebox_used": false
+  },
+  "performance_tables": {
+    "benchmark_rows_checked": 5,
+    "highest_mean": 0.8347222222222223,
+    "rows_bolded_by_mean_including_ties": [
+      "RC-Free Fixed-λ",
+      "RC-Free Pairwise"
+    ],
+    "values_mean_sample_sd_match_frozen_evidence": true
+  },
+  "build": {
+    "pdf": "main.pdf",
+    "total_pdf_pages": 69,
+    "main_content_pages": 49,
+    "chapter_pdf_pages": {
+      "Giới thiệu": 14,
+      "Cơ sở lý thuyết và nghiên cứu liên quan": 19,
+      "Phương pháp": 27,
+      "Thực nghiệm, kết quả và phân tích": 44,
+      "Thảo luận, kết luận và hướng phát triển": 57
+    },
+    "bibliography_pdf_page": 63,
+    "compiled_reference_count": 57,
+    "baseline_is_reference_one": true,
+    "pdf_title": "Longitudinal Learning with Tensor Fusion for Predicting Progression of Alzheimer’s Disease",
+    "official_title_matches_metadata": true,
+    "overfull_boxes": [],
+    "underfull_boxes": [
+      "Underfull \\hbox (badness 1158) in paragraph at lines 52--53"
+    ],
+    "undefined_build_reference_or_citation": false,
+    "bibtex_errors": false,
+    "latex_errors": [],
+    "missing_glyph_warning": false,
+    "float_too_large": false
+  },
+  "automated_check_pass": true,
+  "failed_checks": []
+}

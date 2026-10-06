@@ -1,0 +1,257 @@
+\chapter{Thực nghiệm, kết quả và phân tích}
+\label{chap:results}
+
+Chương này trình bày thực nghiệm theo thứ tự hình thành các quyết định nghiên cứu: đo tín hiệu từ dữ liệu bảng và MRI, bổ sung thông tin đa phương thức, xây dựng tương tác cặp, giảm kích thước lõi song tuyến bằng CP, rồi kiểm tra cấu trúc tương tác bằng ablation. Các kết quả là bằng chứng phát triển trên validation; chúng chưa thay thế một đánh giá khái quát hóa cuối cùng trên tập giữ lại độc lập.
+
+\section{Giao thức thực nghiệm}
+\label{sec:experimental-protocol}
+Cohort đóng băng gồm 359 người và 1.077 lượt khám, đúng ba visit cho mỗi người. Split theo người bệnh gồm 251 người train, 54 người validation và 54 người test; tương ứng có 74, 16 và 16 event. Mọi thí nghiệm sử dụng cùng phân chia RID. Chuẩn hóa clinical, radiomics và PCA chỉ được fit trên train; các artifact đã đóng băng được tái sử dụng cho validation. Đầu ra là raw risk, với giá trị lớn hơn biểu thị nguy cơ chuyển đổi sớm hơn.
+
+Trong các bảng so sánh hiệu năng, \textbf{dòng in đậm} có C-index cao nhất trong cùng bảng; nếu báo cáo nhiều seed, tiêu chí là \textbf{mean C-index} và mọi dòng đồng hạng đều được in đậm. Bảng protocol, cấu hình và số tham số không dùng quy tắc này vì giá trị lớn hơn không đồng nghĩa với hiệu năng tốt hơn.
+
+Các bảng phân biệt ba loại bằng chứng: kết quả lịch sử của một seed; ablation thay đổi một thành phần trong cùng họ mô hình; và benchmark validation chuẩn hóa trên ba seed 20260727, 20260728, 20260729. Không đặt một điểm single-seed cạnh trung bình ba seed như hai đại lượng tương đương. Benchmark đối chiếu split, preprocessing, kiến trúc và checkpoint, rồi replay các run đã tồn tại; nó không huấn luyện thêm mô hình.
+
+Các deep model được chọn checkpoint theo validation C-index. Với họ MedicalNet Pairwise, CP Pairwise và RC-Free Pairwise, giao thức chung dùng AdamW, learning rate $10^{-4}$, weight decay $10^{-4}$, FP16 AMP, clipping norm 1, tối đa 100 epoch và ReduceLROnPlateau theo Cox loss toàn validation \cite{loshchilov2019adamw}. Early stopping theo C-index dùng warmup 10 epoch, patience 20 và min-delta 0,002. Cox loss dùng Breslow để xử lý event đồng thời \cite{cox1972regression,breslow1974covariance}. Risk set khi train là minibatch vật lý; gradient accumulation không biến nó thành risk set của toàn train cohort.
+
+\begin{table}[htbp]
+\centering
+\small
+\caption{Các giao thức phải phân biệt khi đọc tiến trình thực nghiệm.}
+\label{tab:protocol-groups}
+\begin{tabularx}{\linewidth}{@{}Y C{2.0cm} C{2.5cm} L{3.6cm}@{}}
+\toprule
+\textbf{Nhóm thí nghiệm} & \textbf{Cox batch} & \textbf{Số seed} & \textbf{Phạm vi diễn giải} \\
+\midrule
+MRI Only; Longitudinal MRI & 6 & 1 & Milestone lịch sử \\
+Multimodal Concat. & 8 & 1 & Milestone lịch sử \\
+Dynamic/MedicalNet Pairwise & 6 & 1 hoặc 3 & So sánh initialization có kiểm soát \\
+CP/RC-Free Pairwise & 6 & 3 & So sánh trong họ pairwise \\
+Fusion ablations & 6 & 1 & Một thay đổi so với full CP \\
+Paper CNN--T-LSTM & 16 (T-LSTM) & 3 & Adaptation, tối ưu riêng trên train \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+Chỉ số chuẩn hóa cho các deep model là Harrell-style C-index: một người có event được so sánh với người có thời gian theo dõi lớn hơn; risk bằng nhau nhận 0,5 điểm, còn thời gian sống còn bằng nhau không tạo cặp so sánh \cite{harrell1996multivariable}. Validation gồm 54 người tạo 480 cặp hợp lệ theo quy ước này. P01 sử dụng \texttt{concordance\_index\_censored} của scikit-survival (đã đối chiếu mã nguồn phiên bản 0.28.0)\footnote{Mã nguồn metric theo phiên bản: \url{https://github.com/sebp/scikit-survival/blob/v0.28.0/sksurv/metrics.py}.}, cho phép so sánh event với trường hợp censored tại cùng thời điểm; do đó kết quả classical được báo riêng \cite{polsterl2020sksurv}. Cùng một split không đồng nghĩa với cùng toàn bộ giao thức.
+
+\section{Baseline cổ điển và dữ liệu bảng}
+\label{sec:classical-baselines}
+Trước khi học trực tiếp MRI, tám representation được xây dựng từ clinical kèm observedness mask, radiomics bin32/bin64 sau PCA, và tổ hợp của chúng. Clinical có 18 đầu vào mỗi visit; radiomics bin32 có 17 thành phần, bin64 có 16 thành phần. Cox elastic-net sử dụng regularization kết hợp $\ell_1$ và $\ell_2$ \cite{simon2011coxnet}; RSF mở rộng ensemble cây cho dữ liệu kiểm duyệt phải \cite{ishwaran2008rsf}. Hyperparameter của Cox elastic-net được chọn bằng 5-fold cross-validation theo RID trên train, với 48 cấu hình trên tám representation. RSF gồm 300 cây được thử ở bốn representation đã chọn theo train CV, tổng cộng 32 cấu hình. Sau train CV, các ứng viên được đánh giá và lựa chọn theo validation.
+
+\begin{table}[htbp]
+\centering
+\small
+\caption{Validation của các representation dữ liệu bảng. Dòng in đậm đạt C-index cao nhất ở cả Cox và RSF. Dấu ``--'' nghĩa là RSF không được chạy cho representation đó.}
+\label{tab:tabular-baselines}
+\begin{tabularx}{\linewidth}{@{}Y r r r@{}}
+\toprule
+\textbf{Đầu vào} & \textbf{Số chiều} & \textbf{Cox} & \textbf{RSF} \\
+\midrule
+Clinical, visit cuối & 18 & 0,837838 & 0,790021 \\
+Clinical, ba visit & 54 & 0,837838 & 0,837838 \\
+Radiomics bin32, visit cuối & 17 & 0,744283 & -- \\
+Radiomics bin32, ba visit & 51 & 0,582121 & -- \\
+Radiomics bin64, visit cuối & 16 & 0,748441 & -- \\
+Radiomics bin64, ba visit & 48 & 0,559252 & -- \\
+Clinical + bin32, ba visit & 105 & 0,852391 & 0,839917 \\
+\bestresult{Clinical + bin64, ba visit} & \bestresult{102} & \bestresult{0,860707} & \bestresult{0,856549} \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+Ứng viên được giữ là Cox trên clinical và radiomics bin64 của ba visit, với $\alpha=0{,}1$ và $\mathrm{l1\_ratio}=0{,}5$. Train-CV đạt $0{,}854910\pm0{,}056547$; đây là biến thiên giữa các fold, không phải SD giữa các seed. Validation đạt 0,860707, cao về mặt số học so với các kết quả neural ở phần sau, nhưng là giá trị sau lựa chọn representation và model family. Khóa luận không dùng nó để khẳng định ưu thế dưới một giao thức hoàn toàn đồng nhất. Kết quả vẫn cho thấy clinical có tín hiệu tiên lượng mạnh và mạng sâu cần được đối chiếu nghiêm túc với baseline cổ điển.
+
+\section{Baseline MRI một thời điểm}
+\label{sec:mri-baselines}
+MRI Only sử dụng MRI tại visit cuối và 3D ResNet-18. Controlled comparison đầu tiên chỉ thay initialization của backbone. MedicalNet đạt 0,733333, trong khi random initialization đạt 0,787500 ở seed 20260727; vì vậy random ResNet được giữ làm comparator cho chuỗi longitudinal ban đầu. Kết quả này không hỗ trợ phát biểu rằng pretraining luôn có lợi. Các giá trị được đối chiếu với báo cáo controlled comparison.
+
+\begin{table}[htbp]
+\centering
+\small
+\caption{Milestone MRI-only trên seed 20260727; dòng in đậm có C-index cao nhất. Dòng attention có provenance giới hạn và không thuộc benchmark ba seed.}
+\label{tab:mri-milestones}
+\begin{tabularx}{\linewidth}{@{}Y L{3.5cm} r@{}}
+\toprule
+\textbf{Mô hình} & \textbf{Biểu diễn thời gian} & \textbf{Val C-index} \\
+\midrule
+MRI Only -- MedicalNet & Visit cuối & 0,733333 \\
+\bestresult{MRI Only -- random ResNet} & \bestresult{Visit cuối} & \bestresult{0,787500} \\
+MRI Only -- CrossFormer & Visit cuối & 0,764583 \\
+Longitudinal MRI & T-LSTM, last hidden & 0,733333 \\
+Longitudinal MRI + attention* & T-LSTM + attention & 0,783333 \\
+Longitudinal MRI -- CrossFormer & T-LSTM + attention & 0,725000 \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+Nhánh thích nghi CrossFormer3D từ hướng CrossFormer \cite{wang2022crossformer} giảm số tham số MRI Only từ 33.051.969 xuống 9.856.501 và đạt 0,764583. Đây là hướng khảo sát hiệu quả tính toán; trên cùng seed, nó không vượt random ResNet. Nhánh này được ghi nhận như một so sánh backbone, không phải bước thay thế bắt buộc trong kiến trúc cuối.
+
+\section{MRI dọc theo thời gian}
+\label{sec:longitudinal-results}
+Longitudinal MRI dùng shared ResNet cho ba visit, T-LSTM và Cox head. Phiên bản lấy last hidden đạt 0,733333. Run bổ sung attention ban đầu dừng do AMP overflow; run được sửa về số học ghi nhận best-observed 0,783333, nhưng thiếu closure đầy đủ. Giá trị attention được trình bày với dấu sao để tránh xếp hạng như một run hoàn tất có provenance mạnh.
+
+So với random MRI Only 0,787500, các milestone hiện có chưa chứng minh cải thiện ổn định khi thêm temporal modeling. Điều này không bác bỏ giá trị của dữ liệu dọc: representation, khả năng tối ưu trên cohort nhỏ và cách tổng hợp chuỗi đều có thể ảnh hưởng kết quả. Cần so sánh nhiều seed dưới một giao thức matched trước khi quy kết lợi ích riêng cho T-LSTM hoặc attention.
+
+\section{Multimodal Concatenation}
+\label{sec:concat-results}
+Multimodal Concatenation thêm radiomics và clinical vào chuỗi ba visit, ghép $M\concat R\concat C$, rồi giữ T-LSTM, attention và Cox head. Milestone đạt validation 0,812500, cao hơn các milestone longitudinal MRI-only. Kết quả phù hợp với giả thuyết thông tin đa phương thức có giá trị bổ sung, nhưng không cô lập hiệu ứng của từng modality: physical Cox batch tăng từ 6 lên 8 và comparator attention có provenance giới hạn.
+
+\section{Dynamic Pairwise Fusion}
+\label{sec:dynamic-pairwise-results}
+Để kiểm tra tương tác chéo rõ hơn concatenation, Dynamic Pairwise Fusion tạo MR, MC, RC bằng outer-product sau chiếu giảm chiều, rồi đưa interaction về các modality qua sáu route có gate, $\lambda$ và identity residual. Random-ResNet variant đạt 0,828125. Chênh lệch $+0{,}015625$ so với concat là quan sát lịch sử, không phải ablation chỉ thay fusion, vì physical Cox batch giảm từ 8 xuống 6.
+
+Controlled MedicalNet variant giữ kiến trúc và giao thức của Dynamic Pairwise, chỉ đổi initialization MRI; validation ở seed 20260727 đạt 0,839583. Như vậy MedicalNet có lợi trong bối cảnh pairwise này, khác với kết quả MRI Only. Variant có pretraining trở thành full outer-product reference cho thí nghiệm CP. Hình~\ref{fig:performance-evolution} tách các nhóm giao thức để thể hiện quá trình nghiên cứu mà không tạo một đường tăng điểm giả định giữa mọi giai đoạn.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{performance-evolution.pdf}
+\caption[Milestone validation theo các giao thức phát triển]{Các milestone validation theo tiến trình nghiên cứu ở seed 20260727, tách theo giao thức. Concatenation dùng Cox batch 8, các nhóm ResNet còn lại dùng batch 6; không nối các panel thành một xu hướng có kiểm soát. Dấu sao chỉ run attention có provenance giới hạn.}
+\label{fig:performance-evolution}
+\end{figure}
+
+\FloatBarrier
+\section{Paper CNN--T-LSTM Adaptation}
+\label{sec:paper-adaptation-results}
+Kiến trúc tham chiếu từ Aghajanian và cộng sự dùng CNN để trích embedding MRI dọc, PCA, T-LSTM và temporal attention cho dự báo sống còn \cite{aghajanian2025longitudinal}. Track của project được gọi là \emph{adaptation}: cohort, tiền xử lý và cấu hình huấn luyện không trùng hoàn toàn với bài báo. Một cấu hình T-LSTM được chọn bằng retuning giới hạn trong train, rồi khóa cho cả ba seed; outer validation và test không được dùng trong bước chọn hyperparameter đó.
+
+CNN của mỗi seed được huấn luyện riêng, sau đó cố định để trích embedding 512 chiều. PCA99 fit trên train tạo 38, 69 và 2 thành phần ở ba seed. T-LSTM dùng hidden size 64, Adam, batch 16 và learning rate khoảng $2{,}246\times10^{-4}$. Validation đạt $0{,}741667\pm0{,}069347$, thấp hơn các họ pairwise trên cohort hiện tại và biến thiên đáng kể theo seed. Đây là giới hạn chuyển giao của adaptation; nó không phải so sánh trực tiếp với điểm công bố của bài báo, cũng không cô lập riêng đóng góp của CP vì đầu vào và training scheme khác nhau.
+
+\section{CP-Factorized Pairwise Fusion}
+\label{sec:cp-results}
+CP được thử sau khi full outer-product reference đã tồn tại. Controlled experiment chỉ thay phép biến đổi song tuyến đầu tiên: từ outer-product, flatten và full Linear sang $O(A^{\T}x\Had B^{\T}y)+b$. Encoder, post-MLP của từng pair, directed projection, gate, $\lambda$, residual, T-LSTM, attention và giao thức tối ưu được giữ nguyên. Ranks MR/MC/RC là 8/8/4. CP tham số hóa tensor trọng số song tuyến; không phân rã dữ liệu của bệnh nhân.
+
+Trên ba seed chuẩn hóa, full outer-product đạt $0{,}834375\pm0{,}014768$, còn full CP đạt $0{,}827778\pm0{,}025007$. Chênh lệch trung bình CP trừ full là $-0{,}006597$. Vì vậy CP không chứng minh cải thiện C-index trong thí nghiệm này. Lợi ích đo được là giảm tham số interaction, với mức validation vẫn gần reference; đây là đánh đổi hiệu quả biểu diễn và hiệu năng, không phải kết luận tương đương thống kê.
+
+\section{Ablation của các thành phần fusion}
+\label{sec:ablation-results}
+Ablation dùng full CP làm reference và chỉ thay một thành phần tại seed 20260727. Các cấu hình còn lại, bao gồm split, pretraining và ranks, được giữ theo giao thức CP. Bảng~\ref{tab:ablation} và Hình~\ref{fig:ablations} trình bày cả tăng lẫn giảm điểm để tránh chỉ chọn các kết quả thuận lợi.
+
+\begin{table}[htbp]
+\centering
+\small
+\caption{Ablation validation ở seed 20260727; $\Delta$ được tính so với full CP. Dòng in đậm có C-index cao nhất.}
+\label{tab:ablation}
+\begin{tabularx}{\linewidth}{@{}Y r r@{}}
+\toprule
+\textbf{Thay đổi} & \textbf{Val C-index} & \textbf{$\Delta$} \\
+\midrule
+Full CP reference & 0,821875 & 0 \\
+Bỏ dynamic gate & 0,820833 & $-0{,}001042$ \\
+Cố định $\lambda=0{,}1$ & 0,836458 & $+0{,}014583$ \\
+Bỏ identity residual & 0,827083 & $+0{,}005208$ \\
+Bỏ MR interaction & 0,816667 & $-0{,}005208$ \\
+Bỏ MC interaction & 0,837500 & $+0{,}015625$ \\
+\bestresult{Bỏ RC interaction} & \bestresult{0,841667} & \bestresult{$+0{,}019792$} \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{ablation-deltas.pdf}
+\caption[Ablation delta so với full CP]{Thay đổi validation C-index khi bỏ hoặc cố định từng thành phần so với full CP reference 0,821875. Đây là kết quả một seed, không có error bar hoặc diễn giải ý nghĩa thống kê.}
+\label{fig:ablations}
+\end{figure}
+
+Bỏ MR làm giảm điểm, còn bỏ RC tạo mức tăng mô tả lớn nhất. Tuy nhiên, bỏ identity residual và cố định $\lambda$ cũng tăng ở seed này; ablation không xác nhận rằng mọi thành phần đề xuất đều cải thiện hiệu năng. Kết quả chỉ đặt ra giả thuyết rằng direct RC chưa cần thiết trong cohort hiện tại. Không suy từ nó rằng RC có hại nói chung hoặc các route tương ứng biểu diễn quan hệ nhân quả.
+
+\FloatBarrier
+\section{RC-Free Pairwise Fusion qua nhiều seed}
+\label{sec:rcfree-multiseed}
+Giả thuyết rút gọn được kiểm tra bằng ba seed. RC-Free Pairwise Fusion vẫn giữ MRI, radiomics và clinical; chỉ bỏ direct RC và hai route $(\mathrm{RC}\to R)$, $(\mathrm{RC}\to C)$. MR, MC, bốn dynamic gate, bốn learnable $\lambda$, identity residual và mô hình thời gian được giữ lại.
+
+Mean validation đạt 0,834722 với sample SD 0,023693: cao hơn full CP khoảng 0,006944 và gần full outer-product, với chênh lệch mean chỉ 0,000347. RC-Free không tốt hơn ở mọi seed; ở seed 20260729, điểm 0,808333 thấp hơn full outer-product 0,817708. Vì vậy lựa chọn này dựa trên cấu trúc interaction gọn hơn cùng validation cạnh tranh, không dựa trên tuyên bố vượt trội ổn định.
+
+Follow-up RC-Free Fixed-$\lambda$ cố định cả bốn hệ số ở 0,1, giữ gate và residual. Mean bằng đúng RC-Free, nhưng SD tăng từ 0,023693 lên 0,031273. Cấu hình này không đưa ra bằng chứng lợi ích rõ ràng; khóa luận giữ learnable $\lambda$ trong kiến trúc được chọn. SD khác nhau với chỉ ba seed chưa đủ để chứng minh một variant ổn định hơn trong quần thể.
+
+\section{Benchmark validation chuẩn hóa}
+\label{sec:standardized-benchmark}
+Benchmark chuẩn hóa đối chiếu các best checkpoint qua ba seed, kiểm tra fingerprint của split, preprocessing train-only và quy ước C-index. Cả 15 ô model--seed được tái sử dụng, không cần huấn luyện lại. P10 vẫn giữ pipeline đặc thù của adaptation; benchmark chuẩn hóa đánh giá, không biến các model family thành một ablation duy nhất.
+
+\begin{table}[htbp]
+\centering
+\small
+\setlength{\tabcolsep}{4pt}
+\caption{C-index validation chuẩn hóa: mean $\pm$ sample SD ($n=3$). Hai dòng in đậm đồng hạng theo mean. Seed 27/28/29 là 20260727/20260728/20260729.}
+\label{tab:standard-bench}
+\begin{tabularx}{\linewidth}{@{}Y r r r r@{}}
+\toprule
+\textbf{Mô hình} & \textbf{Seed 27} & \textbf{Seed 28} & \textbf{Seed 29} & \textbf{Mean $\pm$ SD} \\
+\midrule
+Paper CNN--T-LSTM & 0,662500 & 0,770833 & 0,791667 & $0{,}741667\pm0{,}069347$ \\
+MedicalNet Pairwise & 0,839583 & 0,845833 & 0,817708 & $0{,}834375\pm0{,}014768$ \\
+CP Pairwise & 0,821875 & 0,855208 & 0,806250 & $0{,}827778\pm0{,}025007$ \\
+\bestresult{RC-Free Pairwise} & \bestresult{0,841667} & \bestresult{0,854167} & \bestresult{0,808333} & \bestresult{$0{,}834722\pm0{,}023693$} \\
+\bestresult{RC-Free Fixed-$\lambda$} & \bestresult{0,833333} & \bestresult{0,866667} & \bestresult{0,804167} & \bestresult{$0{,}834722\pm0{,}031273$} \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+Trong bảng, Paper CNN--T-LSTM là CNN--PCA--T-LSTM Adaptation; MedicalNet Pairwise là full outer-product reference; CP Pairwise là full three-pair CP; RC-Free Pairwise là kiến trúc CP bỏ direct RC. Sample SD được tính với mẫu số $n-1$. Ba seed là ba initialization trên cùng split, không phải ba cohort độc lập.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{standardized-benchmark.pdf}
+\caption[Benchmark validation chuẩn hóa trên ba seed]{Benchmark validation trên ba seed: mean và sample SD của năm deep model. Error bar thể hiện dao động giữa seed trên cùng split; không phải khoảng tin cậy. Classical baseline được trình bày riêng do model selection và quy ước tied time khác.}
+\label{fig:benchmark}
+\end{figure}
+
+Full MedicalNet Pairwise có SD thấp nhất trong nhóm pairwise. RC-Free và Fixed-$\lambda$ cùng mean; chênh lệch RC-Free với full outer-product rất nhỏ. Do đó RC-Free là một lựa chọn đánh đổi hợp lý giữa cấu trúc đơn giản và validation cạnh tranh, không phải ``mô hình tốt nhất tuyệt đối''. Validation được tái sử dụng trong nhiều quyết định kiến trúc, nên các điểm này có selection bias; benchmark không xóa giới hạn đó.
+
+\FloatBarrier
+\section{Hiệu quả về số tham số}
+\label{sec:computational-efficiency}
+Ba phép biến đổi song tuyến đầu tiên của full outer-product có 229.696 tham số gồm bias. CP giảm chúng còn 3.712, tương đương 98,384\%. Các post-MLP không thay đổi; tính cả post-MLP, tổng của ba pair block giảm từ 248.608 còn 22.624. Bảng~\ref{tab:interaction-parameters} phân biệt lõi interaction với toàn bộ mạng để tránh diễn giải mức giảm 98\% như giảm toàn mô hình.
+
+\begin{table}[htbp]
+\centering
+\small
+\caption{Số tham số phép biến đổi song tuyến đầu tiên, gồm bias. CP ranks MR/MC/RC là 8/8/4.}
+\label{tab:interaction-parameters}
+\begin{tabularx}{\linewidth}{@{}Y r r@{}}
+\toprule
+\textbf{Phạm vi} & \textbf{Full outer-product} & \textbf{CP} \\
+\midrule
+MR: $32\times32\to128$ & 131.200 & 1.664 \\
+MC: $32\times16\to128$ & 65.664 & 1.536 \\
+RC: $32\times16\to64$ & 32.832 & 512 \\
+\midrule
+Tổng ba lớp đầu & 229.696 & 3.712 \\
+Ba pair block, gồm post-MLP & 248.608 & 22.624 \\
+Toàn mô hình & 33.760.941 & 33.534.957 \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{cp-parameter-reduction.pdf}
+\caption[Tham số outer-product và CP theo từng phạm vi]{Giảm tham số từ full outer-product sang CP: 98,384\% ở các lớp song tuyến đầu tiên, nhưng chỉ 0,669\% ở toàn mô hình do MRI encoder chiếm phần lớn tham số.}
+\label{fig:cp-parameters}
+\end{figure}
+
+RC-Free có tổng 33.519.497 tham số, trong đó hai pair block MR/MC có 19.968 tham số, lõi CP có 3.200, bốn gate có 25.348 và bốn $\lambda$ là bốn scalar học được. Fixed-$\lambda$ còn 33.519.493 tham số. Việc bỏ RC chủ yếu đơn giản hóa interaction graph; mức giảm toàn mạng là nhỏ. Parameter count không thay thế phép đo FLOPs, latency hoặc memory. Các run có số epoch dừng khác nhau nên thời gian train tổng không được dùng như một benchmark tốc độ có kiểm soát.
+
+\FloatBarrier
+\clearpage
+\section{Trả lời câu hỏi nghiên cứu và trạng thái test}
+\label{sec:rq-results}
+\begin{table}[H]
+\centering
+\small
+\caption{Kết luận cho các câu hỏi nghiên cứu, giới hạn ở evidence validation hiện có.}
+\label{tab:rq-answer}
+\begin{tabularx}{\linewidth}{@{}C{0.9cm}Y@{}}
+\toprule
+\textbf{RQ} & \textbf{Kết luận và giới hạn} \\
+\midrule
+RQ1 & Chưa thấy lợi ích ổn định của longitudinal MRI so với random MRI Only; attention repaired có provenance giới hạn. Cần đối chiếu matched qua nhiều seed. \\
+RQ2 & Concat có milestone cao hơn longitudinal MRI-only, phù hợp với thông tin bổ sung từ clinical/radiomics; khác Cox batch và provenance hạn chế cản trở quy toàn bộ gain cho modality. \\
+RQ3 & Pairwise có điểm lịch sử cao hơn concat, nhưng Cox batch 6/8 khác nhau. Đây là bằng chứng cho giả thuyết fusion, chưa phải kiểm định fusion-only đầy đủ. \\
+RQ4 & CP giảm 98,384\% tham số ở first bilinear core; mean validation giảm 0,006597 so với full reference. Lợi ích chính là tham số hóa gọn. \\
+RQ5 & Bỏ RC tăng điểm ở ablation seed và giữ mean cạnh tranh qua ba seed; chưa chứng minh RC có hại nói chung. Fixed-$\lambda$ không tăng mean so với RC-Free. \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+Architecture selection trong khóa luận dựa trên validation, ablation và benchmark nhiều seed. Formal Final Test Evaluation của project vẫn chưa được thực hiện trong nguồn evidence hiện có: \emph{``Formal held-out final evaluation has not yet been performed.''} Các đánh giá test hậu nghiệm trong tài liệu lịch sử không được đưa vào bảng so sánh hoặc dùng để chọn interaction, rank hay kiến trúc. Vì test đã từng xuất hiện trong quá trình nghiên cứu trước đó, đánh giá tiếp theo trên split này cũng cần công bố lịch sử sử dụng test; external validation hoặc một tập giữ lại mới sẽ cung cấp bằng chứng khái quát hóa mạnh hơn.

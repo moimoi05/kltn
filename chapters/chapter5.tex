@@ -1,0 +1,69 @@
+\chapter{Thảo luận, kết luận và hướng phát triển}
+\label{chap:discussion}
+
+Các thí nghiệm trong Chương~\ref{chap:results} trả lời một câu hỏi thiết kế cụ thể: có thể khai thác thông tin đa phương thức bằng một interaction graph gọn hơn mà vẫn giữ hiệu năng validation cạnh tranh hay không? Chương này diễn giải các bằng chứng, phân biệt kết luận được hỗ trợ với giả thuyết cần kiểm chứng thêm, và xác định phạm vi sử dụng của mô hình.
+
+\section{Thảo luận}
+\subsection{Longitudinal MRI: thêm thời điểm chưa bảo đảm thêm thông tin hữu ích}
+Kết quả MRI-only chưa cho thấy lợi ích ổn định khi chuyển từ một MRI sang ba MRI. Một chuỗi dài hơn có thể chứa thay đổi giải phẫu hữu ích, nhưng cũng tăng độ khó tối ưu hóa trên một cohort nhỏ. T-LSTM xử lý khoảng cách thời gian không đều; bản thân cơ chế này không bảo đảm rằng embedding đã biểu diễn được tốc độ tiến triển. Trong công trình Aghajanian và cộng sự, tác giả cũng thảo luận vai trò của huấn luyện hai bước và ensemble khi giải thích hiệu năng, thay vì quy toàn bộ lợi ích cho tính dọc của dữ liệu \cite{aghajanian2025longitudinal}.
+
+Vì vậy, kết luận phù hợp cho RQ1 là longitudinal MRI chưa được chứng minh vượt trội trong triển khai hiện tại. Việc sửa quy ước attention và thay đổi khởi tạo MRI cần được phân biệt với tác động của temporal modeling. Một kiểm chứng mạnh hơn sẽ giữ encoder, objective, budget và protocol cố định rồi thay riêng số visit hoặc temporal module.
+
+\subsection{Giá trị đa phương thức và giới hạn của bằng chứng ghép nối}
+Ghép nối MRI, radiomics và clinical tạo tín hiệu validation tích cực so với nhánh longitudinal MRI trong tiến trình phát triển. Điều này khuyến khích nghiên cứu fusion: MRI biểu diễn cấu trúc, radiomics lượng hóa cường độ/texture, còn clinical phản ánh trạng thái nhận thức và chức năng. Các nghiên cứu liên quan cũng xem xét thông tin dọc và đa nguồn, dù mục tiêu dự báo và protocol khác nhau \cite{ding2023progression,bapat2024fouryear,li2026longitudinal}.
+
+Tuy nhiên, so sánh lịch sử có khác biệt về physical batch và cấu hình temporal; mức tăng quan sát được không phải ước lượng thuần túy của hiệu ứng thêm modality. RQ2 được hỗ trợ ở mức bằng chứng phát triển, cần thí nghiệm đối chứng đồng nhất hơn. Radiomics cũng được trích từ cùng MRI nên tính bổ sung của hai biểu diễn không đồng nghĩa với hai phép đo sinh học độc lập.
+
+\subsection{Pairwise interaction so với concatenation}
+Concatenation đặt các vector cạnh nhau để downstream network tự học quan hệ giữa chúng. Pairwise fusion đưa các tích chéo vào representation một cách tường minh, sau đó định tuyến đóng góp trở lại từng modality. Đây là một khác biệt về giả thuyết mô hình, không phải một bảo đảm về hiệu năng. Các giai đoạn exploratory cho thấy hướng tương tác đáng tiếp tục, nhưng chưa đủ để tuyên bố pairwise luôn vượt concatenation vì những khác biệt protocol đã nêu.
+
+Gate và identity residual tạo khả năng hiệu chỉnh biểu diễn gốc theo từng patient--visit. Gate là sigmoid phụ thuộc đầu vào; $\lambda$ là scale toàn cục theo route và có thể mang dấu âm. Hai thành phần này không phải cùng một loại trọng số attention. Công thức route-specific của khóa luận lấy cảm hứng từ gated residual modulation và residual scaling \cite{ryumina2026residual,liu2026motion}; kiến trúc đầy đủ và cách học scale là phần triển khai riêng của nghiên cứu.
+
+\subsection{CP: hiệu quả tham số hóa tại đúng phạm vi}
+Controlled CP comparison thay riêng lớp bilinear đầu tiên, giữ các lớp phía sau và protocol chung. Do đó đây là bằng chứng rõ hơn cho RQ4: có thể giảm mạnh số tham số của lõi tương tác mà validation mean chỉ thay đổi nhỏ trong ba seed. Ràng buộc low-rank tạo một inductive bias hợp lý khi dữ liệu ít, nhưng không có bằng chứng rằng CP tự làm tăng hiệu năng dự báo.
+
+Phần lớn tham số toàn mạng vẫn thuộc MRI backbone. Mức giảm của interaction core không thể được dùng như mức giảm của toàn mô hình, và parameter count không thay thế đo thời gian chạy hoặc bộ nhớ. Trong inference, CP factors là trọng số đã học, không cần phân rã lại tensor cho mỗi người bệnh. Đây là lợi ích triển khai của việc tham số hóa tensor trọng số ngay trong phép forward \cite{kolda2009tensor}.
+
+\subsection{Vì sao bỏ tương tác Radiomics--Clinical}
+Ablation một seed gợi ý rằng direct RC pair chưa tạo lợi ích rõ trong cấu hình đang xét. Sau đó, đánh giá ba seed kiểm tra lại kiến trúc bỏ RC và cho kết quả cạnh tranh với full pairwise reference. Chuỗi bằng chứng này dẫn đến RC-Free Pairwise Fusion; RC-Free không phải giả định được chọn từ đầu và không loại bỏ radiomics hay clinical.
+
+Một giả thuyết là R và C chia sẻ một phần tín hiệu về mức suy giảm, trong khi cohort chưa đủ lớn để ước lượng ổn định thêm tương tác trực tiếp. Một giả thuyết khác là route RC làm tăng độ khó tối ưu hóa. Các kết quả hiện tại không phân biệt được những cơ chế đó. Do đó không thể diễn giải RC là nhiễu sinh học, vô ích nói chung, hay không cần thiết trên mọi cohort. RQ5 được trả lời ở phạm vi architecture/protocol hiện tại, với ablation ban đầu mang tính thăm dò.
+
+\subsection{MRI như một trung tâm tương tác}
+Hình~\ref{fig:mri-hub} tóm tắt topology được giữ lại. Hai pair MR và MC điều chỉnh cả hai đầu của mỗi cặp qua bốn directed route. Các nhánh modality gốc, bao gồm R và C, vẫn đi đến readout; việc bỏ cạnh RC không tạo hai mô hình unimodal tách rời. T-LSTM phía sau tiếp tục học từ chuỗi embedding đã hợp nhất ở cả ba visit.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth]{mri-hub-topology.pdf}
+\caption[MRI làm trung tâm của topology RC-Free]{Diễn giải topology cuối: mô hình giữ đủ MRI, radiomics và clinical, sử dụng MRI làm trung tâm tương tác sau khi bỏ direct radiomics--clinical pair. Các cạnh biểu diễn trao đổi feature qua MR/MC, không phải quan hệ nhân quả hay kết nối giải phẫu.}
+\label{fig:mri-hub}
+\end{figure}
+
+Interpretation này có ích cho thiết kế, nhưng không biến gate, $\lambda$ hoặc attention thành biomarker đã được kiểm định. Việc học được một giá trị gate lớn chỉ cho biết đóng góp nội tại của một route trong mô hình đã huấn luyện. Muốn suy luận vai trò lâm sàng cần kiểm tra độ ổn định, confounding và bằng chứng độc lập.
+
+\subsection{Mô hình sâu và baseline sống còn cổ điển}
+Cox elastic-net là một comparator mạnh trong đánh giá tabular. Tuy nhiên, các baseline cổ điển đã chọn representation/model qua cross-validation và validation, dùng quy ước concordance của scikit-survival; các mạng sâu dùng metric strict-time của project. Chương~\ref{chap:results} tách hai nhóm vì cách xử lý thời gian bằng nhau và quá trình lựa chọn khác nhau. Không nên dùng thứ hạng số học giữa chúng như một so sánh xác nhận hoàn toàn đồng nhất.
+
+Bài học thực tế là độ phức tạp không bảo đảm ưu thế. Các predictor đã được thiết kế tốt có thể đủ mạnh cho cohort nhỏ; mạng sâu cần chứng minh lợi ích của representation MRI và interaction bằng đối chứng phù hợp. Đóng góp của khóa luận là phân tích có lưu vết về cơ chế hợp nhất và khả năng rút gọn, cùng một baseline cổ điển đáng tin để làm mốc, thay vì khẳng định mọi thành phần deep learning đều cần thiết.
+
+\section{Giới hạn}
+\begin{enumerate}
+\item \textbf{Phạm vi cohort và endpoint.} Cohort gồm 359 người ADNI được chọn có ít nhất ba MRI trong cửa sổ 18 tháng và không đạt tiêu chí chuyển đổi sớm. Biến cố sau landmark là proxy theo ngưỡng MMSE/CDR, không nhất thiết là chẩn đoán AD được hội đồng chuyên môn xác nhận. Kết quả không tự khái quát sang mọi người MCI tại baseline.
+\item \textbf{Thời gian dự báo và tính sẵn có đầu vào.} Mốc $p$ là MRI thứ ba, trong khi điều kiện không chuyển đổi được xác định đến $L\ge p$. Clinical ghép trong $\pm90$ ngày quanh MRI có các record sau ngày MRI. Vì vậy cohort và alignment hiện tại mang tính hồi cứu; chưa chứng minh một pipeline tiến cứu có mọi predictor sẵn có đúng lúc $p$. Cần đánh giá lại bằng quy tắc availability chỉ dùng thông tin đã quan sát tại thời điểm dự báo.
+\item \textbf{Quy mô validation và nhiều lần lựa chọn.} Validation chỉ có 54 người và 16 biến cố. Ba seed lặp quá trình tối ưu hóa trên cùng một split, không tạo ba cohort độc lập. Mean/SD mô tả độ nhạy theo seed, không phải confidence interval; nhiều lần lựa chọn trên validation có thể tạo optimism. Ablation gate/scale/residual và từng pair ban đầu chỉ chạy một seed.
+\item \textbf{Đối chứng và objective.} Một số giai đoạn lịch sử khác physical batch, backbone hoặc temporal implementation. Cox loss dùng risk set trong physical minibatch; gradient accumulation không tạo lại risk set toàn training cohort. Concordance kiểm tra thứ hạng, chưa chứng minh calibration hoặc xác suất chuyển đổi chính xác theo thời gian.
+\item \textbf{Test và xác nhận cuối cùng.} Test từng được truy cập trong các thí nghiệm lịch sử, nên không được coi như một nguồn hoàn toàn chưa từng quan sát. Những giá trị đó không được dùng trong narrative chọn kiến trúc ở bản này. Formal held-out final evaluation has not yet been performed. Protocol đánh giá cuối phải công bố lịch sử truy cập; xác nhận trên cohort ngoài sẽ cung cấp bằng chứng độc lập mạnh hơn.
+\item \textbf{Độ bền của đầu vào và cấu hình.} Chưa có external validation, kiểm chứng thiếu modality tổng quát, hoặc đánh giá độ nhạy với acquisition/segmentation. Rank CP được giữ cố định theo lineage, chưa có rank sweep có kiểm soát. Chưa có benchmark thời gian/bộ nhớ đủ đồng nhất để chuyển parameter reduction thành tuyên bố tăng tốc thực tế.
+\end{enumerate}
+
+\section{Kết luận}
+Khóa luận phát triển một pipeline survival từ MRI-only đến longitudinal MRI, ghép nối đa phương thức, dynamic pairwise fusion, CP-factorized interaction và ablation topology. Quá trình này xuất phát từ câu hỏi của nghiên cứu longitudinal MRI--radiomics: bổ sung một modality bằng ghép nối chưa bảo đảm khai thác được tín hiệu của nó \cite{aghajanian2025longitudinal}.
+
+Kiến trúc được chọn là \textbf{RC-Free CP-Factorized Pairwise Fusion}. Mô hình giữ MRI, radiomics và clinical, tham số hóa MR/MC bằng CP, đưa tương tác trở lại modality qua gated residual, rồi xử lý ba visit bằng T-LSTM và attention trước Cox head. Bằng chứng validation hiện tại ủng hộ một graph gọn có hiệu năng cạnh tranh; CP giảm chi phí của interaction core, còn loại RC đơn giản hóa topology. Các kết luận này là kết luận về thiết kế trong cohort hiện tại, chưa phải xác nhận ưu thế lâm sàng hoặc kết quả test.
+
+\section{Hướng phát triển}
+Ưu tiên đầu tiên là xây dựng và đánh giá protocol tiến cứu với time origin rõ ràng, eligibility phù hợp lúc dự báo và clinical chỉ lấy từ các ngày đã quan sát; xác nhận endpoint bằng chẩn đoán có thẩm định nếu có. Cần giữ provenance của dữ liệu hiện tại và tạo phiên bản cohort mới thay vì sửa âm thầm bản đóng băng.
+
+Sau khi khóa protocol, nên thực hiện đối chứng MRI/temporal/modality trên cấu hình đồng nhất, mở rộng số split hoặc cohort độc lập, và chạy formal final evaluation có công bố lịch sử test. Calibration, time-dependent Brier score và các metric theo horizon sẽ bổ sung cho concordance \cite{graf1999brier}. Khoảng tin cậy theo người bệnh cần được tách khỏi SD theo seed.
+
+Các hướng về kiến trúc gồm xử lý thiếu modality, rank-adaptive interaction, uncertainty-aware routing và temporal encoders mới khi quy mô dữ liệu cho phép. Pretrained brain representations như hướng brain latent diffusion có thể hữu ích \cite{li2026longitudinal}, nhưng mọi cải tiến cần được kiểm tra bằng đối chứng phù hợp. Cuối cùng, đo latency, memory và độ ổn định trên phần cứng cố định sẽ làm rõ lợi ích triển khai thực sự của kiến trúc gọn.

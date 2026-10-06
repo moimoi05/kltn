@@ -1,0 +1,623 @@
+[
+  {
+    "pdf_page": 1,
+    "page_label": "1",
+    "text_chars": 246,
+    "min_text_font": 15.541679382324219,
+    "outside_page_text": [],
+    "replacement_glyph": false,
+    "question_citation": false
+  },
+  {
+    "pdf_page": 2,
+    "page_label": "1",
+    "text_chars": 359,
+    "min_text_font": 12.951432228088379,
+    "outside_page_text": [],
+    "replacement_glyph": false,
+    "question_citation": false
+  },
+  {
+    "pdf_page": 3,
+    "page_label": "1",
+    "text_chars": 341,
+    "min_text_font": 12.951432228088379,
+    "outside_page_text": [],
+    "replacement_glyph": false,
+    "question_citation": false
+  },
+  {
+    "pdf_page": 4,
+    "page_label": "i",
+    "text_chars": 1984,
+    "min_text_font": 12.951432228088379,
+    "outside_page_text": [],
+    "replacement_glyph": false,
+    "question_citation": false
+  },
+  {
+    "pdf_page": 5,
+    "page_label": "ii",
+    "text_chars": 2250,
+    "min_text_font": 12.951432228088379,
+    "outside_page_text": [],
+    "replacement_glyph": false,
+    "question_citation": false
+  },
+  {
+    "pdf_page": 6,
+    "page_label": "iii",
+    "text_chars": 588,
+    "min_text_font": 12.951432228088379,
+    "outside_page_text": [],
+    "replacement_glyph": false,
+    "question_citation": false
+  },
+  {
+    "pdf_page": 7,
+    "page_label": "iv",
+    "text_chars": 701,
+    "min_text_font": 12.951432228088379,
+    "outside_page_text": [],
+    "replacement_glyph": false,
+    "question_citation": false
+  },
+  {
+    "pdf_page": 8,
+    "page_label": "v",
+    "text_chars": 798,
+    "min_text_font": 12.951432228088379,
+    "outside_page_text": [],
+    "replacement_glyph": false,
+    "question_citation": false
+  },
+  {
+    "pdf_page": 9,
+    "page_label": "vi",
+    "text_chars": 1456,
+    "min_text_font": 12.951432228088379,
+    "outside_page_text": [],
+    "replacement_glyph": false,
+    "question_citation": false
+  },
+  {
+    "pdf_page": 10,
+    "page_label": "vii",
+    "text_chars": 2491,
+    "min_text_font": 12.951432228088379,
+    "outside_page_text": [],
+    "replacement_glyph": false,
+    "question_citation": false
+  },
+  {
+    "pdf_page": 11,
+    "page_label": "viii",
+    "text_chars": 1203,
+    "min_text_font": 12.951432228088379,
+    "outside_page_text": [],
+    "replacement_glyph": false,
+    "question_citation": false
+  },
+  {
+    "pdf_page": 12,
+    "page_label": "ix",
+    "text_chars": 1263,
+    "min_text_font": 12.951432228088379,
+    "outside_page_text": [],
+    "replacement_glyph": false,
+    "question_citation": false
+  },
+  {
+    "pdf_page": 13,
+    "page_label": "x",
+    "text_chars": 1536,
+    "min_text_font": 12.951432228088379,
+    "outside_page_text": [],
+    "replacement_glyph": false,
+    "question_citation": false
+  },
+  {
+    "pdf_page": 14,
+    "page_label": "1",
+    "text_chars": 1744,
+    "min_text_font": 12.951432228088379,
+    "outside_page_text": [],
+    "replacement_glyph": false,
+    "question_citation": false
+  },
+  {
+    "pdf_page": 15,
+    "page_label": "2",
+    "text_chars": 1727,
+    "min_text_font": 9.50047492980957,
+    "outside_page_text": [],
+    "replacement_glyph": false,
+    "question_citation": false
+  },
+  {
+    "pdf_page": 16,
+    "page_label": "3",
+    "text_chars": 1361,
+    "min_text_font": 12.951432228088379,
+    "outside_page_text": [],
+    "replacement_glyph": false,
+    "question_citation": false
+  },
+  {
+    "pdf_page": 17,
+    "page_label": "4",
+    "text_chars": 1478,
+    "min_text_font": 11.81826114654541,
+    "outside_page_text": [],
+    "replacement_glyph": false,
+    "question_citation": false
+  },
+  {
+    "pdf_page": 18,
+    "page_label": "5",
+    "text_chars": 1889,
+    "min_text_font": 12.951432228088379,
+    "outside_page_text": [],
+    "replacement_glyph": false,
+    "question_citation": false
+  },
+  {
+    "pdf_page": 19,
+    "page_label": "6",
+    "text_chars": 1615,
+    "min_text_font": 9.065962791442871,
+    "outside_page_text": [],
+    "replacement_glyph": false,
+    "question_citation": false
+  },
+  {
+    "pdf_page": 20,
+    "page_label": "7",
+    "text_chars": 2007,
+    "min_text_font": 6.4757161140441895,
+    "outside_page_text": [],
+    "replacement_glyph": false,
+    "question_citation": false
+  },
+  {
+    "pdf_page": 21,
+    "page_label": "8",
+    "text_chars": 1871,
+    "min_text_font": 12.951432228088379,
+    "outside_page_text": [],
+    "replacement_glyph": false,
+    "question_citation": false
+  },
+  {
+    "pdf_page": 22,
+    "page_label": "9",
+    "text_chars": 2139,
+    "min_text_font": 12.951432228088379,
+    "outside_page_text": [],
+    "replacement_glyph": false,
+    "question_citation": false
+  },
+  {
+    "pdf_page": 23,
+    "page_label": "10",
+    "text_chars": 1115,
+    "min_text_font": 6.4757161140441895,
+    "outside_page_text": [],
+    "replacement_glyph": false,
+    "question_citation": false
+  },
+  {
+    "pdf_page": 24,
+    "page_label": "11",
+    "text_chars": 1927,
+    "min_text_font": 9.065962791442871,
+    "outside_page_text": [],
+    "replacement_glyph": false,
+    "question_citation": false
+  },
+  {
+    "pdf_page": 25,
+    "page_label": "12",
+    "text_chars": 1646,
+    "min_text_font": 11.81826114654541,
+    "outside_page_text": [],
+    "replacement_glyph": false,
+    "question_citation": false
+  },
+  {
+    "pdf_page": 26,
+    "page_label": "13",
+    "text_chars": 1107,
+    "min_text_font": 12.951432228088379,
+    "outside_page_text": [],
+    "replacement_glyph": false,
+    "question_citation": false
+  },
+  {
+    "pdf_page": 27,
+    "page_label": "14",
+    "text_chars": 1770,
+    "min_text_font": 9.065962791442871,
+    "outside_page_text": [],
+    "replacement_glyph": false,
+    "question_citation": false
+  },
+  {
+    "pdf_page": 28,
+    "page_label": "15",
+    "text_chars": 1378,
+    "min_text_font": 9.065962791442871,
+    "outside_page_text": [],
+    "replacement_glyph": false,
+    "question_citation": false
+  },
+  {
+    "pdf_page": 29,
+    "page_label": "16",
+    "text_chars": 1936,
+    "min_text_font": 9.065962791442871,
+    "outside_page_text": [],
+    "replacement_glyph": false,
+    "question_citation": false
+  },
+  {
+    "pdf_page": 30,
+    "page_label": "17",
+    "text_chars": 1605,
+    "min_text_font": 9.50047492980957,
+    "outside_page_text": [],
+    "replacement_glyph": false,
+    "question_citation": false
+  },
+  {
+    "pdf_page": 31,
+    "page_label": "18",
+    "text_chars": 2029,
+    "min_text_font": 9.065962791442871,
+    "outside_page_text": [],
+    "replacement_glyph": false,
+    "question_citation": false
+  },
+  {
+    "pdf_page": 32,
+    "page_label": "19",
+    "text_chars": 1245,
+    "min_text_font": 10.000499725341797,
+    "outside_page_text": [],
+    "replacement_glyph": false,
+    "question_citation": false
+  },
+  {
+    "pdf_page": 33,
+    "page_label": "20",
+    "text_chars": 1754,
+    "min_text_font": 6.4757161140441895,
+    "outside_page_text": [],
+    "replacement_glyph": false,
+    "question_citation": false
+  },
+  {
+    "pdf_page": 34,
+    "page_label": "21",
+    "text_chars": 798,
+    "min_text_font": 6.4757161140441895,
+    "outside_page_text": [],
+    "replacement_glyph": false,
+    "question_citation": false
+  },
+  {
+    "pdf_page": 35,
+    "page_label": "22",
+    "text_chars": 1135,
+    "min_text_font": 6.4757161140441895,
+    "outside_page_text": [],
+    "replacement_glyph": false,
+    "question_citation": false
+  },
+  {
+    "pdf_page": 36,
+    "page_label": "23",
+    "text_chars": 1743,
+    "min_text_font": 9.065962791442871,
+    "outside_page_text": [],
+    "replacement_glyph": false,
+    "question_citation": false
+  },
+  {
+    "pdf_page": 37,
+    "page_label": "24",
+    "text_chars": 1125,
+    "min_text_font": 9.065962791442871,
+    "outside_page_text": [],
+    "replacement_glyph": false,
+    "question_citation": false
+  },
+  {
+    "pdf_page": 38,
+    "page_label": "25",
+    "text_chars": 1337,
+    "min_text_font": 9.065962791442871,
+    "outside_page_text": [],
+    "replacement_glyph": false,
+    "question_citation": false
+  },
+  {
+    "pdf_page": 39,
+    "page_label": "26",
+    "text_chars": 885,
+    "min_text_font": 9.065962791442871,
+    "outside_page_text": [],
+    "replacement_glyph": false,
+    "question_citation": false
+  },
+  {
+    "pdf_page": 40,
+    "page_label": "27",
+    "text_chars": 1019,
+    "min_text_font": 9.50047492980957,
+    "outside_page_text": [],
+    "replacement_glyph": false,
+    "question_citation": false
+  },
+  {
+    "pdf_page": 41,
+    "page_label": "28",
+    "text_chars": 1218,
+    "min_text_font": 9.065962791442871,
+    "outside_page_text": [],
+    "replacement_glyph": false,
+    "question_citation": false
+  },
+  {
+    "pdf_page": 42,
+    "page_label": "29",
+    "text_chars": 1175,
+    "min_text_font": 6.4757161140441895,
+    "outside_page_text": [],
+    "replacement_glyph": false,
+    "question_citation": false
+  },
+  {
+    "pdf_page": 43,
+    "page_label": "30",
+    "text_chars": 1329,
+    "min_text_font": 9.065962791442871,
+    "outside_page_text": [],
+    "replacement_glyph": false,
+    "question_citation": false
+  },
+  {
+    "pdf_page": 44,
+    "page_label": "31",
+    "text_chars": 1933,
+    "min_text_font": 9.065962791442871,
+    "outside_page_text": [],
+    "replacement_glyph": false,
+    "question_citation": false
+  },
+  {
+    "pdf_page": 45,
+    "page_label": "32",
+    "text_chars": 1863,
+    "min_text_font": 7.555058002471924,
+    "outside_page_text": [],
+    "replacement_glyph": false,
+    "question_citation": false
+  },
+  {
+    "pdf_page": 46,
+    "page_label": "33",
+    "text_chars": 1983,
+    "min_text_font": 11.81826114654541,
+    "outside_page_text": [],
+    "replacement_glyph": false,
+    "question_citation": false
+  },
+  {
+    "pdf_page": 47,
+    "page_label": "34",
+    "text_chars": 1666,
+    "min_text_font": 11.81826114654541,
+    "outside_page_text": [],
+    "replacement_glyph": false,
+    "question_citation": false
+  },
+  {
+    "pdf_page": 48,
+    "page_label": "35",
+    "text_chars": 841,
+    "min_text_font": 12.951432228088379,
+    "outside_page_text": [],
+    "replacement_glyph": false,
+    "question_citation": false
+  },
+  {
+    "pdf_page": 49,
+    "page_label": "36",
+    "text_chars": 1215,
+    "min_text_font": 9.50047492980957,
+    "outside_page_text": [],
+    "replacement_glyph": false,
+    "question_citation": false
+  },
+  {
+    "pdf_page": 50,
+    "page_label": "37",
+    "text_chars": 1768,
+    "min_text_font": 9.065962791442871,
+    "outside_page_text": [],
+    "replacement_glyph": false,
+    "question_citation": false
+  },
+  {
+    "pdf_page": 51,
+    "page_label": "38",
+    "text_chars": 1026,
+    "min_text_font": 9.50047492980957,
+    "outside_page_text": [],
+    "replacement_glyph": false,
+    "question_citation": false
+  },
+  {
+    "pdf_page": 52,
+    "page_label": "39",
+    "text_chars": 1888,
+    "min_text_font": 12.951432228088379,
+    "outside_page_text": [],
+    "replacement_glyph": false,
+    "question_citation": false
+  },
+  {
+    "pdf_page": 53,
+    "page_label": "40",
+    "text_chars": 1292,
+    "min_text_font": 9.50047492980957,
+    "outside_page_text": [],
+    "replacement_glyph": false,
+    "question_citation": false
+  },
+  {
+    "pdf_page": 54,
+    "page_label": "41",
+    "text_chars": 927,
+    "min_text_font": 11.81826114654541,
+    "outside_page_text": [],
+    "replacement_glyph": false,
+    "question_citation": false
+  },
+  {
+    "pdf_page": 55,
+    "page_label": "42",
+    "text_chars": 935,
+    "min_text_font": 9.50047492980957,
+    "outside_page_text": [],
+    "replacement_glyph": false,
+    "question_citation": false
+  },
+  {
+    "pdf_page": 56,
+    "page_label": "43",
+    "text_chars": 1544,
+    "min_text_font": 11.81826114654541,
+    "outside_page_text": [],
+    "replacement_glyph": false,
+    "question_citation": false
+  },
+  {
+    "pdf_page": 57,
+    "page_label": "44",
+    "text_chars": 1556,
+    "min_text_font": 12.951432228088379,
+    "outside_page_text": [],
+    "replacement_glyph": false,
+    "question_citation": false
+  },
+  {
+    "pdf_page": 58,
+    "page_label": "45",
+    "text_chars": 2253,
+    "min_text_font": 12.951432228088379,
+    "outside_page_text": [],
+    "replacement_glyph": false,
+    "question_citation": false
+  },
+  {
+    "pdf_page": 59,
+    "page_label": "46",
+    "text_chars": 1633,
+    "min_text_font": 9.50047492980957,
+    "outside_page_text": [],
+    "replacement_glyph": false,
+    "question_citation": false
+  },
+  {
+    "pdf_page": 60,
+    "page_label": "47",
+    "text_chars": 2023,
+    "min_text_font": 12.951432228088379,
+    "outside_page_text": [],
+    "replacement_glyph": false,
+    "question_citation": false
+  },
+  {
+    "pdf_page": 61,
+    "page_label": "48",
+    "text_chars": 2190,
+    "min_text_font": 12.951432228088379,
+    "outside_page_text": [],
+    "replacement_glyph": false,
+    "question_citation": false
+  },
+  {
+    "pdf_page": 62,
+    "page_label": "49",
+    "text_chars": 1102,
+    "min_text_font": 12.951432228088379,
+    "outside_page_text": [],
+    "replacement_glyph": false,
+    "question_citation": false
+  },
+  {
+    "pdf_page": 63,
+    "page_label": "50",
+    "text_chars": 2677,
+    "min_text_font": 11.81826114654541,
+    "outside_page_text": [],
+    "replacement_glyph": false,
+    "question_citation": false
+  },
+  {
+    "pdf_page": 64,
+    "page_label": "51",
+    "text_chars": 2797,
+    "min_text_font": 11.81826114654541,
+    "outside_page_text": [],
+    "replacement_glyph": false,
+    "question_citation": false
+  },
+  {
+    "pdf_page": 65,
+    "page_label": "52",
+    "text_chars": 2732,
+    "min_text_font": 11.81826114654541,
+    "outside_page_text": [],
+    "replacement_glyph": false,
+    "question_citation": false
+  },
+  {
+    "pdf_page": 66,
+    "page_label": "53",
+    "text_chars": 2712,
+    "min_text_font": 11.81826114654541,
+    "outside_page_text": [],
+    "replacement_glyph": false,
+    "question_citation": false
+  },
+  {
+    "pdf_page": 67,
+    "page_label": "54",
+    "text_chars": 2840,
+    "min_text_font": 11.81826114654541,
+    "outside_page_text": [],
+    "replacement_glyph": false,
+    "question_citation": false
+  },
+  {
+    "pdf_page": 68,
+    "page_label": "55",
+    "text_chars": 2810,
+    "min_text_font": 11.81826114654541,
+    "outside_page_text": [],
+    "replacement_glyph": false,
+    "question_citation": false
+  },
+  {
+    "pdf_page": 69,
+    "page_label": "56",
+    "text_chars": 570,
+    "min_text_font": 11.81826114654541,
+    "outside_page_text": [],
+    "replacement_glyph": false,
+    "question_citation": false
+  }
+]

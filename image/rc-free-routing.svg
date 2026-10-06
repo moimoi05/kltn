@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160mm" height="131.233mm" viewBox="0 0 453.5433 372">
+<rect width="100%" height="100%" fill="white"/>
+<rect x="16" y="14" width="141" height="31" rx="4" fill="#E7F0FA" stroke="#567DA3" stroke-width="1"/>
+<text x="86.5" y="33.2" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="middle" fill="#263B4D">M  (identity)</text>
+<rect x="16" y="59" width="141" height="31" rx="4" fill="#FAE9ED" stroke="#A87984" stroke-width="1"/>
+<text x="86.5" y="78.015" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="700" text-anchor="middle" fill="#263B4D">(MR → M)  |  λ × g × Ê</text>
+<rect x="16" y="104" width="141" height="31" rx="4" fill="#FAE9ED" stroke="#A87984" stroke-width="1"/>
+<text x="86.5" y="123.015" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="700" text-anchor="middle" fill="#263B4D">(MC → M)  |  λ × g × Ê</text>
+<circle cx="211" cy="74.5" r="14" fill="#EEEAF6" stroke="#86759D" stroke-width="1"/>
+<text x="211" y="79.26" font-family="Arial, DejaVu Sans, sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#263B4D">+</text>
+<polyline points="157,29.5 211,29.5 211,60.5" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="211,60.5 213.5,55.5 208.5,55.5" fill="#5C6B79"/>
+<polyline points="157,74.5 197,74.5" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="197,74.5 192.0,72.0 192.0,77.0" fill="#5C6B79"/>
+<polyline points="157,119.5 211,119.5 211,88.5" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="211,88.5 208.5,93.5 213.5,93.5" fill="#5C6B79"/>
+<rect x="250" y="57.5" width="95" height="34" rx="4" fill="#EEEAF6" stroke="#86759D" stroke-width="1"/>
+<text x="297.5" y="78.015" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="700" text-anchor="middle" fill="#263B4D">LayerNorm</text>
+<polyline points="225,74.5 250,74.5" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="250,74.5 245.0,72.0 245.0,77.0" fill="#5C6B79"/>
+<rect x="368" y="52.5" width="69" height="44" rx="4" fill="#E7F0FA" stroke="#567DA3" stroke-width="1"/>
+<text x="402.5" y="72.0" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="middle" fill="#263B4D">M_out</text>
+<text x="402.5" y="84.4" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#263B4D">128</text>
+<polyline points="345,74.5 368,74.5" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="368,74.5 363.0,72.0 363.0,77.0" fill="#5C6B79"/>
+<rect x="16" y="149" width="141" height="31" rx="4" fill="#EAF3E9" stroke="#638560" stroke-width="1"/>
+<text x="86.5" y="168.20000000000002" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="middle" fill="#263B4D">R  (identity)</text>
+<rect x="16" y="194" width="141" height="31" rx="4" fill="#FAE9ED" stroke="#A87984" stroke-width="1"/>
+<text x="86.5" y="213.01500000000001" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="700" text-anchor="middle" fill="#263B4D">(MR → R)  |  λ × g × Ê</text>
+<circle cx="211" cy="187" r="14" fill="#EEEAF6" stroke="#86759D" stroke-width="1"/>
+<text x="211" y="191.76" font-family="Arial, DejaVu Sans, sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#263B4D">+</text>
+<polyline points="157,164.5 211,164.5 211,173" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="211,173 213.5,168.0 208.5,168.0" fill="#5C6B79"/>
+<polyline points="157,209.5 211,209.5 211,201" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="211,201 208.5,206.0 213.5,206.0" fill="#5C6B79"/>
+<rect x="250" y="170" width="95" height="34" rx="4" fill="#EEEAF6" stroke="#86759D" stroke-width="1"/>
+<text x="297.5" y="190.51500000000001" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="700" text-anchor="middle" fill="#263B4D">LayerNorm</text>
+<polyline points="225,187 250,187" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="250,187 245.0,184.5 245.0,189.5" fill="#5C6B79"/>
+<rect x="368" y="165" width="69" height="44" rx="4" fill="#EAF3E9" stroke="#638560" stroke-width="1"/>
+<text x="402.5" y="184.5" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="middle" fill="#263B4D">R_out</text>
+<text x="402.5" y="196.9" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#263B4D">64</text>
+<polyline points="345,187 368,187" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="368,187 363.0,184.5 363.0,189.5" fill="#5C6B79"/>
+<rect x="16" y="249" width="141" height="31" rx="4" fill="#FBF0E3" stroke="#A27D51" stroke-width="1"/>
+<text x="86.5" y="268.2" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="middle" fill="#263B4D">C  (identity)</text>
+<rect x="16" y="294" width="141" height="31" rx="4" fill="#FAE9ED" stroke="#A87984" stroke-width="1"/>
+<text x="86.5" y="313.01500000000004" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="700" text-anchor="middle" fill="#263B4D">(MC → C)  |  λ × g × Ê</text>
+<circle cx="211" cy="287" r="14" fill="#EEEAF6" stroke="#86759D" stroke-width="1"/>
+<text x="211" y="291.76" font-family="Arial, DejaVu Sans, sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#263B4D">+</text>
+<polyline points="157,264.5 211,264.5 211,273" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="211,273 213.5,268.0 208.5,268.0" fill="#5C6B79"/>
+<polyline points="157,309.5 211,309.5 211,301" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="211,301 208.5,306.0 213.5,306.0" fill="#5C6B79"/>
+<rect x="250" y="270" width="95" height="34" rx="4" fill="#EEEAF6" stroke="#86759D" stroke-width="1"/>
+<text x="297.5" y="290.51500000000004" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="700" text-anchor="middle" fill="#263B4D">LayerNorm</text>
+<polyline points="225,287 250,287" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="250,287 245.0,284.5 245.0,289.5" fill="#5C6B79"/>
+<rect x="368" y="265" width="69" height="44" rx="4" fill="#FBF0E3" stroke="#A27D51" stroke-width="1"/>
+<text x="402.5" y="284.5" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="middle" fill="#263B4D">C_out</text>
+<text x="402.5" y="296.9" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#263B4D">64</text>
+<polyline points="345,287 368,287" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="368,287 363.0,284.5 363.0,289.5" fill="#5C6B79"/>
+<rect x="16" y="342" width="421" height="24" rx="4" fill="#FFFFFF" stroke="#A2ADB7" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="226.5" y="357.51500000000004" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#263B4D">RC pair đã bỏ; M, R, C và các identity paths vẫn được giữ.</text>
+</svg>

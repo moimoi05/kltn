@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160mm" height="135.114mm" viewBox="0 0 453.5433 383">
+<rect width="100%" height="100%" fill="white"/>
+<rect x="18" y="12" width="418" height="38" rx="4" fill="#FFFFFF" stroke="#A2ADB7" stroke-width="1"/>
+<text x="227.0" y="34.7" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="middle" fill="#263B4D">899 đối tượng   |   Đối tượng ADNI có MRI liên kết</text>
+<polyline points="227,50 227,64" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="227,64 229.5,59.0 224.5,59.0" fill="#5C6B79"/>
+<rect x="18" y="64" width="418" height="38" rx="4" fill="#FFFFFF" stroke="#A2ADB7" stroke-width="1"/>
+<text x="227.0" y="86.7" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="middle" fill="#263B4D">843 đối tượng   |   MCI tại baseline</text>
+<polyline points="227,102 227,116" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="227,116 229.5,111.0 224.5,111.0" fill="#5C6B79"/>
+<rect x="18" y="116" width="418" height="38" rx="4" fill="#E8F3F8" stroke="#6590A5" stroke-width="1"/>
+<text x="227.0" y="138.70000000000002" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="middle" fill="#263B4D">631 đối tượng   |   Không tiến triển sớm đến hết L</text>
+<polyline points="227,154 227,168" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="227,168 229.5,163.0 224.5,163.0" fill="#5C6B79"/>
+<rect x="18" y="168" width="418" height="38" rx="4" fill="#E8F3F8" stroke="#6590A5" stroke-width="1"/>
+<text x="227.0" y="190.70000000000002" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="middle" fill="#263B4D">536 đối tượng   |   Có theo dõi hợp lệ sau L</text>
+<polyline points="227,206 227,220" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="227,220 229.5,215.0 224.5,215.0" fill="#5C6B79"/>
+<rect x="18" y="220" width="418" height="38" rx="4" fill="#EEEAF6" stroke="#86759D" stroke-width="1"/>
+<text x="227.0" y="242.70000000000002" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="middle" fill="#263B4D">359 đối tượng   |   Có ≥3 thời điểm MRI; chọn đúng 3</text>
+<text x="227" y="281.4" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="middle" fill="#263B4D">1 077 MRI = 359 đối tượng × 3 visits</text>
+<rect x="18" y="296" width="201" height="37" rx="4" fill="#EEF0F2" stroke="#77838F" stroke-width="1"/>
+<text x="118.5" y="312.0" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="middle" fill="#263B4D">106 events</text>
+<text x="118.5" y="324.4" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#263B4D">MMSE / CDR sau L</text>
+<rect x="235" y="296" width="201" height="37" rx="4" fill="#EEF0F2" stroke="#77838F" stroke-width="1"/>
+<text x="335.5" y="312.0" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="middle" fill="#263B4D">253 censored</text>
+<text x="335.5" y="324.4" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#263B4D">Theo dõi cuối sau L</text>
+<text x="227" y="353.4" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="middle" fill="#263B4D">RID-wise split: train 251  |  validation 54  |  test 54</text>
+<text x="227" y="372.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#263B4D">Fit scaler, PCA và imputation trên train; áp dụng nguyên vẹn cho val/test.</text>
+</svg>

@@ -1,0 +1,405 @@
+{
+  "figures": {
+    "mci-progression-timeline": {
+      "outputs": [
+        "image/mci-progression-timeline.pdf",
+        "image/mci-progression-timeline.svg"
+      ],
+      "editable_source": "figures_source/mci-progression-timeline.drawio",
+      "based_on": [
+        "D:/KLTN/metadata/scripts/pipeline_common.py",
+        "D:/KLTN/metadata/scripts/05_create_survival_labels.py",
+        "D:/KLTN/week12/thesis_phase_evolution_bundle_20261005_final.zip"
+      ],
+      "changes": [
+        "Separate third-MRI prediction origin p from the 18-month eligibility landmark L.",
+        "Show conditional eligibility through L and score-defined post-L outcomes; retain ±90-day clinical matching limitation.",
+        "Redrawn as native draw.io; unified vector style and physical font sizes."
+      ],
+      "rendering": "ReportLab/SVG fallback from the same scene; draw.io desktop CLI unavailable.",
+      "width_mm": 160,
+      "minimum_font_pt": 9.5
+    },
+    "fusion-taxonomy": {
+      "outputs": [
+        "image/fusion-taxonomy.pdf",
+        "image/fusion-taxonomy.svg"
+      ],
+      "editable_source": "figures_source/fusion-taxonomy.drawio",
+      "based_on": [
+        "D:/KLTN/pileline.drawio",
+        "D:/KLTN/pairwise_tensor_fusion_pipeline_v2.svg"
+      ],
+      "changes": [
+        "Separate simple feature combination, explicit pair interaction, and adaptive routing.",
+        "Redrawn as native draw.io; unified vector style and physical font sizes."
+      ],
+      "rendering": "ReportLab/SVG fallback from the same scene; draw.io desktop CLI unavailable.",
+      "width_mm": 160,
+      "minimum_font_pt": 9.5
+    },
+    "cohort-construction": {
+      "outputs": [
+        "image/cohort-construction.pdf",
+        "image/cohort-construction.svg"
+      ],
+      "editable_source": "figures_source/cohort-construction.drawio",
+      "based_on": [
+        "D:/KLTN/metadata/reports/cohort_flow.md",
+        "D:/KLTN/metadata/reports/final_cohort_qc.md",
+        "D:/KLTN/metadata/reports/training_manifest_summary.md"
+      ],
+      "changes": [
+        "Use the audited final cohort waterfall and exact RID-wise split; do not conflate L with p.",
+        "Redrawn as native draw.io; unified vector style and physical font sizes."
+      ],
+      "rendering": "ReportLab/SVG fallback from the same scene; draw.io desktop CLI unavailable.",
+      "width_mm": 160,
+      "minimum_font_pt": 9.5
+    },
+    "modality-preprocessing": {
+      "outputs": [
+        "image/modality-preprocessing.pdf",
+        "image/modality-preprocessing.svg"
+      ],
+      "editable_source": "figures_source/modality-preprocessing.drawio",
+      "based_on": [
+        "D:/KLTN/ARCHITECTURE_AUDIT_20260919.md",
+        "D:/KLTN/phase_05b_pairwise_medicalnet_source.zip",
+        "D:/KLTN/pileline.drawio"
+      ],
+      "changes": [
+        "Correct radiomics to 16 PCA inputs and clinical to nine values plus nine observedness masks.",
+        "Use exact encoder dimensions and ±90-day matching rather than prospective-only availability.",
+        "Redrawn as native draw.io; unified vector style and physical font sizes."
+      ],
+      "rendering": "ReportLab/SVG fallback from the same scene; draw.io desktop CLI unavailable.",
+      "width_mm": 160,
+      "minimum_font_pt": 9.5
+    },
+    "architecture-evolution": {
+      "outputs": [
+        "image/architecture-evolution.pdf",
+        "image/architecture-evolution.svg"
+      ],
+      "editable_source": "figures_source/architecture-evolution.drawio",
+      "based_on": [
+        "D:/KLTN/week12/thesis_phase_evolution_bundle_20261005_final.zip"
+      ],
+      "changes": [
+        "Preserve chronological development; CP follows the full outer-product model and RC pruning follows ablation.",
+        "Redrawn as native draw.io; unified vector style and physical font sizes."
+      ],
+      "rendering": "ReportLab/SVG fallback from the same scene; draw.io desktop CLI unavailable.",
+      "width_mm": 160,
+      "minimum_font_pt": 10
+    },
+    "full-pairwise-graph": {
+      "outputs": [
+        "image/full-pairwise-graph.pdf",
+        "image/full-pairwise-graph.svg"
+      ],
+      "editable_source": "figures_source/full-pairwise-graph.drawio",
+      "based_on": [
+        "D:/KLTN/pileline.drawio",
+        "D:/KLTN/phase_05b_pairwise_medicalnet_source.zip"
+      ],
+      "changes": [
+        "Show all three pair blocks and six distinct directed residual contributions without crossing edges.",
+        "Redrawn as native draw.io; unified vector style and physical font sizes.",
+        "2026-10-06: enclose directed route labels in parentheses to disambiguate residual sums, as requested."
+      ],
+      "rendering": "ReportLab/SVG fallback from the same scene; draw.io desktop CLI unavailable.",
+      "width_mm": 160,
+      "minimum_font_pt": 9.5
+    },
+    "outer-vs-cp": {
+      "outputs": [
+        "image/outer-vs-cp.pdf",
+        "image/outer-vs-cp.svg"
+      ],
+      "editable_source": "figures_source/outer-vs-cp.drawio",
+      "based_on": [
+        "D:/KLTN/phase_05b_pairwise_medicalnet_source.zip",
+        "D:/KLTN/week12/thesis_phase_evolution_bundle_20261005_final.zip"
+      ],
+      "changes": [
+        "CP factorizes the first bilinear interaction weight tensor, retaining bias and identical post-MLP.",
+        "Display controlled MR/MC/RC dimensions and ranks rather than suggesting patient-data decomposition.",
+        "Redrawn as native draw.io; unified vector style and physical font sizes.",
+        "Align weight tensor axis order H x dx x dy and CP factor order o_q x a_q x b_q with Chapter3 equations."
+      ],
+      "rendering": "ReportLab/SVG fallback from the same scene; draw.io desktop CLI unavailable.",
+      "width_mm": 160,
+      "minimum_font_pt": 9.5
+    },
+    "gated-residual-route": {
+      "outputs": [
+        "image/gated-residual-route.pdf",
+        "image/gated-residual-route.svg"
+      ],
+      "editable_source": "figures_source/gated-residual-route.drawio",
+      "based_on": [
+        "D:/KLTN/residual gate MRI.drawio.png",
+        "D:/KLTN/residual gate Radiomics.drawio.png",
+        "D:/KLTN/residual gated clinical.drawio.png",
+        "D:/KLTN/phase_05b_pairwise_medicalnet_source.zip"
+      ],
+      "changes": [
+        "Restore the explicit identity residual; distinguish directed projection, visit-specific scalar gate, and global unconstrained route scale.",
+        "Gate input uses LN(original modality) and projected pair; λ initialized 0.1 without softplus.",
+        "Redrawn as native draw.io; unified vector style and physical font sizes.",
+        "Use E_p for the pair output after PostMLP; h is reserved for the preceding bilinear hidden output.",
+        "2026-10-06: enclose directed route labels in parentheses to disambiguate residual sums, as requested."
+      ],
+      "rendering": "ReportLab/SVG fallback from the same scene; draw.io desktop CLI unavailable.",
+      "width_mm": 160,
+      "minimum_font_pt": 9.5
+    },
+    "rc-free-routing": {
+      "outputs": [
+        "image/rc-free-routing.pdf",
+        "image/rc-free-routing.svg"
+      ],
+      "editable_source": "figures_source/rc-free-routing.drawio",
+      "based_on": [
+        "D:/KLTN/week12/Sơ đồ luồng residual A6 theo M, R, C.png",
+        "D:/KLTN/week12/Bao_cao_tuan_12/image/week12/a6_residual_flow.png",
+        "D:/KLTN/week12/thesis_phase_evolution_bundle_20261005_final.zip"
+      ],
+      "changes": [
+        "Correct the original diagram by drawing the identity path separately from gated interaction paths.",
+        "Remove active RC→R and RC→C routes while retaining all three modality encoders.",
+        "Redrawn as native draw.io; unified vector style and physical font sizes.",
+        "2026-10-06: enclose directed route labels in parentheses to disambiguate residual sums, as requested."
+      ],
+      "rendering": "ReportLab/SVG fallback from the same scene; draw.io desktop CLI unavailable.",
+      "width_mm": 160,
+      "minimum_font_pt": 9.5
+    },
+    "final-pipeline": {
+      "outputs": [
+        "image/final-pipeline.pdf",
+        "image/final-pipeline.svg"
+      ],
+      "editable_source": "figures_source/final-pipeline.drawio",
+      "based_on": [
+        "D:/KLTN/pileline.drawio",
+        "D:/KLTN/Untitled Diagram.drawio",
+        "D:/KLTN/week12/Sơ đồ luồng residual A6 theo M, R, C.png",
+        "D:/KLTN/week12/thesis_phase_evolution_bundle_20261005_final.zip"
+      ],
+      "changes": [
+        "Rebuild the main architecture with three retained modalities, MR/MC rank8 only, four gated routes and explicit identity paths.",
+        "Display output128/64/64 → concat256 → readout128 → shared three-visit T-LSTM/attention/raw Cox log-risk.",
+        "Redrawn as native draw.io; unified vector style and physical font sizes.",
+        "2026-10-06: enclose directed route labels in parentheses to disambiguate residual sums, as requested."
+      ],
+      "rendering": "ReportLab/SVG fallback from the same scene; draw.io desktop CLI unavailable.",
+      "width_mm": 160,
+      "minimum_font_pt": 9.5
+    },
+    "temporal-model": {
+      "outputs": [
+        "image/temporal-model.pdf",
+        "image/temporal-model.svg"
+      ],
+      "editable_source": "figures_source/temporal-model.drawio",
+      "based_on": [
+        "D:/KLTN/phase_05b_pairwise_medicalnet_source.zip"
+      ],
+      "changes": [
+        "Use consecutive MRI time gaps, shared T-LSTM128, scalar additive attention and raw log-risk head.",
+        "Redrawn as native draw.io; unified vector style and physical font sizes."
+      ],
+      "rendering": "ReportLab/SVG fallback from the same scene; draw.io desktop CLI unavailable.",
+      "width_mm": 160,
+      "minimum_font_pt": 9.5
+    },
+    "mri-hub-topology": {
+      "outputs": [
+        "image/mri-hub-topology.pdf",
+        "image/mri-hub-topology.svg"
+      ],
+      "editable_source": "figures_source/mri-hub-topology.drawio",
+      "based_on": [
+        "D:/KLTN/week12/Sơ đồ luồng residual A6 theo M, R, C.png",
+        "D:/KLTN/week12/thesis_phase_evolution_bundle_20261005_final.zip"
+      ],
+      "changes": [
+        "Interpret MRI as the interaction hub while preserving radiomics and clinical; omit any active R-C edge.",
+        "Redrawn as native draw.io; unified vector style and physical font sizes."
+      ],
+      "rendering": "ReportLab/SVG fallback from the same scene; draw.io desktop CLI unavailable.",
+      "width_mm": 160,
+      "minimum_font_pt": 9.5
+    },
+    "performance-evolution": {
+      "outputs": [
+        "image/performance-evolution.pdf",
+        "image/performance-evolution.svg"
+      ],
+      "editable_source": "figures_source/performance-evolution.drawio",
+      "based_on": [
+        "figures_source/results_data.json",
+        {
+          "archive": "D:\\KLTN\\week12\\thesis_phase_evolution_bundle_20261005_final.zip",
+          "member": "project_reports/THESIS_PHASE_EVOLUTION_REPORT.md",
+          "member_sha256": "4589ca18c01b65f08147a46ccc969c5662cec63eefebcf76a65575b88799599f"
+        },
+        {
+          "archive": "D:\\KLTN\\week12\\thesis_phase_evolution_bundle_20261005_final.zip",
+          "member": "phase_02_mri_single/reports/p02_controlled_comparison.json",
+          "member_sha256": "18dd2e1f779b82fa35187718b3369c927877b2e9f2d2bf56a8ec89a7c4831813"
+        },
+        {
+          "archive": "D:\\KLTN\\week12\\thesis_phase_evolution_bundle_20261005_final.zip",
+          "member": "phase_03x_crossformer_longitudinal/reports/p03x_vs_p03_controlled_comparison.json",
+          "member_sha256": "5cc0040554c914c416d6ad4ca3672b67a0afc9a5e08ed00615ed81c2a036daeb"
+        },
+        {
+          "archive": "D:\\KLTN\\week12\\thesis_phase_evolution_bundle_20261005_final.zip",
+          "member": "phase_04_concat_fusion/runs/official/p04_official_20260730T165718Z_seed20260727/final_summary.json",
+          "member_sha256": "e9a6aad452b111a52f098b997fb89c77ceb04e035422c4701775479d9addfe43"
+        },
+        {
+          "archive": "D:\\KLTN\\week12\\thesis_phase_evolution_bundle_20261005_final.zip",
+          "member": "phase_05_pairwise_fusion/runs/official/p05_official_20260731T080458Z_seed20260727/final_summary.json",
+          "member_sha256": "e07da2cd5218575b0a8134cf501ee16bd4e0d70eb330841f74ed588fe9dc65ad"
+        },
+        {
+          "archive": "D:\\KLTN\\week12\\phase_11_standardized_benchmark_reports_20260921.zip",
+          "member": "project_reports/FINAL_STANDARDIZED_VALIDATION_BENCHMARK.json",
+          "member_sha256": "27695f7ce4b3b06bbf3565e2958575f9636f3dd16a0591c0c91ad42df26fa32c"
+        }
+      ],
+      "changes": [
+        "Separate four protocol groups, including a separate concat Cox-batch8 panel; no connecting trend lines.",
+        "Plot validation single-seed milestones only; flag incomplete attention provenance with a hollow marker.",
+        "Redrawn as native draw.io; unified vector style and physical font sizes.",
+        "Compact vertical panel spacing to avoid a nearly empty thesis page; preserve 9.5pt minimum font and every plotted value."
+      ],
+      "rendering": "ReportLab/SVG fallback from the same scene; draw.io desktop CLI unavailable.",
+      "width_mm": 160,
+      "minimum_font_pt": 9.5
+    },
+    "cp-parameter-reduction": {
+      "outputs": [
+        "image/cp-parameter-reduction.pdf",
+        "image/cp-parameter-reduction.svg"
+      ],
+      "editable_source": "figures_source/cp-parameter-reduction.drawio",
+      "based_on": [
+        "figures_source/results_data.json",
+        {
+          "archive": "D:\\KLTN\\week12\\thesis_phase_evolution_bundle_20261005_final.zip",
+          "member": "phase_05_cp/reports/p05cp_architecture.md",
+          "member_sha256": "e26ec5f5fbe44c2ab4133a0138e661086a1f113bb1594eb1277a9270b41cbb09"
+        },
+        {
+          "archive": "D:\\KLTN\\week12\\phase_11_standardized_benchmark_reports_20260921.zip",
+          "member": "project_reports/FINAL_STANDARDIZED_VALIDATION_BENCHMARK.json",
+          "member_sha256": "27695f7ce4b3b06bbf3565e2958575f9636f3dd16a0591c0c91ad42df26fa32c"
+        }
+      ],
+      "changes": [
+        "Contrast the first bilinear-layer scope with total-model scope; use zero-origin linear axes.",
+        "Do not present parameter counts as measured runtime, memory or FLOPs savings.",
+        "Redrawn as native draw.io; unified vector style and physical font sizes."
+      ],
+      "rendering": "ReportLab/SVG fallback from the same scene; draw.io desktop CLI unavailable.",
+      "width_mm": 160,
+      "minimum_font_pt": 9.5
+    },
+    "ablation-deltas": {
+      "outputs": [
+        "image/ablation-deltas.pdf",
+        "image/ablation-deltas.svg"
+      ],
+      "editable_source": "figures_source/ablation-deltas.drawio",
+      "based_on": [
+        "figures_source/results_data.json",
+        {
+          "archive": "D:\\KLTN\\week12\\thesis_phase_evolution_bundle_20261005_final.zip",
+          "member": "project_reports/P06_ABLATION_RESULTS.json",
+          "member_sha256": "26ff574d9d77d5933f0060a1eb33948fc5ba82cd32f7ea51bbd0745033d2c9ff"
+        }
+      ],
+      "changes": [
+        "Show six observed single-seed validation deltas against the same full-CP reference.",
+        "Distinguish the fixed-lambda full-CP ablation from the later RC-free fixed-lambda sensitivity model.",
+        "Redrawn as native draw.io; unified vector style and physical font sizes."
+      ],
+      "rendering": "ReportLab/SVG fallback from the same scene; draw.io desktop CLI unavailable.",
+      "width_mm": 160,
+      "minimum_font_pt": 9.5
+    },
+    "standardized-benchmark": {
+      "outputs": [
+        "image/standardized-benchmark.pdf",
+        "image/standardized-benchmark.svg"
+      ],
+      "editable_source": "figures_source/standardized-benchmark.drawio",
+      "based_on": [
+        "figures_source/results_data.json",
+        {
+          "archive": "D:\\KLTN\\week12\\phase_11_standardized_benchmark_reports_20260921.zip",
+          "member": "project_reports/FINAL_STANDARDIZED_VALIDATION_BENCHMARK.json",
+          "member_sha256": "27695f7ce4b3b06bbf3565e2958575f9636f3dd16a0591c0c91ad42df26fa32c"
+        },
+        {
+          "archive": "D:\\KLTN\\week12\\phase_11_standardized_benchmark_reports_20260921.zip",
+          "member": "project_reports/FINAL_STANDARDIZED_BENCHMARK_AUDIT.json",
+          "member_sha256": "b83f6b1764b2c0b1e5c6f8cc548c935c807d1d1135e238b3b745fe6b0eea27ff"
+        }
+      ],
+      "changes": [
+        "Plot three-seed mean ± sample SD (ddof1), alongside individual seed values; SD is not a confidence interval.",
+        "Use standardized validation only, leaving the deterministic post-selection classical baseline separate.",
+        "Redrawn as native draw.io; unified vector style and physical font sizes."
+      ],
+      "rendering": "ReportLab/SVG fallback from the same scene; draw.io desktop CLI unavailable.",
+      "width_mm": 160,
+      "minimum_font_pt": 9.5
+    }
+  },
+  "authoring": "Native draw.io XML is saved before vector exports. PDF/SVG rendering uses the same scene.",
+  "style": {
+    "width_mm": 160,
+    "font": "Arial / DejaVu Sans",
+    "colors": {
+      "m": [
+        "#E7F0FA",
+        "#567DA3"
+      ],
+      "r": [
+        "#EAF3E9",
+        "#638560"
+      ],
+      "c": [
+        "#FBF0E3",
+        "#A27D51"
+      ],
+      "pair": [
+        "#FAE9ED",
+        "#A87984"
+      ],
+      "fusion": [
+        "#EEEAF6",
+        "#86759D"
+      ],
+      "time": [
+        "#E8F3F8",
+        "#6590A5"
+      ],
+      "out": [
+        "#EEF0F2",
+        "#77838F"
+      ],
+      "white": [
+        "#FFFFFF",
+        "#A2ADB7"
+      ]
+    }
+  }
+}

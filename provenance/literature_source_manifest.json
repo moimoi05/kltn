@@ -1,0 +1,72 @@
+{
+  "verified_on": "2026-10-05",
+  "source_root": "D:/KLTN",
+  "files": [
+    {
+      "source": "paper/EARLY PREDICTION OF ALZHEIMER’S DISEASE DEMENTIA BASED ON BASELINE.pdf",
+      "bytes": 492005,
+      "sha256": "f553dd138ef0164aff0cc30429140de8d76712d53415b0c528cde0365df430ea",
+      "role": "literature"
+    },
+    {
+      "source": "paper/Explainable Tensor Multi-Task Ensemble Learning.en.vi.pdf",
+      "bytes": 4199408,
+      "sha256": "573ef8a844609f80af7e9d3f7e1cf16cc51d42c290aa43666f6a778a05fc226b",
+      "role": "literature"
+    },
+    {
+      "source": "paper/Explainable Tensor Multi-Task Ensemble Learning.pdf",
+      "bytes": 3703024,
+      "sha256": "014e95a7d2900e6c4b9f3a2eb9bc9c3dd06272cc1eebf9167b5238e1cbf8f7fc",
+      "role": "literature"
+    },
+    {
+      "source": "paper/Li_Longitudinal_Multimodal_Modeling_for_Alzheimers_Disease_with_Pre-trained_Brain_Latent_CVPRW_2026_paper.pdf",
+      "bytes": 424912,
+      "sha256": "c600ef4958e7da2970843731584290617283720a9d481a71842f0ea58345ba87",
+      "role": "literature"
+    },
+    {
+      "source": "paper/Longitudinal structural MRI-based deep learning and radiomics features for predicting Alzheimer’s disease progression.pdf",
+      "bytes": 4347966,
+      "sha256": "41bb6a6619a9cfbc9ea6b92b7f59fb9c6c70172871aeb77eb18aea5707c9f17e",
+      "role": "literature"
+    },
+    {
+      "source": "paper/Predicting Four-Year’s Alzheimer’s Disease Onset Using Longitudinal Neurocognitive Tests and MRI Data Using Explainable Deep Convolutional Neural Networks.pdf",
+      "bytes": 1322615,
+      "sha256": "14b684df7885fdc899121e807b36f2994668a2084aee69fd04b89e102cb1396a",
+      "role": "literature"
+    },
+    {
+      "source": "paper/Prediction of Progression from Mild Cognitive Impairment to Alzheimer’s Disease with Longitudinal and Multimodal Data.pdf",
+      "bytes": 882788,
+      "sha256": "6f0539285e373bcad10aa1a2bacae20d97e41019ae34d02161e3c21a3c84a139",
+      "role": "literature"
+    },
+    {
+      "source": "Week_6_Bao_cao_tien_do_Tensor_Decomposition.docx",
+      "bytes": 40428,
+      "sha256": "2ac892e4e3e7c46f71999da4c4d19732172f6035db370779aade3afadf6694bb",
+      "role": "historical weekly report"
+    },
+    {
+      "source": "week8/CP_Tensor_Decomposition_AD_Giai_thich_chi_tiet_final.docx",
+      "bytes": 920037,
+      "sha256": "41d2d71b4fa571ca9d9830e808ac107d64738dcccc5cbebf8699279c9dafc6af",
+      "role": "historical weekly report"
+    },
+    {
+      "source": "week10/Bao_cao_tuan_Phase_05_CP_Cap_nhat_MultiSeed.docx",
+      "bytes": 572411,
+      "sha256": "22221b04056f7be1f628c94794fbad4fcf9ebe948184aeb138fd0d05ef0f294f",
+      "role": "historical weekly report"
+    },
+    {
+      "source": "week12/Bao_cao_tuan_A6_NO_RC_Hoan_chinh.docx",
+      "bytes": 450031,
+      "sha256": "420cc0d955eabe81b28500a074c62f649dfb93fd2e05b78df5608b83c7ae7465",
+      "role": "historical weekly report"
+    }
+  ]
+}

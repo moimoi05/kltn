@@ -1,0 +1,353 @@
+﻿path,extension,bytes,environment
+3.3.1.png,.png,175204,False
+3.3.2.jpeg,.jpeg,139636,False
+5.1.4-step1 - Copy.jpg,.jpg,110769,False
+5.1.4-step1.jpg,.jpg,110769,False
+5.1.4-step2.jpg,.jpg,165135,False
+5.2.4.jpg,.jpg,110854,False
+ARCHITECTURE_AUDIT_20260919.md,.md,40779,False
+Bao_cao_Alzheimer_Tensor_Multi_Task_Regresion_bo_sung.docx,.docx,40746,False
+Bao_cao_de_xuat_huong_nghien_cuu_Alzheimer_revised.docx,.docx,2062848,False
+Bao_cao_tien_do_Week3_Week4_Alzheimer.docx,.docx,231206,False
+Bao_cao_tim_hieu_Tensor_Multi_Task_Alzheimer.docx,.docx,40041,False
+báo cáo lần 1.docx,.docx,77057,False
+chi tiết cox.png,.png,1468251,False
+"Dynamic Gated Pairwise Fusion of Longitudinal MRI, Radiomics, and Clinical Data for MCI-to-Alzheimer’s Disease Progression Prediction.png",.png,1705455,False
+khối residual.png,.png,1503716,False
+kiến trúc v2.png,.png,1780082,False
+main.pdf,.pdf,492270,False
+mẫu report.zip,.zip,1303068,False
+pairwise_tensor_fusion_pipeline_v2.svg,.svg,16551,False
+phase_05b_pairwise_medicalnet_source.zip,.zip,315007,False
+pileline.drawio,.drawio,23366,False
+pileline.drawio.png,.png,177925,False
+Pipeline cơ bản.png,.png,67612,False
+project.zip,.zip,17633057,False
+residual gate MRI.drawio.png,.png,109281,False
+residual gate Radiomics.drawio.png,.png,162799,False
+residual gated clinical.drawio.png,.png,162797,False
+Trả lời 4 vấn đề.docx,.docx,25352,False
+Untitled Diagram.drawio,.drawio,25868,False
+week1.pdf,.pdf,1677013,False
+Week_6_Bao_cao_tien_do_Tensor_Decomposition.docx,.docx,40428,False
+_Nguyen_Phuong_Trang_Undergraduate_thesis_final_final_final.pdf,.pdf,14303898,False
+_Nguyen_Phuong_Trang__Undergraduate_thesis.zip,.zip,15995138,False
+báo cáo xử lí MRI\Bao_cao_bo_sung_tien_do_ADNI_Radiomics_Clinical_ModelReady_v1.docx,.docx,49000,False
+báo cáo xử lí MRI\Bao_cao_tien_do_xu_ly_du_lieu_ADNI_MRI_Clinical_Radiomics.docx,.docx,51354,False
+metadata\116.png,.png,1475706,False
+metadata\2026.png,.png,2550511,False
+metadata\448.png,.png,1615821,False
+metadata\ADNI_MCI_LONGITUDINAL_359.zip,.zip,35987633714,False
+metadata\alzheimer ouput sever-20260727T144022Z-1-001.zip,.zip,11529084,False
+metadata\CDR_21Jul2026.csv,.csv,2639782,False
+metadata\DXSUM_21Jul2026.csv,.csv,3498109,False
+metadata\idaSearch_7_21_2026.csv,.csv,3728878,False
+metadata\longitudinal-20260727T165514Z-1-001.zip,.zip,1452532,False
+metadata\manual_review_package-20260727T171910Z-1-001.zip,.zip,14984770,False
+metadata\MMSE_21Jul2026.csv,.csv,4172243,False
+metadata\paths.yaml,.yaml,391,False
+metadata\qc-20260727T163658Z-1-001.zip,.zip,2386635,False
+metadata\REGISTRY_21Jul2026.csv,.csv,4579932,False
+metadata\ROSTER_21Jul2026.csv,.csv,587183,False
+paper\EARLY PREDICTION OF ALZHEIMER’S DISEASE DEMENTIA BASED ON BASELINE.pdf,.pdf,492005,False
+paper\Explainable Tensor Multi-Task Ensemble Learning.en.vi.pdf,.pdf,4199408,False
+paper\Explainable Tensor Multi-Task Ensemble Learning.pdf,.pdf,3703024,False
+paper\Li_Longitudinal_Multimodal_Modeling_for_Alzheimers_Disease_with_Pre-trained_Brain_Latent_CVPRW_2026_paper.pdf,.pdf,424912,False
+paper\Longitudinal structural MRI-based deep learning and radiomics features for predicting Alzheimer’s disease progression.pdf,.pdf,4347966,False
+paper\Predicting Four-Year’s Alzheimer’s Disease Onset Using Longitudinal Neurocognitive Tests and MRI Data Using Explainable Deep Convolutional Neural Networks.pdf,.pdf,1322615,False
+paper\Prediction of Progression from Mild Cognitive Impairment to Alzheimer’s Disease with Longitudinal and Multimodal Data.pdf,.pdf,882788,False
+project\Agent.md,.md,15334,False
+project\Alzheimer_CrossFormer_NewChat_Handoff_Package.zip,.zip,20015,False
+project\baocao.rar,.rar,167401,False
+project\kiến trúc v2.png,.png,1780082,False
+project\main.py,.py,81,False
+project\phase01-20260730T062410Z-1-001.zip,.zip,59134,False
+project\phase03-20260730T104513Z-1-001.zip,.zip,83908,False
+project\phase04-20260730T162428Z-1-001.zip,.zip,213748,False
+project\phase05-20260731T080036Z-1-001.zip,.zip,241591,False
+project\phase2-20260730T073228Z-1-001.zip,.zip,90796,False
+project\phase2-20260730T075626Z-1-001.zip,.zip,90796,False
+project\phase2-20260730T075948Z-1-001.zip,.zip,30037,False
+project\phase3 fix-20260730T142818Z-1-001.zip,.zip,93292,False
+project\phase_00_full_readiness_bundle_20260729T131422Z_host_gpu_correction.zip,.zip,45579,False
+project\phase_00_review_bundle.zip,.zip,72334,False
+project\phase_02d_crossformer_single.zip,.zip,34397,False
+project\PLAN_PHASE_00.md,.md,13519,False
+project\project_reports-20260808T105152Z-1-001.zip,.zip,31210,False
+project\README.md,.md,3130,False
+week10\Bao_cao_tuan_Phase_05_CP.docx,.docx,445917,False
+week10\Bao_cao_tuan_Phase_05_CP_Cap_nhat_MultiSeed.docx,.docx,572411,False
+week10\CP_Gated_3_Phan_Trao_Doi_Thay.pdf,.pdf,491821,False
+week10\CP_Gated_3_Phan_Trao_Doi_Thay.zip,.zip,946877,False
+week10\CP_Gated_Ban_Trao_Doi_6_Trang.pdf,.pdf,425351,False
+week10\main.pdf,.pdf,666682,False
+week10\week11.pdf,.pdf,1020936,False
+week12\Bao cao tuan.zip,.zip,13938360,False
+week12\Bao_cao_A6_Final_So_sanh_Baseline_P10.docx,.docx,41489,False
+week12\Bao_cao_ngan_Chot_A6_Benchmark_21092026.docx,.docx,136005,False
+week12\Bao_cao_tong_hop_P05CP_P06_A6_B1.docx,.docx,322949,False
+week12\Bao_cao_tuan_12.zip,.zip,1001147,False
+week12\Bao_cao_tuan_12_A6_NO_RC_LaTeX.zip,.zip,999397,False
+week12\Bao_cao_tuan_A6_NO_RC_Hoan_chinh.docx,.docx,450031,False
+"week12\ChatGPT Image 20_09_27 20 thg 9, 2026.png",.png,1845529,False
+week12\phase_11_standardized_benchmark_reports_20260921.zip,.zip,54802,False
+"week12\Sơ đồ luồng residual A6 theo M, R, C.png",.png,948087,False
+week12\thesis_phase_evolution_bundle_20261005_final.zip,.zip,174928,False
+week12\week12.pdf,.pdf,1710243,False
+week13\Nguyen_Phuong_Nam_Thesis_RCFree_Draft_20261005.pdf,.pdf,1209302,False
+week13\Nguyen_Phuong_Nam_Thesis_RCFree_Draft_20261005.zip,.zip,875619,False
+week13\phase_names_catalog_update_20261005_1905.zip,.zip,16473,False
+week2\report của Nam.pdf,.pdf,3982537,False
+week2\week2.pdf,.pdf,3959683,False
+week3&4\week3&4.pdf,.pdf,510950,False
+week5\week5.pdf,.pdf,453079,False
+week6\week6.pdf,.pdf,335752,False
+week7\CP_Tensor_Decomposition_AD_Giai_thich_chi_tiet.docx,.docx,919269,False
+week7\Nguyen_Phuong_Nam_Thesis_CP_Gated_Final_Source.zip,.zip,10069470,False
+week7\pileline-Trang-1.drawio.png,.png,109962,False
+week7\pileline-Trang-2.drawio.png,.png,159763,False
+week7\pileline-Trang-3.drawio.png,.png,159409,False
+week7\pileline-Trang-4.drawio.png,.png,161280,False
+week8\bao_cao_week7_week8.docx,.docx,80870,False
+week8\CP_Tensor_Decomposition_AD_Giai_thich_chi_tiet_final.docx,.docx,920037,False
+week8\week7&8.pdf,.pdf,522813,False
+week9\Bao_cao_tien_do_tuan_9.docx,.docx,959496,False
+week9\week9.pdf,.pdf,1361879,False
+avitech\AVITECH_website\README.md,.md,1405,False
+avitech\AVITECH_website\bibs\BuiMinhTuan.bib,.bib,5954,False
+avitech\AVITECH_website\bibs\ChuTamVu.bib,.bib,2,False
+avitech\AVITECH_website\bibs\DamLeMinhQuan.bib,.bib,2,False
+avitech\AVITECH_website\bibs\DamThaiNinh.bib,.bib,547,False
+avitech\AVITECH_website\bibs\DoHaiSon.bib,.bib,14376,False
+avitech\AVITECH_website\bibs\DoMinhNhat.bib,.bib,2,False
+avitech\AVITECH_website\bibs\DoNguyenDangThi.bib,.bib,2,False
+avitech\AVITECH_website\bibs\HoangNghiaTuan.bib,.bib,0,False
+avitech\AVITECH_website\bibs\LeMinhSon.bib,.bib,2,False
+avitech\AVITECH_website\bibs\LeQuangVinh.bib,.bib,2,False
+avitech\AVITECH_website\bibs\LeQuocAnh.bib,.bib,9710,False
+avitech\AVITECH_website\bibs\LeTrungThanh.bib,.bib,14574,False
+avitech\AVITECH_website\bibs\LeTuanAnh.bib,.bib,1323,False
+avitech\AVITECH_website\bibs\LeVuHieu.bib,.bib,531,False
+avitech\AVITECH_website\bibs\MaiLeHoang.bib,.bib,0,False
+avitech\AVITECH_website\bibs\NguyenAnhKiet.bib,.bib,2,False
+avitech\AVITECH_website\bibs\NguyenDucHoangTrung.bib,.bib,2,False
+avitech\AVITECH_website\bibs\NguyenDucKien.bib,.bib,2128,False
+avitech\AVITECH_website\bibs\NguyenHoangLan.bib,.bib,463,False
+avitech\AVITECH_website\bibs\NguyenHoangTu.bib,.bib,2,False
+avitech\AVITECH_website\bibs\NguyenLinhTrung.bib,.bib,50117,False
+avitech\AVITECH_website\bibs\NguyenPhuongNam.bib,.bib,76,False
+avitech\AVITECH_website\bibs\NguyenPhuongTrang.bib,.bib,2,False
+avitech\AVITECH_website\bibs\NguyenQuyDang.bib,.bib,2,False
+avitech\AVITECH_website\bibs\NguyenThanhTrung.bib,.bib,3295,False
+avitech\AVITECH_website\bibs\NguyenTheKhang.bib,.bib,2,False
+avitech\AVITECH_website\bibs\NguyenThiNgocLan.bib,.bib,464,False
+avitech\AVITECH_website\bibs\NguyenTienDung.bib,.bib,2,False
+avitech\AVITECH_website\bibs\NguyenVanLy.bib,.bib,11916,False
+avitech\AVITECH_website\bibs\PhamHaiAnh.bib,.bib,2,False
+avitech\AVITECH_website\bibs\PhamMinhTuan.bib,.bib,6367,False
+avitech\AVITECH_website\bibs\PhamVanDuc.bib,.bib,2,False
+avitech\AVITECH_website\bibs\PhamYenNhi.bib,.bib,0,False
+avitech\AVITECH_website\bibs\TaGiangThuyLoan.bib,.bib,464,False
+avitech\AVITECH_website\bibs\ToNgocHai.bib,.bib,2,False
+avitech\AVITECH_website\bibs\TranQuangDuy.bib,.bib,2,False
+avitech\AVITECH_website\bibs\TranQuocSang.bib,.bib,2,False
+avitech\AVITECH_website\bibs\TranTrongDuy.bib,.bib,2096,False
+avitech\AVITECH_website\bibs\TranVietKhoa.bib,.bib,6467,False
+avitech\AVITECH_website\bibs\TrinhNgocHuynh.bib,.bib,4335,False
+avitech\AVITECH_website\bibs\VuChiAnhTuan.bib,.bib,0,False
+avitech\AVITECH_website\bibs\VuongXuanDung.bib,.bib,2,False
+avitech\AVITECH_website\.github\workflows\merge-publications.yml,.yml,1476,False
+avitech\AVITECH_website\profiles\BuiMinhTuan\BuiMinhTuan.png,.png,2037767,False
+avitech\AVITECH_website\profiles\ChuTamVu\ChuTamVu.png,.png,825492,False
+avitech\AVITECH_website\profiles\DamLeMinhQuan\DamLeMinhQuan.png,.png,144358,False
+avitech\AVITECH_website\profiles\DamThaiNinh\DamThaiNinh.png,.png,381060,False
+avitech\AVITECH_website\profiles\DoHaiSon\DoHaiSon.png,.png,1015840,False
+avitech\AVITECH_website\profiles\DoMinhNhat\DoMinhNhat.png,.png,361474,False
+avitech\AVITECH_website\profiles\DoNguyenDangThi\DoNguyenDangThi.png,.png,649968,False
+avitech\AVITECH_website\profiles\GuyNagels\GuyNagels.png,.png,83375,False
+avitech\AVITECH_website\profiles\LeMinhSon\Le Minh Son.png,.png,5084763,False
+avitech\AVITECH_website\profiles\LeQuangVinh\LeQuangVinh.png,.png,7203052,False
+avitech\AVITECH_website\profiles\LeQuocAnh\LeQuocAnh.png,.png,1668815,False
+avitech\AVITECH_website\profiles\LeTuanAnh\LeTuanAnh.png,.png,174201,False
+avitech\AVITECH_website\profiles\LeVuHieu\LeVuHieu.png,.png,563490,False
+avitech\AVITECH_website\profiles\MerouaneDebbah\MerouaneDebbah.png,.png,2589290,False
+avitech\AVITECH_website\profiles\NguyenAnhKiet\NguyenAnhKiet.png,.png,1453915,False
+avitech\AVITECH_website\profiles\NguyenDucHoangTrung\NguyenDucHoangTrung.png,.png,4851958,False
+avitech\AVITECH_website\profiles\NguyenDucKien\NguyenDucKien.png,.png,22090370,False
+avitech\AVITECH_website\profiles\NguyenHoangLan\NguyenHoangLan.png,.png,116615,False
+avitech\AVITECH_website\profiles\NguyenHoangTu\NguyenHoangTu.png,.png,579792,False
+avitech\AVITECH_website\profiles\NguyenLinhTrung\NguyenLinhTrung.jpg,.jpg,630870,False
+avitech\AVITECH_website\profiles\NguyenPhuongNam\NguyenPhuongNam.png,.png,956348,False
+avitech\AVITECH_website\profiles\NguyenPhuongTrang\NguyenPhuongTrang.png,.png,261472,False
+avitech\AVITECH_website\profiles\NguyenQuyDang\NguyenQuyDang.png,.png,613717,False
+avitech\AVITECH_website\profiles\NguyenThanhTrung\NguyenThanhTrung.png,.png,59380,False
+avitech\AVITECH_website\profiles\NguyenTheKhang\NguyenTheKhang.jpg,.jpg,938962,False
+avitech\AVITECH_website\profiles\NguyenThiNgocLan\NguyenThiNgocLan.png,.png,581625,False
+avitech\AVITECH_website\profiles\NguyenTienDung\NguyenTienDung.png,.png,738337,False
+avitech\AVITECH_website\profiles\NguyenVanLy\NguyenVanLy.png,.png,76595,False
+avitech\AVITECH_website\profiles\PhamHaiAnh\PhamHaiAnh.png,.png,1451140,False
+avitech\AVITECH_website\profiles\PhamMinhTuan\PhamMinhTuan.png,.png,548477,False
+avitech\AVITECH_website\profiles\PhamVanDuc\PhamVanDuc.jpg,.jpg,58713,False
+avitech\AVITECH_website\profiles\TaGiangThuyLoan\TaGiangThuyLoan.png,.png,87132,False
+avitech\AVITECH_website\profiles\ToNgocHai\ToNgocHai.png,.png,835299,False
+avitech\AVITECH_website\profiles\TranQuangDuy\TranQuangDuy.PNG,.png,12347880,False
+avitech\AVITECH_website\profiles\TranQuocSang\TranQuocSang.png,.png,395893,False
+avitech\AVITECH_website\profiles\TranSonBach\TranSonBach.png,.png,359858,False
+avitech\AVITECH_website\profiles\TranTrongDuy\TranTrongDuy.png,.png,177291,False
+avitech\AVITECH_website\profiles\TranVietKhoa\TranVietKhoa.png,.png,74109,False
+avitech\AVITECH_website\profiles\TrinhNgocHuynh\TrinhNgocHuynh.png,.png,1149103,False
+avitech\AVITECH_website\profiles\VuongXuanDung\VuongXuanDung.png,.png,493058,False
+avitech\AVITECH_website\scripts\publications\AVITECH.bib,.bib,89874,False
+avitech\AVITECH_website\scripts\publications\merge.py,.py,17753,False
+metadata\.pytest_cache\README.md,.md,302,False
+metadata\reports\baseline_phase_definition_comparison.csv,.csv,200,False
+metadata\reports\baseline_phase_diagnosis.csv,.csv,142425,False
+metadata\reports\baseline_phase_diagnosis.md,.md,4871,False
+metadata\reports\baseline_row_count_distribution.csv,.csv,34,False
+metadata\reports\baseline_sensitivity_exclusions.csv,.csv,349,False
+metadata\reports\baseline_sensitivity_mri_timing.csv,.csv,389,False
+metadata\reports\baseline_sensitivity_outcomes.csv,.csv,81,False
+metadata\reports\baseline_sensitivity_overlap.csv,.csv,95,False
+metadata\reports\cohort_flow.md,.md,2904,False
+metadata\reports\data_audit.md,.md,14289,False
+metadata\reports\dxsum_baseline_rows_899.csv,.csv,36762,False
+metadata\reports\event_source_counts.csv,.csv,44,False
+metadata\reports\event_trigger_details.csv,.csv,5867,False
+metadata\reports\final_cohort_qc.md,.md,8069,False
+metadata\reports\final_qc_assertions.csv,.csv,318,False
+metadata\reports\followup_threshold_counts.csv,.csv,1067,False
+metadata\reports\manual_review_sample.csv,.csv,6396,False
+metadata\reports\mri_candidate_count_distribution.csv,.csv,247,False
+metadata\reports\mri_gaps_by_rid.csv,.csv,4540,False
+metadata\reports\mri_gap_summary.csv,.csv,207,False
+metadata\reports\mri_timepoint_count_distribution.csv,.csv,56,False
+metadata\reports\mri_timing_summary.csv,.csv,217,False
+metadata\reports\paper_comparison.csv,.csv,101,False
+metadata\reports\phase_outcome_counts.csv,.csv,88,False
+metadata\reports\processing_selection_summary.csv,.csv,428,False
+metadata\reports\selected_description_counts.csv,.csv,2199,False
+metadata\reports\survival_distribution_summary.csv,.csv,825,False
+metadata\reports\training_manifest_summary.md,.md,1169,False
+metadata\scripts\01_audit_inputs.py,.py,1314,False
+metadata\scripts\02_link_subject_rid.py,.py,897,False
+metadata\scripts\03_build_clinical_timeline.py,.py,2332,False
+metadata\scripts\04_select_mri_candidates.py,.py,4190,False
+metadata\scripts\05_create_survival_labels.py,.py,2824,False
+metadata\scripts\06_export_final_manifest.py,.py,4724,False
+metadata\scripts\07_final_cohort_qc.py,.py,12205,False
+metadata\scripts\08_paper_compatibility_diagnosis.py,.py,16534,False
+metadata\scripts\09_export_training_manifest.py,.py,5489,False
+metadata\scripts\pipeline_common.py,.py,7567,False
+metadata\scripts\__init__.py,.py,1,False
+metadata\tests\test_pipeline.py,.py,4653,False
+metadata\data\processed\cohort_audit.csv,.csv,95068,False
+metadata\data\processed\final_image_manifest.csv,.csv,239105,False
+metadata\data\processed\survival_labels.csv,.csv,62016,False
+metadata\data\processed\training_manifest.csv,.csv,270867,False
+metadata\data\processed\intermediate\clinical_timeline.csv,.csv,83633,False
+metadata\data\processed\intermediate\cohort_full.csv,.csv,151362,False
+metadata\data\processed\intermediate\mri_stats.csv,.csv,22206,False
+metadata\data\processed\intermediate\official_mri_linkage_audit.csv,.csv,198,False
+metadata\data\processed\intermediate\selected_mri.csv,.csv,293932,False
+metadata\data\processed\intermediate\subject_rid.csv,.csv,20426,False
+metadata\data\processed_sensitivity\earliest_baseline\cohort_audit_sensitivity.csv,.csv,145057,False
+metadata\data\processed_sensitivity\earliest_baseline\final_image_manifest_sensitivity.csv,.csv,386279,False
+metadata\data\processed_sensitivity\earliest_baseline\survival_labels_sensitivity.csv,.csv,59491,False
+project\.pytest_cache\README.md,.md,302,False
+project\báo cáo phase 1\Bao_cao_Phase_1_Tabular_Survival.md,.md,9170,False
+project\báo cáo phase 10\Bao_cao_Phase_10_Paper_CNN_PCA_TLSTM_Attention.md,.md,16355,False
+project\báo cáo phase 2\Bao_cao_Phase_2_MRI_Single_Visit_Survival.md,.md,10536,False
+project\báo cáo phase 2d\Bao_cao_Phase_P02D_CrossFormer3D.docx,.docx,50420,False
+project\báo cáo phase 3\Bao_cao_Phase_3_MRI_Longitudinal_TLSTM_Attention.md,.md,17563,False
+project\báo cáo phase 4\Bao_cao_Phase_4_Simple_Multimodal_Fusion.md,.md,18552,False
+project\báo cáo phase 5\Bao_cao_Phase_5B_MedicalNet_Dynamic_Pairwise_Fusion.md,.md,16453,False
+project\configs\default.yaml,.yaml,312,False
+project\configs\train_resnet.yaml,.yaml,59,False
+project\configs\train_tlstm_cox.yaml,.yaml,53,False
+project\data\adni_dataset.py,.py,6034,False
+project\data\Assessments.zip,.zip,10405525,False
+project\data\clinical_processor.py,.py,1984,False
+project\data\collate.py,.py,780,False
+project\data\idaSearch_9_09_2026.csv,.csv,395840,False
+project\data\idaSearch_9_10_2026.csv,.csv,14334660,False
+project\data\mri_transforms.py,.py,1785,False
+project\data\radiomics_processor.py,.py,2248,False
+project\data\survival_label_builder.py,.py,2604,False
+project\data\__init__.py,.py,64,False
+project\scripts\build_adni_manifest.py,.py,3898,False
+project\scripts\build_survival_labels.py,.py,166,False
+project\scripts\build_survival_samples.py,.py,3947,False
+project\scripts\create_patient_splits.py,.py,2930,False
+project\scripts\create_splits.py,.py,163,False
+project\scripts\extract_cnn_features.py,.py,166,False
+project\scripts\extract_radiomics.py,.py,164,False
+project\scripts\infer_patient.py,.py,1334,False
+project\scripts\preprocess_mri.py,.py,161,False
+project\scripts\train_resnet.py,.py,317,False
+project\scripts\train_tlstm_cox.py,.py,2314,False
+project\scripts\_bootstrap.py,.py,233,False
+project\src\__init__.py,.py,64,False
+project\tests\conftest.py,.py,180,False
+project\tests\test_cox_loss.py,.py,397,False
+project\tests\test_data_pipeline.py,.py,1963,False
+project\tests\test_shapes.py,.py,1503,False
+project\tests\test_survival_labels.py,.py,976,False
+project\tests\test_survival_label_builder.py,.py,491,False
+project\tests\test_tensor_fusion.py,.py,574,False
+project\tests\test_tlstm.py,.py,593,False
+project\baocao\báo cáo phase 1\Bao_cao_Phase_1_Tabular_Survival.md,.md,9170,False
+project\baocao\báo cáo phase 10\Bao_cao_Phase_10_Paper_CNN_PCA_TLSTM_Attention.md,.md,16355,False
+project\baocao\báo cáo phase 2\Bao_cao_Phase_2_MRI_Single_Visit_Survival.md,.md,10536,False
+project\baocao\báo cáo phase 2d\Bao_cao_Phase_P02D_CrossFormer3D.docx,.docx,50420,False
+project\baocao\báo cáo phase 3\Bao_cao_Phase_3_MRI_Longitudinal_TLSTM_Attention.md,.md,17563,False
+project\baocao\báo cáo phase 4\Bao_cao_Phase_4_Simple_Multimodal_Fusion.md,.md,18552,False
+project\baocao\báo cáo phase 5\Bao_cao_Phase_5B_MedicalNet_Dynamic_Pairwise_Fusion.md,.md,16453,False
+project\src\inference\estimate_baseline_survival.py,.py,227,False
+project\src\inference\predict_risk.py,.py,402,False
+project\src\inference\predict_survival_curve.py,.py,260,False
+project\src\inference\__init__.py,.py,26,False
+project\src\losses\cox_loss.py,.py,1337,False
+project\src\losses\ranking_loss.py,.py,801,False
+project\src\losses\__init__.py,.py,21,False
+project\src\metrics\c_index.py,.py,620,False
+project\src\metrics\survival_metrics.py,.py,390,False
+project\src\metrics\time_dependent_auc.py,.py,215,False
+project\src\metrics\__init__.py,.py,23,False
+project\src\models\clinical_mlp.py,.py,822,False
+project\src\models\cox_head.py,.py,526,False
+project\src\models\full_model.py,.py,2482,False
+project\src\models\pairwise_tensor_fusion.py,.py,774,False
+project\src\models\radiomics_mlp.py,.py,831,False
+project\src\models\resnet3d_monai.py,.py,2969,False
+project\src\models\temporal_attention.py,.py,631,False
+project\src\models\tensor_decomposition.py,.py,1222,False
+project\src\models\tensor_encoder.py,.py,842,False
+project\src\models\time_lstm.py,.py,989,False
+project\src\models\__init__.py,.py,22,False
+project\src\training\trainer.py,.py,1181,False
+project\src\training\train_end_to_end.py,.py,163,False
+project\src\training\train_resnet.py,.py,162,False
+project\src\training\train_tlstm_cox.py,.py,117,False
+project\src\training\__init__.py,.py,25,False
+project\src\utils\checkpoint.py,.py,785,False
+project\src\utils\config.py,.py,250,False
+project\src\utils\logger.py,.py,443,False
+project\src\utils\seed.py,.py,328,False
+project\src\utils\tensor_ops.py,.py,268,False
+project\src\utils\visualization.py,.py,144,False
+project\src\utils\__init__.py,.py,24,False
+week12\Bao_cao_tuan_12\main.tex,.tex,4190,False
+week12\Bao_cao_tuan_12\README.md,.md,514,False
+week12\_inspection_week12\image1.png,.png,65759,False
+week12\_inspection_week12\image2.png,.png,142320,False
+week12\_inspection_week12\image3.png,.png,135338,False
+week12\_inspection_week12\image4.png,.png,69973,False
+week12\_inspection_week12\image5.png,.png,60768,False
+week12\Bao_cao_tuan_12\content\weekly_report_12.tex,.tex,11610,False
+week12\Bao_cao_tuan_12\FrontMatter\CoverPages.tex,.tex,1294,False
+week12\Bao_cao_tuan_12\image\UET.png,.png,589104,False
+week12\Bao_cao_tuan_12\image\week12\a6_residual_flow.png,.png,135338,False
+week12\Bao_cao_tuan_12\image\week12\a6_train_validation_test.png,.png,60768,False
+week12\Bao_cao_tuan_12\image\week12\ablation_seed_20260727.png,.png,69973,False
+week12\Bao_cao_tuan_12\image\week12\pipeline_comparison.png,.png,142320,False
+week12\Bao_cao_tuan_12\image\week12\validation_benchmark.png,.png,65759,False

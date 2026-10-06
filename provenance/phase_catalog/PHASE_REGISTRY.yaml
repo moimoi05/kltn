@@ -1,0 +1,163 @@
+schema_version: 2
+
+# Human-facing names live here and in PHASE_CATALOG.md. Keep the technical IDs,
+# folders and package namespaces stable because checkpoints and manifests use them.
+P00:
+  display_name: Data Audit
+  short_name: data_audit
+  kind: core
+  folder: phase_00_audit
+  package: p00_audit
+  status: PASS
+  purpose: Validate frozen data, schema, outcome, split, leakage and environment before modeling.
+  experiments: [freeze audit, schema audit, outcome audit, leakage audit, environment audit]
+P01:
+  display_name: Tabular Baselines
+  short_name: tabular_baselines
+  kind: core
+  folder: phase_01_tabular
+  package: p01_tabular
+  status: PASS
+  purpose: Establish clinical/radiomics survival baselines before neural MRI models.
+  experiments: [visit-2 vs longitudinal representations, Cox elastic-net, Random Survival Forest]
+P02:
+  display_name: MRI Only
+  short_name: mri_only
+  kind: core
+  folder: phase_02_mri_single
+  package: p02_mri_single
+  status: AUTHORITATIVE_PASS
+  manifest_status: IN_PROGRESS
+  purpose: Measure single-visit 3D MRI survival signal and initialization effect.
+  experiments: [MedicalNet initialization, random initialization, optional GroupNorm preparation]
+P02D:
+  display_name: MRI Only — CrossFormer
+  short_name: mri_only_crossformer
+  kind: backbone_comparison
+  folder: phase_02d_crossformer_single
+  package: p02d_crossformer
+  status: AUTHORITATIVE_CLOSED
+  purpose: Compare CrossFormer3D Tiny with the random-init MRI-only ResNet baseline.
+  experiments: [matched single-visit CrossFormer3D vs ResNet-18]
+P03:
+  display_name: Longitudinal MRI
+  short_name: longitudinal_mri
+  kind: core
+  folder: phase_03_mri_longitudinal
+  package: p03_mri_longitudinal
+  status: AUTHORITATIVE_PASS
+  purpose: Test whether three MRI visits and irregular time gaps improve survival modeling.
+  experiments: [shared ResNet-18 plus T-LSTM, masked temporal attention variant]
+P03X:
+  display_name: Longitudinal MRI — CrossFormer
+  short_name: longitudinal_mri_crossformer
+  kind: backbone_comparison
+  folder: phase_03x_crossformer_longitudinal
+  package: p03x_crossformer_longitudinal
+  status: AUTHORITATIVE_CLOSED
+  purpose: Replace the longitudinal ResNet encoder with CrossFormer3D under a matched protocol.
+  experiments: [protocol-fixed CrossFormer3D plus T-LSTM and attention]
+P04:
+  display_name: Multimodal Concatenation
+  short_name: multimodal_concat
+  kind: core
+  folder: phase_04_concat_fusion
+  package: p04_concat_fusion
+  status: AUTHORITATIVE_PASS
+  purpose: Establish the simple additive MRI/radiomics/clinical fusion baseline.
+  experiments: [fixed concatenation, T-LSTM, masked temporal attention, Cox survival]
+P04X:
+  display_name: Multimodal Concatenation — CrossFormer
+  short_name: multimodal_concat_crossformer
+  kind: backbone_comparison
+  folder: phase_04x_crossformer_concat
+  package: p04x_crossformer_concat
+  status: AUTHORITATIVE_CLOSED
+  purpose: Test CrossFormer3D in the matched simple-concat multimodal model.
+  experiments: [CrossFormer3D MRI branch, frozen radiomics/clinical concat]
+P05:
+  display_name: Dynamic Pairwise Fusion
+  short_name: dynamic_pairwise_fusion
+  kind: core
+  folder: phase_05_pairwise_fusion
+  package: p05_dynamic_pairwise
+  status: AUTHORITATIVE_PASS
+  purpose: Test learned pairwise modality interactions beyond simple concatenation.
+  experiments: [MR/MC/RC outer products, directed projections, dynamic gates, residual fusion]
+P05B:
+  display_name: Pairwise Fusion — MedicalNet
+  short_name: pairwise_medicalnet
+  kind: initialization_comparison
+  folder: phase_05b_pairwise_medicalnet
+  package: p05b_pairwise_medicalnet
+  status: AUTHORITATIVE_PASS
+  purpose: Isolate the effect of MedicalNet initialization in the pairwise model.
+  experiments: [strict MRI MedicalNet load, full encoder fine-tuning, multi-seed validation]
+P05CP:
+  display_name: Pairwise Fusion — CP-Factorized
+  short_name: pairwise_cp_factorized
+  kind: efficiency_comparison
+  folder: phase_05_cp
+  package: p05_cp
+  status: VALIDATION_COMPLETE
+  purpose: Reduce pairwise parameters using CP-factorized bilinear interaction.
+  experiments: [CP ranks MR/MC/RC = 8/8/4, qualification, multi-seed validation]
+P05X:
+  display_name: Pairwise Fusion — CrossFormer
+  short_name: pairwise_crossformer
+  kind: backbone_and_fusion_comparison
+  folder: phase_05x_crossformer_pairwise
+  package: p05x_crossformer_pairwise
+  status: AUTHORITATIVE_CLOSED
+  purpose: Compare static/dynamic pairwise fusion and gated residuals on CrossFormer.
+  experiments: [XA static, XB dynamic, XC dynamic plus gated residual]
+P06:
+  display_name: Fusion Ablations
+  short_name: fusion_ablations
+  kind: core
+  folder: phase_06_ablation
+  package: p06_ablation
+  status: COMPLETE_FOR_SEED_20260727
+  purpose: Attribute the P05-CP validation behavior to individual components.
+  experiments: [no dynamic gate, fixed lambda, no identity residual, no MR, no MC, no RC]
+P06B:
+  display_name: RC-Free Fixed-Lambda
+  short_name: rc_free_fixed_lambda
+  kind: targeted_followup
+  folder: phase_06b_targeted
+  package: p06b_targeted
+  status: VALIDATION_COMPLETE
+  purpose: Stress-test a simpler RC-free model with fixed residual scales.
+  experiments: [A6_NO_RC, fixed lambda 0.1, three-seed validation]
+P07:
+  display_name: Final Test Evaluation
+  short_name: final_test_evaluation
+  kind: core
+  folder: phase_07_final_evaluation
+  package: p07_final_evaluation
+  status: NOT_STARTED
+  purpose: Evaluate one locked final checkpoint on the locked test set with a use ledger.
+  experiments: [checkpoint lock, test-use ledger, final test prediction and metric]
+P10:
+  display_name: Paper CNN–PCA–T-LSTM Adaptation
+  short_name: paper_cnn_pca_tlstm
+  kind: external_paper_track
+  folder: phase_10_paper_cnn_tlstm_reproduction
+  package: p10_paper_reproduction
+  status: AUTHORITATIVE_PASS
+  purpose: Evaluate a paper-inspired architecture as a documented adaptation, not exact reproduction.
+  experiments: [CNN visit-2 embedding, train-only PCA99, T-LSTM attention, three seeds]
+P11:
+  display_name: Standardized Validation Benchmark
+  short_name: standardized_validation_benchmark
+  kind: audit_and_aggregation
+  folder: phase_11_standardized_benchmark
+  package: null
+  status: COMPLETE
+  purpose: Standardize existing validation runs and freeze a fair comparison table.
+  experiments: [split fingerprint audit, checkpoint replay, canonical validation C-index, test-lock audit]
+
+training_workspace: /home/data/user/nguyenphuongnam/alzheimer_training
+data_workspace: /home/data/user/nguyenphuongnam/data_alzheimer
+data_access: READ_ONLY
+cross_phase_python_imports: FORBIDDEN

@@ -1,0 +1,73 @@
+\chapter{Giới thiệu}
+\label{chap:intro}
+
+\section{Động lực nghiên cứu}
+Khóa luận lấy nghiên cứu \emph{Longitudinal structural MRI-based deep learning and radiomics features for predicting Alzheimer's disease progression} của Aghajanian và cộng sự \cite{aghajanian2025longitudinal} làm baseline để phát triển phương pháp. Công trình dùng MRI T1 dọc, CNN, T-LSTM, attention và mô hình sống còn; việc bổ sung radiomics không đem lại cải thiện nhất quán. Từ đó, khóa luận khảo sát cách biểu diễn và điều tiết tương tác giữa MRI, radiomics và lâm sàng.
+
+Bệnh Alzheimer (Alzheimer's disease -- AD) gây suy giảm nhận thức và chức năng sinh hoạt theo thời gian. Suy giảm nhận thức nhẹ (Mild Cognitive Impairment -- MCI) là một trạng thái cần theo dõi vì các bệnh nhân có cùng chẩn đoán ban đầu vẫn có thể đi theo những quỹ đạo khác nhau: tiến triển sang sa sút trí tuệ, ổn định hoặc cải thiện \cite{petersen2018mci,jack2018niaaa}. Bởi vậy, nhận diện trạng thái hiện tại và dự báo diễn biến tương lai là hai bài toán khác nhau. Khóa luận tập trung vào \emph{tiên lượng}: từ những lần khám đã được ghi nhận, mô hình xếp hạng ai có nguy cơ tiến triển sớm hơn.
+
+Theo dõi dọc theo thời gian cung cấp cả trạng thái lẫn sự thay đổi của người bệnh. MRI cấu trúc cho biết đặc điểm giải phẫu; radiomics lượng hóa hình dạng, cường độ và kết cấu ảnh; các biến lâm sàng phản ánh nhận thức và chức năng \cite{vangriethuysen2017computational}. Kết hợp các nguồn này có thể giúp mô hình đặt một thay đổi trên ảnh vào bối cảnh lâm sàng. Tuy nhiên, nhiều nguồn dữ liệu cũng tạo ra dư thừa, khác biệt về thang đo và nhiễu. Vì vậy, lợi ích của dữ liệu đa phương thức cần được kiểm tra bằng thực nghiệm, thay vì được giả định từ số lượng đầu vào.
+
+\section{Phát biểu bài toán}
+Đề tài \emph{Longitudinal Learning with Tensor Fusion for Predicting Progression of Alzheimer's Disease} xây dựng mô hình dự báo nguy cơ tiến triển trên cohort MCI của Alzheimer's Disease Neuroimaging Initiative (ADNI) \cite{weiner2015impact}. Mỗi bệnh nhân có ba lần chụp MRI được chọn trong cửa sổ thu thập ban đầu, với radiomics và các biến lâm sàng được căn chỉnh theo visit. Đầu ra là một điểm nguy cơ liên tục; điểm cao hơn biểu thị nguy cơ tương đối cao hơn trong mô hình sống còn, không phải xác suất chẩn đoán AD tại một visit.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth]{image/mci-progression-timeline.pdf}
+\caption[Bài toán dự báo tiến triển MCI theo thời gian]{Bài toán tiên lượng tiến triển MCI với ba visit. Mốc tham chiếu dự báo $p$ là ngày MRI thứ ba; landmark chọn cohort $L$ bằng baseline cộng 18 tháng lịch, với $p\leq L$. Sự kiện hoặc kiểm duyệt được xác định sau $L$, còn thời gian sống còn được tính từ $p$. Sơ đồ phân biệt phần dữ liệu đầu vào, điều kiện chọn cohort và kết cục theo dõi.}
+\label{fig:problem-timeline}
+\end{figure}
+
+Hình~\ref{fig:problem-timeline} làm rõ hai mốc dễ bị nhầm. Landmark $L$ dùng để xác định nhóm còn đủ điều kiện sau 18 tháng; ngày MRI thứ ba $p$ là gốc tính thời gian trong bộ nhãn đã đóng băng. Sự kiện vận hành là lần đầu ghi nhận MMSE $<24$ hoặc CDR-global $\geq1$ sau $L$: đây là \emph{proxy tiến triển dựa trên điểm số}, không đòi hỏi một chẩn đoán AD đã được thẩm định hoặc xác nhận bằng dấu ấn sinh học. Người đạt ngưỡng có chỉ báo $\delta=1$; người chưa đạt ngưỡng đến lần theo dõi hợp lệ cuối cùng có $\delta=0$. Kiểm duyệt không có nghĩa là người đó sẽ không bao giờ tiến triển.
+
+Đây là thiết kế hồi cứu với dữ liệu căn chỉnh sẵn. Quy tắc ghép lâm sàng chọn quan sát hợp lệ gần MRI trong cửa sổ $\pm90$ ngày, nên một số giá trị được đo sau ngày MRI. Vì vậy, tách bệnh nhân và tiền xử lý trên tập huấn luyện kiểm soát sự lẫn thông tin giữa các split, nhưng chưa đủ để khẳng định toàn bộ đầu vào sẵn có tại $p$ trong ứng dụng tiến cứu. Chương~\ref{chap:method} trình bày quy tắc căn chỉnh; Chương~\ref{chap:discussion} thảo luận giới hạn khả dụng theo thời gian.
+
+Về phương pháp, concatenation đặt các vector cạnh nhau và để các lớp sau học quan hệ giữa chúng. Outer-product biểu diễn trực tiếp các tích chéo nhưng làm kích thước interaction tăng nhanh \cite{zadeh2017tensor}. Khóa luận khảo sát ba câu hỏi thiết kế liên tiếp: có cần tương tác tường minh hay không; có thể biểu diễn chúng gọn hơn bằng CP hay không; và có cần giữ mọi cặp tương tác trực tiếp hay không.
+
+\section{Câu hỏi nghiên cứu}
+Các câu hỏi trong Bảng~\ref{tab:rq} liên kết từng bước phát triển kiến trúc với một phép so sánh cụ thể. Những câu hỏi này được trả lời trong phạm vi cohort và protocol của project, không nhằm khẳng định một kiến trúc luôn tốt hơn trên mọi bộ dữ liệu.
+
+Các giai đoạn MRI đến concatenation và pairwise ban đầu là quá trình thăm dò: một số cấu hình encoder, temporal module và batch huấn luyện cũng thay đổi. Do đó, chênh lệch giữa các giai đoạn không được quy hoàn toàn cho việc thêm một phương thức hoặc thay fusion. Các kết luận về thành phần được ưu tiên từ controlled CP, ablation và benchmark có điều kiện so sánh phù hợp.
+
+\begin{table}[htbp]
+\centering
+\caption{Câu hỏi nghiên cứu định hướng các thực nghiệm.}
+\label{tab:rq}
+\begin{tabularx}{\textwidth}{C{1.0cm}Y}
+\toprule
+\textbf{Mã} & \textbf{Câu hỏi nghiên cứu} \\
+\midrule
+RQ1 & MRI dọc theo thời gian có cải thiện so với MRI một visit trong cohort hiện tại hay không? \\
+RQ2 & Radiomics và lâm sàng cung cấp bao nhiêu thông tin bổ sung ngoài MRI khi dùng concatenation? \\
+RQ3 & Tương tác pairwise tường minh có cải thiện so với concatenation trong cùng pipeline temporal--survival hay không? \\
+RQ4 & CP-factorized bilinear interaction giảm độ phức tạp của lõi tương tác đến đâu, và hiệu năng validation thay đổi thế nào? \\
+RQ5 & Gate, hệ số route, identity residual và từng cặp tương tác đóng góp ra sao; cặp Radiomics--Clinical có cần giữ lại hay không? \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\FloatBarrier
+\section{Mục tiêu nghiên cứu}
+Mục tiêu tổng quát là xây dựng và phân tích một pipeline học dọc đa phương thức cho tiên lượng MCI, trong đó cấu trúc fusion được phát triển theo bằng chứng thực nghiệm. Các mục tiêu cụ thể gồm:
+\begin{enumerate}
+  \item Xây dựng cohort ba visit và nhãn sự kiện/kiểm duyệt có thể truy vết; giữ split theo bệnh nhân và fit tiền xử lý trên tập huấn luyện.
+  \item Thiết lập chuỗi baseline MRI Only, Longitudinal MRI và Multimodal Concatenation để làm rõ vai trò của thời gian và thông tin bổ sung.
+  \item Khảo sát Dynamic Pairwise Fusion với các tương tác MR, MC và RC cùng định tuyến gated residual.
+  \item Thực hiện phép so sánh có kiểm soát giữa lõi outer-product và lõi CP, sau đó ablation từng thành phần fusion.
+  \item Đánh giá lựa chọn kiến trúc bằng validation, nhiều seed và benchmark chuẩn hóa; tách quá trình này khỏi formal held-out final evaluation.
+\end{enumerate}
+
+\section{Đóng góp của khóa luận}
+Các đóng góp chính là pipeline dữ liệu có truy vết và quá trình khảo sát kiến trúc theo từng thay đổi có kiểm soát:
+\begin{enumerate}
+  \item Hệ thống học dọc kết hợp MRI 3D, radiomics và biến lâm sàng, với T-LSTM, attention và Cox survival head.
+  \item Cơ chế pairwise fusion tạo đặc trưng cho từng cặp phương thức, rồi định tuyến chúng trở lại biểu diễn đích qua gate phụ thuộc đầu vào và hệ số theo route. Hai nguồn cảm hứng gated residual và residual scaling được phân biệt với công thức do khóa luận xây dựng \cite{ryumina2026residual,liu2026motion}.
+  \item Tham số hóa CP cho \emph{tensor trọng số} của ánh xạ song tuyến, giữ các thành phần còn lại trong phép so sánh controlled CP. Đóng góp này liên quan đến độ phức tạp của lớp tương tác, không phải phân rã dữ liệu của từng bệnh nhân.
+  \item Ablation gate, scale, residual và các cặp tương tác dẫn đến \textbf{RC-Free Pairwise Fusion}. Kiến trúc vẫn sử dụng đủ ba phương thức, đồng thời loại bỏ tương tác trực tiếp Radiomics--Clinical và hai route tương ứng.
+  \item Benchmark validation trên cùng split và ba seed, kèm phân tích độ dao động và chi phí tham số, để đánh giá mức đánh đổi giữa độ phức tạp và hiệu năng.
+\end{enumerate}
+
+Quá trình nghiên cứu đi từ baseline đến kiến trúc cuối; CP không phải lựa chọn có sẵn từ đầu và cấu trúc RC-Free được giữ sau ablation. Các kết quả validation thể hiện bằng chứng trên cohort hiện tại. Đánh giá held-out cuối cùng theo quy trình chính thức chưa được thực hiện.
+
+\section{Cấu trúc khóa luận}
+Khóa luận gồm năm chương. Chương~\ref{chap:background} xây dựng cơ sở lý thuyết từ tiên lượng MCI, sống còn và mô hình dọc đến tương tác đa phương thức, CP và gated residual. Chương~\ref{chap:method} trình bày xây dựng dữ liệu, quá trình phát triển kiến trúc và pipeline RC-Free cuối cùng. Chương~\ref{chap:results} tổ chức thực nghiệm theo câu hỏi nghiên cứu, với các so sánh có kiểm soát, ablation và benchmark validation nhiều seed. Chương~\ref{chap:discussion} giải thích ý nghĩa của topology cuối, giới hạn và hướng phát triển, đồng thời đưa ra kết luận của khóa luận.

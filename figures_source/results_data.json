@@ -1,0 +1,1011 @@
+{
+  "schema_version": 1,
+  "sources": {
+    "standardized_benchmark": {
+      "archive": "D:\\KLTN\\week12\\phase_11_standardized_benchmark_reports_20260921.zip",
+      "member": "project_reports/FINAL_STANDARDIZED_VALIDATION_BENCHMARK.json",
+      "member_sha256": "27695f7ce4b3b06bbf3565e2958575f9636f3dd16a0591c0c91ad42df26fa32c"
+    },
+    "standardized_audit": {
+      "archive": "D:\\KLTN\\week12\\phase_11_standardized_benchmark_reports_20260921.zip",
+      "member": "project_reports/FINAL_STANDARDIZED_BENCHMARK_AUDIT.json",
+      "member_sha256": "b83f6b1764b2c0b1e5c6f8cc548c935c807d1d1135e238b3b745fe6b0eea27ff"
+    },
+    "cp_multiseed": {
+      "archive": "D:\\KLTN\\week12\\thesis_phase_evolution_bundle_20261005_final.zip",
+      "member": "project_reports/P05B_vs_P05CP_multiseed_validation.json",
+      "member_sha256": "c77cffcb6549e2f7da2be4ccb045d820133da00d2584f294ab5f3c93fce3b13d"
+    },
+    "ablation": {
+      "archive": "D:\\KLTN\\week12\\thesis_phase_evolution_bundle_20261005_final.zip",
+      "member": "project_reports/P06_ABLATION_RESULTS.json",
+      "member_sha256": "26ff574d9d77d5933f0060a1eb33948fc5ba82cd32f7ea51bbd0745033d2c9ff"
+    },
+    "rcfree_multiseed": {
+      "archive": "D:\\KLTN\\week12\\thesis_phase_evolution_bundle_20261005_final.zip",
+      "member": "project_reports/P06_A6_NO_RC_multiseed_validation.json",
+      "member_sha256": "fb15006f87d73d0541926799c42f7e7a25d1c92f7654ff5ed62fba636570716b"
+    },
+    "fixedlambda_multiseed": {
+      "archive": "D:\\KLTN\\week12\\thesis_phase_evolution_bundle_20261005_final.zip",
+      "member": "project_reports/P06B_A6_FIXEDLAMBDA_multiseed_validation.json",
+      "member_sha256": "4ab9dba1775afc3795681b6b65bb9235828f17a59c2f260a55b3fd98165f246d"
+    },
+    "mri_initialization": {
+      "archive": "D:\\KLTN\\week12\\thesis_phase_evolution_bundle_20261005_final.zip",
+      "member": "phase_02_mri_single/reports/p02_controlled_comparison.json",
+      "member_sha256": "18dd2e1f779b82fa35187718b3369c927877b2e9f2d2bf56a8ec89a7c4831813"
+    },
+    "longitudinal_crossformer": {
+      "archive": "D:\\KLTN\\week12\\thesis_phase_evolution_bundle_20261005_final.zip",
+      "member": "phase_03x_crossformer_longitudinal/reports/p03x_vs_p03_controlled_comparison.json",
+      "member_sha256": "5cc0040554c914c416d6ad4ca3672b67a0afc9a5e08ed00615ed81c2a036daeb"
+    },
+    "concat_official": {
+      "archive": "D:\\KLTN\\week12\\thesis_phase_evolution_bundle_20261005_final.zip",
+      "member": "phase_04_concat_fusion/runs/official/p04_official_20260730T165718Z_seed20260727/final_summary.json",
+      "member_sha256": "e9a6aad452b111a52f098b997fb89c77ceb04e035422c4701775479d9addfe43"
+    },
+    "pairwise_official": {
+      "archive": "D:\\KLTN\\week12\\thesis_phase_evolution_bundle_20261005_final.zip",
+      "member": "phase_05_pairwise_fusion/runs/official/p05_official_20260731T080458Z_seed20260727/final_summary.json",
+      "member_sha256": "e07da2cd5218575b0a8134cf501ee16bd4e0d70eb330841f74ed588fe9dc65ad"
+    },
+    "classical_table": {
+      "archive": "D:\\KLTN\\week12\\thesis_phase_evolution_bundle_20261005_final.zip",
+      "member": "phase_01_tabular/reports/validation_model_comparison.csv",
+      "member_sha256": "5f6dedfe2b54b22e348909ce78c96c8c694ea15e818c7c3bc68d6bdf0615a567"
+    },
+    "cp_architecture": {
+      "archive": "D:\\KLTN\\week12\\thesis_phase_evolution_bundle_20261005_final.zip",
+      "member": "phase_05_cp/reports/p05cp_architecture.md",
+      "member_sha256": "e26ec5f5fbe44c2ab4133a0138e661086a1f113bb1594eb1277a9270b41cbb09"
+    },
+    "cp_lineage": {
+      "archive": "D:\\KLTN\\week12\\thesis_phase_evolution_bundle_20261005_final.zip",
+      "member": "phase_05_cp/reports/p05cp_lineage.md",
+      "member_sha256": "9180fdebf004593ef59568899519aec12d3469ce22bc2588a9843bce91c715f8"
+    },
+    "phase_evolution": {
+      "archive": "D:\\KLTN\\week12\\thesis_phase_evolution_bundle_20261005_final.zip",
+      "member": "project_reports/THESIS_PHASE_EVOLUTION_REPORT.md",
+      "member_sha256": "4589ca18c01b65f08147a46ccc969c5662cec63eefebcf76a65575b88799599f"
+    },
+    "concat_scientific_report": {
+      "file": "D:\\KLTN\\project\\báo cáo phase 4\\Bao_cao_Phase_4_Simple_Multimodal_Fusion.md",
+      "file_sha256": "228ca17216ea070a261b3f6e8077044b1824b3e1b936f20c3dc7aa392d3879e8"
+    },
+    "longitudinal_scientific_report": {
+      "file": "D:\\KLTN\\project\\báo cáo phase 3\\Bao_cao_Phase_3_MRI_Longitudinal_TLSTM_Attention.md",
+      "file_sha256": "6cca79e4ea559f52cbcafac57c1d1ab47a1c280edb030f1620a01497b6d775e9"
+    },
+    "scikit_survival_metric_v0280": {
+      "documentation_url": "https://scikit-survival.readthedocs.io/en/stable/api/generated/sksurv.metrics.concordance_index_censored.html",
+      "source_url": "https://github.com/sebp/scikit-survival/blob/v0.28.0/sksurv/metrics.py",
+      "accessed": "2026-10-05",
+      "verified_behavior": "_iter_comparable includes event vs censored subject at equal time; simultaneous events are excluded. Risk ties use tolerance1e-8."
+    }
+  },
+  "protocols": {
+    "standardized_validation": {
+      "cohort": 359,
+      "visits": 1077,
+      "visits_per_subject": 3,
+      "split_subjects": {
+        "train": 251,
+        "validation": 54,
+        "test_metadata_only": 54
+      },
+      "events": {
+        "train": 74,
+        "validation": 16,
+        "test_metadata_only": 16
+      },
+      "validation_metric": {
+        "event_convention": "event=1 is observed event; event=0 censored",
+        "implementation_sources": [
+          "phase_05b_pairwise_medicalnet/src/p05b_pairwise_medicalnet/metrics.py",
+          "phase_05_cp/src/p05_cp/metrics.py",
+          "phase_06_ablation/src/p06_ablation/metrics.py",
+          "phase_06b_targeted/src/p06b_targeted/metrics.py",
+          "phase_10_paper_cnn_tlstm_reproduction/src/p10_paper_reproduction/tlstm/validation.py"
+        ],
+        "name": "strict_pairwise_harrell_c_index",
+        "risk_direction": "higher raw risk means earlier event risk",
+        "risk_ties": "0.5 concordance",
+        "time_convention": "survival_time_years",
+        "time_ties": "not comparable",
+        "validation_comparable_pairs": 480,
+        "validation_subjects": 54
+      },
+      "seeds": [
+        20260727,
+        20260728,
+        20260729
+      ],
+      "checkpoint_selection": "best validation checkpoint per seed",
+      "sample_sd_formula": "sqrt(sum((x_i-mean)^2)/(n-1))",
+      "sd_not_confidence_interval": true,
+      "replayed_without_retraining": true,
+      "source": "standardized_benchmark"
+    },
+    "medicalnet_pairwise_controlled": {
+      "amp": "float16",
+      "configs": {
+        "P05-CP": [
+          "phase_05_cp/configs/multiseed/p05cp_seed20260728.yaml",
+          "phase_05_cp/configs/multiseed/p05cp_seed20260729.yaml"
+        ],
+        "P05B": [
+          "phase_05b_pairwise_medicalnet/configs/multiseed/p05b_seed20260728.yaml",
+          "phase_05b_pairwise_medicalnet/configs/multiseed/p05b_seed20260729.yaml"
+        ]
+      },
+      "data_root": "/home/data/user/nguyenphuongnam/data_alzheimer",
+      "early_stopping": {
+        "min_delta": 0.002,
+        "patience": 20,
+        "warmup_epochs": 10
+      },
+      "gradient_clip_norm": 1.0,
+      "max_epochs": 100,
+      "medicalnet_sha256": "61224f9317fcce873366deb3703183e92cc47325b726b69691b33536244e10f4",
+      "optimizer": {
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "learning_rate": 0.0001,
+        "name": "AdamW",
+        "weight_decay": 0.0001
+      },
+      "scheduler": {
+        "factor": 0.5,
+        "min_learning_rate": 1e-06,
+        "name": "ReduceLROnPlateau",
+        "patience": 5
+      },
+      "split": {
+        "test_subjects": 54,
+        "train_subjects": 251,
+        "validation_subjects": 54
+      }
+    },
+    "mri_single_controlled": {
+      "P02-A": {
+        "physical_batch_size": 6,
+        "validation_batch_size": 6,
+        "gradient_accumulation_steps": 2,
+        "target_effective_batch_size": 8,
+        "actual_effective_optimizer_batch": 12,
+        "cox_risk_set_scope": "physical minibatch"
+      },
+      "P02-B": {
+        "physical_batch_size": 6,
+        "validation_batch_size": 6,
+        "gradient_accumulation_steps": 2,
+        "target_effective_batch_size": 8,
+        "actual_effective_optimizer_batch": 12,
+        "cox_risk_set_scope": "physical minibatch"
+      }
+    },
+    "classical": {
+      "artifact_paths": [
+        "phase_01_tabular/reports/selected_candidate.json",
+        "phase_01_tabular/runs/20260730T061549Z_seed20260727_5625bb05/model_metadata.json"
+      ],
+      "deterministic_final_fit": true,
+      "feature_count": 102,
+      "hyperparameters": {
+        "alpha": 0.1,
+        "l1_ratio": 0.5
+      },
+      "input_modalities": "9 clinical values + 9 observedness masks + 16 bin64 PCA radiomics per visit, 3 visits = 102 features",
+      "library": "scikit-survival",
+      "library_version": "0.28.0",
+      "metric_implementation": "sksurv.metrics.concordance_index_censored",
+      "model": "P01-R08",
+      "model_type": "Cox elastic-net (scikit-survival Coxnet)",
+      "parameterization": "102 feature coefficients; model artifact does not report a separate trainable-parameter total",
+      "random_resampling_or_cv": "5-fold stratified CV was used for training-side selection; no neural initialization-seed ensemble",
+      "representation": "R08_CLINICAL_RAD64_LONG",
+      "selection_scope": "R08 was selected after validation evaluation among candidate representations/models; the reported validation C-index is post-selection, not an untouched one-shot comparator",
+      "status": "AUDITED SEPARATELY",
+      "test_evaluated": false,
+      "training_protocol": "5-fold RID-level stratified CV on the 251-subject training split, followed by validation evaluation of candidate representations/models, final candidate selection, and refit on all training subjects",
+      "validation_cindex": 0.8607068607068608,
+      "why_separate": "single deterministic post-selection validation result is not the same uncertainty object as a 3-seed neural-network mean ± sample SD",
+      "tied_time_detail": "Event-censor pairs at equal time are comparable in scikit-survival0.28.0; neural canonical metric excludes all equal-time pairs."
+    },
+    "test_policy": {
+      "formal_final_evaluation": "NOT_STARTED",
+      "formal_statement": "Formal held-out final evaluation has not yet been performed.",
+      "historical_test_values_used_for_selection": false,
+      "no_test_values_in_charts": true
+    },
+    "historical_longitudinal_stages": {
+      "physical_cox_batch": 6,
+      "optimizer_effective_batch": 12,
+      "seed": 20260727,
+      "source": "longitudinal_scientific_report",
+      "attention_provenance": "limited"
+    },
+    "concat_batch8": {
+      "physical_cox_batch": 8,
+      "gradient_accumulation": 2,
+      "optimizer_effective_batch": 16,
+      "seed": 20260727,
+      "source": "concat_scientific_report"
+    }
+  },
+  "evolution": {
+    "groups": [
+      {
+        "id": "mri_single",
+        "title": "MRI Only: matched initialization study",
+        "protocol": "mri_single_controlled",
+        "seeds": [
+          20260727
+        ],
+        "cross_group_comparable": false,
+        "connect_points": false,
+        "rows": [
+          {
+            "label": "MRI Only\nMedicalNet",
+            "value": 0.7333333333333333,
+            "id": "P02-A",
+            "initialization": "MedicalNet",
+            "source": "mri_initialization",
+            "best_epoch": 3
+          },
+          {
+            "label": "MRI Only\nRandom ResNet",
+            "value": 0.7875,
+            "id": "P02-B",
+            "initialization": "random",
+            "source": "mri_initialization",
+            "best_epoch": 19
+          }
+        ]
+      },
+      {
+        "id": "random_longitudinal",
+        "title": "Longitudinal MRI: Cox batch 6",
+        "protocol": "historical_longitudinal_stages",
+        "seeds": [
+          20260727
+        ],
+        "cross_group_comparable": false,
+        "connect_points": false,
+        "comparison_scope": "MRI-only last hidden vs attention; repaired attention incomplete closure.",
+        "rows": [
+          {
+            "label": "Longitudinal\nMRI",
+            "value": 0.7333333333333333,
+            "id": "P03-TLSTM",
+            "source": "phase_evolution",
+            "provenance": "official reported milestone"
+          },
+          {
+            "label": "Longitudinal MRI\n+ attention*",
+            "value": 0.7833333333333333,
+            "id": "P03-ATTN",
+            "source": "longitudinal_crossformer",
+            "provenance": "limited; best-observed, incomplete closure",
+            "marker": "hollow",
+            "chart_optional": true
+          }
+        ],
+        "physical_cox_batch": 6
+      },
+      {
+        "id": "concat_batch8",
+        "title": "Multimodal Concatenation: Cox batch 8",
+        "protocol": "concat_batch8",
+        "seeds": [
+          20260727
+        ],
+        "cross_group_comparable": false,
+        "connect_points": false,
+        "physical_cox_batch": 8,
+        "rows": [
+          {
+            "label": "Multimodal\nConcat.",
+            "value": 0.8125,
+            "id": "P04",
+            "source": "concat_official",
+            "best_epoch": 29
+          }
+        ],
+        "comparison_scope": "Different physical Cox risk set from longitudinal MRI and pairwise families; cannot isolate a modality or fusion effect."
+      },
+      {
+        "id": "medicalnet_pairwise",
+        "title": "Pairwise family: Cox batch 6",
+        "protocol": "medicalnet_pairwise_controlled",
+        "seeds": [
+          20260727
+        ],
+        "cross_group_comparable": false,
+        "connect_points": false,
+        "rows": [
+          {
+            "label": "Dynamic\nPairwise",
+            "value": 0.828125,
+            "id": "P05",
+            "source": "pairwise_official",
+            "best_epoch": 5
+          },
+          {
+            "label": "MedicalNet\nPairwise",
+            "value": 0.8395833333333333,
+            "id": "P05B",
+            "source": "standardized_benchmark"
+          },
+          {
+            "label": "CP\nPairwise",
+            "value": 0.821875,
+            "id": "P05-CP",
+            "source": "standardized_benchmark"
+          },
+          {
+            "label": "RC-Free\nPairwise",
+            "value": 0.8416666666666667,
+            "id": "RC-Free",
+            "source": "standardized_benchmark"
+          }
+        ],
+        "physical_cox_batch": 6,
+        "comparison_scope": "Random to MedicalNet changes initialization; full to CP changes first bilinear layer only; CP to RC-free removes RC interaction. All seed20260727. No concat baseline in this group."
+      }
+    ],
+    "metric": "validation C-index",
+    "chart_policy": "Use separate panels for protocol groups and no line across groups. Do not combine single-seed historical milestones with three-seed means. Do not plot classical post-selection baseline or any historical test results on this chart. P04 uses physical Cox batch8, versus6 in P03/P05 families: separate P04 panel even though the frozen cohort/split is shared."
+  },
+  "parameters": {
+    "pairs": [
+      {
+        "label": "MR",
+        "x_dim": 32,
+        "y_dim": 32,
+        "hidden_dim": 128,
+        "rank": 8,
+        "full": 131200,
+        "cp": 1664,
+        "scope": "first bilinear layer including bias",
+        "source": "cp_architecture"
+      },
+      {
+        "label": "MC",
+        "x_dim": 32,
+        "y_dim": 16,
+        "hidden_dim": 128,
+        "rank": 8,
+        "full": 65664,
+        "cp": 1536,
+        "scope": "first bilinear layer including bias",
+        "source": "cp_architecture"
+      },
+      {
+        "label": "RC",
+        "x_dim": 32,
+        "y_dim": 16,
+        "hidden_dim": 64,
+        "rank": 4,
+        "full": 32832,
+        "cp": 512,
+        "scope": "first bilinear layer including bias",
+        "source": "cp_architecture"
+      }
+    ],
+    "first_bilinear_layers": {
+      "labels": [
+        "Full outer-product",
+        "CP-factorized"
+      ],
+      "values": [
+        229696,
+        3712
+      ],
+      "full": 229696,
+      "cp": 3712,
+      "saved": 225984,
+      "reduction_percent": 98.38395096127056,
+      "includes_bias": true,
+      "source": "cp_architecture"
+    },
+    "whole_pair_blocks": {
+      "full": 248608,
+      "cp": 22624,
+      "unchanged_post_mlp": 18912,
+      "source": "cp_architecture"
+    },
+    "total_models": [
+      {
+        "label": "MedicalNet Pairwise",
+        "value": 33760941,
+        "source": "standardized_benchmark"
+      },
+      {
+        "label": "CP Pairwise",
+        "value": 33534957,
+        "source": "standardized_benchmark"
+      },
+      {
+        "label": "RC-Free Pairwise",
+        "value": 33519497,
+        "source": "standardized_benchmark"
+      },
+      {
+        "label": "RC-Free Fixed-λ",
+        "value": 33519493,
+        "source": "standardized_benchmark"
+      }
+    ],
+    "total_full_to_cp_reduction_percent": 0.6693652288897955,
+    "rcfree_component_counts": {
+      "cp_specific_parameters": 3200,
+      "dynamic_gate_parameters": 25348,
+      "lambda_parameters": 4,
+      "pairwise_parameters": 19968,
+      "total_parameters": 33519497,
+      "trainable_parameters": 33519497
+    },
+    "notes": [
+      "The 98.384% reduction is restricted to the first bilinear interaction layers, not the whole model.",
+      "Parameter count does not establish a measured latency, FLOPs, memory, or wall-time improvement.",
+      "Three-pair CP ranks are MR/MC/RC=8/8/4; RC-free actively computes only MR/MC with ranks 8/8."
+    ]
+  },
+  "ablations": {
+    "baseline_label": "Full CP Pairwise",
+    "baseline": 0.821875,
+    "seed": 20260727,
+    "rows": [
+      {
+        "id": "A1_NO_DYNAMIC_GATE",
+        "label": "Remove gate",
+        "value": 0.8208333333333333,
+        "delta": -0.0010416666666667185,
+        "seed": 20260727,
+        "baseline": 0.821875,
+        "total_parameters": 33501287,
+        "source": "ablation",
+        "original_run_path": "/home/data/user/nguyenphuongnam/alzheimer_training/phase_06_ablation/runs/official/a1_no_dynamic_gate_20260919T163744Z_seed20260727",
+        "best_epoch": 12,
+        "completed_epochs": 32,
+        "runtime_seconds": 1837.5812282589904
+      },
+      {
+        "id": "A2_FIXED_LAMBDA",
+        "label": "Fixed λ",
+        "value": 0.8364583333333333,
+        "delta": 0.014583333333333282,
+        "seed": 20260727,
+        "baseline": 0.821875,
+        "total_parameters": 33534951,
+        "source": "ablation",
+        "original_run_path": "/home/data/user/nguyenphuongnam/alzheimer_training/phase_06_ablation/runs/official/a2_fixed_lambda_20260919T170826Z_seed20260727",
+        "best_epoch": 17,
+        "completed_epochs": 37,
+        "runtime_seconds": 2127.329634753987
+      },
+      {
+        "id": "A3_NO_IDENTITY_RESIDUAL",
+        "label": "Remove residual",
+        "value": 0.8270833333333333,
+        "delta": 0.005208333333333259,
+        "seed": 20260727,
+        "baseline": 0.821875,
+        "total_parameters": 33534957,
+        "source": "ablation",
+        "original_run_path": "/home/data/user/nguyenphuongnam/alzheimer_training/phase_06_ablation/runs/official/a3_no_identity_residual_20260919T174357Z_seed20260727",
+        "best_epoch": 24,
+        "completed_epochs": 44,
+        "runtime_seconds": 2527.9437908040127
+      },
+      {
+        "id": "A4_NO_MR",
+        "label": "Remove MR",
+        "value": 0.8166666666666667,
+        "delta": -0.00520833333333337,
+        "seed": 20260727,
+        "baseline": 0.821875,
+        "total_parameters": 33499625,
+        "source": "ablation",
+        "original_run_path": "/home/data/user/nguyenphuongnam/alzheimer_training/phase_06_ablation/runs/official/a4_no_mr_20260919T182609Z_seed20260727",
+        "best_epoch": 10,
+        "completed_epochs": 30,
+        "runtime_seconds": 1719.686752368987
+      },
+      {
+        "id": "A5_NO_MC",
+        "label": "Remove MC",
+        "value": 0.8375,
+        "delta": 0.015625,
+        "seed": 20260727,
+        "baseline": 0.821875,
+        "total_parameters": 33499753,
+        "source": "ablation",
+        "original_run_path": "/home/data/user/nguyenphuongnam/alzheimer_training/phase_06_ablation/runs/official/a5_no_mc_20260919T185453Z_seed20260727",
+        "best_epoch": 16,
+        "completed_epochs": 36,
+        "runtime_seconds": 2051.9218121080194
+      },
+      {
+        "id": "A6_NO_RC",
+        "label": "Remove RC",
+        "value": 0.8416666666666667,
+        "delta": 0.019791666666666652,
+        "seed": 20260727,
+        "baseline": 0.821875,
+        "total_parameters": 33519497,
+        "source": "ablation",
+        "original_run_path": "/home/data/user/nguyenphuongnam/alzheimer_training/phase_06_ablation/runs/official/a6_no_rc_20260919T192909Z_seed20260727",
+        "best_epoch": 16,
+        "completed_epochs": 36,
+        "runtime_seconds": 2049.5579505159985
+      }
+    ],
+    "protocol": "medicalnet_pairwise_controlled",
+    "source": "ablation"
+  },
+  "benchmark": [
+    {
+      "id": "P10",
+      "label": "Paper CNN–T-LSTM",
+      "values": [
+        0.6625,
+        0.7708333333333334,
+        0.7916666666666666
+      ],
+      "seeds": [
+        20260727,
+        20260728,
+        20260729
+      ],
+      "mean": 0.7416666666666667,
+      "sd": 0.06934715407122183,
+      "sd_type": "sample",
+      "ddof": 1,
+      "total_parameters": "seed-specific: 33205186/33213122/33195970",
+      "parameters_by_seed": [
+        33205186,
+        33213122,
+        33195970
+      ],
+      "protocol": "standardized_validation",
+      "source": "standardized_benchmark",
+      "run_evidence": [
+        {
+          "seed": 20260727,
+          "best_epoch": 20,
+          "checkpoint_path": "phase_10_paper_cnn_tlstm_reproduction/artifacts/checkpoints/tlstm_official_seed_20260727/best.pt",
+          "checkpoint_sha256": "c2d942d3bd9428798fd7390c3b302ba154e3d23ef049f426722ebe064699a1bf",
+          "metric": 0.6625,
+          "parameters": 33205186,
+          "status": "REUSED"
+        },
+        {
+          "seed": 20260728,
+          "best_epoch": 12,
+          "checkpoint_path": "phase_10_paper_cnn_tlstm_reproduction/artifacts/checkpoints/tlstm_official_seed_20260728/best.pt",
+          "checkpoint_sha256": "9eb74762e30555d86c7edcfd61dc22bde883c613dc8e4e0fe38c2cfb3f9113b0",
+          "metric": 0.7708333333333334,
+          "parameters": 33213122,
+          "status": "REUSED"
+        },
+        {
+          "seed": 20260729,
+          "best_epoch": 16,
+          "checkpoint_path": "phase_10_paper_cnn_tlstm_reproduction/artifacts/checkpoints/tlstm_official_seed_20260729/best.pt",
+          "checkpoint_sha256": "4bcd5070d0d3cc94ff50dacb36e472736968763927a1a217f6bde736efd2cb60",
+          "metric": 0.7916666666666666,
+          "parameters": 33195970,
+          "status": "REUSED"
+        }
+      ]
+    },
+    {
+      "id": "P05B",
+      "label": "MedicalNet Pairwise",
+      "values": [
+        0.8395833333333333,
+        0.8458333333333333,
+        0.8177083333333334
+      ],
+      "seeds": [
+        20260727,
+        20260728,
+        20260729
+      ],
+      "mean": 0.834375,
+      "sd": 0.01476817383203938,
+      "sd_type": "sample",
+      "ddof": 1,
+      "total_parameters": 33760941,
+      "parameters_by_seed": [
+        33760941,
+        33760941,
+        33760941
+      ],
+      "protocol": "standardized_validation",
+      "source": "standardized_benchmark",
+      "run_evidence": [
+        {
+          "seed": 20260727,
+          "best_epoch": 35,
+          "checkpoint_path": "phase_05b_pairwise_medicalnet/runs/official/p05b_official_20260731T101104Z_seed20260727/checkpoints/best.pt",
+          "checkpoint_sha256": "f0e3a2954f4e4fc542a1c77082b87699f8ca8ffbb4534736967c55ed726ee97d",
+          "metric": 0.8395833333333333,
+          "parameters": 33760941,
+          "status": "REUSED"
+        },
+        {
+          "seed": 20260728,
+          "best_epoch": 12,
+          "checkpoint_path": "phase_05b_pairwise_medicalnet/runs/multiseed_validation/official/p05b_validation_20260919T113827946200515_seed20260728/checkpoints/best.pt",
+          "checkpoint_sha256": "07cd8dd4bde947ef28af1f83ab1c1fda12cc942af0d8b971038a56da02205181",
+          "metric": 0.8458333333333333,
+          "parameters": 33760941,
+          "status": "REUSED"
+        },
+        {
+          "seed": 20260729,
+          "best_epoch": 7,
+          "checkpoint_path": "phase_05b_pairwise_medicalnet/runs/multiseed_validation/official/p05b_validation_20260919T121253155712205_seed20260729/checkpoints/best.pt",
+          "checkpoint_sha256": "8ee05d0b8e6fcb9bc6ad157b2d1d2468d862bb4eb2401c8aa787ef0677e89e05",
+          "metric": 0.8177083333333334,
+          "parameters": 33760941,
+          "status": "REUSED"
+        }
+      ]
+    },
+    {
+      "id": "P05-CP",
+      "label": "CP Pairwise",
+      "values": [
+        0.821875,
+        0.8552083333333333,
+        0.80625
+      ],
+      "seeds": [
+        20260727,
+        20260728,
+        20260729
+      ],
+      "mean": 0.8277777777777778,
+      "sd": 0.025007232750042827,
+      "sd_type": "sample",
+      "ddof": 1,
+      "total_parameters": 33534957,
+      "parameters_by_seed": [
+        33534957,
+        33534957,
+        33534957
+      ],
+      "protocol": "standardized_validation",
+      "source": "standardized_benchmark",
+      "run_evidence": [
+        {
+          "seed": 20260727,
+          "best_epoch": 8,
+          "checkpoint_path": "phase_05_cp/runs/official/p05cp_official_20260919T094039595311702_seed20260727/checkpoints/best.pt",
+          "checkpoint_sha256": "9a437266a5306e979083a907b938b836bf53503a3f54824206a374d1d31e1b38",
+          "metric": 0.821875,
+          "parameters": 33534957,
+          "status": "REUSED"
+        },
+        {
+          "seed": 20260728,
+          "best_epoch": 11,
+          "checkpoint_path": "phase_05_cp/runs/multiseed_validation/official/p05-cp_validation_20260919T124252929082756_seed20260728/checkpoints/best.pt",
+          "checkpoint_sha256": "cc7ec626b4c5fa844fc5a53f88ff49ba0e9dad79b55dee0bb61ccb0a1f1d4270",
+          "metric": 0.8552083333333333,
+          "parameters": 33534957,
+          "status": "REUSED"
+        },
+        {
+          "seed": 20260729,
+          "best_epoch": 8,
+          "checkpoint_path": "phase_05_cp/runs/multiseed_validation/official/p05-cp_validation_20260919T131256643473042_seed20260729/checkpoints/best.pt",
+          "checkpoint_sha256": "314f3bae9ca5870776284aa3a7cd159987e169024d922884047604a3a090cc1a",
+          "metric": 0.80625,
+          "parameters": 33534957,
+          "status": "REUSED"
+        }
+      ]
+    },
+    {
+      "id": "A6",
+      "label": "RC-Free Pairwise",
+      "values": [
+        0.8416666666666667,
+        0.8541666666666666,
+        0.8083333333333333
+      ],
+      "seeds": [
+        20260727,
+        20260728,
+        20260729
+      ],
+      "mean": 0.8347222222222223,
+      "sd": 0.023692669596155506,
+      "sd_type": "sample",
+      "ddof": 1,
+      "total_parameters": 33519497,
+      "parameters_by_seed": [
+        33519497,
+        33519497,
+        33519497
+      ],
+      "protocol": "standardized_validation",
+      "source": "standardized_benchmark",
+      "run_evidence": [
+        {
+          "seed": 20260727,
+          "best_epoch": 16,
+          "checkpoint_path": "phase_06_ablation/runs/official/a6_no_rc_20260919T192909Z_seed20260727/checkpoints/best.pt",
+          "checkpoint_sha256": "c339c9b57955dd57a1d6a72940b917801c2c2503b3bfd73b4ca4fe2e7e4ba504",
+          "metric": 0.8416666666666667,
+          "parameters": 33519497,
+          "status": "REUSED"
+        },
+        {
+          "seed": 20260728,
+          "best_epoch": 7,
+          "checkpoint_path": "phase_06_ablation/runs/multiseed_validation/official/a6_no_rc_seed20260728_20260920T082644Z/checkpoints/best.pt",
+          "checkpoint_sha256": "0a46ccb6191fd3f5732c9296c4b6b899b182602845d4f75de0cd9429db41c5c5",
+          "metric": 0.8541666666666666,
+          "parameters": 33519497,
+          "status": "REUSED"
+        },
+        {
+          "seed": 20260729,
+          "best_epoch": 25,
+          "checkpoint_path": "phase_06_ablation/runs/multiseed_validation/official/a6_no_rc_seed20260729_20260920T085637Z/checkpoints/best.pt",
+          "checkpoint_sha256": "5e20a8296491aa0a778b6a51780a103f281f788a060da7b9eb78e9df923a1a3d",
+          "metric": 0.8083333333333333,
+          "parameters": 33519497,
+          "status": "REUSED"
+        }
+      ]
+    },
+    {
+      "id": "B1",
+      "label": "RC-Free Fixed-λ",
+      "values": [
+        0.8333333333333334,
+        0.8666666666666667,
+        0.8041666666666667
+      ],
+      "seeds": [
+        20260727,
+        20260728,
+        20260729
+      ],
+      "mean": 0.8347222222222223,
+      "sd": 0.03127313958110473,
+      "sd_type": "sample",
+      "ddof": 1,
+      "total_parameters": 33519493,
+      "parameters_by_seed": [
+        33519493,
+        33519493,
+        33519493
+      ],
+      "protocol": "standardized_validation",
+      "source": "standardized_benchmark",
+      "run_evidence": [
+        {
+          "seed": 20260727,
+          "best_epoch": 12,
+          "checkpoint_path": "phase_06b_targeted/runs/multiseed_validation/official/b1_a6_fixedlambda_seed20260727_20260920T121112Z/checkpoints/best.pt",
+          "checkpoint_sha256": "ed7bfd31ce35e833ee7453b5d679800afb547e07aa60fbb2e70f0bd6cd3eae6f",
+          "metric": 0.8333333333333334,
+          "parameters": 33519493,
+          "status": "REUSED"
+        },
+        {
+          "seed": 20260728,
+          "best_epoch": 11,
+          "checkpoint_path": "phase_06b_targeted/runs/multiseed_validation/official/b1_a6_fixedlambda_seed20260728_20260920T124156Z/checkpoints/best.pt",
+          "checkpoint_sha256": "7c3a2bf881f87c5e44377e928aba699eff6be39977d1f3a9756d4dbc65e473b2",
+          "metric": 0.8666666666666667,
+          "parameters": 33519493,
+          "status": "REUSED"
+        },
+        {
+          "seed": 20260729,
+          "best_epoch": 20,
+          "checkpoint_path": "phase_06b_targeted/runs/multiseed_validation/official/b1_a6_fixedlambda_seed20260729_20260920T131142Z/checkpoints/best.pt",
+          "checkpoint_sha256": "687e7c9c73369ac8cdd19f58838a7b05bd2728ad3c9dd3ef6c0c3a61b9656dd4",
+          "metric": 0.8041666666666667,
+          "parameters": 33519493,
+          "status": "REUSED"
+        }
+      ]
+    }
+  ],
+  "classical": {
+    "rows": [
+      {
+        "representation": "R01_CLINICAL_V2",
+        "model_family": "cox",
+        "hyperparameters": "{\"alpha\": 0.1, \"l1_ratio\": 0.5}",
+        "mean_train_cv_cindex": 0.8467703578640103,
+        "std_train_cv_cindex": 0.06278856610839494,
+        "validation_cindex": 0.8378378378378378,
+        "convergence_status": "PASS",
+        "warnings": "",
+        "fit_time_seconds": "0.001014163950458169",
+        "prediction_finite": "True",
+        "feature_count": 18,
+        "source": "classical_table"
+      },
+      {
+        "representation": "R02_CLINICAL_LONG",
+        "model_family": "cox",
+        "hyperparameters": "{\"alpha\": 0.1, \"l1_ratio\": 0.5}",
+        "mean_train_cv_cindex": 0.8544560346073757,
+        "std_train_cv_cindex": 0.06251169049764332,
+        "validation_cindex": 0.8378378378378378,
+        "convergence_status": "PASS",
+        "warnings": "",
+        "fit_time_seconds": "0.0008746318053454161",
+        "prediction_finite": "True",
+        "feature_count": 54,
+        "source": "classical_table"
+      },
+      {
+        "representation": "R03_RAD32_V2",
+        "model_family": "cox",
+        "hyperparameters": "{\"alpha\": 0.1, \"l1_ratio\": 0.5}",
+        "mean_train_cv_cindex": 0.6310714853779044,
+        "std_train_cv_cindex": 0.09262617506828434,
+        "validation_cindex": 0.7442827442827443,
+        "convergence_status": "PASS",
+        "warnings": "",
+        "fit_time_seconds": "0.0007317729759961367",
+        "prediction_finite": "True",
+        "feature_count": 17,
+        "source": "classical_table"
+      },
+      {
+        "representation": "R04_RAD32_LONG",
+        "model_family": "cox",
+        "hyperparameters": "{\"alpha\": 0.01, \"l1_ratio\": 0.05}",
+        "mean_train_cv_cindex": 0.6314737109980996,
+        "std_train_cv_cindex": 0.10557491130232341,
+        "validation_cindex": 0.5821205821205822,
+        "convergence_status": "PASS",
+        "warnings": "",
+        "fit_time_seconds": "0.004405264975503087",
+        "prediction_finite": "True",
+        "feature_count": 51,
+        "source": "classical_table"
+      },
+      {
+        "representation": "R05_RAD64_V2",
+        "model_family": "cox",
+        "hyperparameters": "{\"alpha\": 0.1, \"l1_ratio\": 0.5}",
+        "mean_train_cv_cindex": 0.6417885437986139,
+        "std_train_cv_cindex": 0.0808931920383357,
+        "validation_cindex": 0.7484407484407485,
+        "convergence_status": "PASS",
+        "warnings": "",
+        "fit_time_seconds": "0.0006913249380886555",
+        "prediction_finite": "True",
+        "feature_count": 16,
+        "source": "classical_table"
+      },
+      {
+        "representation": "R06_RAD64_LONG",
+        "model_family": "cox",
+        "hyperparameters": "{\"alpha\": 0.01, \"l1_ratio\": 0.05}",
+        "mean_train_cv_cindex": 0.6304377730033494,
+        "std_train_cv_cindex": 0.10357131654124992,
+        "validation_cindex": 0.5592515592515592,
+        "convergence_status": "PASS",
+        "warnings": "",
+        "fit_time_seconds": "0.004172127926722169",
+        "prediction_finite": "True",
+        "feature_count": 48,
+        "source": "classical_table"
+      },
+      {
+        "representation": "R07_CLINICAL_RAD32_LONG",
+        "model_family": "cox",
+        "hyperparameters": "{\"alpha\": 0.1, \"l1_ratio\": 0.5}",
+        "mean_train_cv_cindex": 0.8543426711540711,
+        "std_train_cv_cindex": 0.050853898570603885,
+        "validation_cindex": 0.8523908523908524,
+        "convergence_status": "PASS",
+        "warnings": "",
+        "fit_time_seconds": "0.001155866077169776",
+        "prediction_finite": "True",
+        "feature_count": 105,
+        "source": "classical_table"
+      },
+      {
+        "representation": "R08_CLINICAL_RAD64_LONG",
+        "model_family": "cox",
+        "hyperparameters": "{\"alpha\": 0.1, \"l1_ratio\": 0.5}",
+        "mean_train_cv_cindex": 0.8549099225670196,
+        "std_train_cv_cindex": 0.05654650179091269,
+        "validation_cindex": 0.8607068607068608,
+        "convergence_status": "PASS",
+        "warnings": "",
+        "fit_time_seconds": "0.0011322351638227701",
+        "prediction_finite": "True",
+        "feature_count": 102,
+        "source": "classical_table"
+      },
+      {
+        "representation": "R01_CLINICAL_V2",
+        "model_family": "rsf",
+        "hyperparameters": "{\"max_depth\": 4, \"max_features\": 0.5, \"min_samples_leaf\": 10, \"n_estimators\": 300}",
+        "mean_train_cv_cindex": 0.8253118374908602,
+        "std_train_cv_cindex": 0.078726132958126,
+        "validation_cindex": 0.7900207900207901,
+        "convergence_status": "PASS",
+        "warnings": "",
+        "fit_time_seconds": "0.4078222450334579",
+        "prediction_finite": "True",
+        "feature_count": 18,
+        "source": "classical_table"
+      },
+      {
+        "representation": "R02_CLINICAL_LONG",
+        "model_family": "rsf",
+        "hyperparameters": "{\"max_depth\": 4, \"max_features\": 0.5, \"min_samples_leaf\": 10, \"n_estimators\": 300}",
+        "mean_train_cv_cindex": 0.8389406256670611,
+        "std_train_cv_cindex": 0.08452466142437004,
+        "validation_cindex": 0.8378378378378378,
+        "convergence_status": "PASS",
+        "warnings": "",
+        "fit_time_seconds": "0.3024399820715189",
+        "prediction_finite": "True",
+        "feature_count": 54,
+        "source": "classical_table"
+      },
+      {
+        "representation": "R07_CLINICAL_RAD32_LONG",
+        "model_family": "rsf",
+        "hyperparameters": "{\"max_depth\": 8, \"max_features\": \"sqrt\", \"min_samples_leaf\": 10, \"n_estimators\": 300}",
+        "mean_train_cv_cindex": 0.8395809943891148,
+        "std_train_cv_cindex": 0.05799469602082147,
+        "validation_cindex": 0.83991683991684,
+        "convergence_status": "PASS",
+        "warnings": "",
+        "fit_time_seconds": "0.2047390309162438",
+        "prediction_finite": "True",
+        "feature_count": 105,
+        "source": "classical_table"
+      },
+      {
+        "representation": "R08_CLINICAL_RAD64_LONG",
+        "model_family": "rsf",
+        "hyperparameters": "{\"max_depth\": 4, \"max_features\": \"sqrt\", \"min_samples_leaf\": 10, \"n_estimators\": 300}",
+        "mean_train_cv_cindex": 0.8388633473552473,
+        "std_train_cv_cindex": 0.0738904631984013,
+        "validation_cindex": 0.8565488565488566,
+        "convergence_status": "PASS",
+        "warnings": "",
+        "fit_time_seconds": "0.1894840239547193",
+        "prediction_finite": "True",
+        "feature_count": 102,
+        "source": "classical_table"
+      }
+    ],
+    "source": "classical_table",
+    "protocol": "classical",
+    "keep_separate_from_neural_errorbars": true
+  },
+  "validation_differences": {
+    "cp_minus_full_mean": -0.006597222222222143,
+    "rcfree_minus_cp_mean": 0.00694444444444442,
+    "rcfree_minus_full_mean": 0.0003472222222222765,
+    "fixedlambda_minus_rcfree_mean": 0.0
+  }
+}

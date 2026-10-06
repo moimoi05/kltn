@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" agent="Codex" version="native-xml">
+  <diagram id="modality-preprocessing" name="modality-preprocessing">
+    <mxGraphModel grid="0" page="1" pageScale="1" pageWidth="453.5433" pageHeight="300" background="#FFFFFF" math="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="i0" parent="1" vertex="1" value="INPUT" style="html=1;fontFamily=Arial;fontColor=#263B4D;whiteSpace=wrap;text;strokeColor=none;fillColor=none;fontSize=10;fontStyle=1;align=left;verticalAlign=top;spacing=0;">
+          <mxGeometry x="15" y="8" width="32.0" height="12.4" as="geometry" />
+        </mxCell>
+        <mxCell id="i1" parent="1" vertex="1" value="PREPROCESSING" style="html=1;fontFamily=Arial;fontColor=#263B4D;whiteSpace=wrap;text;strokeColor=none;fillColor=none;fontSize=10;fontStyle=1;align=left;verticalAlign=top;spacing=0;">
+          <mxGeometry x="109" y="8" width="89.2412109375" height="12.4" as="geometry" />
+        </mxCell>
+        <mxCell id="i2" parent="1" vertex="1" value="ENCODER" style="html=1;fontFamily=Arial;fontColor=#263B4D;whiteSpace=wrap;text;strokeColor=none;fillColor=none;fontSize=10;fontStyle=1;align=left;verticalAlign=top;spacing=0;">
+          <mxGeometry x="261" y="8" width="52.0048828125" height="12.4" as="geometry" />
+        </mxCell>
+        <mxCell id="n4" parent="1" vertex="1" value="&lt;b&gt;T1 MRI&lt;/b&gt;" style="html=1;fontFamily=Arial;fontColor=#263B4D;whiteSpace=wrap;rounded=1;arcSize=8;fillColor=#E7F0FA;strokeColor=#567DA3;strokeWidth=1;fontSize=10;spacing=5;">
+          <mxGeometry x="15" y="40" width="76" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="n5" parent="1" vertex="1" value="RAS; SynthStrip&lt;br&gt;Rigid registration&lt;br&gt;144³, 1.5 mm; z-score" style="html=1;fontFamily=Arial;fontColor=#263B4D;whiteSpace=wrap;rounded=1;arcSize=8;fillColor=#E7F0FA;strokeColor=#567DA3;strokeWidth=1;fontSize=9.5;spacing=5;">
+          <mxGeometry x="109" y="40" width="135" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="n6" parent="1" vertex="1" value="&lt;b&gt;MedicalNet&lt;/b&gt;&lt;br&gt;ResNet18&lt;br&gt;512 → 128" style="html=1;fontFamily=Arial;fontColor=#263B4D;whiteSpace=wrap;rounded=1;arcSize=8;fillColor=#E7F0FA;strokeColor=#567DA3;strokeWidth=1;fontSize=9.5;spacing=5;">
+          <mxGeometry x="262" y="40" width="112" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="n7" parent="1" vertex="1" value="&lt;b&gt;M&lt;/b&gt;&lt;br&gt;128" style="html=1;fontFamily=Arial;fontColor=#263B4D;whiteSpace=wrap;rounded=1;arcSize=8;fillColor=#E7F0FA;strokeColor=#567DA3;strokeWidth=1;fontSize=10;spacing=5;">
+          <mxGeometry x="391" y="49" width="47" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="i7" parent="1" edge="1" value="" style="html=1;fontFamily=Arial;fontColor=#263B4D;whiteSpace=wrap;edgeStyle=none;rounded=0;endArrow=block;endFill=1;endSize=5;startArrow=none;startFill=1;startSize=5;strokeColor=#5C6B79;strokeWidth=1.1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="91" y="71" as="sourcePoint" />
+            <mxPoint x="109" y="71" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="i8" parent="1" edge="1" value="" style="html=1;fontFamily=Arial;fontColor=#263B4D;whiteSpace=wrap;edgeStyle=none;rounded=0;endArrow=block;endFill=1;endSize=5;startArrow=none;startFill=1;startSize=5;strokeColor=#5C6B79;strokeWidth=1.1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="244" y="71" as="sourcePoint" />
+            <mxPoint x="262" y="71" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="i9" parent="1" edge="1" value="" style="html=1;fontFamily=Arial;fontColor=#263B4D;whiteSpace=wrap;edgeStyle=none;rounded=0;endArrow=block;endFill=1;endSize=5;startArrow=none;startFill=1;startSize=5;strokeColor=#5C6B79;strokeWidth=1.1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="374" y="71" as="sourcePoint" />
+            <mxPoint x="391" y="71" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n11" parent="1" vertex="1" value="&lt;b&gt;Radiomics&lt;/b&gt;&lt;br&gt;107 features" style="html=1;fontFamily=Arial;fontColor=#263B4D;whiteSpace=wrap;rounded=1;arcSize=8;fillColor=#EAF3E9;strokeColor=#638560;strokeWidth=1;fontSize=10;spacing=5;">
+          <mxGeometry x="15" y="123" width="76" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="n12" parent="1" vertex="1" value="Loại 3 hằng số&lt;br&gt;Train scaling + PCA&lt;br&gt;16 thành phần" style="html=1;fontFamily=Arial;fontColor=#263B4D;whiteSpace=wrap;rounded=1;arcSize=8;fillColor=#EAF3E9;strokeColor=#638560;strokeWidth=1;fontSize=9.5;spacing=5;">
+          <mxGeometry x="109" y="123" width="135" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="n13" parent="1" vertex="1" value="&lt;b&gt;MLP&lt;/b&gt;&lt;br&gt;16 → 128 → 64" style="html=1;fontFamily=Arial;fontColor=#263B4D;whiteSpace=wrap;rounded=1;arcSize=8;fillColor=#EAF3E9;strokeColor=#638560;strokeWidth=1;fontSize=9.5;spacing=5;">
+          <mxGeometry x="262" y="123" width="112" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="n14" parent="1" vertex="1" value="&lt;b&gt;R&lt;/b&gt;&lt;br&gt;64" style="html=1;fontFamily=Arial;fontColor=#263B4D;whiteSpace=wrap;rounded=1;arcSize=8;fillColor=#EAF3E9;strokeColor=#638560;strokeWidth=1;fontSize=10;spacing=5;">
+          <mxGeometry x="391" y="132" width="47" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="i14" parent="1" edge="1" value="" style="html=1;fontFamily=Arial;fontColor=#263B4D;whiteSpace=wrap;edgeStyle=none;rounded=0;endArrow=block;endFill=1;endSize=5;startArrow=none;startFill=1;startSize=5;strokeColor=#5C6B79;strokeWidth=1.1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="91" y="154" as="sourcePoint" />
+            <mxPoint x="109" y="154" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="i15" parent="1" edge="1" value="" style="html=1;fontFamily=Arial;fontColor=#263B4D;whiteSpace=wrap;edgeStyle=none;rounded=0;endArrow=block;endFill=1;endSize=5;startArrow=none;startFill=1;startSize=5;strokeColor=#5C6B79;strokeWidth=1.1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="244" y="154" as="sourcePoint" />
+            <mxPoint x="262" y="154" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="i16" parent="1" edge="1" value="" style="html=1;fontFamily=Arial;fontColor=#263B4D;whiteSpace=wrap;edgeStyle=none;rounded=0;endArrow=block;endFill=1;endSize=5;startArrow=none;startFill=1;startSize=5;strokeColor=#5C6B79;strokeWidth=1.1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="374" y="154" as="sourcePoint" />
+            <mxPoint x="391" y="154" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n18" parent="1" vertex="1" value="&lt;b&gt;Clinical&lt;/b&gt;&lt;br&gt;9 values&lt;br&gt;9 masks" style="html=1;fontFamily=Arial;fontColor=#263B4D;whiteSpace=wrap;rounded=1;arcSize=8;fillColor=#FBF0E3;strokeColor=#A27D51;strokeWidth=1;fontSize=10;spacing=5;">
+          <mxGeometry x="15" y="206" width="76" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="n19" parent="1" vertex="1" value="Nearest valid ±90 d&lt;br&gt;Train median + scaling&lt;br&gt;Mask: 1 = observed" style="html=1;fontFamily=Arial;fontColor=#263B4D;whiteSpace=wrap;rounded=1;arcSize=8;fillColor=#FBF0E3;strokeColor=#A27D51;strokeWidth=1;fontSize=9.5;spacing=5;">
+          <mxGeometry x="109" y="206" width="135" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="n20" parent="1" vertex="1" value="&lt;b&gt;MLP&lt;/b&gt;&lt;br&gt;18 → 64 → 64" style="html=1;fontFamily=Arial;fontColor=#263B4D;whiteSpace=wrap;rounded=1;arcSize=8;fillColor=#FBF0E3;strokeColor=#A27D51;strokeWidth=1;fontSize=9.5;spacing=5;">
+          <mxGeometry x="262" y="206" width="112" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="n21" parent="1" vertex="1" value="&lt;b&gt;C&lt;/b&gt;&lt;br&gt;64" style="html=1;fontFamily=Arial;fontColor=#263B4D;whiteSpace=wrap;rounded=1;arcSize=8;fillColor=#FBF0E3;strokeColor=#A27D51;strokeWidth=1;fontSize=10;spacing=5;">
+          <mxGeometry x="391" y="215" width="47" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="i21" parent="1" edge="1" value="" style="html=1;fontFamily=Arial;fontColor=#263B4D;whiteSpace=wrap;edgeStyle=none;rounded=0;endArrow=block;endFill=1;endSize=5;startArrow=none;startFill=1;startSize=5;strokeColor=#5C6B79;strokeWidth=1.1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="91" y="237" as="sourcePoint" />
+            <mxPoint x="109" y="237" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="i22" parent="1" edge="1" value="" style="html=1;fontFamily=Arial;fontColor=#263B4D;whiteSpace=wrap;edgeStyle=none;rounded=0;endArrow=block;endFill=1;endSize=5;startArrow=none;startFill=1;startSize=5;strokeColor=#5C6B79;strokeWidth=1.1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="244" y="237" as="sourcePoint" />
+            <mxPoint x="262" y="237" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="i23" parent="1" edge="1" value="" style="html=1;fontFamily=Arial;fontColor=#263B4D;whiteSpace=wrap;edgeStyle=none;rounded=0;endArrow=block;endFill=1;endSize=5;startArrow=none;startFill=1;startSize=5;strokeColor=#5C6B79;strokeWidth=1.1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="374" y="237" as="sourcePoint" />
+            <mxPoint x="391" y="237" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="i24" parent="1" vertex="1" value="Cùng encoder dùng cho cả 3 visits; chỉ train quyết định tham số tiền xử lý." style="html=1;fontFamily=Arial;fontColor=#263B4D;whiteSpace=wrap;text;strokeColor=none;fillColor=none;fontSize=9.5;fontStyle=0;align=left;verticalAlign=top;spacing=0;">
+          <mxGeometry x="15" y="285" width="313.055419921875" height="11.78" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

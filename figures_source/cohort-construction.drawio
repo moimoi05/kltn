@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" agent="Codex" version="native-xml">
+  <diagram id="cohort-construction" name="cohort-construction">
+    <mxGraphModel grid="0" page="1" pageScale="1" pageWidth="453.5433" pageHeight="383" background="#FFFFFF" math="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="n1" parent="1" vertex="1" value="&lt;b&gt;899 đối tượng   |   Đối tượng ADNI có MRI liên kết&lt;/b&gt;" style="html=1;fontFamily=Arial;fontColor=#263B4D;whiteSpace=wrap;rounded=1;arcSize=8;fillColor=#FFFFFF;strokeColor=#A2ADB7;strokeWidth=1;fontSize=10;spacing=5;">
+          <mxGeometry x="18" y="12" width="418" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="i1" parent="1" edge="1" value="" style="html=1;fontFamily=Arial;fontColor=#263B4D;whiteSpace=wrap;edgeStyle=none;rounded=0;endArrow=block;endFill=1;endSize=5;startArrow=none;startFill=1;startSize=5;strokeColor=#5C6B79;strokeWidth=1.1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="227" y="50" as="sourcePoint" />
+            <mxPoint x="227" y="64" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n3" parent="1" vertex="1" value="&lt;b&gt;843 đối tượng   |   MCI tại baseline&lt;/b&gt;" style="html=1;fontFamily=Arial;fontColor=#263B4D;whiteSpace=wrap;rounded=1;arcSize=8;fillColor=#FFFFFF;strokeColor=#A2ADB7;strokeWidth=1;fontSize=10;spacing=5;">
+          <mxGeometry x="18" y="64" width="418" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="i3" parent="1" edge="1" value="" style="html=1;fontFamily=Arial;fontColor=#263B4D;whiteSpace=wrap;edgeStyle=none;rounded=0;endArrow=block;endFill=1;endSize=5;startArrow=none;startFill=1;startSize=5;strokeColor=#5C6B79;strokeWidth=1.1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="227" y="102" as="sourcePoint" />
+            <mxPoint x="227" y="116" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n5" parent="1" vertex="1" value="&lt;b&gt;631 đối tượng   |   Không tiến triển sớm đến hết L&lt;/b&gt;" style="html=1;fontFamily=Arial;fontColor=#263B4D;whiteSpace=wrap;rounded=1;arcSize=8;fillColor=#E8F3F8;strokeColor=#6590A5;strokeWidth=1;fontSize=10;spacing=5;">
+          <mxGeometry x="18" y="116" width="418" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="i5" parent="1" edge="1" value="" style="html=1;fontFamily=Arial;fontColor=#263B4D;whiteSpace=wrap;edgeStyle=none;rounded=0;endArrow=block;endFill=1;endSize=5;startArrow=none;startFill=1;startSize=5;strokeColor=#5C6B79;strokeWidth=1.1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="227" y="154" as="sourcePoint" />
+            <mxPoint x="227" y="168" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n7" parent="1" vertex="1" value="&lt;b&gt;536 đối tượng   |   Có theo dõi hợp lệ sau L&lt;/b&gt;" style="html=1;fontFamily=Arial;fontColor=#263B4D;whiteSpace=wrap;rounded=1;arcSize=8;fillColor=#E8F3F8;strokeColor=#6590A5;strokeWidth=1;fontSize=10;spacing=5;">
+          <mxGeometry x="18" y="168" width="418" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="i7" parent="1" edge="1" value="" style="html=1;fontFamily=Arial;fontColor=#263B4D;whiteSpace=wrap;edgeStyle=none;rounded=0;endArrow=block;endFill=1;endSize=5;startArrow=none;startFill=1;startSize=5;strokeColor=#5C6B79;strokeWidth=1.1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="227" y="206" as="sourcePoint" />
+            <mxPoint x="227" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n9" parent="1" vertex="1" value="&lt;b&gt;359 đối tượng   |   Có ≥3 thời điểm MRI; chọn đúng 3&lt;/b&gt;" style="html=1;fontFamily=Arial;fontColor=#263B4D;whiteSpace=wrap;rounded=1;arcSize=8;fillColor=#EEEAF6;strokeColor=#86759D;strokeWidth=1;fontSize=10;spacing=5;">
+          <mxGeometry x="18" y="220" width="418" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="i9" parent="1" vertex="1" value="1 077 MRI = 359 đối tượng × 3 visits" style="html=1;fontFamily=Arial;fontColor=#263B4D;whiteSpace=wrap;text;strokeColor=none;fillColor=none;fontSize=10;fontStyle=1;align=center;verticalAlign=top;spacing=0;">
+          <mxGeometry x="141.0146484375" y="273" width="171.970703125" height="12.4" as="geometry" />
+        </mxCell>
+        <mxCell id="n11" parent="1" vertex="1" value="&lt;b&gt;106 events&lt;/b&gt;&lt;br&gt;MMSE / CDR sau L" style="html=1;fontFamily=Arial;fontColor=#263B4D;whiteSpace=wrap;rounded=1;arcSize=8;fillColor=#EEF0F2;strokeColor=#77838F;strokeWidth=1;fontSize=10;spacing=5;">
+          <mxGeometry x="18" y="296" width="201" height="37" as="geometry" />
+        </mxCell>
+        <mxCell id="n12" parent="1" vertex="1" value="&lt;b&gt;253 censored&lt;/b&gt;&lt;br&gt;Theo dõi cuối sau L" style="html=1;fontFamily=Arial;fontColor=#263B4D;whiteSpace=wrap;rounded=1;arcSize=8;fillColor=#EEF0F2;strokeColor=#77838F;strokeWidth=1;fontSize=10;spacing=5;">
+          <mxGeometry x="235" y="296" width="201" height="37" as="geometry" />
+        </mxCell>
+        <mxCell id="i12" parent="1" vertex="1" value="RID-wise split: train 251  |  validation 54  |  test 54" style="html=1;fontFamily=Arial;fontColor=#263B4D;whiteSpace=wrap;text;strokeColor=none;fillColor=none;fontSize=10;fontStyle=1;align=center;verticalAlign=top;spacing=0;">
+          <mxGeometry x="109.5546875" y="345" width="234.890625" height="12.4" as="geometry" />
+        </mxCell>
+        <mxCell id="i13" parent="1" vertex="1" value="Fit scaler, PCA và imputation trên train; áp dụng nguyên vẹn cho val/test." style="html=1;fontFamily=Arial;fontColor=#263B4D;whiteSpace=wrap;text;strokeColor=none;fillColor=none;fontSize=9.5;fontStyle=0;align=center;verticalAlign=top;spacing=0;">
+          <mxGeometry x="72.334716796875" y="365" width="309.33056640625" height="11.78" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

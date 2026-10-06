@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160mm" height="181.681mm" viewBox="0 0 453.5433 515">
+<rect width="100%" height="100%" fill="white"/>
+<text x="16" y="16.4" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="start" fill="#263B4D">1   XỬ LÝ TỪNG VISIT   (cùng trọng số cho 3 visits)</text>
+<rect x="16" y="35" width="92" height="46" rx="4" fill="#E7F0FA" stroke="#567DA3" stroke-width="1"/>
+<text x="62.0" y="61.699999999999996" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="middle" fill="#263B4D">MRI</text>
+<rect x="129" y="35" width="120" height="46" rx="4" fill="#E7F0FA" stroke="#567DA3" stroke-width="1"/>
+<text x="189.0" y="55.62499999999999" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="700" text-anchor="middle" fill="#263B4D">MedicalNet</text>
+<text x="189.0" y="67.405" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#263B4D">ResNet18</text>
+<rect x="271" y="35" width="64" height="46" rx="4" fill="#E7F0FA" stroke="#567DA3" stroke-width="1"/>
+<text x="303.0" y="55.5" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="middle" fill="#263B4D">M</text>
+<text x="303.0" y="67.9" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#263B4D">128</text>
+<polyline points="108,58 129,58" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="129,58 124.0,55.5 124.0,60.5" fill="#5C6B79"/>
+<polyline points="249,58 271,58" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="271,58 266.0,55.5 266.0,60.5" fill="#5C6B79"/>
+<rect x="16" y="99" width="92" height="46" rx="4" fill="#EAF3E9" stroke="#638560" stroke-width="1"/>
+<text x="62.0" y="119.5" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="middle" fill="#263B4D">Radiomics</text>
+<text x="62.0" y="131.9" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#263B4D">PCA 16</text>
+<rect x="129" y="99" width="120" height="46" rx="4" fill="#EAF3E9" stroke="#638560" stroke-width="1"/>
+<text x="189.0" y="119.625" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="700" text-anchor="middle" fill="#263B4D">MLP</text>
+<text x="189.0" y="131.405" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#263B4D">16 → 128 → 64</text>
+<rect x="271" y="99" width="64" height="46" rx="4" fill="#EAF3E9" stroke="#638560" stroke-width="1"/>
+<text x="303.0" y="119.5" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="middle" fill="#263B4D">R</text>
+<text x="303.0" y="131.9" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#263B4D">64</text>
+<polyline points="108,122 129,122" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="129,122 124.0,119.5 124.0,124.5" fill="#5C6B79"/>
+<polyline points="249,122 271,122" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="271,122 266.0,119.5 266.0,124.5" fill="#5C6B79"/>
+<rect x="16" y="163" width="92" height="46" rx="4" fill="#FBF0E3" stroke="#A27D51" stroke-width="1"/>
+<text x="62.0" y="183.5" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="middle" fill="#263B4D">Clinical</text>
+<text x="62.0" y="195.9" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#263B4D">9 + 9 masks</text>
+<rect x="129" y="163" width="120" height="46" rx="4" fill="#FBF0E3" stroke="#A27D51" stroke-width="1"/>
+<text x="189.0" y="183.625" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="700" text-anchor="middle" fill="#263B4D">MLP</text>
+<text x="189.0" y="195.405" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#263B4D">18 → 64 → 64</text>
+<rect x="271" y="163" width="64" height="46" rx="4" fill="#FBF0E3" stroke="#A27D51" stroke-width="1"/>
+<text x="303.0" y="183.5" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="middle" fill="#263B4D">C</text>
+<text x="303.0" y="195.9" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#263B4D">64</text>
+<polyline points="108,186 129,186" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="129,186 124.0,183.5 124.0,188.5" fill="#5C6B79"/>
+<polyline points="249,186 271,186" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="271,186 266.0,183.5 266.0,188.5" fill="#5C6B79"/>
+<rect x="361" y="35" width="77" height="174" rx="4" fill="#EEEAF6" stroke="#86759D" stroke-width="1"/>
+<text x="399.5" y="78.39500000000001" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="700" text-anchor="middle" fill="#263B4D">M · R · C</text>
+<text x="399.5" y="90.17500000000001" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#263B4D"></text>
+<text x="399.5" y="101.95500000000001" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#263B4D">Per-visit</text>
+<text x="399.5" y="113.735" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#263B4D">fusion</text>
+<text x="399.5" y="125.515" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#263B4D"></text>
+<text x="399.5" y="137.295" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#263B4D">MR / MC</text>
+<text x="399.5" y="149.075" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#263B4D">CP rank 8</text>
+<text x="399.5" y="160.855" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#263B4D"></text>
+<text x="399.5" y="172.635" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#263B4D">No RC</text>
+<polyline points="335,58 361,58" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="361,58 356.0,55.5 356.0,60.5" fill="#5C6B79"/>
+<polyline points="335,122 361,122" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="361,122 356.0,119.5 356.0,124.5" fill="#5C6B79"/>
+<polyline points="335,186 361,186" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="361,186 356.0,183.5 356.0,188.5" fill="#5C6B79"/>
+<text x="16" y="231.4" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="start" fill="#263B4D">2   CP PAIRWISE + DYNAMIC GATED RESIDUAL ROUTING</text>
+<rect x="16" y="246" width="134" height="52" rx="4" fill="#E7F0FA" stroke="#567DA3" stroke-width="1"/>
+<text x="83.0" y="263.735" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="700" text-anchor="middle" fill="#263B4D">M_out 128</text>
+<text x="83.0" y="275.51500000000004" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#263B4D">M + (MR→M) + (MC→M)</text>
+<text x="83.0" y="287.295" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#263B4D">LayerNorm</text>
+<rect x="160" y="246" width="134" height="52" rx="4" fill="#EAF3E9" stroke="#638560" stroke-width="1"/>
+<text x="227.0" y="263.735" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="700" text-anchor="middle" fill="#263B4D">R_out 64</text>
+<text x="227.0" y="275.51500000000004" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#263B4D">R + (MR→R)</text>
+<text x="227.0" y="287.295" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#263B4D">LayerNorm</text>
+<rect x="304" y="246" width="134" height="52" rx="4" fill="#FBF0E3" stroke="#A27D51" stroke-width="1"/>
+<text x="371.0" y="263.735" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="700" text-anchor="middle" fill="#263B4D">C_out 64</text>
+<text x="371.0" y="275.51500000000004" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#263B4D">C + (MC→C)</text>
+<text x="371.0" y="287.295" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#263B4D">LayerNorm</text>
+<polyline points="400,209 446,209 446,234 227,234 227,246" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="227,246 229.5,241.0 224.5,241.0" fill="#5C6B79"/>
+<polyline points="227,234 83,234 83,246" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="83,246 85.5,241.0 80.5,241.0" fill="#5C6B79"/>
+<polyline points="227,234 371,234 371,246" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="371,246 373.5,241.0 368.5,241.0" fill="#5C6B79"/>
+<text x="249" y="325.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="start" fill="#263B4D">Mỗi route = λ × g × Ê</text>
+<rect x="99" y="335" width="118" height="38" rx="4" fill="#EEEAF6" stroke="#86759D" stroke-width="1"/>
+<text x="158.0" y="351.5" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="middle" fill="#263B4D">Concatenate</text>
+<text x="158.0" y="363.9" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#263B4D">256</text>
+<rect x="243" y="335" width="128" height="38" rx="4" fill="#EEEAF6" stroke="#86759D" stroke-width="1"/>
+<text x="307.0" y="351.5" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="middle" fill="#263B4D">Shared readout</text>
+<text x="307.0" y="363.9" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#263B4D">256 → 128</text>
+<polyline points="217,354 243,354" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="243,354 238.0,351.5 238.0,356.5" fill="#5C6B79"/>
+<polyline points="83,298 83,311 158,311 158,335" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="158,335 160.5,330.0 155.5,330.0" fill="#5C6B79"/>
+<polyline points="227,298 227,311 158,311" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
+<polyline points="371,298 371,311 227,311" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
+<text x="129" y="396.4" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="start" fill="#263B4D">3   LONGITUDINAL SURVIVAL</text>
+<rect x="16" y="410" width="92" height="52" rx="4" fill="#E8F3F8" stroke="#6590A5" stroke-width="1"/>
+<text x="62.0" y="427.735" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="700" text-anchor="middle" fill="#263B4D">3 visit vectors</text>
+<text x="62.0" y="439.515" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#263B4D">128 mỗi visit</text>
+<text x="62.0" y="451.295" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#263B4D">Δt theo MRI</text>
+<rect x="129" y="410" width="92" height="52" rx="4" fill="#E8F3F8" stroke="#6590A5" stroke-width="1"/>
+<text x="175.0" y="433.5" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="middle" fill="#263B4D">T-LSTM</text>
+<text x="175.0" y="445.9" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#263B4D">Hidden 128</text>
+<rect x="242" y="410" width="91" height="52" rx="4" fill="#E8F3F8" stroke="#6590A5" stroke-width="1"/>
+<text x="287.5" y="427.735" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="700" text-anchor="middle" fill="#263B4D">Temporal</text>
+<text x="287.5" y="439.515" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#263B4D">attention</text>
+<text x="287.5" y="451.295" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#263B4D">Σ α_t h_t</text>
+<rect x="354" y="410" width="84" height="52" rx="4" fill="#EEF0F2" stroke="#77838F" stroke-width="1"/>
+<text x="396.0" y="427.735" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="700" text-anchor="middle" fill="#263B4D">Cox head</text>
+<text x="396.0" y="439.515" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#263B4D">128 → 64 → 1</text>
+<text x="396.0" y="451.295" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#263B4D">Log-risk η</text>
+<polyline points="307,373 307,380 62,380 62,410" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="62,410 64.5,405.0 59.5,405.0" fill="#5C6B79"/>
+<polyline points="108,436 129,436" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="129,436 124.0,433.5 124.0,438.5" fill="#5C6B79"/>
+<polyline points="221,436 242,436" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="242,436 237.0,433.5 237.0,438.5" fill="#5C6B79"/>
+<polyline points="333,436 354,436" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="354,436 349.0,433.5 349.0,438.5" fill="#5C6B79"/>
+<text x="227" y="484.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#263B4D">Huấn luyện bằng Cox partial likelihood (Breslow ties).</text>
+<text x="227" y="500.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#263B4D">Output là raw log-risk; không áp dụng sigmoid ở survival head.</text>
+</svg>
