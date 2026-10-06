@@ -1,5 +1,16 @@
 # CHANGELOG — 05–06/10/2026
 
+## Chữ đen, khối 3D và bảng shape — 06/10/2026
+
+- Chuyển toàn bộ chữ của 16 hình sang đen trong PDF, SVG và native drawio; giữ bold/emphasis và màu pastel cho nền/đường nét. Kiểm tra tự động đã phát hiện lỗi trước sửa và pass sau sửa.
+- Vẽ MRI/3D encoder bằng khối hộp trong timeline, modality preprocessing và pipeline cuối. Hình CP vẽ tensor trọng số `H×dx×dy` và tổng các tensor rank-one; không vẽ dữ liệu bệnh nhân như đối tượng bị phân rã, không thêm phép dựng tensor/outer-product vào forward CP.
+- Bổ sung Bảng 3.1 shape shared MRI encoder, Bảng 3.2 giao diện phase, Bảng 3.3 Paper CNN–PCA–T-LSTM/CrossFormer3D; mở rộng Bảng 3.5 toàn pipeline cuối. Không dùng resizebox hay ảnh chụp bảng.
+- Xác minh MRI cuối từ wrapper P05B/config và MONAI1.5.2: input144³, stem stride1, CNN xử lý lần lượt ba visits, stack pooled512 rồi projection128. Shape feature maps là source-derived, không gán log smoke8³/4³ thành trace MRI thật.
+- Tích hợp audit từ máy giữ code do người dùng cung cấp: P10 official retuned lấy pre-dropout GAP512, PCA train-only38/69/2 theo seed20260727/28/29, hidden64; CrossFormer stem stride6 và trục channels-last xuyên các stages. Ghi version/commit/config hash và phân biệt source contracts/tests/persisted artifacts với forward hooks trong provenance.
+- Tách renderer dùng chung sang `figures_source/scene_renderer.py`; 49 asset/provenance đã duyệt không đổi byte do refactor. Giữ native cuboid stencil editable trong drawio và PDF/SVG vector.
+- Bản cuối70 trang:13 front matter,50 nội dung chính,7 bibliography. Giữ57 references, baseline[1], các route trong ngoặc và in đậm winner theo mean; không đổi số liệu thực nghiệm, không training/refit/test.
+- Duyệt toàn bộ trang, kiểm tra riêng bảng shape và hình CP/pipeline, chấp nhận tám trang thang xám. ZIP giải nén mới biên dịch độc lập và tái tạo nội dung/ảnh render cả70 trang; CRC và checksum nguồn đóng băng đều pass.
+
 ## Mở rộng references và in đậm kết quả — 06/10/2026
 
 - Bỏ hai báo cáo nội bộ khỏi bibliography theo góp ý PDF; kết quả tự nghiên cứu vẫn được dẫn về bảng/phụ lục provenance của source.
@@ -9,7 +20,7 @@
 - Rà soát import/requirements thực tế, loại thư viện cài sẵn trong môi trường khỏi bằng chứng sử dụng. Chương 3 bổ sung mô tả vai trò thư viện; phân biệt TorchSurv nguyên mẫu với Cox/Breslow tự triển khai trong mô hình cuối.
 - Chương 2 bổ sung nền tảng Transformer/ViT và ảnh 3D, phân biệt UNETR segmentation với survival task và CrossFormer gốc với bản 3D của project.
 - In đậm toàn dòng tốt nhất trong các bảng so sánh hiệu năng. Benchmark dùng mean của ba seed và in đậm cả hai dòng đồng hạng; giữ nguyên score và sample SD.
-- Giữ ký hiệu route trong ngoặc. Bản cuối 69 trang: 13 front matter, 49 nội dung chính và 7 bibliography; 16 hình vector. Biên dịch ổn định, không thiếu citation/reference hoặc tràn lề; tất cả 69 trang đã được kiểm tra trực quan.
+- Giữ ký hiệu route trong ngoặc. Phiên bản sau cập nhật references có 69 trang: 13 front matter, 49 nội dung chính và 7 bibliography; 16 hình vector. Biên dịch ổn định, không thiếu citation/reference hoặc tràn lề; tất cả 69 trang của phiên bản đó đã được kiểm tra trực quan.
 
 ## Cập nhật ký hiệu route — 06/10/2026
 

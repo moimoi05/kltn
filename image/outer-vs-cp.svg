@@ -1,55 +1,71 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="160mm" height="115.006mm" viewBox="0 0 453.5433 326">
 <rect width="100%" height="100%" fill="white"/>
-<text x="112" y="15.4" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="middle" fill="#263B4D">FULL OUTER PRODUCT</text>
-<text x="342" y="15.4" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="middle" fill="#263B4D">CP-FACTORIZED WEIGHTS</text>
-<polyline points="227,30 227,257" fill="none" stroke="#B4BEC7" stroke-width="1.1" stroke-linejoin="round" stroke-dasharray="4 3"/>
-<rect x="14" y="37" width="57" height="34" rx="4" fill="#E7F0FA" stroke="#567DA3" stroke-width="1"/>
-<text x="42.5" y="51.5" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="middle" fill="#263B4D">x</text>
-<text x="42.5" y="63.9" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#263B4D">dₓ</text>
-<rect x="150" y="37" width="57" height="34" rx="4" fill="#EAF3E9" stroke="#638560" stroke-width="1"/>
-<text x="178.5" y="51.5" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="middle" fill="#263B4D">y</text>
-<text x="178.5" y="63.9" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#263B4D">dᵧ</text>
-<rect x="56" y="99" width="112" height="37" rx="4" fill="#FAE9ED" stroke="#A87984" stroke-width="1"/>
-<text x="112.0" y="115.0" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="middle" fill="#263B4D">x ⊗ y</text>
-<text x="112.0" y="127.4" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#263B4D">dₓ × dᵧ</text>
-<polyline points="42,71 42,118 56,118" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
-<polygon points="56,118 51.0,115.5 51.0,120.5" fill="#5C6B79"/>
-<polyline points="178,71 178,118 168,118" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
-<polygon points="168,118 173.0,120.5 173.0,115.5" fill="#5C6B79"/>
-<rect x="31" y="157" width="161" height="36" rx="4" fill="#FAE9ED" stroke="#A87984" stroke-width="1"/>
-<text x="111.5" y="172.5" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="middle" fill="#263B4D">Flatten + Linear</text>
-<text x="111.5" y="184.9" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#263B4D">dₓdᵧ → H</text>
-<polyline points="112,136 112,157" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
-<polygon points="112,157 114.5,152.0 109.5,152.0" fill="#5C6B79"/>
-<rect x="32" y="214" width="159" height="42" rx="4" fill="#EEEAF6" stroke="#86759D" stroke-width="1"/>
-<text x="111.5" y="232.625" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="700" text-anchor="middle" fill="#263B4D">Post-MLP (giữ nguyên)</text>
-<text x="111.5" y="244.405" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#263B4D">GELU · dropout · Linear · LN</text>
-<polyline points="112,193 112,214" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
-<polygon points="112,214 114.5,209.0 109.5,209.0" fill="#5C6B79"/>
-<rect x="245" y="37" width="70" height="34" rx="4" fill="#E7F0FA" stroke="#567DA3" stroke-width="1"/>
-<text x="280.0" y="51.5" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="middle" fill="#263B4D">x → Aᵀx</text>
-<text x="280.0" y="63.9" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#263B4D">Q</text>
-<rect x="370" y="37" width="70" height="34" rx="4" fill="#EAF3E9" stroke="#638560" stroke-width="1"/>
-<text x="405.0" y="51.5" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="middle" fill="#263B4D">y → Bᵀy</text>
-<text x="405.0" y="63.9" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#263B4D">Q</text>
-<rect x="294" y="99" width="98" height="37" rx="4" fill="#FAE9ED" stroke="#A87984" stroke-width="1"/>
-<text x="343.0" y="115.0" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="middle" fill="#263B4D">q = u ⊙ v</text>
-<text x="343.0" y="127.4" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#263B4D">Q</text>
-<polyline points="280,71 280,118 294,118" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
-<polygon points="294,118 289.0,115.5 289.0,120.5" fill="#5C6B79"/>
-<polyline points="405,71 405,118 392,118" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
-<polygon points="392,118 397.0,120.5 397.0,115.5" fill="#5C6B79"/>
-<rect x="263" y="157" width="161" height="36" rx="4" fill="#FAE9ED" stroke="#A87984" stroke-width="1"/>
-<text x="343.5" y="172.5" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="middle" fill="#263B4D">h = Oq + b</text>
-<text x="343.5" y="184.9" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#263B4D">Q → H</text>
-<polyline points="343,136 343,157" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
-<polygon points="343,157 345.5,152.0 340.5,152.0" fill="#5C6B79"/>
-<rect x="264" y="214" width="159" height="42" rx="4" fill="#EEEAF6" stroke="#86759D" stroke-width="1"/>
-<text x="343.5" y="232.625" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="700" text-anchor="middle" fill="#263B4D">Post-MLP (giữ nguyên)</text>
-<text x="343.5" y="244.405" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#263B4D">GELU · dropout · Linear · LN</text>
-<polyline points="343,193 343,214" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
-<polygon points="343,214 345.5,209.0 340.5,209.0" fill="#5C6B79"/>
-<text x="227" y="280.4" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#263B4D">W ∈ ℝ^(H × dₓ × dᵧ) ≈ Σ o_q ⊗ a_q ⊗ b_q</text>
-<text x="227" y="298.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#263B4D">MR: 32 × 32, Q=8   |   MC: 32 × 16, Q=8   |   RC: 32 × 16, Q=4</text>
-<text x="227" y="316.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="700" text-anchor="middle" fill="#263B4D">Thay tensor trọng số W; không phân rã MRI hay dữ liệu bệnh nhân.</text>
+<text x="227" y="15.82" font-family="Arial, DejaVu Sans, sans-serif" font-size="10.5" font-weight="700" text-anchor="middle" fill="#000000">PHÂN RÃ CP CỦA TENSOR TRỌNG SỐ W</text>
+<text x="227" y="26.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#000000">Mỗi W_q = o_q ⊗ a_q ⊗ b_q là một tensor hạng 1</text>
+<polygon points="20,41 30,31 87,31 77,41" fill="#FCF1F4" stroke="#A87984" stroke-width="1"/>
+<polygon points="77,41 87,31 87,76 77,86" fill="#E8D0D6" stroke="#A87984" stroke-width="1"/>
+<polygon points="20,41 77,41 77,86 20,86" fill="#FAE9ED" stroke="#A87984" stroke-width="1"/>
+<text x="48.5" y="67.94" font-family="Arial, DejaVu Sans, sans-serif" font-size="12" font-weight="700" text-anchor="middle" fill="#000000">W</text>
+<polygon points="132,41 142,31 202,31 192,41" fill="#F4F2F9" stroke="#86759D" stroke-width="1"/>
+<polygon points="192,41 202,31 202,76 192,86" fill="#D7D0E2" stroke="#86759D" stroke-width="1"/>
+<polygon points="132,41 192,41 192,86 132,86" fill="#EEEAF6" stroke="#86759D" stroke-width="1"/>
+<text x="162.0" y="67.94" font-family="Arial, DejaVu Sans, sans-serif" font-size="12" font-weight="700" text-anchor="middle" fill="#000000">W₁</text>
+<polygon points="243,41 253,31 313,31 303,41" fill="#F4F2F9" stroke="#86759D" stroke-width="1"/>
+<polygon points="303,41 313,31 313,76 303,86" fill="#D7D0E2" stroke="#86759D" stroke-width="1"/>
+<polygon points="243,41 303,41 303,86 243,86" fill="#EEEAF6" stroke="#86759D" stroke-width="1"/>
+<text x="273.0" y="67.94" font-family="Arial, DejaVu Sans, sans-serif" font-size="12" font-weight="700" text-anchor="middle" fill="#000000">W₂</text>
+<polygon points="371,41 381,31 437,31 427,41" fill="#F4F2F9" stroke="#86759D" stroke-width="1"/>
+<polygon points="427,41 437,31 437,76 427,86" fill="#D7D0E2" stroke="#86759D" stroke-width="1"/>
+<polygon points="371,41 427,41 427,86 371,86" fill="#EEEAF6" stroke="#86759D" stroke-width="1"/>
+<text x="399.0" y="67.94" font-family="Arial, DejaVu Sans, sans-serif" font-size="12" font-weight="700" text-anchor="middle" fill="#000000">W_Q</text>
+<text x="107" y="60.6" font-family="Arial, DejaVu Sans, sans-serif" font-size="15" font-weight="400" text-anchor="middle" fill="#000000">≈</text>
+<text x="222" y="60.6" font-family="Arial, DejaVu Sans, sans-serif" font-size="15" font-weight="400" text-anchor="middle" fill="#000000">+</text>
+<text x="328" y="59.76" font-family="Arial, DejaVu Sans, sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#000000">+</text>
+<text x="344" y="59.76" font-family="Arial, DejaVu Sans, sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#000000">…</text>
+<text x="359" y="58.08" font-family="Arial, DejaVu Sans, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#000000">+</text>
+<text x="53" y="101.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#000000">H × dₓ × dᵧ</text>
+<text x="167" y="101.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#000000">o₁ ⊗ a₁ ⊗ b₁</text>
+<text x="278" y="101.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#000000">o₂ ⊗ a₂ ⊗ b₂</text>
+<text x="404" y="101.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#000000">o_Q ⊗ a_Q ⊗ b_Q</text>
+<rect x="15" y="115" width="131" height="29" rx="4" fill="#E7F0FA" stroke="#567DA3" stroke-width="1"/>
+<text x="80.5" y="133.2" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="middle" fill="#000000">A: dₓ × Q</text>
+<rect x="161" y="115" width="131" height="29" rx="4" fill="#EAF3E9" stroke="#638560" stroke-width="1"/>
+<text x="226.5" y="133.2" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="middle" fill="#000000">B: dᵧ × Q</text>
+<rect x="307" y="115" width="131" height="29" rx="4" fill="#EEEAF6" stroke="#86759D" stroke-width="1"/>
+<text x="372.5" y="133.2" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="middle" fill="#000000">O: H × Q</text>
+<text x="112" y="166.4" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="middle" fill="#000000">FULL OUTER PRODUCT</text>
+<text x="342" y="166.4" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="middle" fill="#000000">CP-FACTORIZED WEIGHTS</text>
+<polyline points="227,157 227,285" fill="none" stroke="#B4BEC7" stroke-width="1.1" stroke-linejoin="round" stroke-dasharray="4 3"/>
+<rect x="15" y="177" width="83" height="28" rx="4" fill="#E7F0FA" stroke="#567DA3" stroke-width="1"/>
+<text x="56.5" y="194.70000000000002" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="middle" fill="#000000">x: dₓ</text>
+<rect x="132" y="177" width="83" height="28" rx="4" fill="#EAF3E9" stroke="#638560" stroke-width="1"/>
+<text x="173.5" y="194.70000000000002" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="middle" fill="#000000">y: dᵧ</text>
+<polyline points="56,205 56,212 112,212 112,219" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="112,219 114.5,214.0 109.5,214.0" fill="#5C6B79"/>
+<polyline points="174,205 174,212 112,212" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
+<rect x="15" y="219" width="200" height="33" rx="4" fill="#FAE9ED" stroke="#A87984" stroke-width="1"/>
+<text x="115.0" y="233.125" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="700" text-anchor="middle" fill="#000000">x ⊗ y → Flatten + Linear</text>
+<text x="115.0" y="244.905" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#000000">dₓdᵧ → H (gồm bias b)</text>
+<rect x="15" y="259" width="200" height="33" rx="4" fill="#EEEAF6" stroke="#86759D" stroke-width="1"/>
+<text x="115.0" y="273.12500000000006" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="700" text-anchor="middle" fill="#000000">Post-MLP (giữ nguyên)</text>
+<text x="115.0" y="284.90500000000003" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#000000">GELU · dropout · Linear · LN</text>
+<polyline points="112,252 112,259" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="112,259 114.5,254.0 109.5,254.0" fill="#5C6B79"/>
+<rect x="244" y="177" width="91" height="28" rx="4" fill="#E7F0FA" stroke="#567DA3" stroke-width="1"/>
+<text x="289.5" y="194.51500000000001" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="700" text-anchor="middle" fill="#000000">u = Aᵀx: Q</text>
+<rect x="347" y="177" width="91" height="28" rx="4" fill="#EAF3E9" stroke="#638560" stroke-width="1"/>
+<text x="392.5" y="194.51500000000001" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="700" text-anchor="middle" fill="#000000">v = Bᵀy: Q</text>
+<polyline points="289,205 289,212 342,212 342,219" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="342,219 344.5,214.0 339.5,214.0" fill="#5C6B79"/>
+<polyline points="393,205 393,212 342,212" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
+<rect x="244" y="219" width="194" height="33" rx="4" fill="#FAE9ED" stroke="#A87984" stroke-width="1"/>
+<text x="341.0" y="233.125" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="700" text-anchor="middle" fill="#000000">h = O(u ⊙ v) + b</text>
+<text x="341.0" y="244.905" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#000000">Q → H</text>
+<rect x="244" y="259" width="194" height="33" rx="4" fill="#EEEAF6" stroke="#86759D" stroke-width="1"/>
+<text x="341.0" y="273.12500000000006" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="700" text-anchor="middle" fill="#000000">Post-MLP (giữ nguyên)</text>
+<text x="341.0" y="284.90500000000003" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#000000">GELU · dropout · Linear · LN</text>
+<polyline points="342,252 342,259" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="342,259 344.5,254.0 339.5,254.0" fill="#5C6B79"/>
+<text x="227" y="305.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#000000">MR: 32 × 32, Q=8   |   MC: 32 × 16, Q=8   |   RC: 32 × 16, Q=4</text>
+<text x="227" y="320.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="700" text-anchor="middle" fill="#000000">Phân rã trọng số W; không phân rã MRI hay dữ liệu bệnh nhân.</text>
 </svg>

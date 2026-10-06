@@ -1,24 +1,24 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="160mm" height="118.886mm" viewBox="0 0 453.5433 337">
 <rect width="100%" height="100%" fill="white"/>
-<text x="227" y="15.82" font-family="Arial, DejaVu Sans, sans-serif" font-size="10.5" font-weight="700" text-anchor="middle" fill="#263B4D">Full reference: 3 pair blocks, 6 directed routes</text>
+<text x="227" y="15.82" font-family="Arial, DejaVu Sans, sans-serif" font-size="10.5" font-weight="700" text-anchor="middle" fill="#000000">Full reference: 3 pair blocks, 6 directed routes</text>
 <rect x="188" y="36" width="78" height="42" rx="4" fill="#E7F0FA" stroke="#567DA3" stroke-width="1"/>
-<text x="227.0" y="54.5" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="middle" fill="#263B4D">M</text>
-<text x="227.0" y="66.9" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#263B4D">128</text>
+<text x="227.0" y="54.5" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="middle" fill="#000000">M</text>
+<text x="227.0" y="66.9" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#000000">128</text>
 <rect x="55" y="106" width="90" height="42" rx="4" fill="#FAE9ED" stroke="#A87984" stroke-width="1"/>
-<text x="100.0" y="124.5" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="middle" fill="#263B4D">MR</text>
-<text x="100.0" y="136.9" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#263B4D">M × R</text>
+<text x="100.0" y="124.5" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="middle" fill="#000000">MR</text>
+<text x="100.0" y="136.9" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#000000">M × R</text>
 <rect x="309" y="106" width="90" height="42" rx="4" fill="#FAE9ED" stroke="#A87984" stroke-width="1"/>
-<text x="354.0" y="124.5" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="middle" fill="#263B4D">MC</text>
-<text x="354.0" y="136.9" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#263B4D">M × C</text>
+<text x="354.0" y="124.5" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="middle" fill="#000000">MC</text>
+<text x="354.0" y="136.9" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#000000">M × C</text>
 <rect x="61" y="203" width="78" height="42" rx="4" fill="#EAF3E9" stroke="#638560" stroke-width="1"/>
-<text x="100.0" y="221.5" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="middle" fill="#263B4D">R</text>
-<text x="100.0" y="233.9" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#263B4D">64</text>
+<text x="100.0" y="221.5" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="middle" fill="#000000">R</text>
+<text x="100.0" y="233.9" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#000000">64</text>
 <rect x="315" y="203" width="78" height="42" rx="4" fill="#FBF0E3" stroke="#A27D51" stroke-width="1"/>
-<text x="354.0" y="221.5" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="middle" fill="#263B4D">C</text>
-<text x="354.0" y="233.9" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#263B4D">64</text>
+<text x="354.0" y="221.5" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="middle" fill="#000000">C</text>
+<text x="354.0" y="233.9" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#000000">64</text>
 <rect x="182" y="270" width="90" height="42" rx="4" fill="#FAE9ED" stroke="#A87984" stroke-width="1"/>
-<text x="227.0" y="288.5" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="middle" fill="#263B4D">RC</text>
-<text x="227.0" y="300.9" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#263B4D">R × C</text>
+<text x="227.0" y="288.5" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="middle" fill="#000000">RC</text>
+<text x="227.0" y="300.9" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#000000">R × C</text>
 <polyline points="145,112 188,65" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
 <polygon points="188,65 182.78041915956584,67.0014934049785 186.46944621972233,70.37656071533445" fill="#5C6B79"/>
 <polyline points="309,112 266,65" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
@@ -31,14 +31,14 @@
 <polygon points="139,238 141.02405782748932,243.210872279281 144.3831325199184,239.50727710557717" fill="#5C6B79"/>
 <polyline points="272,277 315,238" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
 <polygon points="315,238 309.6168674800816,239.50727710557717 312.9759421725107,243.210872279281" fill="#5C6B79"/>
-<text x="115" y="72.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#263B4D">(MR → M)</text>
-<text x="340" y="72.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#263B4D">(MC → M)</text>
-<text x="87" y="175.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="end" fill="#263B4D">(MR → R)</text>
-<text x="367" y="175.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="start" fill="#263B4D">(MC → C)</text>
-<text x="121" y="286.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="end" fill="#263B4D">(RC → R)</text>
-<text x="335" y="286.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="start" fill="#263B4D">(RC → C)</text>
-<text x="227" y="177.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#263B4D">M/R/C là identity paths.</text>
-<text x="227" y="189.76" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#263B4D">Mỗi arrow là đóng góp</text>
-<text x="227" y="201.54" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#263B4D">projected × gate × λ.</text>
-<text x="227" y="329.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#263B4D">Pair features được xây dựng từ low projections của hai modality tương ứng.</text>
+<text x="115" y="72.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#000000">(MR → M)</text>
+<text x="340" y="72.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#000000">(MC → M)</text>
+<text x="87" y="175.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="end" fill="#000000">(MR → R)</text>
+<text x="367" y="175.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="start" fill="#000000">(MC → C)</text>
+<text x="121" y="286.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="end" fill="#000000">(RC → R)</text>
+<text x="335" y="286.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="start" fill="#000000">(RC → C)</text>
+<text x="227" y="177.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#000000">M/R/C là identity paths.</text>
+<text x="227" y="189.76" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#000000">Mỗi arrow là đóng góp</text>
+<text x="227" y="201.54" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#000000">projected × gate × λ.</text>
+<text x="227" y="329.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#000000">Pair features được xây dựng từ low projections của hai modality tương ứng.</text>
 </svg>

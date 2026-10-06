@@ -1,328 +1,38 @@
-"""Native draw.io first, then PDF/SVG from the same 160-mm scene.
-ReportLab is the fallback when draw.io desktop CLI is absent.
-Charts read the separately audited results_data.json only.
+"""Thesis figure declarations; charts use the separately audited results_data.json.
+
+Shared fonts and vector rendering live in scene_renderer.py. Native draw.io is
+saved first; PDF/SVG use the same scene when the desktop CLI is unavailable.
 """
 from __future__ import annotations
 
 import argparse
-import html
 import json
 import math
-import os
-from pathlib import Path
-import sys
-import xml.etree.ElementTree as ET
-from reportlab.pdfgen import canvas
-from reportlab.pdfbase import pdfmetrics
-from reportlab.pdfbase.ttfonts import TTFont
-from reportlab.lib.colors import HexColor
-ROOT = Path(__file__).resolve().parents[1]
-OUT = ROOT / "image"
-SRC = ROOT / "figures_source"
-WIDTH = 453.5433  # 160 mm
-INK = "#263B4D"
-LINE = "#5C6B79"
-COLORS = {
-    "m": ("#E7F0FA", "#567DA3"),
-    "r": ("#EAF3E9", "#638560"),
-    "c": ("#FBF0E3", "#A27D51"),
-    "pair": ("#FAE9ED", "#A87984"),
-    "fusion": ("#EEEAF6", "#86759D"),
-    "time": ("#E8F3F8", "#6590A5"),
-    "out": ("#EEF0F2", "#77838F"),
-    "white": ("#FFFFFF", "#A2ADB7"),
-}
-PROVENANCE: dict[str, dict] = {}
-def register_fonts():
-    windows = Path(os.environ.get("WINDIR", "C:/Windows")) / "Fonts"
-    candidates = [(windows / "arial.ttf", windows / "arialbd.ttf")]
-    packaged_fonts = ROOT.parent / "thesis_revision_work" / "python_packages" / "matplotlib" / "mpl-data" / "fonts" / "ttf"
-    candidates.append((packaged_fonts / "DejaVuSans.ttf", packaged_fonts / "DejaVuSans-Bold.ttf"))
-    try:
-        import matplotlib
-        fontdir = Path(matplotlib.get_data_path()) / "fonts" / "ttf"
-        candidates.append((fontdir / "DejaVuSans.ttf", fontdir / "DejaVuSans-Bold.ttf"))
-    except ImportError:
-        pass
-    found = [(regular, bold) for regular, bold in candidates if regular.exists() and bold.exists()]
-    for regular, bold in found:
-        if regular.exists() and bold.exists():
-            pdfmetrics.registerFont(TTFont("ThesisSans", str(regular)))
-            pdfmetrics.registerFont(TTFont("ThesisSansBold", str(bold)))
-            fallback = next(((a, b) for a, b in found if "DejaVu" in a.name), (regular, bold))
-            pdfmetrics.registerFont(TTFont("ThesisSymbols", str(fallback[0])))
-            pdfmetrics.registerFont(TTFont("ThesisSymbolsBold", str(fallback[1])))
-            return
-    raise RuntimeError("Arial or DejaVu Sans font files are required for Vietnamese labels.")
 
-
-def font_runs(text, bold=False):
-    base = "ThesisSansBold" if bold else "ThesisSans"
-    fallback = "ThesisSymbolsBold" if bold else "ThesisSymbols"
-    supported = pdfmetrics.getFont(base).face.charToGlyph
-    runs = []
-    for char in text:
-        font = base if ord(char) in supported else fallback
-        if ord(char) not in pdfmetrics.getFont(font).face.charToGlyph:
-            raise ValueError(f"Missing font glyph: {char!r} U+{ord(char):04X}")
-        if runs and runs[-1][0] == font:
-            runs[-1] = (font, runs[-1][1] + char)
-        else:
-            runs.append((font, char))
-    return runs
-
-
-def text_width(text, size, bold=False):
-    return sum(pdfmetrics.stringWidth(chunk, font, size) for font, chunk in font_runs(text, bold))
-
-
-class Scene:
-    def __init__(self, name, height, sources=(), corrections=()):
-        self.name, self.width, self.height = name, WIDTH, height
-        self.items = []
-        self.sources = list(sources)
-        self.corrections = list(corrections)
-        self.text_checks = []
-
-    def text(self, x, y, text, size=10, bold=False, align="left", width=None, color=INK):
-        item = {"kind": "text", "x": x, "y": y, "text": text, "size": size,
-                "bold": bold, "align": align, "width": width, "color": color}
-        self.items.append(item)
-        for line in text.split("\n"):
-            actual = text_width(line, size, bold)
-            if width and actual > width + .2:
-                self.text_checks.append(f"{self.name}: text exceeds width by {actual-width:.1f}: {line}")
-        return item
-
-    def box(self, x, y, w, h, text, color="out", size=10, bold_first=True, dashed=False):
-        fill, stroke = COLORS[color]
-        item = {"kind": "box", "x": x, "y": y, "w": w, "h": h, "text": text,
-                "fill": fill, "stroke": stroke, "size": size, "bold_first": bold_first,
-                "dashed": dashed, "id": f"n{len(self.items)+1}"}
-        self.items.append(item)
-        lines = text.split("\n") if text else []
-        if len(lines) * size * 1.24 > h - 8:
-            self.text_checks.append(f"{self.name}: text exceeds box height: {text}")
-        for i, line in enumerate(lines):
-            actual = text_width(line, size, bold_first and i == 0)
-            if actual > w - 10:
-                self.text_checks.append(f"{self.name}: box text exceeds by {actual-w+10:.1f}: {line}")
-        return item
-
-    def circle(self, x, y, r, text="", color="fusion", size=12):
-        fill, stroke = COLORS[color]
-        item = {"kind": "circle", "x": x, "y": y, "r": r, "text": text,
-                "fill": fill, "stroke": stroke, "size": size, "id": f"n{len(self.items)+1}"}
-        self.items.append(item)
-        return item
-
-    def bar(self, x, y, w, h, color="fusion"):
-        item = self.box(x, y, w, h, "", color, 9.5)
-        item["radius"] = 0
-        return item
-
-    def path(self, points, arrow=True, color=LINE, dashed=False, start_arrow=False, width=1.1):
-        item = {"kind": "path", "points": points, "arrow": arrow,
-                "color": color, "dashed": dashed, "start_arrow": start_arrow, "width": width}
-        self.items.append(item)
-        return item
-
-    def line(self, x1, y1, x2, y2, **kwargs):
-        return self.path([(x1, y1), (x2, y2)], **kwargs)
-
-    def save_drawio(self):
-        mxfile = ET.Element("mxfile", {"host": "app.diagrams.net", "agent": "Codex",
-                                      "version": "native-xml"})
-        diagram = ET.SubElement(mxfile, "diagram", {"id": self.name, "name": self.name})
-        model = ET.SubElement(diagram, "mxGraphModel", {
-            "grid": "0", "page": "1", "pageScale": "1", "pageWidth": str(self.width),
-            "pageHeight": str(self.height), "background": "#FFFFFF", "math": "0"})
-        root = ET.SubElement(model, "root")
-        ET.SubElement(root, "mxCell", {"id": "0"})
-        ET.SubElement(root, "mxCell", {"id": "1", "parent": "0"})
-        for index, item in enumerate(self.items):
-            kind = item["kind"]
-            attrs = {"id": item.get("id", f"i{index}"), "parent": "1"}
-            base = f"html=1;fontFamily=Arial;fontColor={INK};whiteSpace=wrap;"
-            if kind == "path":
-                attrs.update(edge="1", value="", style=(
-                    base + "edgeStyle=none;rounded=0;" +
-                    f"endArrow={'block' if item['arrow'] else 'none'};endFill=1;endSize=5;" +
-                    f"startArrow={'block' if item['start_arrow'] else 'none'};startFill=1;startSize=5;" +
-                    f"strokeColor={item['color']};strokeWidth={item['width']};" +
-                    ("dashed=1;dashPattern=4 3;" if item["dashed"] else "")))
-                cell = ET.SubElement(root, "mxCell", attrs)
-                geom = ET.SubElement(cell, "mxGeometry", {"relative": "1", "as": "geometry"})
-                for point, role in [(item["points"][0], "sourcePoint"), (item["points"][-1], "targetPoint")]:
-                    ET.SubElement(geom, "mxPoint", {"x": str(point[0]), "y": str(point[1]), "as": role})
-                if len(item["points"]) > 2:
-                    arr = ET.SubElement(geom, "Array", {"as": "points"})
-                    for point in item["points"][1:-1]:
-                        ET.SubElement(arr, "mxPoint", {"x": str(point[0]), "y": str(point[1])})
-                continue
-            if kind == "box":
-                lines = item["text"].split("\n")
-                label = "<br>".join(("<b>" + html.escape(line) + "</b>") if i == 0 and item["bold_first"]
-                                     else html.escape(line) for i, line in enumerate(lines))
-                attrs.update(vertex="1", value=label, style=(base +
-                    f"rounded={0 if item.get('radius') == 0 else 1};arcSize=8;fillColor={item['fill']};strokeColor={item['stroke']};" +
-                    f"strokeWidth=1;fontSize={item['size']};spacing=5;" +
-                    ("dashed=1;" if item["dashed"] else "")))
-                x, y, w, h = item["x"], item["y"], item["w"], item["h"]
-            elif kind == "circle":
-                attrs.update(vertex="1", value=html.escape(item["text"]), style=(base +
-                    f"ellipse;fillColor={item['fill']};strokeColor={item['stroke']};" +
-                    f"strokeWidth=1;fontSize={item['size']};"))
-                x, y = item["x"] - item["r"], item["y"] - item["r"]
-                w = h = item["r"] * 2
-            else:
-                attrs.update(vertex="1", value=html.escape(item["text"]).replace("\n", "<br>"), style=(base +
-                    f"text;strokeColor=none;fillColor=none;fontSize={item['size']};" +
-                    f"fontStyle={1 if item['bold'] else 0};align={item['align']};verticalAlign=top;spacing=0;"))
-                w = item["width"] or max(text_width(line, item["size"], item["bold"])
-                    for line in item["text"].split("\n")) + 2
-                x = item["x"] - (w / 2 if item["align"] == "center" else w if item["align"] == "right" else 0)
-                y, h = item["y"], len(item["text"].split("\n")) * item["size"] * 1.24
-            cell = ET.SubElement(root, "mxCell", attrs)
-            ET.SubElement(cell, "mxGeometry", {"x": str(x), "y": str(y), "width": str(w),
-                                                "height": str(h), "as": "geometry"})
-        ET.indent(mxfile, space="  ")
-        ET.ElementTree(mxfile).write(SRC / f"{self.name}.drawio", encoding="utf-8", xml_declaration=True)
-
-    def save_pdf(self):
-        pdf = canvas.Canvas(str(OUT / f"{self.name}.pdf"), pagesize=(self.width, self.height))
-        pdf.setTitle(self.name.replace("-", " "))
-        pdf.setAuthor("Nguyen Phuong Nam")
-        pdf.setFillColor(HexColor("#FFFFFF"))
-        pdf.rect(0, 0, self.width, self.height, stroke=0, fill=1)
-        for item in self.items:
-            kind = item["kind"]
-            if kind in ("box", "circle"):
-                pdf.setFillColor(HexColor(item["fill"]))
-                pdf.setStrokeColor(HexColor(item["stroke"]))
-                pdf.setLineWidth(1)
-                pdf.setDash([4, 3] if item.get("dashed") else [])
-                if kind == "box":
-                    pdf.roundRect(item["x"], self.height-item["y"]-item["h"], item["w"], item["h"], item.get("radius", 4), fill=1)
-                    self._pdf_label(pdf, item)
-                else:
-                    pdf.circle(item["x"], self.height-item["y"], item["r"], fill=1)
-                    self._pdf_text(pdf, item["x"], item["y"]-item["size"]*.5,
-                                   item["text"], item["size"], False, "center", INK)
-            elif kind == "text":
-                self._pdf_text(pdf, item["x"], item["y"], item["text"], item["size"],
-                               item["bold"], item["align"], item["color"])
-            else:
-                pdf.setStrokeColor(HexColor(item["color"]))
-                pdf.setLineWidth(item["width"])
-                pdf.setDash([4, 3] if item["dashed"] else [])
-                path = pdf.beginPath()
-                path.moveTo(item["points"][0][0], self.height-item["points"][0][1])
-                for x, y in item["points"][1:]:
-                    path.lineTo(x, self.height-y)
-                pdf.drawPath(path)
-                if item["arrow"]:
-                    self._pdf_arrow(pdf, item["points"][-2], item["points"][-1], item["color"])
-                if item["start_arrow"]:
-                    self._pdf_arrow(pdf, item["points"][1], item["points"][0], item["color"])
-        pdf.showPage()
-        pdf.save()
-
-    def _pdf_text(self, pdf, x, y, text, size, bold, align, color):
-        pdf.setFillColor(HexColor(color))
-        for i, line in enumerate(text.split("\n")):
-            line_width = text_width(line, size, bold)
-            left = x-line_width/2 if align == "center" else x-line_width if align == "right" else x
-            for font, chunk in font_runs(line, bold):
-                pdf.setFont(font, size)
-                pdf.drawString(left, self.height-y-size*.84-i*size*1.24, chunk)
-                left += pdfmetrics.stringWidth(chunk, font, size)
-
-    def _pdf_label(self, pdf, item):
-        lines = item["text"].split("\n")
-        top = item["y"] + (item["h"]-len(lines)*item["size"]*1.24)/2 + item["size"]*.15
-        for i, line in enumerate(lines):
-            self._pdf_text(pdf, item["x"]+item["w"]/2, top+i*item["size"]*1.24,
-                           line, item["size"], item["bold_first"] and i == 0, "center", INK)
-
-    def _pdf_arrow(self, pdf, previous, tip, color):
-        points = arrow_points(previous, tip)
-        pdf.setFillColor(HexColor(color))
-        path = pdf.beginPath()
-        path.moveTo(points[0][0], self.height-points[0][1])
-        for x, y in points[1:]:
-            path.lineTo(x, self.height-y)
-        path.close()
-        pdf.drawPath(path, stroke=0, fill=1)
-
-    def save_svg(self):
-        svg = [f'<svg xmlns="http://www.w3.org/2000/svg" width="160mm" height="{self.height/2.8346457:.3f}mm" viewBox="0 0 {self.width} {self.height}">',
-               '<rect width="100%" height="100%" fill="white"/>']
-        def text(x, y, label, size, bold=False, align="left", color=INK):
-            anchor = "middle" if align == "center" else "end" if align == "right" else "start"
-            for i, line in enumerate(label.split("\n")):
-                svg.append(f'<text x="{x}" y="{y+size*.84+i*size*1.24}" font-family="Arial, DejaVu Sans, sans-serif" font-size="{size}" font-weight="{700 if bold else 400}" text-anchor="{anchor}" fill="{color}">{html.escape(line)}</text>')
-        for item in self.items:
-            kind = item["kind"]
-            dash = ' stroke-dasharray="4 3"' if item.get("dashed") else ""
-            if kind == "box":
-                svg.append(f'<rect x="{item["x"]}" y="{item["y"]}" width="{item["w"]}" height="{item["h"]}" rx="{item.get("radius", 4)}" fill="{item["fill"]}" stroke="{item["stroke"]}" stroke-width="1"{dash}/>')
-                lines = item["text"].split("\n")
-                top = item["y"]+(item["h"]-len(lines)*item["size"]*1.24)/2+item["size"]*.15
-                for i, label in enumerate(lines):
-                    text(item["x"]+item["w"]/2, top+i*item["size"]*1.24, label,
-                         item["size"], item["bold_first"] and i == 0, "center")
-            elif kind == "circle":
-                svg.append(f'<circle cx="{item["x"]}" cy="{item["y"]}" r="{item["r"]}" fill="{item["fill"]}" stroke="{item["stroke"]}" stroke-width="1"/>')
-                text(item["x"], item["y"]-item["size"]*.5, item["text"], item["size"], align="center")
-            elif kind == "text":
-                text(item["x"], item["y"], item["text"], item["size"], item["bold"], item["align"], item["color"])
-            else:
-                pts = " ".join(f"{x},{y}" for x, y in item["points"])
-                svg.append(f'<polyline points="{pts}" fill="none" stroke="{item["color"]}" stroke-width="{item["width"]}" stroke-linejoin="round"{dash}/>')
-                for previous, tip, enabled in [(item["points"][-2], item["points"][-1], item["arrow"]),
-                                               (item["points"][1], item["points"][0], item["start_arrow"])]:
-                    if enabled:
-                        pts = " ".join(f"{x},{y}" for x, y in arrow_points(previous, tip))
-                        svg.append(f'<polygon points="{pts}" fill="{item["color"]}"/>')
-        svg.append("</svg>")
-        (OUT / f"{self.name}.svg").write_text("\n".join(svg), encoding="utf-8")
-
-    def save(self):
-        if self.text_checks:
-            raise ValueError("\n".join(self.text_checks))
-        self.save_drawio()  # Native editable source is deliberately authored first.
-        self.save_pdf()
-        self.save_svg()
-        PROVENANCE[self.name] = {
-            "outputs": [f"image/{self.name}.pdf", f"image/{self.name}.svg"],
-            "editable_source": f"figures_source/{self.name}.drawio",
-            "based_on": self.sources,
-            "changes": self.corrections + ["Redrawn as native draw.io; unified vector style and physical font sizes."],
-            "rendering": "ReportLab/SVG fallback from the same scene; draw.io desktop CLI unavailable.",
-            "width_mm": 160, "minimum_font_pt": min([item.get("size", 10) for item in self.items]),
-        }
-        print(f"Created {self.name}: {self.width:.1f} x {self.height:.1f} pt")
-
-
-def arrow_points(previous, tip):
-    dx, dy = tip[0]-previous[0], tip[1]-previous[1]
-    norm = math.hypot(dx, dy) or 1
-    dx, dy = dx/norm, dy/norm
-    return [tip, (tip[0]-5*dx+2.5*dy, tip[1]-5*dy-2.5*dx),
-            (tip[0]-5*dx-2.5*dy, tip[1]-5*dy+2.5*dx)]
-
+if __package__:
+    from .scene_renderer import (
+        COLORS, INK, LINE, OUT, PROVENANCE, ROOT, SRC, WIDTH, Scene,
+        arrow_points, cuboid_faces, cuboid_front, cuboid_stencil,
+        font_runs, mix_color, register_fonts, text_width,
+    )
+else:
+    from scene_renderer import (
+        COLORS, INK, LINE, OUT, PROVENANCE, ROOT, SRC, WIDTH, Scene,
+        arrow_points, cuboid_faces, cuboid_front, cuboid_stencil,
+        font_runs, mix_color, register_fonts, text_width,
+    )
 
 def timeline():
     s = Scene("mci-progression-timeline", 314,
         ["D:/KLTN/metadata/scripts/pipeline_common.py", "D:/KLTN/metadata/scripts/05_create_survival_labels.py",
          "D:/KLTN/week12/thesis_phase_evolution_bundle_20261005_final.zip"],
         ["Separate third-MRI prediction origin p from the 18-month eligibility landmark L.",
-         "Show conditional eligibility through L and score-defined post-L outcomes; retain ±90-day clinical matching limitation."])
+         "Show conditional eligibility through L and score-defined post-L outcomes; retain ±90-day clinical matching limitation.",
+         "Draw the three volumetric MRI observations as 3D cuboids; tabular R/C remain labels."])
     s.text(18, 9, "Chọn 3 MRI trong cửa sổ 18 tháng: baseline ≤ s₁ < s₂ < s₃ ≤ L", 10, bold=True)
-    for x, label in [(70, "Visit 1\ns₁"), (160, "Visit 2\ns₂"), (250, "Visit 3\ns₃ = p")]:
-        s.box(x-39, 40, 78, 43, label, "time", 10)
-        s.text(x, 91, "MRI + R + C", 9.5, align="center")
+    for x, label in [(70, "T1 MRI\nVisit 1: s₁"), (160, "T1 MRI\nVisit 2: s₂"), (250, "T1 MRI\nVisit 3: p")]:
+        s.cuboid(x-39, 40, 78, 43, label, "m", 9.5, depth=7)
+        s.text(x, 91, "+ R + C", 9.5, align="center")
         s.line(x, 108, x, 130)
     s.line(18, 135, 437, 135)
     s.line(25, 128, 25, 143, arrow=False)
@@ -388,17 +98,19 @@ def preprocessing():
         ["D:/KLTN/ARCHITECTURE_AUDIT_20260919.md", "D:/KLTN/phase_05b_pairwise_medicalnet_source.zip",
          "D:/KLTN/pileline.drawio"],
         ["Correct radiomics to 16 PCA inputs and clinical to nine values plus nine observedness masks.",
-         "Use exact encoder dimensions and ±90-day matching rather than prospective-only availability."])
+         "Use exact encoder dimensions and ±90-day matching rather than prospective-only availability.",
+         "MRI volume and its spatial preprocessing/3D encoder use cuboids; final 128-D embedding is a vector."])
     s.text(15, 8, "INPUT", 10, bold=True)
     s.text(109, 8, "PREPROCESSING", 10, bold=True)
     s.text(261, 8, "ENCODER", 10, bold=True)
-    rows = [(40, "T1 MRI", "RAS; SynthStrip\nRigid registration\n144³, 1.5 mm; z-score", "MedicalNet\nResNet18\n512 → 128", "M\n128", "m"),
+    rows = [(40, "T1 MRI\n3D volume", "RAS; SynthStrip\nRigid registration\n144³, 1.5 mm; z-score", "MedicalNet\n3D ResNet18\nGAP 512 → 128", "M\n128", "m"),
             (123, "Radiomics\n107 features", "Loại 3 hằng số\nTrain scaling + PCA\n16 thành phần", "MLP\n16 → 128 → 64", "R\n64", "r"),
             (206, "Clinical\n9 values\n9 masks", "Nearest valid ±90 d\nTrain median + scaling\nMask: 1 = observed", "MLP\n18 → 64 → 64", "C\n64", "c")]
     for y, label, prep, encoder, output, color in rows:
-        s.box(15, y, 76, 62, label, color)
-        s.box(109, y, 135, 62, prep, color, 9.5, bold_first=False)
-        s.box(262, y, 112, 62, encoder, color, 9.5)
+        draw = s.cuboid if color == "m" else s.box
+        draw(15, y, 76, 62, label, color)
+        draw(109, y, 135, 62, prep, color, 9.5, bold_first=False)
+        draw(262, y, 112, 62, encoder, color, 9.5)
         s.box(391, y+9, 47, 44, output, color, 10)
         for a, b in [(91, 109), (244, 262), (374, 391)]:
             s.line(a, y+31, b, y+31)
@@ -459,31 +171,44 @@ def outer_cp():
         ["D:/KLTN/phase_05b_pairwise_medicalnet_source.zip",
          "D:/KLTN/week12/thesis_phase_evolution_bundle_20261005_final.zip"],
         ["CP factorizes the first bilinear interaction weight tensor, retaining bias and identical post-MLP.",
-         "Display controlled MR/MC/RC dimensions and ranks rather than suggesting patient-data decomposition."])
-    s.text(112, 7, "FULL OUTER PRODUCT", 10, bold=True, align="center")
-    s.text(342, 7, "CP-FACTORIZED WEIGHTS", 10, bold=True, align="center")
-    s.line(227, 30, 227, 257, arrow=False, dashed=True, color="#B4BEC7")
-    s.box(14, 37, 57, 34, "x\ndₓ", "m")
-    s.box(150, 37, 57, 34, "y\ndᵧ", "r")
-    s.box(56, 99, 112, 37, "x ⊗ y\ndₓ × dᵧ", "pair")
-    s.path([(42, 71), (42, 118), (56, 118)])
-    s.path([(178, 71), (178, 118), (168, 118)])
-    s.box(31, 157, 161, 36, "Flatten + Linear\ndₓdᵧ → H", "pair")
-    s.line(112, 136, 112, 157)
-    s.box(32, 214, 159, 42, "Post-MLP (giữ nguyên)\nGELU · dropout · Linear · LN", "fusion", 9.5)
-    s.line(112, 193, 112, 214)
-    s.box(245, 37, 70, 34, "x → Aᵀx\nQ", "m")
-    s.box(370, 37, 70, 34, "y → Bᵀy\nQ", "r")
-    s.box(294, 99, 98, 37, "q = u ⊙ v\nQ", "pair")
-    s.path([(280, 71), (280, 118), (294, 118)])
-    s.path([(405, 71), (405, 118), (392, 118)])
-    s.box(263, 157, 161, 36, "h = Oq + b\nQ → H", "pair")
-    s.line(343, 136, 343, 157)
-    s.box(264, 214, 159, 42, "Post-MLP (giữ nguyên)\nGELU · dropout · Linear · LN", "fusion", 9.5)
-    s.line(343, 193, 343, 214)
-    s.text(227, 272, "W ∈ ℝ^(H × dₓ × dᵧ) ≈ Σ o_q ⊗ a_q ⊗ b_q", 10, align="center")
-    s.text(227, 291, "MR: 32 × 32, Q=8   |   MC: 32 × 16, Q=8   |   RC: 32 × 16, Q=4", 9.5, align="center")
-    s.text(227, 309, "Thay tensor trọng số W; không phân rã MRI hay dữ liệu bệnh nhân.", 9.5, bold=True, align="center")
+         "Display controlled MR/MC/RC dimensions and ranks rather than suggesting patient-data decomposition.",
+         "Show the third-order weight tensor as a sum of 3D rank-one tensors, with explicit factor matrices A/B/O."])
+    s.text(227, 7, "PHÂN RÃ CP CỦA TENSOR TRỌNG SỐ W", 10.5, bold=True, align="center")
+    s.text(227, 19, "Mỗi W_q = o_q ⊗ a_q ⊗ b_q là một tensor hạng 1", 9.5, align="center")
+    for x, w, label, color in [(20, 67, "W", "pair"), (132, 70, "W₁", "fusion"),
+                                (243, 70, "W₂", "fusion"), (371, 66, "W_Q", "fusion")]:
+        s.cuboid(x, 31, w, 55, label, color, 12, depth=10)
+    s.text(107, 48, "≈", 15, align="center")
+    s.text(222, 48, "+", 15, align="center")
+    s.text(328, 48, "+", 14, align="center")
+    s.text(344, 48, "…", 14, align="center")
+    s.text(359, 48, "+", 12, align="center")
+    s.text(53, 94, "H × dₓ × dᵧ", 9.5, align="center")
+    s.text(167, 94, "o₁ ⊗ a₁ ⊗ b₁", 9.5, align="center")
+    s.text(278, 94, "o₂ ⊗ a₂ ⊗ b₂", 9.5, align="center")
+    s.text(404, 94, "o_Q ⊗ a_Q ⊗ b_Q", 9.5, align="center")
+    s.box(15, 115, 131, 29, "A: dₓ × Q", "m", 10)
+    s.box(161, 115, 131, 29, "B: dᵧ × Q", "r", 10)
+    s.box(307, 115, 131, 29, "O: H × Q", "fusion", 10)
+    s.text(112, 158, "FULL OUTER PRODUCT", 10, bold=True, align="center")
+    s.text(342, 158, "CP-FACTORIZED WEIGHTS", 10, bold=True, align="center")
+    s.line(227, 157, 227, 285, arrow=False, dashed=True, color="#B4BEC7")
+    s.box(15, 177, 83, 28, "x: dₓ", "m", 10)
+    s.box(132, 177, 83, 28, "y: dᵧ", "r", 10)
+    s.path([(56, 205), (56, 212), (112, 212), (112, 219)])
+    s.path([(174, 205), (174, 212), (112, 212)], arrow=False)
+    s.box(15, 219, 200, 33, "x ⊗ y → Flatten + Linear\ndₓdᵧ → H (gồm bias b)", "pair", 9.5)
+    s.box(15, 259, 200, 33, "Post-MLP (giữ nguyên)\nGELU · dropout · Linear · LN", "fusion", 9.5)
+    s.line(112, 252, 112, 259)
+    s.box(244, 177, 91, 28, "u = Aᵀx: Q", "m", 9.5)
+    s.box(347, 177, 91, 28, "v = Bᵀy: Q", "r", 9.5)
+    s.path([(289, 205), (289, 212), (342, 212), (342, 219)])
+    s.path([(393, 205), (393, 212), (342, 212)], arrow=False)
+    s.box(244, 219, 194, 33, "h = O(u ⊙ v) + b\nQ → H", "pair", 9.5)
+    s.box(244, 259, 194, 33, "Post-MLP (giữ nguyên)\nGELU · dropout · Linear · LN", "fusion", 9.5)
+    s.line(342, 252, 342, 259)
+    s.text(227, 298, "MR: 32 × 32, Q=8   |   MC: 32 × 16, Q=8   |   RC: 32 × 16, Q=4", 9.5, align="center")
+    s.text(227, 313, "Phân rã trọng số W; không phân rã MRI hay dữ liệu bệnh nhân.", 9.5, bold=True, align="center")
     s.save()
 
 
@@ -558,14 +283,16 @@ def final_pipeline():
          "D:/KLTN/week12/Sơ đồ luồng residual A6 theo M, R, C.png",
          "D:/KLTN/week12/thesis_phase_evolution_bundle_20261005_final.zip"],
         ["Rebuild the main architecture with three retained modalities, MR/MC rank8 only, four gated routes and explicit identity paths.",
-         "Display output128/64/64 → concat256 → readout128 → shared three-visit T-LSTM/attention/raw Cox log-risk."])
+         "Display output128/64/64 → concat256 → readout128 → shared three-visit T-LSTM/attention/raw Cox log-risk.",
+         "Use 3D cuboids for the MRI volume and 3D encoder, retaining 2D vector branches for M/R/C and temporal embeddings."])
     s.text(16, 8, "1   XỬ LÝ TỪNG VISIT   (cùng trọng số cho 3 visits)", 10, bold=True)
-    rows = [(35, "MRI", "MedicalNet\nResNet18", "M\n128", "m"),
+    rows = [(35, "T1 MRI 3D\n1 × 144³", "MedicalNet\n3D ResNet18", "M\n128", "m"),
             (99, "Radiomics\nPCA 16", "MLP\n16 → 128 → 64", "R\n64", "r"),
             (163, "Clinical\n9 + 9 masks", "MLP\n18 → 64 → 64", "C\n64", "c")]
     for y, inp, enc, feature, color in rows:
-        s.box(16, y, 92, 46, inp, color)
-        s.box(129, y, 120, 46, enc, color, 9.5)
+        draw = s.cuboid if color == "m" else s.box
+        draw(16, y, 92, 46, inp, color, 9.5)
+        draw(129, y, 120, 46, enc, color, 9.5)
         s.box(271, y, 64, 46, feature, color)
         s.line(108, y+23, 129, y+23)
         s.line(249, y+23, 271, y+23)
@@ -793,7 +520,8 @@ def main():
         previous = json.loads(provenance_file.read_text(encoding="utf-8")).get("figures", {})
     provenance_file.write_text(json.dumps({"figures": {**previous, **PROVENANCE},
         "authoring": "Native draw.io XML is saved before vector exports. PDF/SVG rendering uses the same scene.",
-        "style": {"width_mm": 160, "font": "Arial / DejaVu Sans", "colors": COLORS}},
+        "style": {"width_mm": 160, "font": "Arial / DejaVu Sans", "text_color": INK,
+                  "colors": COLORS, "volume_primitive": "Three-face native editable cuboid stencil"}},
         ensure_ascii=False, indent=2), encoding="utf-8")
 if __name__ == "__main__":
     main()

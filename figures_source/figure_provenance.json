@@ -14,11 +14,16 @@
       "changes": [
         "Separate third-MRI prediction origin p from the 18-month eligibility landmark L.",
         "Show conditional eligibility through L and score-defined post-L outcomes; retain ±90-day clinical matching limitation.",
-        "Redrawn as native draw.io; unified vector style and physical font sizes."
+        "Draw the three volumetric MRI observations as 3D cuboids; tabular R/C remain labels.",
+        "Redrawn as native draw.io; unified vector style and physical font sizes.",
+        "All labels, chart values and ticks use black text; emphasis uses font weight."
       ],
       "rendering": "ReportLab/SVG fallback from the same scene; draw.io desktop CLI unavailable.",
       "width_mm": 160,
-      "minimum_font_pt": 9.5
+      "minimum_font_pt": 9.5,
+      "height_pt": 314,
+      "text_color": "#000000",
+      "cuboid_count": 3
     },
     "fusion-taxonomy": {
       "outputs": [
@@ -32,11 +37,15 @@
       ],
       "changes": [
         "Separate simple feature combination, explicit pair interaction, and adaptive routing.",
-        "Redrawn as native draw.io; unified vector style and physical font sizes."
+        "Redrawn as native draw.io; unified vector style and physical font sizes.",
+        "All labels, chart values and ticks use black text; emphasis uses font weight."
       ],
       "rendering": "ReportLab/SVG fallback from the same scene; draw.io desktop CLI unavailable.",
       "width_mm": 160,
-      "minimum_font_pt": 9.5
+      "minimum_font_pt": 9.5,
+      "height_pt": 303,
+      "text_color": "#000000",
+      "cuboid_count": 0
     },
     "cohort-construction": {
       "outputs": [
@@ -51,11 +60,15 @@
       ],
       "changes": [
         "Use the audited final cohort waterfall and exact RID-wise split; do not conflate L with p.",
-        "Redrawn as native draw.io; unified vector style and physical font sizes."
+        "Redrawn as native draw.io; unified vector style and physical font sizes.",
+        "All labels, chart values and ticks use black text; emphasis uses font weight."
       ],
       "rendering": "ReportLab/SVG fallback from the same scene; draw.io desktop CLI unavailable.",
       "width_mm": 160,
-      "minimum_font_pt": 9.5
+      "minimum_font_pt": 9.5,
+      "height_pt": 383,
+      "text_color": "#000000",
+      "cuboid_count": 0
     },
     "modality-preprocessing": {
       "outputs": [
@@ -71,11 +84,16 @@
       "changes": [
         "Correct radiomics to 16 PCA inputs and clinical to nine values plus nine observedness masks.",
         "Use exact encoder dimensions and ±90-day matching rather than prospective-only availability.",
-        "Redrawn as native draw.io; unified vector style and physical font sizes."
+        "MRI volume and its spatial preprocessing/3D encoder use cuboids; final 128-D embedding is a vector.",
+        "Redrawn as native draw.io; unified vector style and physical font sizes.",
+        "All labels, chart values and ticks use black text; emphasis uses font weight."
       ],
       "rendering": "ReportLab/SVG fallback from the same scene; draw.io desktop CLI unavailable.",
       "width_mm": 160,
-      "minimum_font_pt": 9.5
+      "minimum_font_pt": 9.5,
+      "height_pt": 300,
+      "text_color": "#000000",
+      "cuboid_count": 3
     },
     "architecture-evolution": {
       "outputs": [
@@ -88,11 +106,15 @@
       ],
       "changes": [
         "Preserve chronological development; CP follows the full outer-product model and RC pruning follows ablation.",
-        "Redrawn as native draw.io; unified vector style and physical font sizes."
+        "Redrawn as native draw.io; unified vector style and physical font sizes.",
+        "All labels, chart values and ticks use black text; emphasis uses font weight."
       ],
       "rendering": "ReportLab/SVG fallback from the same scene; draw.io desktop CLI unavailable.",
       "width_mm": 160,
-      "minimum_font_pt": 10
+      "minimum_font_pt": 10,
+      "height_pt": 398,
+      "text_color": "#000000",
+      "cuboid_count": 0
     },
     "full-pairwise-graph": {
       "outputs": [
@@ -107,11 +129,14 @@
       "changes": [
         "Show all three pair blocks and six distinct directed residual contributions without crossing edges.",
         "Redrawn as native draw.io; unified vector style and physical font sizes.",
-        "2026-10-06: enclose directed route labels in parentheses to disambiguate residual sums, as requested."
+        "All labels, chart values and ticks use black text; emphasis uses font weight."
       ],
       "rendering": "ReportLab/SVG fallback from the same scene; draw.io desktop CLI unavailable.",
       "width_mm": 160,
-      "minimum_font_pt": 9.5
+      "minimum_font_pt": 9.5,
+      "height_pt": 337,
+      "text_color": "#000000",
+      "cuboid_count": 0
     },
     "outer-vs-cp": {
       "outputs": [
@@ -126,12 +151,16 @@
       "changes": [
         "CP factorizes the first bilinear interaction weight tensor, retaining bias and identical post-MLP.",
         "Display controlled MR/MC/RC dimensions and ranks rather than suggesting patient-data decomposition.",
+        "Show the third-order weight tensor as a sum of 3D rank-one tensors, with explicit factor matrices A/B/O.",
         "Redrawn as native draw.io; unified vector style and physical font sizes.",
-        "Align weight tensor axis order H x dx x dy and CP factor order o_q x a_q x b_q with Chapter3 equations."
+        "All labels, chart values and ticks use black text; emphasis uses font weight."
       ],
       "rendering": "ReportLab/SVG fallback from the same scene; draw.io desktop CLI unavailable.",
       "width_mm": 160,
-      "minimum_font_pt": 9.5
+      "minimum_font_pt": 9.5,
+      "height_pt": 326,
+      "text_color": "#000000",
+      "cuboid_count": 4
     },
     "gated-residual-route": {
       "outputs": [
@@ -149,12 +178,14 @@
         "Restore the explicit identity residual; distinguish directed projection, visit-specific scalar gate, and global unconstrained route scale.",
         "Gate input uses LN(original modality) and projected pair; λ initialized 0.1 without softplus.",
         "Redrawn as native draw.io; unified vector style and physical font sizes.",
-        "Use E_p for the pair output after PostMLP; h is reserved for the preceding bilinear hidden output.",
-        "2026-10-06: enclose directed route labels in parentheses to disambiguate residual sums, as requested."
+        "All labels, chart values and ticks use black text; emphasis uses font weight."
       ],
       "rendering": "ReportLab/SVG fallback from the same scene; draw.io desktop CLI unavailable.",
       "width_mm": 160,
-      "minimum_font_pt": 9.5
+      "minimum_font_pt": 9.5,
+      "height_pt": 406,
+      "text_color": "#000000",
+      "cuboid_count": 0
     },
     "rc-free-routing": {
       "outputs": [
@@ -171,11 +202,14 @@
         "Correct the original diagram by drawing the identity path separately from gated interaction paths.",
         "Remove active RC→R and RC→C routes while retaining all three modality encoders.",
         "Redrawn as native draw.io; unified vector style and physical font sizes.",
-        "2026-10-06: enclose directed route labels in parentheses to disambiguate residual sums, as requested."
+        "All labels, chart values and ticks use black text; emphasis uses font weight."
       ],
       "rendering": "ReportLab/SVG fallback from the same scene; draw.io desktop CLI unavailable.",
       "width_mm": 160,
-      "minimum_font_pt": 9.5
+      "minimum_font_pt": 9.5,
+      "height_pt": 372,
+      "text_color": "#000000",
+      "cuboid_count": 0
     },
     "final-pipeline": {
       "outputs": [
@@ -192,12 +226,16 @@
       "changes": [
         "Rebuild the main architecture with three retained modalities, MR/MC rank8 only, four gated routes and explicit identity paths.",
         "Display output128/64/64 → concat256 → readout128 → shared three-visit T-LSTM/attention/raw Cox log-risk.",
+        "Use 3D cuboids for the MRI volume and 3D encoder, retaining 2D vector branches for M/R/C and temporal embeddings.",
         "Redrawn as native draw.io; unified vector style and physical font sizes.",
-        "2026-10-06: enclose directed route labels in parentheses to disambiguate residual sums, as requested."
+        "All labels, chart values and ticks use black text; emphasis uses font weight."
       ],
       "rendering": "ReportLab/SVG fallback from the same scene; draw.io desktop CLI unavailable.",
       "width_mm": 160,
-      "minimum_font_pt": 9.5
+      "minimum_font_pt": 9.5,
+      "height_pt": 515,
+      "text_color": "#000000",
+      "cuboid_count": 2
     },
     "temporal-model": {
       "outputs": [
@@ -210,11 +248,15 @@
       ],
       "changes": [
         "Use consecutive MRI time gaps, shared T-LSTM128, scalar additive attention and raw log-risk head.",
-        "Redrawn as native draw.io; unified vector style and physical font sizes."
+        "Redrawn as native draw.io; unified vector style and physical font sizes.",
+        "All labels, chart values and ticks use black text; emphasis uses font weight."
       ],
       "rendering": "ReportLab/SVG fallback from the same scene; draw.io desktop CLI unavailable.",
       "width_mm": 160,
-      "minimum_font_pt": 9.5
+      "minimum_font_pt": 9.5,
+      "height_pt": 301,
+      "text_color": "#000000",
+      "cuboid_count": 0
     },
     "mri-hub-topology": {
       "outputs": [
@@ -228,11 +270,15 @@
       ],
       "changes": [
         "Interpret MRI as the interaction hub while preserving radiomics and clinical; omit any active R-C edge.",
-        "Redrawn as native draw.io; unified vector style and physical font sizes."
+        "Redrawn as native draw.io; unified vector style and physical font sizes.",
+        "All labels, chart values and ticks use black text; emphasis uses font weight."
       ],
       "rendering": "ReportLab/SVG fallback from the same scene; draw.io desktop CLI unavailable.",
       "width_mm": 160,
-      "minimum_font_pt": 9.5
+      "minimum_font_pt": 9.5,
+      "height_pt": 181,
+      "text_color": "#000000",
+      "cuboid_count": 0
     },
     "performance-evolution": {
       "outputs": [
@@ -277,11 +323,14 @@
         "Separate four protocol groups, including a separate concat Cox-batch8 panel; no connecting trend lines.",
         "Plot validation single-seed milestones only; flag incomplete attention provenance with a hollow marker.",
         "Redrawn as native draw.io; unified vector style and physical font sizes.",
-        "Compact vertical panel spacing to avoid a nearly empty thesis page; preserve 9.5pt minimum font and every plotted value."
+        "All labels, chart values and ticks use black text; emphasis uses font weight."
       ],
       "rendering": "ReportLab/SVG fallback from the same scene; draw.io desktop CLI unavailable.",
       "width_mm": 160,
-      "minimum_font_pt": 9.5
+      "minimum_font_pt": 9.5,
+      "height_pt": 474,
+      "text_color": "#000000",
+      "cuboid_count": 0
     },
     "cp-parameter-reduction": {
       "outputs": [
@@ -305,11 +354,15 @@
       "changes": [
         "Contrast the first bilinear-layer scope with total-model scope; use zero-origin linear axes.",
         "Do not present parameter counts as measured runtime, memory or FLOPs savings.",
-        "Redrawn as native draw.io; unified vector style and physical font sizes."
+        "Redrawn as native draw.io; unified vector style and physical font sizes.",
+        "All labels, chart values and ticks use black text; emphasis uses font weight."
       ],
       "rendering": "ReportLab/SVG fallback from the same scene; draw.io desktop CLI unavailable.",
       "width_mm": 160,
-      "minimum_font_pt": 9.5
+      "minimum_font_pt": 9.5,
+      "height_pt": 364,
+      "text_color": "#000000",
+      "cuboid_count": 0
     },
     "ablation-deltas": {
       "outputs": [
@@ -328,11 +381,15 @@
       "changes": [
         "Show six observed single-seed validation deltas against the same full-CP reference.",
         "Distinguish the fixed-lambda full-CP ablation from the later RC-free fixed-lambda sensitivity model.",
-        "Redrawn as native draw.io; unified vector style and physical font sizes."
+        "Redrawn as native draw.io; unified vector style and physical font sizes.",
+        "All labels, chart values and ticks use black text; emphasis uses font weight."
       ],
       "rendering": "ReportLab/SVG fallback from the same scene; draw.io desktop CLI unavailable.",
       "width_mm": 160,
-      "minimum_font_pt": 9.5
+      "minimum_font_pt": 9.5,
+      "height_pt": 346,
+      "text_color": "#000000",
+      "cuboid_count": 0
     },
     "standardized-benchmark": {
       "outputs": [
@@ -356,17 +413,22 @@
       "changes": [
         "Plot three-seed mean ± sample SD (ddof1), alongside individual seed values; SD is not a confidence interval.",
         "Use standardized validation only, leaving the deterministic post-selection classical baseline separate.",
-        "Redrawn as native draw.io; unified vector style and physical font sizes."
+        "Redrawn as native draw.io; unified vector style and physical font sizes.",
+        "All labels, chart values and ticks use black text; emphasis uses font weight."
       ],
       "rendering": "ReportLab/SVG fallback from the same scene; draw.io desktop CLI unavailable.",
       "width_mm": 160,
-      "minimum_font_pt": 9.5
+      "minimum_font_pt": 9.5,
+      "height_pt": 370,
+      "text_color": "#000000",
+      "cuboid_count": 0
     }
   },
   "authoring": "Native draw.io XML is saved before vector exports. PDF/SVG rendering uses the same scene.",
   "style": {
     "width_mm": 160,
     "font": "Arial / DejaVu Sans",
+    "text_color": "#000000",
     "colors": {
       "m": [
         "#E7F0FA",
@@ -400,6 +462,7 @@
         "#FFFFFF",
         "#A2ADB7"
       ]
-    }
+    },
+    "volume_primitive": "Three-face native editable cuboid stencil"
   }
 }

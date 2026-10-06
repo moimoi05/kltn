@@ -4,10 +4,10 @@
   "compiler": "Tectonic 0.17.0+20260731 / XeTeX + BibTeX",
   "windows_fontconfig_auto_configuration_pass": true,
   "no_prior_auxiliary_or_bibliography_build_files": true,
-  "pages": 69,
+  "pages": 70,
   "all_page_text_identical": true,
   "all_page_renders_identical": true,
-  "rebuilt_pdf_sha256": "0b256a2929fe130f35a7d277ca12cccc8919e439939895a4bf0ac3ce2cdeb63d",
-  "delivered_pdf_sha256": "a42eda006fa6b35ba7fd2c88abb5143609c3d787e496e063311c3261c8eb49d8",
+  "rebuilt_pdf_sha256": "dd4e2bce3f496d74ef6de0287e7070ee207efc5b92607f2a261523c42ae882dd",
+  "delivered_pdf_sha256": "2be113930387fbe51d6fc2af52de993e03da2488827cc343d0902382c4745dd4",
   "automated_check_pass": true
 }

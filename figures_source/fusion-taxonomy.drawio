@@ -5,13 +5,13 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="n1" parent="1" vertex="1" value="&lt;b&gt;Multimodal&lt;/b&gt;&lt;br&gt;M · R · C" style="html=1;fontFamily=Arial;fontColor=#263B4D;whiteSpace=wrap;rounded=1;arcSize=8;fillColor=#FFFFFF;strokeColor=#A2ADB7;strokeWidth=1;fontSize=10;spacing=5;">
+        <mxCell id="n1" parent="1" vertex="1" value="&lt;b&gt;Multimodal&lt;/b&gt;&lt;br&gt;M · R · C" style="html=1;fontFamily=Arial;fontColor=#000000;whiteSpace=wrap;rounded=1;arcSize=8;fillColor=#FFFFFF;strokeColor=#A2ADB7;strokeWidth=1;fontSize=10;spacing=5;">
           <mxGeometry x="13" y="119" width="96" height="52" as="geometry" />
         </mxCell>
-        <mxCell id="n2" parent="1" vertex="1" value="&lt;b&gt;Concatenation&lt;/b&gt;&lt;br&gt;Ghép các đặc trưng" style="html=1;fontFamily=Arial;fontColor=#263B4D;whiteSpace=wrap;rounded=1;arcSize=8;fillColor=#EEF0F2;strokeColor=#77838F;strokeWidth=1;fontSize=10;spacing=5;">
+        <mxCell id="n2" parent="1" vertex="1" value="&lt;b&gt;Concatenation&lt;/b&gt;&lt;br&gt;Ghép các đặc trưng" style="html=1;fontFamily=Arial;fontColor=#000000;whiteSpace=wrap;rounded=1;arcSize=8;fillColor=#EEF0F2;strokeColor=#77838F;strokeWidth=1;fontSize=10;spacing=5;">
           <mxGeometry x="146" y="13" width="291" height="45" as="geometry" />
         </mxCell>
-        <mxCell id="i2" parent="1" edge="1" value="" style="html=1;fontFamily=Arial;fontColor=#263B4D;whiteSpace=wrap;edgeStyle=none;rounded=0;endArrow=block;endFill=1;endSize=5;startArrow=none;startFill=1;startSize=5;strokeColor=#5C6B79;strokeWidth=1.1;">
+        <mxCell id="i2" parent="1" edge="1" value="" style="html=1;fontFamily=Arial;fontColor=#000000;whiteSpace=wrap;edgeStyle=none;rounded=0;endArrow=block;endFill=1;endSize=5;startArrow=none;startFill=1;startSize=5;strokeColor=#5C6B79;strokeWidth=1.1;">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="109" y="145" as="sourcePoint" />
             <mxPoint x="146" y="35.5" as="targetPoint" />
@@ -21,10 +21,10 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="n4" parent="1" vertex="1" value="&lt;b&gt;Element-wise&lt;/b&gt;&lt;br&gt;Tương tác theo phần tử" style="html=1;fontFamily=Arial;fontColor=#263B4D;whiteSpace=wrap;rounded=1;arcSize=8;fillColor=#EEF0F2;strokeColor=#77838F;strokeWidth=1;fontSize=10;spacing=5;">
+        <mxCell id="n4" parent="1" vertex="1" value="&lt;b&gt;Element-wise&lt;/b&gt;&lt;br&gt;Tương tác theo phần tử" style="html=1;fontFamily=Arial;fontColor=#000000;whiteSpace=wrap;rounded=1;arcSize=8;fillColor=#EEF0F2;strokeColor=#77838F;strokeWidth=1;fontSize=10;spacing=5;">
           <mxGeometry x="146" y="69" width="291" height="45" as="geometry" />
         </mxCell>
-        <mxCell id="i4" parent="1" edge="1" value="" style="html=1;fontFamily=Arial;fontColor=#263B4D;whiteSpace=wrap;edgeStyle=none;rounded=0;endArrow=block;endFill=1;endSize=5;startArrow=none;startFill=1;startSize=5;strokeColor=#5C6B79;strokeWidth=1.1;">
+        <mxCell id="i4" parent="1" edge="1" value="" style="html=1;fontFamily=Arial;fontColor=#000000;whiteSpace=wrap;edgeStyle=none;rounded=0;endArrow=block;endFill=1;endSize=5;startArrow=none;startFill=1;startSize=5;strokeColor=#5C6B79;strokeWidth=1.1;">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="109" y="145" as="sourcePoint" />
             <mxPoint x="146" y="91.5" as="targetPoint" />
@@ -34,10 +34,10 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="n6" parent="1" vertex="1" value="&lt;b&gt;Bilinear / outer product&lt;/b&gt;&lt;br&gt;Tương tác bậc hai đầy đủ" style="html=1;fontFamily=Arial;fontColor=#263B4D;whiteSpace=wrap;rounded=1;arcSize=8;fillColor=#FAE9ED;strokeColor=#A87984;strokeWidth=1;fontSize=10;spacing=5;">
+        <mxCell id="n6" parent="1" vertex="1" value="&lt;b&gt;Bilinear / outer product&lt;/b&gt;&lt;br&gt;Tương tác bậc hai đầy đủ" style="html=1;fontFamily=Arial;fontColor=#000000;whiteSpace=wrap;rounded=1;arcSize=8;fillColor=#FAE9ED;strokeColor=#A87984;strokeWidth=1;fontSize=10;spacing=5;">
           <mxGeometry x="146" y="125" width="291" height="45" as="geometry" />
         </mxCell>
-        <mxCell id="i6" parent="1" edge="1" value="" style="html=1;fontFamily=Arial;fontColor=#263B4D;whiteSpace=wrap;edgeStyle=none;rounded=0;endArrow=block;endFill=1;endSize=5;startArrow=none;startFill=1;startSize=5;strokeColor=#5C6B79;strokeWidth=1.1;">
+        <mxCell id="i6" parent="1" edge="1" value="" style="html=1;fontFamily=Arial;fontColor=#000000;whiteSpace=wrap;edgeStyle=none;rounded=0;endArrow=block;endFill=1;endSize=5;startArrow=none;startFill=1;startSize=5;strokeColor=#5C6B79;strokeWidth=1.1;">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="109" y="145" as="sourcePoint" />
             <mxPoint x="146" y="147.5" as="targetPoint" />
@@ -47,10 +47,10 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="n8" parent="1" vertex="1" value="&lt;b&gt;Low-rank CP&lt;/b&gt;&lt;br&gt;Factorize tensor trọng số" style="html=1;fontFamily=Arial;fontColor=#263B4D;whiteSpace=wrap;rounded=1;arcSize=8;fillColor=#FAE9ED;strokeColor=#A87984;strokeWidth=1;fontSize=10;spacing=5;">
+        <mxCell id="n8" parent="1" vertex="1" value="&lt;b&gt;Low-rank CP&lt;/b&gt;&lt;br&gt;Factorize tensor trọng số" style="html=1;fontFamily=Arial;fontColor=#000000;whiteSpace=wrap;rounded=1;arcSize=8;fillColor=#FAE9ED;strokeColor=#A87984;strokeWidth=1;fontSize=10;spacing=5;">
           <mxGeometry x="146" y="181" width="291" height="45" as="geometry" />
         </mxCell>
-        <mxCell id="i8" parent="1" edge="1" value="" style="html=1;fontFamily=Arial;fontColor=#263B4D;whiteSpace=wrap;edgeStyle=none;rounded=0;endArrow=block;endFill=1;endSize=5;startArrow=none;startFill=1;startSize=5;strokeColor=#5C6B79;strokeWidth=1.1;">
+        <mxCell id="i8" parent="1" edge="1" value="" style="html=1;fontFamily=Arial;fontColor=#000000;whiteSpace=wrap;edgeStyle=none;rounded=0;endArrow=block;endFill=1;endSize=5;startArrow=none;startFill=1;startSize=5;strokeColor=#5C6B79;strokeWidth=1.1;">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="109" y="145" as="sourcePoint" />
             <mxPoint x="146" y="203.5" as="targetPoint" />
@@ -60,10 +60,10 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="n10" parent="1" vertex="1" value="&lt;b&gt;Gated residual&lt;/b&gt;&lt;br&gt;Điều tiết đóng góp từng route" style="html=1;fontFamily=Arial;fontColor=#263B4D;whiteSpace=wrap;rounded=1;arcSize=8;fillColor=#EEEAF6;strokeColor=#86759D;strokeWidth=1;fontSize=10;spacing=5;">
+        <mxCell id="n10" parent="1" vertex="1" value="&lt;b&gt;Gated residual&lt;/b&gt;&lt;br&gt;Điều tiết đóng góp từng route" style="html=1;fontFamily=Arial;fontColor=#000000;whiteSpace=wrap;rounded=1;arcSize=8;fillColor=#EEEAF6;strokeColor=#86759D;strokeWidth=1;fontSize=10;spacing=5;">
           <mxGeometry x="146" y="237" width="291" height="45" as="geometry" />
         </mxCell>
-        <mxCell id="i10" parent="1" edge="1" value="" style="html=1;fontFamily=Arial;fontColor=#263B4D;whiteSpace=wrap;edgeStyle=none;rounded=0;endArrow=block;endFill=1;endSize=5;startArrow=none;startFill=1;startSize=5;strokeColor=#5C6B79;strokeWidth=1.1;">
+        <mxCell id="i10" parent="1" edge="1" value="" style="html=1;fontFamily=Arial;fontColor=#000000;whiteSpace=wrap;edgeStyle=none;rounded=0;endArrow=block;endFill=1;endSize=5;startArrow=none;startFill=1;startSize=5;strokeColor=#5C6B79;strokeWidth=1.1;">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="109" y="145" as="sourcePoint" />
             <mxPoint x="146" y="259.5" as="targetPoint" />
@@ -73,7 +73,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="i11" parent="1" vertex="1" value="Thesis kết hợp CP cho pairwise interaction và gated residual cho routing." style="html=1;fontFamily=Arial;fontColor=#263B4D;whiteSpace=wrap;text;strokeColor=none;fillColor=none;fontSize=9.5;fontStyle=0;align=left;verticalAlign=top;spacing=0;">
+        <mxCell id="i11" parent="1" vertex="1" value="Thesis kết hợp CP cho pairwise interaction và gated residual cho routing." style="html=1;fontFamily=Arial;fontColor=#000000;whiteSpace=wrap;text;strokeColor=none;fillColor=none;fontSize=9.5;fontStyle=0;align=left;verticalAlign=top;spacing=0;">
           <mxGeometry x="13" y="288" width="309.752685546875" height="11.78" as="geometry" />
         </mxCell>
       </root>

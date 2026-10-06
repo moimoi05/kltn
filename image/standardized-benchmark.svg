@@ -1,86 +1,86 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="160mm" height="130.528mm" viewBox="0 0 453.5433 370">
 <rect width="100%" height="100%" fill="white"/>
-<text x="16" y="17.4" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="start" fill="#263B4D">54 validation subjects  |  480 comparable pairs</text>
-<text x="439" y="37.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="700" text-anchor="end" fill="#263B4D">Mean ± SD</text>
+<text x="16" y="17.4" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="start" fill="#000000">54 validation subjects  |  480 comparable pairs</text>
+<text x="439" y="37.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="700" text-anchor="end" fill="#000000">Mean ± SD</text>
 <polyline points="158.0,53 158.0,289" fill="none" stroke="#D1D7DD" stroke-width="0.7" stroke-linejoin="round"/>
-<text x="158.0" y="301.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#263B4D">0.60</text>
+<text x="158.0" y="301.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#000000">0.60</text>
 <polyline points="219.33333333333331,53 219.33333333333331,289" fill="none" stroke="#D1D7DD" stroke-width="0.7" stroke-linejoin="round"/>
-<text x="219.33333333333331" y="301.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#263B4D">0.70</text>
+<text x="219.33333333333331" y="301.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#000000">0.70</text>
 <polyline points="280.66666666666674,53 280.66666666666674,289" fill="none" stroke="#D1D7DD" stroke-width="0.7" stroke-linejoin="round"/>
-<text x="280.66666666666674" y="301.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#263B4D">0.80</text>
+<text x="280.66666666666674" y="301.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#000000">0.80</text>
 <polyline points="342.0,53 342.0,289" fill="none" stroke="#D1D7DD" stroke-width="0.7" stroke-linejoin="round"/>
-<text x="342.0" y="301.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#263B4D">0.90</text>
-<text x="16" y="75.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="start" fill="#263B4D">Paper CNN-T-LSTM</text>
+<text x="342.0" y="301.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#000000">0.90</text>
+<text x="16" y="75.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="start" fill="#000000">Paper CNN-T-LSTM</text>
 <polyline points="202.3559677252062,72 287.42181005257163,72" fill="none" stroke="#5C6B79" stroke-width="1.5" stroke-linejoin="round"/>
 <polyline points="202.3559677252062,67 202.3559677252062,77" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
 <polyline points="287.42181005257163,67 287.42181005257163,77" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
 <circle cx="196.33333333333334" cy="82" r="2.5" fill="#FFFFFF" stroke="#A2ADB7" stroke-width="1"/>
-<text x="196.33333333333334" y="86.08" font-family="Arial, DejaVu Sans, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#263B4D"></text>
+<text x="196.33333333333334" y="86.08" font-family="Arial, DejaVu Sans, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#000000"></text>
 <circle cx="262.7777777777778" cy="82" r="2.5" fill="#FFFFFF" stroke="#A2ADB7" stroke-width="1"/>
-<text x="262.7777777777778" y="86.08" font-family="Arial, DejaVu Sans, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#263B4D"></text>
+<text x="262.7777777777778" y="86.08" font-family="Arial, DejaVu Sans, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#000000"></text>
 <circle cx="275.55555555555554" cy="82" r="2.5" fill="#FFFFFF" stroke="#A2ADB7" stroke-width="1"/>
-<text x="275.55555555555554" y="86.08" font-family="Arial, DejaVu Sans, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#263B4D"></text>
+<text x="275.55555555555554" y="86.08" font-family="Arial, DejaVu Sans, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#000000"></text>
 <circle cx="244.8888888888889" cy="72" r="4" fill="#86759D" stroke="#86759D" stroke-width="1"/>
-<text x="244.8888888888889" y="76.08" font-family="Arial, DejaVu Sans, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#263B4D"></text>
-<text x="439" y="75.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="end" fill="#263B4D">0.7417 ± 0.0693</text>
-<text x="16" y="123.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="start" fill="#263B4D">MedicalNet Pairwise</text>
+<text x="244.8888888888889" y="76.08" font-family="Arial, DejaVu Sans, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#000000"></text>
+<text x="439" y="75.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="end" fill="#000000">0.7417 ± 0.0693</text>
+<text x="16" y="123.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="start" fill="#000000">MedicalNet Pairwise</text>
 <polyline points="292.69218671634917,120 310.80781328365083,120" fill="none" stroke="#5C6B79" stroke-width="1.5" stroke-linejoin="round"/>
 <polyline points="292.69218671634917,115 292.69218671634917,125" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
 <polyline points="310.80781328365083,115 310.80781328365083,125" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
 <circle cx="304.94444444444446" cy="130" r="2.5" fill="#FFFFFF" stroke="#A2ADB7" stroke-width="1"/>
-<text x="304.94444444444446" y="134.08" font-family="Arial, DejaVu Sans, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#263B4D"></text>
+<text x="304.94444444444446" y="134.08" font-family="Arial, DejaVu Sans, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#000000"></text>
 <circle cx="308.7777777777778" cy="130" r="2.5" fill="#FFFFFF" stroke="#A2ADB7" stroke-width="1"/>
-<text x="308.7777777777778" y="134.08" font-family="Arial, DejaVu Sans, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#263B4D"></text>
+<text x="308.7777777777778" y="134.08" font-family="Arial, DejaVu Sans, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#000000"></text>
 <circle cx="291.5277777777778" cy="130" r="2.5" fill="#FFFFFF" stroke="#A2ADB7" stroke-width="1"/>
-<text x="291.5277777777778" y="134.08" font-family="Arial, DejaVu Sans, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#263B4D"></text>
+<text x="291.5277777777778" y="134.08" font-family="Arial, DejaVu Sans, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#000000"></text>
 <circle cx="301.75" cy="120" r="4" fill="#86759D" stroke="#86759D" stroke-width="1"/>
-<text x="301.75" y="124.08" font-family="Arial, DejaVu Sans, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#263B4D"></text>
-<text x="439" y="123.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="end" fill="#263B4D">0.8344 ± 0.0148</text>
-<text x="16" y="171.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="start" fill="#263B4D">CP Pairwise</text>
+<text x="301.75" y="124.08" font-family="Arial, DejaVu Sans, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#000000"></text>
+<text x="439" y="123.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="end" fill="#000000">0.8344 ± 0.0148</text>
+<text x="16" y="171.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="start" fill="#000000">CP Pairwise</text>
 <polyline points="282.3659342836775,168 313.04147312373,168" fill="none" stroke="#5C6B79" stroke-width="1.5" stroke-linejoin="round"/>
 <polyline points="282.3659342836775,163 282.3659342836775,173" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
 <polyline points="313.04147312373,163 313.04147312373,173" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
 <circle cx="294.08333333333337" cy="178" r="2.5" fill="#FFFFFF" stroke="#A2ADB7" stroke-width="1"/>
-<text x="294.08333333333337" y="182.08" font-family="Arial, DejaVu Sans, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#263B4D"></text>
+<text x="294.08333333333337" y="182.08" font-family="Arial, DejaVu Sans, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#000000"></text>
 <circle cx="314.5277777777778" cy="178" r="2.5" fill="#FFFFFF" stroke="#A2ADB7" stroke-width="1"/>
-<text x="314.5277777777778" y="182.08" font-family="Arial, DejaVu Sans, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#263B4D"></text>
+<text x="314.5277777777778" y="182.08" font-family="Arial, DejaVu Sans, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#000000"></text>
 <circle cx="284.50000000000006" cy="178" r="2.5" fill="#FFFFFF" stroke="#A2ADB7" stroke-width="1"/>
-<text x="284.50000000000006" y="182.08" font-family="Arial, DejaVu Sans, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#263B4D"></text>
+<text x="284.50000000000006" y="182.08" font-family="Arial, DejaVu Sans, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#000000"></text>
 <circle cx="297.70370370370375" cy="168" r="4" fill="#86759D" stroke="#86759D" stroke-width="1"/>
-<text x="297.70370370370375" y="172.08" font-family="Arial, DejaVu Sans, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#263B4D"></text>
-<text x="439" y="171.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="end" fill="#263B4D">0.8278 ± 0.0250</text>
-<text x="16" y="219.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="700" text-anchor="start" fill="#263B4D">RC-Free Pairwise</text>
+<text x="297.70370370370375" y="172.08" font-family="Arial, DejaVu Sans, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#000000"></text>
+<text x="439" y="171.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="end" fill="#000000">0.8278 ± 0.0250</text>
+<text x="16" y="219.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="700" text-anchor="start" fill="#000000">RC-Free Pairwise</text>
 <polyline points="287.43145894398765,216 316.49446698193833,216" fill="none" stroke="#5C6B79" stroke-width="1.5" stroke-linejoin="round"/>
 <polyline points="287.43145894398765,211 287.43145894398765,221" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
 <polyline points="316.49446698193833,211 316.49446698193833,221" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
 <circle cx="306.2222222222223" cy="226" r="2.5" fill="#FFFFFF" stroke="#A2ADB7" stroke-width="1"/>
-<text x="306.2222222222223" y="230.08" font-family="Arial, DejaVu Sans, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#263B4D"></text>
+<text x="306.2222222222223" y="230.08" font-family="Arial, DejaVu Sans, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#000000"></text>
 <circle cx="313.8888888888889" cy="226" r="2.5" fill="#FFFFFF" stroke="#A2ADB7" stroke-width="1"/>
-<text x="313.8888888888889" y="230.08" font-family="Arial, DejaVu Sans, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#263B4D"></text>
+<text x="313.8888888888889" y="230.08" font-family="Arial, DejaVu Sans, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#000000"></text>
 <circle cx="285.7777777777778" cy="226" r="2.5" fill="#FFFFFF" stroke="#A2ADB7" stroke-width="1"/>
-<text x="285.7777777777778" y="230.08" font-family="Arial, DejaVu Sans, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#263B4D"></text>
+<text x="285.7777777777778" y="230.08" font-family="Arial, DejaVu Sans, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#000000"></text>
 <circle cx="301.96296296296305" cy="216" r="4" fill="#86759D" stroke="#86759D" stroke-width="1"/>
-<text x="301.96296296296305" y="220.08" font-family="Arial, DejaVu Sans, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#263B4D"></text>
-<text x="439" y="219.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="end" fill="#263B4D">0.8347 ± 0.0237</text>
-<text x="16" y="267.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="start" fill="#263B4D">RC-Free Fixed-λ</text>
+<text x="301.96296296296305" y="220.08" font-family="Arial, DejaVu Sans, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#000000"></text>
+<text x="439" y="219.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="end" fill="#000000">0.8347 ± 0.0237</text>
+<text x="16" y="267.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="start" fill="#000000">RC-Free Fixed-λ</text>
 <polyline points="282.7821040198854,264 321.1438219060406,264" fill="none" stroke="#5C6B79" stroke-width="1.5" stroke-linejoin="round"/>
 <polyline points="282.7821040198854,259 282.7821040198854,269" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
 <polyline points="321.1438219060406,259 321.1438219060406,269" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
 <circle cx="301.11111111111114" cy="274" r="2.5" fill="#FFFFFF" stroke="#A2ADB7" stroke-width="1"/>
-<text x="301.11111111111114" y="278.08" font-family="Arial, DejaVu Sans, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#263B4D"></text>
+<text x="301.11111111111114" y="278.08" font-family="Arial, DejaVu Sans, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#000000"></text>
 <circle cx="321.5555555555556" cy="274" r="2.5" fill="#FFFFFF" stroke="#A2ADB7" stroke-width="1"/>
-<text x="321.5555555555556" y="278.08" font-family="Arial, DejaVu Sans, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#263B4D"></text>
+<text x="321.5555555555556" y="278.08" font-family="Arial, DejaVu Sans, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#000000"></text>
 <circle cx="283.2222222222223" cy="274" r="2.5" fill="#FFFFFF" stroke="#A2ADB7" stroke-width="1"/>
-<text x="283.2222222222223" y="278.08" font-family="Arial, DejaVu Sans, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#263B4D"></text>
+<text x="283.2222222222223" y="278.08" font-family="Arial, DejaVu Sans, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#000000"></text>
 <circle cx="301.96296296296305" cy="264" r="4" fill="#86759D" stroke="#86759D" stroke-width="1"/>
-<text x="301.96296296296305" y="268.08" font-family="Arial, DejaVu Sans, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#263B4D"></text>
-<text x="439" y="267.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="end" fill="#263B4D">0.8347 ± 0.0313</text>
-<text x="250" y="322.4" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#263B4D">Validation C-index</text>
+<text x="301.96296296296305" y="268.08" font-family="Arial, DejaVu Sans, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#000000"></text>
+<text x="439" y="267.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="end" fill="#000000">0.8347 ± 0.0313</text>
+<text x="250" y="322.4" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#000000">Validation C-index</text>
 <circle cx="19" cy="344" r="3.5" fill="#86759D" stroke="#86759D" stroke-width="1"/>
-<text x="19" y="348.08" font-family="Arial, DejaVu Sans, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#263B4D"></text>
-<text x="28" y="346.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="start" fill="#263B4D">Mean ± sample SD</text>
+<text x="19" y="348.08" font-family="Arial, DejaVu Sans, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#000000"></text>
+<text x="28" y="346.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="start" fill="#000000">Mean ± sample SD</text>
 <circle cx="177" cy="344" r="2.5" fill="#FFFFFF" stroke="#A2ADB7" stroke-width="1"/>
-<text x="177" y="348.08" font-family="Arial, DejaVu Sans, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#263B4D"></text>
-<text x="186" y="346.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="start" fill="#263B4D">Seeds 20260727 / 28 / 29</text>
-<text x="16" y="364.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="start" fill="#263B4D">SD là độ biến thiên giữa 3 seeds; không phải confidence interval.</text>
+<text x="177" y="348.08" font-family="Arial, DejaVu Sans, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#000000"></text>
+<text x="186" y="346.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="start" fill="#000000">Seeds 20260727 / 28 / 29</text>
+<text x="16" y="364.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="start" fill="#000000">SD là độ biến thiên giữa 3 seeds; không phải confidence interval.</text>
 </svg>

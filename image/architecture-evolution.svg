@@ -1,50 +1,50 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="160mm" height="140.406mm" viewBox="0 0 453.5433 398">
 <rect width="100%" height="100%" fill="white"/>
 <circle cx="30" cy="32" r="13" fill="#FFFFFF" stroke="#A2ADB7" stroke-width="1"/>
-<text x="30" y="35.4" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#263B4D">1</text>
+<text x="30" y="35.4" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#000000">1</text>
 <rect x="57" y="9" width="378" height="45" rx="4" fill="#E7F0FA" stroke="#567DA3" stroke-width="1"/>
-<text x="246.0" y="29.0" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="middle" fill="#263B4D">MRI Only</text>
-<text x="246.0" y="41.4" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#263B4D">Đặc trưng không gian</text>
+<text x="246.0" y="29.0" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="middle" fill="#000000">MRI Only</text>
+<text x="246.0" y="41.4" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#000000">Đặc trưng không gian</text>
 <polyline points="246,54 246,64" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
 <polygon points="246,64 248.5,59.0 243.5,59.0" fill="#5C6B79"/>
 <circle cx="30" cy="87" r="13" fill="#FFFFFF" stroke="#A2ADB7" stroke-width="1"/>
-<text x="30" y="90.4" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#263B4D">2</text>
+<text x="30" y="90.4" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#000000">2</text>
 <rect x="57" y="64" width="378" height="45" rx="4" fill="#E8F3F8" stroke="#6590A5" stroke-width="1"/>
-<text x="246.0" y="84.0" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="middle" fill="#263B4D">Longitudinal MRI</text>
-<text x="246.0" y="96.4" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#263B4D">Khai thác chuỗi 3 visits</text>
+<text x="246.0" y="84.0" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="middle" fill="#000000">Longitudinal MRI</text>
+<text x="246.0" y="96.4" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#000000">Khai thác chuỗi 3 visits</text>
 <polyline points="246,109 246,119" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
 <polygon points="246,119 248.5,114.0 243.5,114.0" fill="#5C6B79"/>
 <circle cx="30" cy="142" r="13" fill="#FFFFFF" stroke="#A2ADB7" stroke-width="1"/>
-<text x="30" y="145.4" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#263B4D">3</text>
+<text x="30" y="145.4" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#000000">3</text>
 <rect x="57" y="119" width="378" height="45" rx="4" fill="#EEF0F2" stroke="#77838F" stroke-width="1"/>
-<text x="246.0" y="139.0" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="middle" fill="#263B4D">Multimodal Concatenation</text>
-<text x="246.0" y="151.4" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#263B4D">Thêm thông tin R và C</text>
+<text x="246.0" y="139.0" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="middle" fill="#000000">Multimodal Concatenation</text>
+<text x="246.0" y="151.4" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#000000">Thêm thông tin R và C</text>
 <polyline points="246,164 246,174" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
 <polygon points="246,174 248.5,169.0 243.5,169.0" fill="#5C6B79"/>
 <circle cx="30" cy="197" r="13" fill="#FFFFFF" stroke="#A2ADB7" stroke-width="1"/>
-<text x="30" y="200.4" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#263B4D">4</text>
+<text x="30" y="200.4" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#000000">4</text>
 <rect x="57" y="174" width="378" height="45" rx="4" fill="#EEEAF6" stroke="#86759D" stroke-width="1"/>
-<text x="246.0" y="194.0" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="middle" fill="#263B4D">Dynamic Pairwise Fusion</text>
-<text x="246.0" y="206.4" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#263B4D">MR, MC, RC; gated residual</text>
+<text x="246.0" y="194.0" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="middle" fill="#000000">Dynamic Pairwise Fusion</text>
+<text x="246.0" y="206.4" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#000000">MR, MC, RC; gated residual</text>
 <polyline points="246,219 246,229" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
 <polygon points="246,229 248.5,224.0 243.5,224.0" fill="#5C6B79"/>
 <circle cx="30" cy="252" r="13" fill="#FFFFFF" stroke="#A2ADB7" stroke-width="1"/>
-<text x="30" y="255.4" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#263B4D">5</text>
+<text x="30" y="255.4" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#000000">5</text>
 <rect x="57" y="229" width="378" height="45" rx="4" fill="#FAE9ED" stroke="#A87984" stroke-width="1"/>
-<text x="246.0" y="249.0" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="middle" fill="#263B4D">CP-Factorized Pairwise Fusion</text>
-<text x="246.0" y="261.4" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#263B4D">Giảm tham số tensor trọng số</text>
+<text x="246.0" y="249.0" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="middle" fill="#000000">CP-Factorized Pairwise Fusion</text>
+<text x="246.0" y="261.4" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#000000">Giảm tham số tensor trọng số</text>
 <polyline points="246,274 246,284" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
 <polygon points="246,284 248.5,279.0 243.5,279.0" fill="#5C6B79"/>
 <circle cx="30" cy="307" r="13" fill="#FFFFFF" stroke="#A2ADB7" stroke-width="1"/>
-<text x="30" y="310.4" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#263B4D">6</text>
+<text x="30" y="310.4" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#000000">6</text>
 <rect x="57" y="284" width="378" height="45" rx="4" fill="#EEF0F2" stroke="#77838F" stroke-width="1"/>
-<text x="246.0" y="304.0" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="middle" fill="#263B4D">Fusion Ablation</text>
-<text x="246.0" y="316.4" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#263B4D">Kiểm tra cơ chế và từng pair</text>
+<text x="246.0" y="304.0" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="middle" fill="#000000">Fusion Ablation</text>
+<text x="246.0" y="316.4" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#000000">Kiểm tra cơ chế và từng pair</text>
 <polyline points="246,329 246,339" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
 <polygon points="246,339 248.5,334.0 243.5,334.0" fill="#5C6B79"/>
 <circle cx="30" cy="362" r="13" fill="#FFFFFF" stroke="#A2ADB7" stroke-width="1"/>
-<text x="30" y="365.4" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#263B4D">7</text>
+<text x="30" y="365.4" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#000000">7</text>
 <rect x="57" y="339" width="378" height="45" rx="4" fill="#EEEAF6" stroke="#86759D" stroke-width="1"/>
-<text x="246.0" y="359.0" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="middle" fill="#263B4D">RC-Free Pairwise Fusion</text>
-<text x="246.0" y="371.4" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#263B4D">Giữ 3 modalities; chỉ MR và MC</text>
+<text x="246.0" y="359.0" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="middle" fill="#000000">RC-Free Pairwise Fusion</text>
+<text x="246.0" y="371.4" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#000000">Giữ 3 modalities; chỉ MR và MC</text>
 </svg>

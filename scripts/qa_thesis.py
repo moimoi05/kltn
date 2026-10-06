@@ -100,6 +100,8 @@ def main():
     report = {'source': source_checks(root)}
     from qa_performance_tables import check as check_performance_tables
     report['performance_tables'] = check_performance_tables(root)
+    from qa_figure_style import check as check_figure_style
+    report['figure_style'] = check_figure_style(root)
     pdf = args.pdf or root / 'main.pdf'
     if pdf.exists():
         report['build'] = build_checks(root, pdf)
@@ -110,6 +112,8 @@ def main():
                     'internal_project_citations', 'duplicate_bibliography_keys', 'duplicate_labels',
                     'undefined_source_references', 'missing_graphics', 'todo_fixme', 'old_experiment_final_name', 'resizebox_used']
     errors = [key for key in failure_keys if s[key]]
+    if not report['figure_style']['pass']:
+        errors.append('figure_text_color_or_3d_representation')
     if s['chapter_count'] != 5 or any(n < 1 for n in s['figures_per_chapter'].values()):
         errors.append('chapter_figure_requirement')
     if 'build' in report:

@@ -4,7 +4,7 @@ Nguyễn Phương Nam — Khóa luận cử nhân, Trí tuệ nhân tạo, UET, 
 
 Đây là bản chỉnh sửa từ source thesis ngày 05/10/2026, giữ nội dung nghiên cứu và bổ sung flow, hình vector, bảng đọc được, đối chiếu code/report và kết quả validation. Không thực hiện thêm preprocessing, training hoặc test evaluation.
 
-Bản PDF hoàn thiện ngày 06/10/2026 có 69 trang tổng cộng, 16 hình vector và 57 tài liệu tham khảo. Gói source đã được giải nén, biên dịch độc lập bằng script đi kèm và đối chiếu toàn bộ trang với PDF đã kiểm tra trực quan. Xem `QUALITY_CHECK.md` để biết phạm vi kiểm chứng và các giới hạn nghiên cứu.
+Bản PDF hoàn thiện ngày 06/10/2026 có 70 trang tổng cộng, 16 hình vector và 57 tài liệu tham khảo. Gói source đã được giải nén, biên dịch độc lập bằng script đi kèm và đối chiếu toàn bộ trang với PDF đã kiểm tra trực quan. Xem `QUALITY_CHECK.md` để biết phạm vi kiểm chứng và các giới hạn nghiên cứu.
 
 ## Cấu trúc năm chương
 
@@ -21,7 +21,7 @@ Bản PDF hoàn thiện ngày 06/10/2026 có 69 trang tổng cộng, 16 hình ve
 - `FrontMatter/`: bìa, tóm tắt Việt/Anh, lời cảm ơn, cam đoan, từ viết tắt.
 - `references.bib`: 57 nguồn nghiên cứu quốc tế; bài baseline Aghajanian được cố định ở [1], các nguồn còn lại đánh số theo thứ tự trích dẫn.
 - `image/`: logo và 16 hình PDF/SVG vector.
-- `figures_source/`: 16 scene `.drawio`, source Python thống nhất, dữ liệu thật của bốn chart và provenance.
+- `figures_source/`: 16 scene `.drawio`, `generate_figures.py` và renderer dùng chung `scene_renderer.py`, dữ liệu thật của bốn chart và provenance.
 - `provenance/`: kiểm chứng literature/method/results, inventory toàn KLTN, catalog và checksum của các nguồn chính.
 - `COMPILE.md`, `build.ps1`, `build.sh`, `latexmkrc`: hướng dẫn và cách biên dịch.
 - `QUALITY_CHECK.md`, `qa_report.json`: kết quả QA sau biên dịch.
@@ -42,6 +42,14 @@ Bản PDF hoàn thiện ngày 06/10/2026 có 69 trang tổng cộng, 16 hình ve
 Danh mục có 51 bài tạp chí/hội nghị và 6 preprint arXiv được ghi rõ trạng thái. Đã bỏ hai báo cáo nội bộ và entry chỉ dẫn tới tài liệu API. CNN/CNN3D, LSTM/T-LSTM, Transformer/ViT/3D UNETR, Med3D và các thư viện thực sự có trong code đều được đối chiếu; mục thư viện ở Chương 3 nêu đúng vai trò của backend nguyên mẫu và pipeline cuối. NiBabel được mô tả trong phương pháp; không tạo một bài công bố không tồn tại chỉ để có citation.
 
 Các bảng so sánh hiệu năng in đậm toàn bộ dòng tốt nhất theo C-index; bảng ba seed dùng mean. Hai dòng RC-Free có mean bằng nhau nên cùng in đậm. Bảng tham số/cấu hình không áp dụng quy tắc “lớn nhất là tốt nhất”. Số liệu thực nghiệm được giữ nguyên.
+
+## Shape và hình 3D — cập nhật 06/10/2026
+
+Toàn bộ chữ trong 16 hình dùng màu đen; màu pastel chỉ dùng cho nền và đường nét. Timeline, nhánh preprocessing và pipeline dùng khối hộp 3D để biểu diễn MRI/encoder 3D. Hình CP vẽ tensor **trọng số** `H×dx×dy` và các tensor rank-one, đồng thời giữ riêng sơ đồ forward hiệu quả.
+
+Bảng 3.1 ghi shape từng stage của MRI encoder cuối; Bảng 3.2 tổng hợp giao diện các phase; Bảng 3.3 chi tiết Paper CNN–PCA–T-LSTM và CrossFormer3D; Bảng 3.5 ghi toàn bộ pipeline RC-Free. Shape ResNet cuối được suy ra từ source/config MONAI 1.5.2: MRI144³, stem stride1, xử lý từng visit rồi stack pooled512 trước projection128. P10 dùng MRI128³ channels-last, stem stride2, lấy GAP512 trước dropout; PCA99 theo seed là38/69/2 và temporal hidden64. CrossFormer đổi từ channels-first sang channels-last sau stem stride6. Không mô tả các shape này như một lần chạy forward hooks mới.
+
+Evidence local và audit remote do người dùng cung cấp được ghi riêng trong `provenance/TENSOR_SHAPE_AUDIT.md` và `REMOTE_SHAPE_AUDIT_20261006.md`, gồm source/config/version/hash, artifact PCA và phạm vi shape tests. Không thay đổi mô hình hoặc kết quả đã đóng băng.
 
 ## Biên dịch và chỉnh hình
 

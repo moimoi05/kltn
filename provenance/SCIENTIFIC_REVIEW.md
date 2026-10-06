@@ -1,5 +1,17 @@
 # Scientific and requirement review
 
+## Current figure/shape revision — 6 October 2026
+
+The current artifact has 70 total pages, including 50 main-content pages, and supersedes the earlier 69-page reference revision recorded below. All pages were accepted by contact/full-page review or identical-render comparison to accepted sheets; the new shape tables and 3D CP/pipeline were inspected at full-page scale. Grayscale review covers the CP/gate/routes/pipeline and all four result charts.
+
+All 16 scientific figures use black text in PDF/SVG/native drawio, with volumetric MRI and CP weight tensors drawn as cuboids. Source-derived final ResNet maps use MONAI1.5.2 stem stride1 at144³ and sequential visit processing, pooled512→stack→projection128. The earlier shape audit's wording corrections were integrated: PCA produces16, radiomics MLP produces64, and pooled512 vectors are stacked before MRI projection.
+
+The user's remote audit provides the official P10 per-seed PCA38/69/2, pre-dropout GAP512, hidden64 and channels-last128³ CNN; CrossFormer source contracts/shape tests provide the144³/stride6 stem and its permutation to channels-last stages. These are attributed to supplied remote evidence, with exact configuration/version/hash identifiers in REMOTE_SHAPE_AUDIT_20261006.md. Neither this editor nor the remote audit claimed a new forward-hook measurement. Distinct P05-X fusion internals are not assigned the final ResNet bottlenecks.
+
+The frozen results JSON and references.bib are byte-identical to the previous release. The final RC-Free architecture, winner-row emphasis, 57 references, baseline[1], parenthesized routes and formal-test status remain unchanged. Current build/style/font/geometry/original-source checks pass. A fresh ZIP extraction compiled independently and reproduced all70 pages with identical extracted text and pixel-identical renders; package_build_check.json records that completed check.
+
+## Earlier independent reviews
+
 Reviewed 5 October 2026. Scope was read-only review of the full user request, Chapters 1–5, English/Vietnamese abstracts, current figure-source semantics, methodology/results/literature evidence audits and `figures_source/results_data.json`. Project data and model code were not changed; no training, refit or prediction run was performed.
 
 ## Disposition

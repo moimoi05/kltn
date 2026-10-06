@@ -1,7 +1,7 @@
 \chapter{Phương pháp}
 \label{chap:method}
 
-Chương này trình bày cách xây dựng mẫu nghiên cứu, quá trình phát triển kiến trúc và hoạt động của mô hình cuối. Ký hiệu $M$, $R$ và $C$ lần lượt chỉ embedding MRI, radiomics và clinical tại một visit. Các khối fusion được dùng chung giữa ba visits; mô hình thời gian sau đó tổng hợp chuỗi thành một điểm nguy cơ ở cấp bệnh nhân. Kết quả dùng để đánh giá các quyết định thiết kế được trình bày riêng ở Chương~\ref{chap:results}.
+Chương này trình bày cách xây dựng mẫu nghiên cứu, quá trình phát triển kiến trúc và hoạt động của mô hình cuối. Ký hiệu $M$, $R$ và $C$ lần lượt chỉ embedding MRI, radiomics và clinical tại một visit. Các khối fusion được dùng chung giữa ba visits; mô hình thời gian sau đó tổng hợp chuỗi thành một điểm nguy cơ ở cấp bệnh nhân. Shape được trình bày ở Bảng~\ref{tab:mri-encoder-shapes}, \ref{tab:phase-shape-interfaces}, \ref{tab:alternative-encoder-shapes} và \ref{tab:pipeline-shapes}; kết quả đánh giá ở Chương~\ref{chap:results}.
 
 \section{Thiết kế nghiên cứu và xây dựng dữ liệu}
 \label{sec:study-design}
@@ -44,7 +44,7 @@ Clinical được ghép với MRI bằng quy tắc frozen: cùng RID, đánh gi�
 \begin{figure}[tbp]
 \centering
 \includegraphics[width=\textwidth]{image/modality-preprocessing.pdf}
-\caption[Ba nhánh xử lý modality]{Ba nhánh xử lý tại một visit. MRI tạo embedding $M$ 128 chiều; 16 thành phần radiomics PCA tạo $R$ 64 chiều; 9 giá trị clinical và 9 observedness masks tạo $C$ 64 chiều. Các biến đổi thống kê được fit trên training và giữ cố định khi áp dụng cho validation.}
+\caption[Ba nhánh xử lý modality]{Ba nhánh xử lý tại một visit. Khối 3D biểu diễn nhánh volume MRI; pooling và projection tạo vector $M$ 128 chiều. Radiomics qua PCA 16 chiều và MLP tạo $R$ 64 chiều; 9 giá trị clinical và 9 masks tạo $C$ 64 chiều. Biến đổi thống kê chỉ fit trên training.}
 \label{fig:modalities}
 \end{figure}
 
@@ -52,6 +52,31 @@ Clinical được ghép với MRI bằng quy tắc frozen: cùng RID, đánh gi�
 Pipeline MRI T1 chuẩn hóa orientation RAS, dùng SynthStrip để tách não \cite{hoopes2022synthstrip}, đăng ký rigid 6-DOF các visits sau về visit đầu, rồi đăng ký rigid visit đầu về MNI152NLin2009cAsym. Ba MRI của cùng người nằm trên lưới chung $144\times144\times144$, spacing 1.5~mm isotropic. Ảnh được z-score trong brain mask riêng của volume; voxel ngoài mask bằng không. Nội suy ảnh là linear và nội suy mask là nearest-neighbor. Pipeline này không bổ sung N4, affine scaling hay nonlinear registration.
 
 Encoder là MONAI ResNet-18 3D dùng chung trọng số giữa visits \cite{he2016deep,cardoso2022monai}. Backbone chứa BatchNorm và ReLU \cite{ioffe2015batchnorm,nair2010rectified}; sau global pooling, vector 512 chiều qua Linear $512\to128$, GELU, Dropout 0.20 và LayerNorm để tạo $M$ \cite{hendrycks2016gelu,srivastava2014dropout,ba2016layernorm}. Trong kiến trúc cuối, backbone được khởi tạo bằng MedicalNet/Med3D \cite{chen2019med3d}, nạp chặt trọng số và BatchNorm buffers của backbone, loại task head pretrained và fine-tune toàn bộ từ epoch đầu. Các mô hình MRI random và pretrained thuộc giai đoạn đối chứng, không phải hai encoder đồng thời trong pipeline cuối.
+
+Bảng~\ref{tab:mri-encoder-shapes} suy ra kích thước feature map từ constructor thực tế và MONAI 1.5.2\footnote{Mã nguồn phiên bản: \url{https://github.com/Project-MONAI/MONAI/blob/1.5.2/monai/networks/nets/resnet.py}.}; đây không phải log forward hooks mới. Implementation xử lý lần lượt từng visit với batch $B$, stack pooled vectors theo trục visit $T=3$, rồi áp dụng projection.
+
+\begin{table}[htbp]
+\centering
+\small
+\caption[Shape của shared MRI encoder]{Shape MRI encoder: feature map $[B,C,D,H,W]$ và chuỗi pooled/embedding $[B,T,F]$, với $T=3$.}
+\label{tab:mri-encoder-shapes}
+\begin{tabularx}{\textwidth}{@{}Y l@{}}
+\toprule
+\textbf{Bước} & \textbf{Shape đầu ra} \\
+\midrule
+MRI đầu vào & $[B,1,144,144,144]$ \\
+Conv $7^3$, stride 1, padding 3; BN; ReLU & $[B,64,144,144,144]$ \\
+MaxPool $3^3$, stride 2, padding 1 & $[B,64,72,72,72]$ \\
+ResNet stage 1: hai basic blocks & $[B,64,72,72,72]$ \\
+Stage 2: block đầu stride 2 & $[B,128,36,36,36]$ \\
+Stage 3: block đầu stride 2 & $[B,256,18,18,18]$ \\
+Stage 4: block đầu stride 2 & $[B,512,9,9,9]$ \\
+Global average pooling; flatten & $[B,512,1,1,1]\to[B,512]$ \\
+Stack ba pooled vectors & $[B,3,512]$ \\
+Linear; GELU; Dropout; LayerNorm & $[B,3,128]$ \\
+\bottomrule
+\end{tabularx}
+\end{table}
 
 \subsection{Radiomics}
 PyRadiomics trích 107 đặc trưng whole-brain từ MRI đã xử lý và mask, gồm shape, first-order, GLCM, GLDM, GLRLM, GLSZM và NGTDM \cite{vangriethuysen2017computational}. Protocol deep dùng binCount 64. Ba đặc trưng hằng trên training được loại bỏ, còn 104; scaling và PCA giữ ít nhất 99\% phương sai chỉ fit trên training \cite{jolliffe2016pca}. Dữ liệu model-ready có 16 thành phần PCA mỗi visit. Đây là chiều \emph{đầu vào} radiomics; embedding $R$ có 64 chiều sau MLP $16\to128\to64$, GELU, Dropout 0.20 và LayerNorm cuối nhánh.
@@ -78,6 +103,95 @@ Kiến trúc được phát triển theo từng câu hỏi nghiên cứu, không
 \end{figure}
 
 Full outer-product tạo tương tác giàu nhưng cần lớp tuyến tính lớn. CP được áp dụng ở bước sau để giảm chi phí của lớp này trong khi giữ các khối còn lại. Fusion ablation tiếp tục kiểm tra gate, scale, identity residual và từng pair. Kết quả validation dẫn tới RC-Free Pairwise Fusion, chỉ giữ MR và MC. Hình~\ref{fig:evolution} là chronology thiết kế; các so sánh và mức độ chắc chắn của bằng chứng được trình bày ở Chương~\ref{chap:results}. Chuỗi milestone ban đầu có khác biệt về protocol batching, nên không được diễn giải toàn bộ thành các đối chứng chỉ thay duy nhất một thành phần.
+
+\begin{table}[htbp]
+\centering
+\small
+\caption[Giao diện shape theo giai đoạn phát triển]{Giao diện shape theo giai đoạn phát triển. Chiều feature tính cho một visit; shape chuỗi giữ $T=3$. Raw log-risk ở mọi giai đoạn là $[B]$.}
+\label{tab:phase-shape-interfaces}
+\begin{tabularx}{\textwidth}{@{}L{3.5cm} Y l@{}}
+\toprule
+\textbf{Giai đoạn} & \textbf{Biểu diễn trước temporal/head} & \textbf{Patient vector} \\
+\midrule
+MRI Only & CNN $512\to128$, một visit & $[B,128]$ \\
+Longitudinal MRI & Ba MRI: $[B,3,512]\to[B,3,128]$ & $[B,128]$ \\
+CrossFormer3D & Pooled $512$; P03-X: $[B,3,512]\to[B,3,128]$ & $[B,128]$ \\
+Multimodal Concat. & $M/R/C:128/64/64\to256\to128$ & $[B,128]$ \\
+Full Pairwise & Pair MR/MC/RC: $64/64/32$; readout $256\to128$ & $[B,128]$ \\
+Paper CNN--T-LSTM & CNN $512\to\mathrm{PCA}\ K\to\mathrm{T\!-\!LSTM}\ 64$ & $[B,64]$ \\
+CP Pairwise & Rank $8/8/4$; giữ pair outputs $64/64/32$ & $[B,128]$ \\
+RC-Free / Fixed-$\lambda$ & Rank MR/MC $8/8$; bốn routes; readout $256\to128$ & $[B,128]$ \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+Bảng~\ref{tab:alternative-encoder-shapes} tách hai encoder đối chứng khỏi ResNet của kiến trúc cuối. Paper CNN dùng TensorFlow với MRI $128^3$, stem stride 2 và embedding lấy tại global average pooling \emph{trước} dropout/head CNN. Trong P10 retuned, PCA được fit riêng trên embedding training của từng seed: $K=38$, $69$ và $2$ lần lượt cho seed 20260727, 20260728 và 20260729; cấu hình T-LSTM đã chọn có hidden size 64. PCA chỉ center, giữ 99\% phương sai, không scaling/whitening. CrossFormer3D Tiny nhận MRI $144^3$ channels-first, stem stride 6, rồi đổi sang channels-last. Shape CNN được suy ra từ source; chiều embedding/PCA được xác nhận bằng artifact đã lưu, còn CrossFormer dựa trên source contract và shape tests. Đây không phải phép đo mới bằng forward hooks.
+
+\begin{table}[p]
+\centering
+\small
+\caption[Shape Paper CNN--T-LSTM và CrossFormer3D]{Shape các encoder đối chứng. $N$ là batch volume CNN; $B$ là batch bệnh nhân. Ký hiệu $s^3$ trong shape viết tắt ba trục không gian $(s,s,s)$; thứ tự trục được ghi riêng cho từng khối.}
+\label{tab:alternative-encoder-shapes}
+\begin{minipage}[t]{0.49\textwidth}
+\centering
+\textbf{(a) P10: Paper CNN--PCA--T-LSTM}\\[4pt]
+\begin{tabularx}{\linewidth}{@{}Y l@{}}
+\toprule
+\textbf{Bước} & \textbf{Shape đầu ra} \\
+\midrule
+\multicolumn{2}{@{}l}{\emph{CNN: $[N,D,H,W,C]$}} \\
+MRI đầu vào & $[N,128^3,1]$ \\
+Conv $7^3$, stride 2 & $[N,64^3,64]$ \\
+MaxPool $3^3$, stride 2 & $[N,32^3,64]$ \\
+Residual stage 1 & $[N,32^3,64]$ \\
+Stage 2 & $[N,16^3,128]$ \\
+Stage 3 & $[N,8^3,256]$ \\
+Stage 4 & $[N,4^3,512]$ \\
+GAP, trước dropout & $[N,512]$ \\
+\midrule
+\multicolumn{2}{@{}l}{\emph{Chuỗi ba visits: $[B,T,F]$}} \\
+Group theo RID & $[B,3,512]$ \\
+PCA train-only & $[B,3,K]$ \\
+T-LSTM hidden & $[B,3,64]$ \\
+Hidden/cell cuối & $[B,64]$ \\
+Attention: projection & $[B,3,64]$ \\
+Scores; weights & $[B,3,1]$ \\
+Weighted context & $[B,64]$ \\
+Linear risk; squeeze & $[B,1]\to[B]$ \\
+\bottomrule
+\end{tabularx}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.49\textwidth}
+\centering
+\textbf{(b) CrossFormer3D Tiny: P02-D}\\[4pt]
+\begin{tabularx}{\linewidth}{@{}Y l@{}}
+\toprule
+\textbf{Bước} & \textbf{Shape đầu ra} \\
+\midrule
+\multicolumn{2}{@{}l}{\emph{Đầu vào/stem: $[B,C,D,H,W]$}} \\
+MRI đầu vào & $[B,1,144^3]$ \\
+Stem $k=5/7/9$: mỗi nhánh & $[B,16,24^3]$ \\
+Concat ba nhánh & $[B,48,24^3]$ \\
+Projection $1\times1$ & $[B,64,24^3]$ \\
+Permute; LN; GELU & $[B,24^3,64]$ \\
+\midrule
+\multicolumn{2}{@{}l}{\emph{Các stages: $[B,D,H,W,C]$}} \\
+Stage 1: hai blocks & $[B,24^3,64]$ \\
+Patch Merge 1 & $[B,12^3,128]$ \\
+Stage 2: hai blocks & $[B,12^3,128]$ \\
+Patch Merge 2 & $[B,6^3,256]$ \\
+Stage 3: hai blocks & $[B,6^3,256]$ \\
+Patch Merge 3 & $[B,3^3,512]$ \\
+Stage 4; final LN & $[B,3^3,512]$ \\
+Masked spatial pool & $[B,512]$ \\
+Identity adapter & $[B,512]$ \\
+\midrule
+Head: Linear; GELU; dropout & $[B,128]$ \\
+Linear risk; squeeze & $[B,1]\to[B]$ \\
+\bottomrule
+\end{tabularx}
+\end{minipage}
+\end{table}
 
 \section{Multimodal Concatenation baseline}
 Tại visit $t$, baseline nối ba embedding:
@@ -128,7 +242,7 @@ $A$ và $B$ không bias; bias $b$ của first layer được giữ trong $Oq+b$.
 \begin{figure}[tbp]
 \centering
 \includegraphics[width=\textwidth]{image/outer-vs-cp.pdf}
-\caption[Full outer-product và CP-factorized bilinear]{Full outer-product và CP-factorized first bilinear layer. CP tính hai phép chiếu rank $Q$, tích Hadamard và phép chiếu output mà không tạo activation $d_xd_y$. Post-MLP sau first layer được giữ nguyên trong controlled comparison.}
+\caption[Tensor trọng số 3D và CP-factorized bilinear]{Khối 3D biểu diễn tensor trọng số $\mathcal W\in\mathbb R^{d_h\times d_x\times d_y}$ và tổng các tensor rank-one trong CP. Forward tính hai phép chiếu rank $Q$, tích Hadamard và phép chiếu output, không dựng $\mathcal W$ hay activation outer-product. Post-MLP được giữ nguyên.}
 \label{fig:cp-block}
 \end{figure}
 
@@ -213,25 +327,36 @@ Hình~\ref{fig:overall} liên kết toàn bộ các bước. Tại mỗi visit, 
 \begin{figure}[tbp]
 \centering
 \includegraphics[width=\textwidth]{image/final-pipeline.pdf}
-\caption[Kiến trúc tổng thể của framework cuối]{Kiến trúc tổng thể của Longitudinal Learning with Tensor Fusion. Phần trên xử lý một visit bằng ba encoders, CP interactions MR/MC và gated residual routing; phần dưới tổng hợp ba visit embeddings bằng T-LSTM và temporal attention, sau đó xuất raw Cox log-risk. Không có direct RC interaction trong pipeline cuối.}
+\caption[Kiến trúc tổng thể của framework cuối]{Kiến trúc tổng thể của Longitudinal Learning with Tensor Fusion. Khối 3D biểu diễn MRI và xử lý không gian; các embedding sau pooling là vector. Ba encoders, CP MR/MC và residual routing tạo visit representation; T-LSTM và attention tổng hợp ba visits rồi xuất raw Cox log-risk. Không có direct RC interaction.}
 \label{fig:overall}
 \end{figure}
 
 \begin{table}[H]
 \centering
-\caption{Kích thước tensor chính trong kiến trúc cuối, với batch size $B$.}
+\small
+\caption[Shape theo từng bước của kiến trúc RC-Free]{Shape theo từng bước của kiến trúc RC-Free cuối. $B$ là số người trong batch, $T=3$; mọi phép biến đổi theo visit dùng chung trọng số.}
 \label{tab:pipeline-shapes}
-\begin{tabularx}{\textwidth}{Yl}
+\begin{tabularx}{\textwidth}{@{}L{5.5cm} Y@{}}
 \toprule
-Tensor & Shape \\
+\textbf{Bước / tensor} & \textbf{Shape hoặc phép biến đổi} \\
 \midrule
 MRI sequence & $[B,3,1,144,144,144]$ \\
-Radiomics PCA & $[B,3,16]$ \\
-Clinical values / observedness masks & $[B,3,9]$ / $[B,3,9]$ \\
+CNN pooling / MRI projection & $[B,3,512]\to[B,3,128]$ \\
+Radiomics: đầu vào PCA / MLP & $[B,3,16]\to[B,3,128]\to[B,3,64]$ \\
+Clinical: values + masks; MLP $18\to64\to64$ & Hai $[B,3,9]\to[B,3,18]\to[B,3,64]$ \\
+Low projections $\widetilde M,\widetilde R,\widetilde C$ & $[B,3,32]$, $[B,3,32]$, $[B,3,16]$ \\
+CP MR/MC: $u,v,q=u\odot v$ & Mỗi tensor $[B,3,8]$ ở từng pair \\
+CP output / post-MLP & $[B,3,8]\to[B,3,128]\to[B,3,64]$ \\
+$(\mathrm{MR}\to M)$, $(\mathrm{MC}\to M)$ & Mỗi directed feature $[B,3,128]$ \\
+$(\mathrm{MR}\to R)$, $(\mathrm{MC}\to C)$ & Mỗi directed feature $[B,3,64]$ \\
+Gate / global route scale & Mỗi gate $[B,3,1]$; mỗi $\lambda$ là scalar $[]$ \\
 $M_{\rm out},R_{\rm out},C_{\rm out}$ & $[B,3,128]$, $[B,3,64]$, $[B,3,64]$ \\
-Readout / T-LSTM hidden sequence & $[B,3,128]$ \\
-Temporal attention weights & $[B,3]$ \\
-Subject embedding / raw log-risk & $[B,128]$ / $[B]$ \\
+Concatenate / shared readout & $[B,3,256]\to[B,3,128]$ \\
+Khoảng thời gian / visit mask & Mỗi tensor $[B,3]$ \\
+T-LSTM hidden / cell tại một visit & Chuỗi $[B,3,128]$; hidden/cell $[B,128]$ \\
+Attention scores / weights & $[B,3,128]\to[B,3,64]\to[B,3,1]$; squeeze $[B,3]$ \\
+Weighted subject representation & $[B,128]$ \\
+Cox hidden / output / raw log-risk & $[B,128]\to[B,64]\to[B,1]\to[B]$ \\
 \bottomrule
 \end{tabularx}
 \end{table}

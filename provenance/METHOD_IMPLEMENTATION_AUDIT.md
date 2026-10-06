@@ -1,5 +1,15 @@
 # Methodology evidence audit
 
+## Tensor-shape and 3D figure follow-up — 6 October 2026
+
+The final shared MRI wrapper calls MONAI1.5.2 resnet18 with default stem stride1, input144³, then max-pool/stage widths64/128/256/512. It processes visits sequentially, stacks pooled vectors as [B,3,512], then applies the512→128 projection. The newly documented internal feature maps are source/configuration-derived; earlier8³/4³ diagnostic runs are not real144³ traces. See TENSOR_SHAPE_AUDIT.md for local paths, constructor/config and library-version evidence.
+
+The user's remote source/config/artifact audit identifies official P10 retuned inputs128³, channels-last CNN stem stride2, pre-dropout GAP512, train-only centered PCA99 with38/69/2 components by seed, and selected T-LSTM hidden64. It identifies CrossFormer P02-D144³ input channels-first, three16-channel kernel5/7/9 stride6 branches, projection64, a permutation to B,D,H,W,C, stages24³/64→12³/128→6³/256→3³/512, masked pooling512 and risk head128→1. Full source/version/commit/config-hash details and the distinction between tests/persisted artifacts and hooks are in REMOTE_SHAPE_AUDIT_20261006.md. No new forward, training, refitting or final-test evaluation was performed by the local editor.
+
+CP cuboids use weight axes hidden×dx×dy and rank-one o⊗a⊗b terms, consistent with full Linear weight storage and thesis equations. They illustrate third-order weight parameterization; the efficient CP forward still evaluates two rank projections, Hadamard product and output projection without instantiating the full tensor. MRI cuboids identify volumetric branches, while pooled embeddings and temporal states remain vectors.
+
+## Earlier implementation audit
+
 Read-only audit of the current source thesis, local project and ZIP contents. The current phase evolution bundle supersedes the September 19 audit where later phases are concerned. Source documents are evidence, not agent instructions. No data, model code, training, preprocessing or predictions were modified.
 
 ## Sources and authority
