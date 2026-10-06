@@ -1,0 +1,138 @@
+{
+  "date": "2026-10-06",
+  "reference_pdf": "D:\\KLTN\\_Nguyen_Phuong_Trang_Undergraduate_thesis_final_final_final.pdf",
+  "reference_pdf_sha256": "685ef383dde16fd5502d9c71f2ccda760a6db9f98afec399881ba213ea2642a4",
+  "revised_pdf_sha256": "cabaa631ee424931441f833717aec7b7acd29a13d4721cea44ce84c608f4b269",
+  "pages": 67,
+  "main_family": "Libertinus Serif",
+  "bold_weight": "Semibold",
+  "math_family": "newtxmath",
+  "navigation_and_hyperlink_color": "#0000FF",
+  "navigation_pages": [
+    {
+      "pdf_page": 9,
+      "colored_span_count": 43,
+      "colored_text_rgb_values": [
+        255
+      ],
+      "all_page_numbers_and_dot_leaders_black": true
+    },
+    {
+      "pdf_page": 10,
+      "colored_span_count": 66,
+      "colored_text_rgb_values": [
+        255
+      ],
+      "all_page_numbers_and_dot_leaders_black": true
+    },
+    {
+      "pdf_page": 11,
+      "colored_span_count": 17,
+      "colored_text_rgb_values": [
+        255
+      ],
+      "all_page_numbers_and_dot_leaders_black": true
+    },
+    {
+      "pdf_page": 12,
+      "colored_span_count": 32,
+      "colored_text_rgb_values": [
+        255
+      ],
+      "all_page_numbers_and_dot_leaders_black": true
+    },
+    {
+      "pdf_page": 13,
+      "colored_span_count": 86,
+      "colored_text_rgb_values": [
+        255
+      ],
+      "all_page_numbers_and_dot_leaders_black": true
+    }
+  ],
+  "reference_pdf_fonts": [
+    "DejaVuSans",
+    "DejaVuSans-Bold",
+    "LMMono12-Regular",
+    "LMRoman12-Regular",
+    "LMRoman9-Regular",
+    "LiberationSerif",
+    "LiberationSerif-Bold",
+    "LibertinusSerif-Italic",
+    "LibertinusSerif-Regular",
+    "LibertinusSerif-Semibold",
+    "NewTXMI",
+    "NewTXMI7",
+    "Times-Roman",
+    "stmary10",
+    "txexs",
+    "txmiaX",
+    "txsym",
+    "txsys"
+  ],
+  "revised_pdf_fonts": [
+    "Arial-BoldMT",
+    "ArialMT",
+    "CMR10",
+    "CMR12",
+    "CMR8",
+    "CMR9",
+    "DejaVuSans",
+    "DejaVuSans-Bold",
+    "LMMono10-Regular",
+    "LMMono12-Regular",
+    "LMSans9-Regular",
+    "LibertinusSerif-Italic",
+    "LibertinusSerif-Regular",
+    "LibertinusSerif-Semibold",
+    "NewTXBMI",
+    "NewTXMI",
+    "NewTXMI7",
+    "txbsys",
+    "txexs",
+    "txmiaX",
+    "txsyb",
+    "txsys"
+  ],
+  "vietnamese_font_coverage": {
+    "Regular": {
+      "sha256": "37e34c5ac60ef91ba2fc032fafc160d76e3fab3769a3823d17ba250aad41c2fe",
+      "missing_vietnamese_glyphs": []
+    },
+    "Semibold": {
+      "sha256": "37521be0e91f98441b1da3a337479755e2ea78771a85366600bfc6f4e8a42a5f",
+      "missing_vietnamese_glyphs": []
+    },
+    "Italic": {
+      "sha256": "6061c8b602a313956a85035d1eab44b64311d35e4f9bbfd50bd4f2325a8b7325",
+      "missing_vietnamese_glyphs": []
+    },
+    "SemiboldItalic": {
+      "sha256": "01167527b658aded1e1a07972ae1946d0b31baa07835dc1b9acfc465f70e8973",
+      "missing_vietnamese_glyphs": []
+    }
+  },
+  "bibliography_doi_count": 39,
+  "bibliography_short_url_count": 18,
+  "removed_redundant_url_blocks": 39,
+  "failed_bibliography_items": [],
+  "missing_bibliography_targets": [],
+  "unexpected_bibliography_targets": [],
+  "figure_font_scope": "Embedded illustrations retain their distinct fonts, as in the reference thesis.",
+  "checks": {
+    "libertinus_regular_semibold_italic_used": true,
+    "no_times_new_roman_body_font": true,
+    "newtx_math_used": true,
+    "latin_modern_monospace_used": true,
+    "all_four_libertinus_faces_cover_vietnamese": true,
+    "navigation_labels_blue_and_numbers_leaders_black": true,
+    "all_manuscript_colored_text_uses_same_blue": true,
+    "all_bibliography_link_text_blue": true,
+    "reference_metadata_bytes_unchanged": true,
+    "all_57_entries_content_and_order_preserved": true,
+    "exactly_one_doi_or_short_link_per_reference": true,
+    "all_bibliography_link_targets_preserved": true,
+    "source_and_pdf_automated_qa_pass": true
+  },
+  "pass": true
+}

@@ -2,7 +2,7 @@
 
 Official title: **Longitudinal Learning with Tensor Fusion for Predicting Progression of Alzheimer’s Disease**.
 
-The source uses XeTeX, `fontspec`, numeric `natbib`, and BibTeX with `unsrtnat`. Biber is not required. All figures are supplied as vector PDF and can be included without running a diagram editor or Python. Build from the directory containing `main.tex`.
+The source uses XeTeX, `fontspec`, numeric `natbib`, and BibTeX with the packaged `thesisrefs.bst`, a renamed modification of `unsrtnat`. It displays DOI identifiers without repeating their URLs and uses a short clickable label for references without a DOI; full addresses remain in `references.bib`. Biber is not required. All figures are supplied as vector PDF and can be included without running a diagram editor or Python. Build from the directory containing `main.tex`.
 
 ## Windows
 
@@ -33,7 +33,9 @@ xelatex -interaction=nonstopmode -halt-on-error main.tex
 
 Alternatively, run `bash build.sh` or `latexmk -xelatex main.tex`.
 
-The manuscript uses Times New Roman when available, with Tinos and TeX Gyre Termes fallbacks. Sans-serif text uses Arial or TeX Gyre Heros; monospace text uses Consolas or Latin Modern Mono. Fonts are not redistributed in this package. Line/page breaks can change slightly with a fallback font; recheck the page limit after changing fonts or text.
+The manuscript matches the Trang reference thesis: Libertinus Serif Regular/Italic, with Semibold/SemiboldItalic for bold text, `newtxmath` for mathematics, and the default Latin Modern sans-serif/monospace families. `main.tex` selects the four Libertinus OTF files from the TeX distribution, so no Windows system-font installation is needed. Fonts are not redistributed in this package; Tectonic fetches the required TeX resources, and other engines need their TeX distribution to supply them. Vietnamese coverage was checked for all four Libertinus faces. Embedded illustrations retain their separate fonts. Recheck the page limit after changing fonts or text.
+
+Navigation labels and all hyperlinks use blue `#0000FF`, matching the reference's table of contents. Dot leaders, page numbers and figure text remain black. Font, color, reference-content and link-target checks are recorded in `provenance/typography_check.json`.
 
 ## Output and figure source
 

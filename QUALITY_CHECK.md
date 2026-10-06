@@ -5,7 +5,7 @@ Reviewed artifact: `Nguyen_Phuong_Nam_Thesis_RCFree_Revised.pdf`.
 ## Scope and document structure
 
 - [x] Official title matches all three covers, both abstracts, title macro, PDF metadata and README: **Longitudinal Learning with Tensor Fusion for Predicting Progression of Alzheimer’s Disease**.
-- [x] Five chapters, with **67 total PDF pages**: 13 front matter, 47 main content and 7 bibliography. The complete document meets the 70-page ceiling.
+- [x] Five chapters, with **67 total PDF pages**: 13 front matter, 48 main content and 6 bibliography. The complete document meets the 70-page ceiling.
 - [x] Section5.1 is four connected paragraphs without the seven previous subheadings; Section5.2 groups six limitations into three simpler points. The figure/caption, chapter introduction and Sections5.3/5.4 are retained. An independent read-only review confirmed that the shorter text preserves essential scientific qualifications; measurements are in `provenance/discussion_revision.json`.
 - [x] Each chapter has at least one figure; distribution 1/1/9/4/1, total 16. Methodology includes cohort, preprocessing, architecture evolution, full graph, full/CP, gated residual, RC-Free routes, overall pipeline and temporal model.
 - [x] Experimental chronology, controlled comparisons and exploratory milestones are distinguished. Historical test scores are excluded from selection tables and charts.
@@ -38,25 +38,27 @@ The PDF annotation follow-up additionally checked all 16 figures: explanatory fo
 - [x] Aghajanian et al., *Longitudinal structural MRI-based deep learning and radiomics features for predicting Alzheimer’s disease progression*, is bibliography [1] and explicitly identified as the direct methodological baseline.
 - [x] CNN/C3D, LSTM/T-LSTM, Transformer/ViT/3D medical-image Transformer, Med3D and actual library roles have literature attribution. Optional prototype/backbone/background scope is qualified; no nonexistent NiBabel paper was invented.
 - [x] Every winner row is bold throughout the performance tables. Benchmark selection uses the mean of three seeds and includes both tied RC-Free rows; the five benchmark scores/means/sample SDs match frozen evidence.
+- [x] Reference metadata and all 57 entries' content/order match release613d74d. The renamed `thesisrefs.bst` retains the original `unsrtnat` copyright/license and changes only URL formatting: 39 DOI-bearing entries omit redundant URLs; the other18 use the short clickable label “Liên kết”. Each entry retains its exact DOI/URL target in the PDF. All reference links use the same blue as the table of contents.
 
 ## Build and source verification
 
 - [x] Tectonic 0.17.0+20260731 completed the XeTeX/BibTeX build and stabilized references.
 - [x] No LaTeX/BibTeX error, undefined citation/reference, duplicate label, missing image, overfull box, missing glyph or oversized float.
-- [x] One mild Underfull hbox message remains (badness 1158 in the MRI template-name paragraph). The page was inspected and accepted; it does not show overflow, overlap or unreadable spacing. System-font path warnings are portability notices; used PDF fonts are embedded.
+- [x] One mild Underfull hbox message remains (badness1348 in a bibliography paragraph). The page was inspected and accepted; it does not show overflow, overlap or unreadable spacing. System-font path warnings are portability notices; used PDF fonts are embedded.
 - [x] No TODO/FIXME, resizebox or old experiment code as the final narrative name.
 - [x] 16 native `.drawio` files and 16 SVG files parse; 16 figure PDFs are single-page vectors. Their minimum label size is 9.5 pt at the supplied 160 mm width. Figures are included at text width without shrinking tables as images.
 - [x] Fonts used in extracted PDF text are embedded. No replacement glyph, unresolved `[?]` citation or text outside the page bounds was found across 67 pages.
+- [x] Manuscript text matches the Trang reference's Libertinus Serif Regular/Italic and Semibold/SemiboldItalic mapping, with `newtxmath` and Latin Modern defaults. All four Libertinus faces cover the Vietnamese alphabet and accented Unicode range. TOC/list labels and all colored manuscript/link text use exact blue `#0000FF`; navigation dot leaders and page numbers remain black. Embedded figure fonts are unchanged, consistent with the reference's separate illustration fonts. Detailed checks and font checksums are in `provenance/typography_check.json`.
 - [x] Checksums of 10 primary original files, including the draft ZIP/PDF and research report archives, remain unchanged.
 
 Build logs are preserved in `provenance/build/`. Automated findings are in `qa_report.json` and `provenance/artifact_checks.json`.
 
 ## Page-by-page visual review
 
-- [x] All 67 pages accepted through contact/full-page inspection or pixel-identical comparison to previously accepted sheets: covers/front matter, TOC/lists, every body page, equations, tables, figures and bibliography. The unchanged-page comparison is preserved in `provenance/visual_reuse_check.json`.
-- [x] The Section5.1/5.2 follow-up inspected all 12 changed pages and reused 55 pixel-identical previously accepted pages. TOC/list of figures (PDF11/12) and the three Chapter5 pages (58/59/60) were additionally inspected at full-page scale. All four earlier chapters, bibliography inputs, figure assets and chart data are byte-identical to the accepted release d254105. Route labels remain parenthesized in diagrams, text, captions and equation indices, including `M + (MR→M) + (MC→M)`.
+- [x] All 67 pages changed after the font update and were inspected in current contact sheets: covers/front matter, TOC/lists, every body page, equations, tables, figures and bibliography. No current page relies on a previous pixel-identical render. The comparison and frozen-input checks are in `provenance/visual_reuse_check.json`.
+- [x] TOC (PDF9), Table3.5/equations (PDF43) and the first bibliography page (PDF62) were additionally inspected at full-page scale. Chapters1/2/4/5, all front matter, bibliography metadata, figure assets and chart data are byte-identical to release613d74d. Chapter3 changes only by a float barrier that keeps preceding figures clear of Table3.5; its caption and all17 rows fit without shrinking, and all36 tensor shapes are unchanged. Route labels remain parenthesized in diagrams, text, captions and equation indices, including `M + (MR→M) + (MC→M)`.
 - [x] Table names and numbers are readable; main model names remain on one line where practical. Captions, margins, page numbers and section transitions are consistent.
-- [x] The accepted grayscale review of CP/gate/RC-Free/pipeline drawings and all four result charts on release d254105 PDF37/39/40/41/50/52/54/56 is reused: their source assets and current page renders are unchanged. Labels, arrows, point markers, signed values and error bars preserve meaning without relying on color.
+- [x] The accepted grayscale review of CP/gate/RC-Free/pipeline drawings and all four result charts on release d254105 PDF37/39/40/41/50/52/54/56 is reused for the byte-identical figure assets. Whole-page renders have changed with the manuscript font and were separately inspected. Labels, arrows, point markers, signed values and error bars preserve meaning without relying on color.
 - [x] Final pipeline and routing show all three modalities, no active RC pair and correct128/64/64→256→128→temporal→Cox dimensions. No connector crosses a box interior or clips a label.
 
 The per-page acceptance record and final-PDF checksum are in `provenance/visual_review.json`. Rendered inspection PNGs remain in the local working directory and are not mixed into the thesis source package.

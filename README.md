@@ -20,6 +20,7 @@ Bản PDF hoàn thiện ngày 06/10/2026 có 67 trang tổng cộng, 16 hình ve
 - `chapters/`: nội dung năm chương.
 - `FrontMatter/`: bìa, tóm tắt Việt/Anh, lời cảm ơn, cam đoan, từ viết tắt.
 - `references.bib`: 57 nguồn nghiên cứu quốc tế; bài baseline Aghajanian được cố định ở [1], các nguồn còn lại đánh số theo thứ tự trích dẫn.
+- `thesisrefs.bst`: style BibTeX đi kèm, rút gọn link hiển thị và bỏ URL trùng với DOI; giữ nguyên địa chỉ đích trong bibliography metadata.
 - `image/`: logo và 16 hình PDF/SVG vector.
 - `figures_source/`: 16 scene `.drawio`, `generate_figures.py` và renderer dùng chung `scene_renderer.py`, dữ liệu thật của bốn chart và provenance.
 - `provenance/`: kiểm chứng literature/method/results, inventory toàn KLTN, catalog và checksum của các nguồn chính.
@@ -52,5 +53,7 @@ Bảng 3.1 ghi shape từng stage của MRI encoder cuối; Bảng 3.2 tổng h�
 Evidence local và audit remote do người dùng cung cấp được ghi riêng trong `provenance/TENSOR_SHAPE_AUDIT.md` và `REMOTE_SHAPE_AUDIT_20261006.md`, gồm source/config/version/hash, artifact PCA và phạm vi shape tests. Không thay đổi mô hình hoặc kết quả đã đóng băng.
 
 ## Biên dịch và chỉnh hình
+
+Font nội dung dùng Libertinus Serif giống khóa luận Nguyễn Phương Trang, với Semibold cho chữ đậm và `newtxmath` cho công thức. Mục lục và các liên kết cùng màu xanh `#0000FF`; số trang và dấu chấm dẫn màu đen. Đã kiểm tra dấu tiếng Việt ở cả bốn font variant. 39 tài liệu hiển thị DOI, 18 tài liệu còn lại dùng nhãn “Liên kết”; đủ 57 mục và địa chỉ đích được giữ nguyên. Bằng chứng ở `provenance/typography_check.json`.
 
 Xem `COMPILE.md`. Các hình PDF đã có sẵn nên không cần Python/draw.io để biên dịch LaTeX. Nếu đổi nội dung/diagram, cần kiểm tra lại số trang, font, caption, routing, source data và citation. Không đóng gói hoặc sửa dữ liệu ADNI thô.

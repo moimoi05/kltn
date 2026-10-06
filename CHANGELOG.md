@@ -1,5 +1,14 @@
 # CHANGELOG — 05–06/10/2026
 
+## Font, mục lục và link tham khảo theo bản Trang — 06/10/2026
+
+- Đối chiếu PDF và source khóa luận Nguyễn Phương Trang; đổi font nội dung sang Libertinus Serif Regular/Italic, Semibold/SemiboldItalic cho chữ đậm, dùng `newtxmath` và Latin Modern cho sans-serif/monospace. Chọn OTF từ TeX distribution; không cần cài font hệ thống. Cả bốn font variant hỗ trợ đầy đủ dấu tiếng Việt và PDF không có missing glyph.
+- Mục lục, danh mục hình/bảng và mọi link cùng màu xanh thuần `#0000FF`. Dấu chấm dẫn, số trang và toàn bộ chữ trong hình giữ màu đen.
+- Thêm `thesisrefs.bst`, đổi tên từ `unsrtnat` và giữ copyright/license gốc. Rút gọn link hiển thị: 39 mục có DOI bỏ URL trùng; 18 mục còn lại dùng nhãn “Liên kết”. Giữ nguyên byte của `references.bib`, toàn bộ nội dung/thứ tự 57 tài liệu và địa chỉ đích PDF; baseline vẫn là [1].
+- Thêm float barrier trước Bảng3.5 để bảng vừa trang sau đổi font; giữ một dòng cho caption và mỗi bước, đủ36 shape. Chapters1/2/4/5, front matter, dữ liệu, hình và source hình không đổi byte. Không chạy thêm training/evaluation.
+- Bản cuối67 trang:13 front matter,48 nội dung chính và6 bibliography. Duyệt lại cả67 trang sau đổi font, kiểm tra riêng PDF9/43/62. Font/color/link-target QA và reviewer độc lập đều pass; bằng chứng ở `provenance/typography_check.json`.
+- Gói source giải nén mới tái tạo text/render cả67 trang; kiểm tra CRC, checksum PDF và compiled inputs trước khi cập nhật GitHub.
+
 ## Rút gọn mục 5.1 và 5.2 — 06/10/2026
 
 - Gộp mục 5.1 thành bốn đoạn thảo luận liền mạch, bỏ bảy tiểu mục. Rút khoảng 71% số từ theo phép đếm khoảng trắng có tính cả LaTeX và caption; giữ Hình 5.1 cùng chú thích.
