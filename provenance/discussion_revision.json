@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-06",
+  "changed_source": "chapters/chapter5.tex",
+  "section_5_1_subheadings_removed": 7,
+  "section_5_2_items_before": 6,
+  "section_5_2_items_after": 3,
+  "word_counts_including_latex_and_caption": {
+    "Thảo luận": {
+      "before_whitespace_words": 1223,
+      "after_whitespace_words": 360
+    },
+    "Giới hạn": {
+      "before_whitespace_words": 421,
+      "after_whitespace_words": 295
+    }
+  },
+  "chapter_prefix_and_sections_5_3_5_4_bytes_unchanged": true,
+  "all_figure_source_asset_and_chart_data_bytes_unchanged": true,
+  "figure_5_1_and_its_caption_retained": true,
+  "independent_read_only_review_pass": true,
+  "review_clarification_addressed": "C-index refers to the calculation convention, not just a different score.",
+  "final_pdf_pages": 67,
+  "section_5_1_body_paragraphs": 4,
+  "chapter_5_pdf_pages": [
+    58,
+    59,
+    60
+  ],
+  "no_figure_interrupts_a_sentence": true
+}

@@ -1216,17 +1216,15 @@ File: image//cp-parameter-reduction.pdf Graphic file (type pdf)
 
 ]
 Chương 5.
-[45
-
-] [46]
 File: image//mri-hub-topology.pdf Graphic file (type pdf)
 <use image//mri-hub-topology.pdf>
- [47] [48] [49]) [50] (main.bbl [51
+[45
+
+] [46]) [47] (main.bbl [48
 
 
-] [52] [53] [54] [55] [56])
-[57] (main.aux)
+] [49] [50] [51] [52] [53]) [54] (main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 0DF531B8F5027FDA0931A58C7B9E29DD;15931.
+(rerunfilecheck)             Checksum: D36C4CBF727A0C20A7525173C05C76B8;13576.
  )
-Output written on main.xdv (70 pages, 1213820 bytes).
+Output written on main.xdv (67 pages, 1148688 bytes).

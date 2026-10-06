@@ -5,7 +5,8 @@ Reviewed artifact: `Nguyen_Phuong_Nam_Thesis_RCFree_Revised.pdf`.
 ## Scope and document structure
 
 - [x] Official title matches all three covers, both abstracts, title macro, PDF metadata and README: **Longitudinal Learning with Tensor Fusion for Predicting Progression of Alzheimer’s Disease**.
-- [x] Five chapters, with **70 total PDF pages**: 13 front matter, 50 main content and 7 bibliography. The complete document meets the 70-page ceiling.
+- [x] Five chapters, with **67 total PDF pages**: 13 front matter, 47 main content and 7 bibliography. The complete document meets the 70-page ceiling.
+- [x] Section5.1 is four connected paragraphs without the seven previous subheadings; Section5.2 groups six limitations into three simpler points. The figure/caption, chapter introduction and Sections5.3/5.4 are retained. An independent read-only review confirmed that the shorter text preserves essential scientific qualifications; measurements are in `provenance/discussion_revision.json`.
 - [x] Each chapter has at least one figure; distribution 1/1/9/4/1, total 16. Methodology includes cohort, preprocessing, architecture evolution, full graph, full/CP, gated residual, RC-Free routes, overall pipeline and temporal model.
 - [x] Experimental chronology, controlled comparisons and exploratory milestones are distinguished. Historical test scores are excluded from selection tables and charts.
 
@@ -45,17 +46,17 @@ The PDF annotation follow-up additionally checked all 16 figures: explanatory fo
 - [x] One mild Underfull hbox message remains (badness 1158 in the MRI template-name paragraph). The page was inspected and accepted; it does not show overflow, overlap or unreadable spacing. System-font path warnings are portability notices; used PDF fonts are embedded.
 - [x] No TODO/FIXME, resizebox or old experiment code as the final narrative name.
 - [x] 16 native `.drawio` files and 16 SVG files parse; 16 figure PDFs are single-page vectors. Their minimum label size is 9.5 pt at the supplied 160 mm width. Figures are included at text width without shrinking tables as images.
-- [x] Fonts used in extracted PDF text are embedded. No replacement glyph, unresolved `[?]` citation or text outside the page bounds was found across 70 pages.
+- [x] Fonts used in extracted PDF text are embedded. No replacement glyph, unresolved `[?]` citation or text outside the page bounds was found across 67 pages.
 - [x] Checksums of 10 primary original files, including the draft ZIP/PDF and research report archives, remain unchanged.
 
 Build logs are preserved in `provenance/build/`. Automated findings are in `qa_report.json` and `provenance/artifact_checks.json`.
 
 ## Page-by-page visual review
 
-- [x] All 70 pages accepted through contact/full-page inspection or pixel-identical comparison to previously accepted sheets: covers/front matter, TOC/lists, every body page, equations, tables, figures and bibliography. The unchanged-page comparison is preserved in `provenance/visual_reuse_check.json`.
-- [x] This annotation follow-up inspected all 29 changed pages in current contacts and reused 41 pixel-identical previously accepted pages. 3D CP (PDF37), pipeline (41), one-line final-step table (42), ablation/caption (52), relocated benchmark legend (54) and MR/MC labels (60) were additionally inspected at full-page scale. Route labels remain parenthesized in diagrams, text, captions and equation indices, including `M + (MR→M) + (MC→M)`.
+- [x] All 67 pages accepted through contact/full-page inspection or pixel-identical comparison to previously accepted sheets: covers/front matter, TOC/lists, every body page, equations, tables, figures and bibliography. The unchanged-page comparison is preserved in `provenance/visual_reuse_check.json`.
+- [x] The Section5.1/5.2 follow-up inspected all 12 changed pages and reused 55 pixel-identical previously accepted pages. TOC/list of figures (PDF11/12) and the three Chapter5 pages (58/59/60) were additionally inspected at full-page scale. All four earlier chapters, bibliography inputs, figure assets and chart data are byte-identical to the accepted release d254105. Route labels remain parenthesized in diagrams, text, captions and equation indices, including `M + (MR→M) + (MC→M)`.
 - [x] Table names and numbers are readable; main model names remain on one line where practical. Captions, margins, page numbers and section transitions are consistent.
-- [x] Detailed CP/gate/RC-Free/pipeline drawings and all four result charts were inspected in grayscale on final PDF37/39/40/41/50/52/54/56. Labels, arrows, point markers, signed values and error bars preserve meaning without relying on color.
+- [x] The accepted grayscale review of CP/gate/RC-Free/pipeline drawings and all four result charts on release d254105 PDF37/39/40/41/50/52/54/56 is reused: their source assets and current page renders are unchanged. Labels, arrows, point markers, signed values and error bars preserve meaning without relying on color.
 - [x] Final pipeline and routing show all three modalities, no active RC pair and correct128/64/64→256→128→temporal→Cox dimensions. No connector crosses a box interior or clips a label.
 
 The per-page acceptance record and final-PDF checksum are in `provenance/visual_review.json`. Rendered inspection PNGs remain in the local working directory and are not mixed into the thesis source package.
@@ -63,7 +64,7 @@ The per-page acceptance record and final-PDF checksum are in `provenance/visual_
 ## Package reproduction
 
 - [x] ZIP extracted into a fresh directory with no previous root-level auxiliary/bibliography build files, then built using the supplied `build.ps1` and portable Tectonic with `FONTCONFIG_FILE` unset. Automatic Windows font configuration succeeded.
-- [x] The extracted source passed the same automated source/build checks. All 70 rebuilt pages have identical extracted text and pixel-identical renders to the visually accepted PDF.
+- [x] The extracted source passed the same automated source/build checks. All 67 rebuilt pages have identical extracted text and pixel-identical renders to the visually accepted PDF.
 - [x] Final ZIP CRC checked; compiled inputs are unchanged from the tested extraction. The PDF inside the ZIP is byte-identical to the PDF delivered beside it. Only QA/documentation records were finalized after the reproduction build.
 
 See `provenance/package_build_check.json`. Rebuilt-PDF byte hashes can differ because compilation timestamps change; page text and renders were directly compared and matched.

@@ -66,5 +66,8 @@
     54,
     60
   ],
-  "pass": true
+  "pass": true,
+  "reviewed_release_commit": "d25410513a74d7ff9b0238415c2fe8855e561470",
+  "historical_pdf_page_numbers_refer_to_that_release": true,
+  "figure_assets_unchanged_in_discussion_followup": true
 }

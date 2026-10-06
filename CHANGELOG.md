@@ -1,5 +1,13 @@
 # CHANGELOG — 05–06/10/2026
 
+## Rút gọn mục 5.1 và 5.2 — 06/10/2026
+
+- Gộp mục 5.1 thành bốn đoạn thảo luận liền mạch, bỏ bảy tiểu mục. Rút khoảng 71% số từ theo phép đếm khoảng trắng có tính cả LaTeX và caption; giữ Hình 5.1 cùng chú thích.
+- Gộp sáu ý ở mục 5.2 thành ba nhóm: dữ liệu/thời điểm dự báo, độ chắc chắn của kết quả, kiểm chứng trên dữ liệu mới/hiệu quả triển khai. Viết lại bằng câu ngắn và từ dễ hiểu hơn; giảm khoảng 30% số từ.
+- Giữ nguyên phần mở đầu Chương 5, mục 5.3/5.4, bốn chương trước, 57 references, hình và số liệu. Reviewer độc lập xác nhận các giới hạn khoa học cần thiết vẫn được nêu đầy đủ.
+- PDF còn 67 trang: 13 front matter, 47 nội dung chính và 7 bibliography. Kiểm tra 12 trang thay đổi; 55 trang còn lại có render giống hệt bản đã duyệt. Mục lục và danh mục hình đã cập nhật số trang.
+- Gói source giải nén mới biên dịch thành công và tái tạo text/render cả 67 trang. QA, CRC và checksum PDF trong ZIP được kiểm tra trước khi đồng bộ GitHub.
+
 ## Chỉnh theo ba comment PDF — 06/10/2026
 
 - Hạ nhãn MR/MC sát các mũi tên trong Hình 5.1; khoảng cách từ đáy chữ đến mũi tên còn khoảng 6,36 pt. Thu gọn khoảng trắng của hình.

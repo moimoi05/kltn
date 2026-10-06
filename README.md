@@ -4,7 +4,7 @@ Nguyễn Phương Nam — Khóa luận cử nhân, Trí tuệ nhân tạo, UET, 
 
 Đây là bản chỉnh sửa từ source thesis ngày 05/10/2026, giữ nội dung nghiên cứu và bổ sung flow, hình vector, bảng đọc được, đối chiếu code/report và kết quả validation. Không thực hiện thêm preprocessing, training hoặc test evaluation.
 
-Bản PDF hoàn thiện ngày 06/10/2026 có 70 trang tổng cộng, 16 hình vector và 57 tài liệu tham khảo. Gói source đã được giải nén, biên dịch độc lập bằng script đi kèm và đối chiếu toàn bộ trang với PDF đã kiểm tra trực quan. Xem `QUALITY_CHECK.md` để biết phạm vi kiểm chứng và các giới hạn nghiên cứu.
+Bản PDF hoàn thiện ngày 06/10/2026 có 67 trang tổng cộng, 16 hình vector và 57 tài liệu tham khảo. Gói source đã được giải nén, biên dịch độc lập bằng script đi kèm và đối chiếu toàn bộ trang với PDF đã kiểm tra trực quan. Xem `QUALITY_CHECK.md` để biết phạm vi kiểm chứng và các giới hạn nghiên cứu.
 
 ## Cấu trúc năm chương
 

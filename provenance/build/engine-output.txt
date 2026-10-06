@@ -20,15 +20,15 @@ warning: chapters/chapter3:53: Underfull \hbox (badness 1158) in paragraph at li
 note: Running BibTeX on main.aux ...
 note: Rerunning TeX because bibtex was run ...
 warning: chapters/chapter3:53: Underfull \hbox (badness 1158) in paragraph at lines 52--53
-note: Running xdvipdfmx ...
 warning: warnings were issued by the TeX engine; use --print and/or --keep-logs for details.
-note: Writing `main.log` (42.2373046875 KiB)
-note: Writing `main.pdf` (2.0076465606689453 MiB)
-note: Writing `main.toc` (6.8193359375 KiB)
-note: Writing `main.out` (15.5576171875 KiB)
+note: Running xdvipdfmx ...
 note: Writing `main.bbl` (25.8662109375 KiB)
-note: Writing `main.lof` (2.0458984375 KiB)
+note: Writing `main.pdf` (1.998307228088379 MiB)
+note: Writing `main.toc` (5.9462890625 KiB)
+note: Writing `main.out` (13.2578125 KiB)
+note: Writing `main.log` (42.2216796875 KiB)
 note: Writing `main.lot` (2.6357421875 KiB)
+note: Writing `main.aux` (32.177734375 KiB)
+note: Writing `main.lof` (2.0458984375 KiB)
 note: Writing `main.blg` (194 B)
-note: Writing `main.aux` (33.478515625 KiB)
 PDF created: Nguyen_Phuong_Nam_Thesis_RCFree_Revised.pdf
