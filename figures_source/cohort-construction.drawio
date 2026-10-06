@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <mxfile host="app.diagrams.net" agent="Codex" version="native-xml">
   <diagram id="cohort-construction" name="cohort-construction">
-    <mxGraphModel grid="0" page="1" pageScale="1" pageWidth="453.5433" pageHeight="383" background="#FFFFFF" math="0">
+    <mxGraphModel grid="0" page="1" pageScale="1" pageWidth="453.5433" pageHeight="367" background="#FFFFFF" math="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -55,9 +55,6 @@
         </mxCell>
         <mxCell id="i12" parent="1" vertex="1" value="RID-wise split: train 251  |  validation 54  |  test 54" style="html=1;fontFamily=Arial;fontColor=#000000;whiteSpace=wrap;text;strokeColor=none;fillColor=none;fontSize=10;fontStyle=1;align=center;verticalAlign=top;spacing=0;">
           <mxGeometry x="109.5546875" y="345" width="234.890625" height="12.4" as="geometry" />
-        </mxCell>
-        <mxCell id="i13" parent="1" vertex="1" value="Fit scaler, PCA và imputation trên train; áp dụng nguyên vẹn cho val/test." style="html=1;fontFamily=Arial;fontColor=#000000;whiteSpace=wrap;text;strokeColor=none;fillColor=none;fontSize=9.5;fontStyle=0;align=center;verticalAlign=top;spacing=0;">
-          <mxGeometry x="72.334716796875" y="365" width="309.33056640625" height="11.78" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

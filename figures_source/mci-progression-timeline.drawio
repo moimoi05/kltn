@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <mxfile host="app.diagrams.net" agent="Codex" version="native-xml">
   <diagram id="mci-progression-timeline" name="mci-progression-timeline">
-    <mxGraphModel grid="0" page="1" pageScale="1" pageWidth="453.5433" pageHeight="314" background="#FFFFFF" math="0">
+    <mxGraphModel grid="0" page="1" pageScale="1" pageWidth="453.5433" pageHeight="264" background="#FFFFFF" math="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -133,15 +133,6 @@
         </mxCell>
         <mxCell id="i22" parent="1" vertex="1" value="Điều kiện: không tiến triển sớm đến hết L" style="html=1;fontFamily=Arial;fontColor=#000000;whiteSpace=wrap;text;strokeColor=none;fillColor=none;fontSize=9.5;fontStyle=0;align=center;verticalAlign=top;spacing=0;">
           <mxGeometry x="90.1826171875" y="234" width="175.634765625" height="11.78" as="geometry" />
-        </mxCell>
-        <mxCell id="i23" parent="1" vertex="1" value="Thời gian mô hình = (ngày outcome − p) / 365.25; p có thể trùng L." style="html=1;fontFamily=Arial;fontColor=#000000;whiteSpace=wrap;text;strokeColor=none;fillColor=none;fontSize=9.5;fontStyle=0;align=left;verticalAlign=top;spacing=0;">
-          <mxGeometry x="18" y="260" width="282.84375" height="11.78" as="geometry" />
-        </mxCell>
-        <mxCell id="i24" parent="1" vertex="1" value="* Endpoint theo MMSE &amp;lt; 24 hoặc CDR-global ≥ 1 sau L." style="html=1;fontFamily=Arial;fontColor=#000000;whiteSpace=wrap;text;strokeColor=none;fillColor=none;fontSize=9.5;fontStyle=0;align=left;verticalAlign=top;spacing=0;">
-          <mxGeometry x="18" y="277" width="238.7763671875" height="11.78" as="geometry" />
-        </mxCell>
-        <mxCell id="i25" parent="1" vertex="1" value="Clinical ghép gần nhất ±90 ngày; có thể quan sát sau ngày MRI." style="html=1;fontFamily=Arial;fontColor=#000000;whiteSpace=wrap;text;strokeColor=none;fillColor=none;fontSize=9.5;fontStyle=0;align=left;verticalAlign=top;spacing=0;">
-          <mxGeometry x="18" y="294" width="271.8037109375" height="11.78" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

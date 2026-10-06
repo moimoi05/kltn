@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <mxfile host="app.diagrams.net" agent="Codex" version="native-xml">
   <diagram id="final-pipeline" name="final-pipeline">
-    <mxGraphModel grid="0" page="1" pageScale="1" pageWidth="453.5433" pageHeight="515" background="#FFFFFF" math="0">
+    <mxGraphModel grid="0" page="1" pageScale="1" pageWidth="453.5433" pageHeight="474" background="#FFFFFF" math="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -230,12 +230,6 @@
             <mxPoint x="333" y="436" as="sourcePoint" />
             <mxPoint x="354" y="436" as="targetPoint" />
           </mxGeometry>
-        </mxCell>
-        <mxCell id="i43" parent="1" vertex="1" value="Huấn luyện bằng Cox partial likelihood (Breslow ties)." style="html=1;fontFamily=Arial;fontColor=#000000;whiteSpace=wrap;text;strokeColor=none;fillColor=none;fontSize=9.5;fontStyle=0;align=center;verticalAlign=top;spacing=0;">
-          <mxGeometry x="113.526123046875" y="477" width="226.94775390625" height="11.78" as="geometry" />
-        </mxCell>
-        <mxCell id="i44" parent="1" vertex="1" value="Output là raw log-risk; không áp dụng sigmoid ở survival head." style="html=1;fontFamily=Arial;fontColor=#000000;whiteSpace=wrap;text;strokeColor=none;fillColor=none;fontSize=9.5;fontStyle=0;align=center;verticalAlign=top;spacing=0;">
-          <mxGeometry x="94.303466796875" y="493" width="265.39306640625" height="11.78" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

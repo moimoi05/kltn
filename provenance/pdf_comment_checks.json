@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-06",
+  "all_three_pdf_comments_addressed": true,
+  "topology_labels": [
+    {
+      "text": "MR",
+      "bbox": [
+        142.22410583496094,
+        30.6424560546875,
+        157.77410888671875,
+        40.6424560546875
+      ],
+      "arrow_y": 47,
+      "bottom_to_arrow_gap_pt": 6.3575439453125,
+      "center_in_connection_gap": true
+    },
+    {
+      "text": "MC",
+      "bbox": [
+        295.2240905761719,
+        30.6424560546875,
+        310.7740783691406,
+        40.6424560546875
+      ],
+      "arrow_y": 47,
+      "bottom_to_arrow_gap_pt": 6.3575439453125,
+      "center_in_connection_gap": true
+    }
+  ],
+  "table_3_5": {
+    "pdf_page": 42,
+    "ordered_tensor_shapes_unchanged": 36,
+    "single_line_caption_and_each_row_visually_confirmed": true,
+    "unbreakable_latex_columns": "tabular* with l/l"
+  },
+  "figure_annotation_audit": {
+    "figures_reviewed": 16,
+    "explanatory_footers_removed": [
+      "mci-progression-timeline",
+      "fusion-taxonomy",
+      "cohort-construction",
+      "modality-preprocessing",
+      "full-pairwise-graph",
+      "outer-vs-cp",
+      "gated-residual-route",
+      "rc-free-routing",
+      "final-pipeline",
+      "temporal-model",
+      "mri-hub-topology",
+      "performance-evolution",
+      "cp-parameter-reduction",
+      "ablation-deltas",
+      "standardized-benchmark"
+    ],
+    "architecture_evolution_has_no_footer": true,
+    "unique_information_retained_in_captions": true,
+    "axes_internal_labels_and_marker_legends_retained": true
+  },
+  "independent_source_review": "figure_revision reviewer compared against clean commit d8b7b1c; no unresolved findings",
+  "total_pdf_pages": 70,
+  "targeted_full_page_inspections": [
+    37,
+    41,
+    42,
+    52,
+    54,
+    60
+  ],
+  "pass": true
+}

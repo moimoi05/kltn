@@ -105,7 +105,7 @@ Controlled MedicalNet variant giữ kiến trúc và giao thức của Dynamic P
 \begin{figure}[H]
 \centering
 \includegraphics[width=\linewidth]{performance-evolution.pdf}
-\caption[Milestone validation theo các giao thức phát triển]{Các milestone validation theo tiến trình nghiên cứu ở seed 20260727, tách theo giao thức. Concatenation dùng Cox batch 8, các nhóm ResNet còn lại dùng batch 6; không nối các panel thành một xu hướng có kiểm soát. Dấu sao chỉ run attention có provenance giới hạn.}
+\caption[Milestone validation theo các giao thức phát triển]{Các milestone validation theo tiến trình nghiên cứu ở seed 20260727, tách theo giao thức. Concatenation dùng Cox batch 8, các nhóm ResNet còn lại dùng batch 6; không nối các panel thành một xu hướng có kiểm soát. Dấu sao và marker rỗng chỉ kết quả attention best-observed có artifact hoàn tất còn hạn chế.}
 \label{fig:performance-evolution}
 \end{figure}
 
@@ -149,7 +149,7 @@ Bỏ MC interaction & 0,837500 & $+0{,}015625$ \\
 \begin{figure}[H]
 \centering
 \includegraphics[width=\linewidth]{ablation-deltas.pdf}
-\caption[Ablation delta so với full CP]{Thay đổi validation C-index khi bỏ hoặc cố định từng thành phần so với full CP reference 0,821875. Đây là kết quả một seed, không có error bar hoặc diễn giải ý nghĩa thống kê.}
+\caption[Ablation delta so với full CP]{Thay đổi validation C-index khi bỏ hoặc cố định từng thành phần so với full CP reference 0,821875 ở seed 20260727, cùng cohort và split. Đây là bằng chứng khám phá từ một seed, không có error bar hoặc diễn giải ý nghĩa thống kê.}
 \label{fig:ablations}
 \end{figure}
 
@@ -226,7 +226,7 @@ Toàn mô hình & 33.760.941 & 33.534.957 \\
 \begin{figure}[H]
 \centering
 \includegraphics[width=\linewidth]{cp-parameter-reduction.pdf}
-\caption[Tham số outer-product và CP theo từng phạm vi]{Giảm tham số từ full outer-product sang CP: 98,384\% ở các lớp song tuyến đầu tiên, nhưng chỉ 0,669\% ở toàn mô hình do MRI encoder chiếm phần lớn tham số.}
+\caption[Tham số outer-product và CP theo từng phạm vi]{Giảm tham số từ full outer-product sang CP: 98,384\% ở các lớp song tuyến đầu tiên, nhưng chỉ 0,669\% ở toàn mô hình do MRI encoder chiếm phần lớn tham số. Post-MLP được giữ nguyên.}
 \label{fig:cp-parameters}
 \end{figure}
 

@@ -1,22 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="160mm" height="63.853mm" viewBox="0 0 453.5433 181">
+<svg xmlns="http://www.w3.org/2000/svg" width="160mm" height="33.514mm" viewBox="0 0 453.5433 95">
 <rect width="100%" height="100%" fill="white"/>
-<rect x="16" y="48" width="113" height="59" rx="4" fill="#EAF3E9" stroke="#638560" stroke-width="1"/>
-<text x="72.5" y="74.75" font-family="Arial, DejaVu Sans, sans-serif" font-size="11" font-weight="700" text-anchor="middle" fill="#000000">Radiomics</text>
-<text x="72.5" y="88.39" font-family="Arial, DejaVu Sans, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#000000">R</text>
-<rect x="170" y="48" width="113" height="59" rx="4" fill="#E7F0FA" stroke="#567DA3" stroke-width="1"/>
-<text x="226.5" y="74.75" font-family="Arial, DejaVu Sans, sans-serif" font-size="11" font-weight="700" text-anchor="middle" fill="#000000">MRI</text>
-<text x="226.5" y="88.39" font-family="Arial, DejaVu Sans, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#000000">M</text>
-<rect x="324" y="48" width="113" height="59" rx="4" fill="#FBF0E3" stroke="#A27D51" stroke-width="1"/>
-<text x="380.5" y="74.75" font-family="Arial, DejaVu Sans, sans-serif" font-size="11" font-weight="700" text-anchor="middle" fill="#000000">Clinical</text>
-<text x="380.5" y="88.39" font-family="Arial, DejaVu Sans, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#000000">C</text>
-<polyline points="129,77 170,77" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
-<polygon points="170,77 165.0,74.5 165.0,79.5" fill="#5C6B79"/>
-<polygon points="129,77 134.0,79.5 134.0,74.5" fill="#5C6B79"/>
-<polyline points="283,77 324,77" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
-<polygon points="324,77 319.0,74.5 319.0,79.5" fill="#5C6B79"/>
-<polygon points="283,77 288.0,79.5 288.0,74.5" fill="#5C6B79"/>
-<text x="150" y="35.4" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="middle" fill="#000000">MR</text>
-<text x="303" y="35.4" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="middle" fill="#000000">MC</text>
-<text x="227" y="139.4" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="middle" fill="#000000">Giữ đủ 3 modalities; không có direct radiomics-clinical pair.</text>
-<text x="227" y="160.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#000000">Topology phản ánh lựa chọn mô hình qua validation và ablation.</text>
+<rect x="16" y="18" width="113" height="59" rx="4" fill="#EAF3E9" stroke="#638560" stroke-width="1"/>
+<text x="72.5" y="44.75" font-family="Arial, DejaVu Sans, sans-serif" font-size="11" font-weight="700" text-anchor="middle" fill="#000000">Radiomics</text>
+<text x="72.5" y="58.39" font-family="Arial, DejaVu Sans, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#000000">R</text>
+<rect x="170" y="18" width="113" height="59" rx="4" fill="#E7F0FA" stroke="#567DA3" stroke-width="1"/>
+<text x="226.5" y="44.75" font-family="Arial, DejaVu Sans, sans-serif" font-size="11" font-weight="700" text-anchor="middle" fill="#000000">MRI</text>
+<text x="226.5" y="58.39" font-family="Arial, DejaVu Sans, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#000000">M</text>
+<rect x="324" y="18" width="113" height="59" rx="4" fill="#FBF0E3" stroke="#A27D51" stroke-width="1"/>
+<text x="380.5" y="44.75" font-family="Arial, DejaVu Sans, sans-serif" font-size="11" font-weight="700" text-anchor="middle" fill="#000000">Clinical</text>
+<text x="380.5" y="58.39" font-family="Arial, DejaVu Sans, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#000000">C</text>
+<polyline points="129,47 170,47" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="170,47 165.0,44.5 165.0,49.5" fill="#5C6B79"/>
+<polygon points="129,47 134.0,49.5 134.0,44.5" fill="#5C6B79"/>
+<polyline points="283,47 324,47" fill="none" stroke="#5C6B79" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="324,47 319.0,44.5 319.0,49.5" fill="#5C6B79"/>
+<polygon points="283,47 288.0,49.5 288.0,44.5" fill="#5C6B79"/>
+<text x="150" y="38.4" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="middle" fill="#000000">MR</text>
+<text x="303" y="38.4" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="middle" fill="#000000">MC</text>
 </svg>

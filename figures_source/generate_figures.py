@@ -23,7 +23,7 @@ else:
     )
 
 def timeline():
-    s = Scene("mci-progression-timeline", 314,
+    s = Scene("mci-progression-timeline", 264,
         ["D:/KLTN/metadata/scripts/pipeline_common.py", "D:/KLTN/metadata/scripts/05_create_survival_labels.py",
          "D:/KLTN/week12/thesis_phase_evolution_bundle_20261005_final.zip"],
         ["Separate third-MRI prediction origin p from the 18-month eligibility landmark L.",
@@ -47,14 +47,11 @@ def timeline():
     s.path([(340, 135), (346, 135), (346, 230), (352, 230)])
     s.path([(25, 218), (25, 226), (332, 226), (332, 218)], arrow=False, color=COLORS["time"][1])
     s.text(178, 234, "Điều kiện: không tiến triển sớm đến hết L", 9.5, align="center")
-    s.text(18, 260, "Thời gian mô hình = (ngày outcome − p) / 365.25; p có thể trùng L.", 9.5)
-    s.text(18, 277, "* Endpoint theo MMSE < 24 hoặc CDR-global ≥ 1 sau L.", 9.5)
-    s.text(18, 294, "Clinical ghép gần nhất ±90 ngày; có thể quan sát sau ngày MRI.", 9.5)
     s.save()
 
 
 def taxonomy():
-    s = Scene("fusion-taxonomy", 303,
+    s = Scene("fusion-taxonomy", 294,
         ["D:/KLTN/pileline.drawio", "D:/KLTN/pairwise_tensor_fusion_pipeline_v2.svg"],
         ["Separate simple feature combination, explicit pair interaction, and adaptive routing."])
     s.box(13, 119, 96, 52, "Multimodal\nM · R · C", "white")
@@ -66,12 +63,11 @@ def taxonomy():
     for y, title, detail, color in rows:
         s.box(146, y, 291, 45, title+"\n"+detail, color)
         s.path([(109, 145), (127, 145), (127, y+22.5), (146, y+22.5)])
-    s.text(13, 288, "Thesis kết hợp CP cho pairwise interaction và gated residual cho routing.", 9.5)
     s.save()
 
 
 def cohort():
-    s = Scene("cohort-construction", 383,
+    s = Scene("cohort-construction", 367,
         ["D:/KLTN/metadata/reports/cohort_flow.md", "D:/KLTN/metadata/reports/final_cohort_qc.md",
          "D:/KLTN/metadata/reports/training_manifest_summary.md"],
         ["Use the audited final cohort waterfall and exact RID-wise split; do not conflate L with p."])
@@ -89,12 +85,11 @@ def cohort():
     s.box(18, 296, 201, 37, "106 events\nMMSE / CDR sau L", "out", 10)
     s.box(235, 296, 201, 37, "253 censored\nTheo dõi cuối sau L", "out", 10)
     s.text(227, 345, "RID-wise split: train 251  |  validation 54  |  test 54", 10, bold=True, align="center")
-    s.text(227, 365, "Fit scaler, PCA và imputation trên train; áp dụng nguyên vẹn cho val/test.", 9.5, align="center")
     s.save()
 
 
 def preprocessing():
-    s = Scene("modality-preprocessing", 300,
+    s = Scene("modality-preprocessing", 280,
         ["D:/KLTN/ARCHITECTURE_AUDIT_20260919.md", "D:/KLTN/phase_05b_pairwise_medicalnet_source.zip",
          "D:/KLTN/pileline.drawio"],
         ["Correct radiomics to 16 PCA inputs and clinical to nine values plus nine observedness masks.",
@@ -114,7 +109,6 @@ def preprocessing():
         s.box(391, y+9, 47, 44, output, color, 10)
         for a, b in [(91, 109), (244, 262), (374, 391)]:
             s.line(a, y+31, b, y+31)
-    s.text(15, 285, "Cùng encoder dùng cho cả 3 visits; chỉ train quyết định tham số tiền xử lý.", 9.5)
     s.save()
 
 
@@ -139,7 +133,7 @@ def evolution():
 
 
 def full_graph():
-    s = Scene("full-pairwise-graph", 337,
+    s = Scene("full-pairwise-graph", 324,
         ["D:/KLTN/pileline.drawio", "D:/KLTN/phase_05b_pairwise_medicalnet_source.zip"],
         ["Show all three pair blocks and six distinct directed residual contributions without crossing edges."])
     s.text(227, 7, "Full reference: 3 pair blocks, 6 directed routes", 10.5, bold=True, align="center")
@@ -162,12 +156,11 @@ def full_graph():
     s.text(121, 279, "(RC → R)", 9.5, align="right")
     s.text(335, 279, "(RC → C)", 9.5)
     s.text(227, 170, "M/R/C là identity paths.\nMỗi arrow là đóng góp\nprojected × gate × λ.", 9.5, align="center")
-    s.text(227, 322, "Pair features được xây dựng từ low projections của hai modality tương ứng.", 9.5, align="center")
     s.save()
 
 
 def outer_cp():
-    s = Scene("outer-vs-cp", 326,
+    s = Scene("outer-vs-cp", 304,
         ["D:/KLTN/phase_05b_pairwise_medicalnet_source.zip",
          "D:/KLTN/week12/thesis_phase_evolution_bundle_20261005_final.zip"],
         ["CP factorizes the first bilinear interaction weight tensor, retaining bias and identical post-MLP.",
@@ -207,13 +200,11 @@ def outer_cp():
     s.box(244, 219, 194, 33, "h = O(u ⊙ v) + b\nQ → H", "pair", 9.5)
     s.box(244, 259, 194, 33, "Post-MLP (giữ nguyên)\nGELU · dropout · Linear · LN", "fusion", 9.5)
     s.line(342, 252, 342, 259)
-    s.text(227, 298, "MR: 32 × 32, Q=8   |   MC: 32 × 16, Q=8   |   RC: 32 × 16, Q=4", 9.5, align="center")
-    s.text(227, 313, "Phân rã trọng số W; không phân rã MRI hay dữ liệu bệnh nhân.", 9.5, bold=True, align="center")
     s.save()
 
 
 def gated_route():
-    s = Scene("gated-residual-route", 406,
+    s = Scene("gated-residual-route", 382,
         ["D:/KLTN/residual gate MRI.drawio.png", "D:/KLTN/residual gate Radiomics.drawio.png",
          "D:/KLTN/residual gated clinical.drawio.png", "D:/KLTN/phase_05b_pairwise_medicalnet_source.zip"],
         ["Restore the explicit identity residual; distinguish directed projection, visit-specific scalar gate, and global unconstrained route scale.",
@@ -240,12 +231,11 @@ def gated_route():
     s.line(227, 314, 227, 332)
     s.box(313, 332, 125, 38, "Updated modality\nZ_d", "m", 9.5)
     s.line(286, 351, 313, 351)
-    s.text(16, 387, "λ không bị ràng buộc dấu; U_d không qua thêm identity projection.", 9.5)
     s.save()
 
 
 def rc_routes():
-    s = Scene("rc-free-routing", 372,
+    s = Scene("rc-free-routing", 337,
         ["D:/KLTN/week12/Sơ đồ luồng residual A6 theo M, R, C.png",
          "D:/KLTN/week12/Bao_cao_tuan_12/image/week12/a6_residual_flow.png",
          "D:/KLTN/week12/thesis_phase_evolution_bundle_20261005_final.zip"],
@@ -273,12 +263,11 @@ def rc_routes():
         s.line(225, join, 250, join)
         s.box(368, join-22, 69, 44, output, color)
         s.line(345, join, 368, join)
-    s.box(16, 342, 421, 24, "RC pair đã bỏ; M, R, C và các identity paths vẫn được giữ.", "white", 9.5, bold_first=False, dashed=True)
     s.save()
 
 
 def final_pipeline():
-    s = Scene("final-pipeline", 515,
+    s = Scene("final-pipeline", 474,
         ["D:/KLTN/pileline.drawio", "D:/KLTN/Untitled Diagram.drawio",
          "D:/KLTN/week12/Sơ đồ luồng residual A6 theo M, R, C.png",
          "D:/KLTN/week12/thesis_phase_evolution_bundle_20261005_final.zip"],
@@ -321,13 +310,11 @@ def final_pipeline():
     s.path([(307, 373), (307, 380), (62, 380), (62, 410)])
     for a, b in [(108, 129), (221, 242), (333, 354)]:
         s.line(a, 436, b, 436)
-    s.text(227, 477, "Huấn luyện bằng Cox partial likelihood (Breslow ties).", 9.5, align="center")
-    s.text(227, 493, "Output là raw log-risk; không áp dụng sigmoid ở survival head.", 9.5, align="center")
     s.save()
 
 
 def temporal():
-    s = Scene("temporal-model", 301,
+    s = Scene("temporal-model", 283,
         ["D:/KLTN/phase_05b_pairwise_medicalnet_source.zip"],
         ["Use consecutive MRI time gaps, shared T-LSTM128, scalar additive attention and raw log-risk head."])
     for i, x in enumerate((27, 180, 333)):
@@ -346,38 +333,37 @@ def temporal():
     s.path([(73, 201), (73, 219), (175, 219), (175, 233)])
     s.path([(226, 201), (226, 219), (175, 219)], arrow=False)
     s.path([(379, 201), (379, 219), (226, 219)], arrow=False)
-    s.text(227, 285, "Δt₁ = 0; Δt₂, Δt₃ là khoảng cách giữa MRI liên tiếp (năm).", 9.5, align="center")
     s.save()
 
 
 def topology():
-    s = Scene("mri-hub-topology", 181,
+    s = Scene("mri-hub-topology", 95,
         ["D:/KLTN/week12/Sơ đồ luồng residual A6 theo M, R, C.png",
          "D:/KLTN/week12/thesis_phase_evolution_bundle_20261005_final.zip"],
-        ["Interpret MRI as the interaction hub while preserving radiomics and clinical; omit any active R-C edge."])
-    s.box(16, 48, 113, 59, "Radiomics\nR", "r", 11)
-    s.box(170, 48, 113, 59, "MRI\nM", "m", 11)
-    s.box(324, 48, 113, 59, "Clinical\nC", "c", 11)
-    s.line(129, 77, 170, 77, start_arrow=True)
-    s.line(283, 77, 324, 77, start_arrow=True)
-    s.text(150, 27, "MR", 10, bold=True, align="center")
-    s.text(303, 27, "MC", 10, bold=True, align="center")
-    s.text(227, 131, "Giữ đủ 3 modalities; không có direct radiomics-clinical pair.", 10, bold=True, align="center")
-    s.text(227, 153, "Topology phản ánh lựa chọn mô hình qua validation và ablation.", 9.5, align="center")
+        ["Interpret MRI as the interaction hub while preserving radiomics and clinical; omit any active R-C edge.",
+         "Lower MR/MC toward the arrows: top-to-arrow gap 17 pt instead of 50 pt; trim the empty margins."])
+    s.box(16, 18, 113, 59, "Radiomics\nR", "r", 11)
+    s.box(170, 18, 113, 59, "MRI\nM", "m", 11)
+    s.box(324, 18, 113, 59, "Clinical\nC", "c", 11)
+    s.line(129, 47, 170, 47, start_arrow=True)
+    s.line(283, 47, 324, 47, start_arrow=True)
+    s.text(150, 30, "MR", 10, bold=True, align="center")
+    s.text(303, 30, "MC", 10, bold=True, align="center")
     s.save()
 
 
 def chart_sources(data, keys):
     return ["figures_source/results_data.json"] + [data["sources"][key] for key in keys]
 def performance_chart(data):
-    s = Scene("performance-evolution", 474, chart_sources(data, ["phase_evolution", "mri_initialization",
+    s = Scene("performance-evolution", 458, chart_sources(data, ["phase_evolution", "mri_initialization",
         "longitudinal_crossformer", "concat_official", "pairwise_official", "standardized_benchmark"]),
         ["Separate four protocol groups, including a separate concat Cox-batch8 panel; no connecting trend lines.",
          "Plot validation single-seed milestones only; flag incomplete attention provenance with a hollow marker."])
     titles = ["1  MRI Only: cùng protocol, khác initialization", "2  Longitudinal MRI: Cox batch 6",
               "3  Multimodal Concat.: Cox batch 8", "4  Pairwise family: Cox batch 6"]
+    s.text(16, 7, "Validation C-index", 9.5)
     for panel, group in enumerate(data["evolution"]["groups"]):
-        top = 9 + panel*106
+        top = 25 + panel*106
         s.text(16, top, titles[panel], 10, bold=True)
         upper, lower = top+26, top+74
         def yy(value):
@@ -399,14 +385,12 @@ def performance_chart(data):
             plate["stroke"] = "#FFFFFF"
             s.text(x, y-17, f"{row['value']:.4f}", 9.5, align="center")
             s.text(x, lower+7, row["label"], 9.5, align="center", width=span-3)
-    s.text(16, 444, "Y: validation C-index. Tất cả điểm: seed 20260727; không nối các protocol.", 9.5)
-    s.text(16, 461, "* Attention: best-observed; artifact hoàn tất còn hạn chế, ký hiệu rỗng.", 9.5)
     s.save()
 
 
 def parameter_chart(data):
     p = data["parameters"]
-    s = Scene("cp-parameter-reduction", 364, chart_sources(data, ["cp_architecture", "standardized_benchmark"]),
+    s = Scene("cp-parameter-reduction", 313, chart_sources(data, ["cp_architecture", "standardized_benchmark"]),
         ["Contrast the first bilinear-layer scope with total-model scope; use zero-origin linear axes.",
          "Do not present parameter counts as measured runtime, memory or FLOPs savings."])
     s.text(16, 9, "a  Ba first bilinear layers (MR, MC, RC; gồm bias)", 10, bold=True)
@@ -422,25 +406,23 @@ def parameter_chart(data):
         s.line(x, 124, x, 130, arrow=False)
         s.text(x, 134, f"{tick//1000}k", 9.5, align="center")
     s.line(155, 127, 425, 127, arrow=False, width=.8)
-    s.text(16, 155, f"Giảm {core['reduction_percent']:.3f}% trong tensor trọng số tương tác đầu tiên.", 10, bold=True)
-    s.text(16, 187, "b  Toàn bộ mô hình: backbone MRI chiếm phần lớn tham số", 10, bold=True)
-    for row, y, color in zip(p["total_models"][:2], (222, 268), ("pair", "fusion")):
-        s.text(16, y+8, "Full Pairwise" if y == 222 else "CP Pairwise", 10)
+    s.text(16, 162, "b  Toàn bộ mô hình: backbone MRI chiếm phần lớn tham số", 10, bold=True)
+    for row, y, color in zip(p["total_models"][:2], (197, 243), ("pair", "fusion")):
+        s.text(16, y+8, "Full Pairwise" if y == 197 else "CP Pairwise", 10)
         w = row["value"]/40000000*270
         s.bar(155, y, w, 26, color)
         s.text(155+w+5, y+8, f"{row['value']/1000000:.3f} M", 9.5)
-    s.line(155, 307, 425, 307, arrow=False, width=.8)
+    s.line(155, 282, 425, 282, arrow=False, width=.8)
     for tick in (0, 10000000, 20000000, 30000000, 40000000):
         x = 155+tick/40000000*270
-        s.line(x, 304, x, 310, arrow=False)
-        s.text(x, 314, f"{tick//1000000}M", 9.5, align="center")
-    s.text(16, 342, f"Giảm {p['total_full_to_cp_reduction_percent']:.3f}% tổng tham số; post-MLP giữ nguyên.", 10, bold=True)
+        s.line(x, 279, x, 285, arrow=False)
+        s.text(x, 289, f"{tick//1000000}M", 9.5, align="center")
     s.save()
 
 
 def ablation_chart(data):
     ablation = data["ablations"]
-    s = Scene("ablation-deltas", 346, chart_sources(data, ["ablation"]),
+    s = Scene("ablation-deltas", 310, chart_sources(data, ["ablation"]),
         ["Show six observed single-seed validation deltas against the same full-CP reference.",
          "Distinguish the fixed-lambda full-CP ablation from the later RC-free fixed-lambda sensitivity model."])
     s.text(16, 8, "Δ validation C-index so với Full CP Pairwise", 10.5, bold=True)
@@ -460,13 +442,11 @@ def ablation_chart(data):
         s.text(endpoint+(6 if row["delta"] >= 0 else -6), y+7, f"{row['delta']:+.4f}", 9.5,
                bold=row["label"] == "Remove RC", align="left" if row["delta"] >= 0 else "right")
     s.line(zero, 32, zero, 282, arrow=False, width=1.15)
-    s.text(16, 314, f"Reference = {ablation['baseline']:.6f}; seed {ablation['seed']}; cùng cohort/split.", 9.5)
-    s.text(16, 331, "Δ từ một seed là bằng chứng khám phá; không phải kiểm định ý nghĩa thống kê.", 9.5)
     s.save()
 
 
 def benchmark_chart(data):
-    s = Scene("standardized-benchmark", 370, chart_sources(data, ["standardized_benchmark", "standardized_audit"]),
+    s = Scene("standardized-benchmark", 337, chart_sources(data, ["standardized_benchmark", "standardized_audit"]),
         ["Plot three-seed mean ± sample SD (ddof1), alongside individual seed values; SD is not a confidence interval.",
          "Use standardized validation only, leaving the deterministic post-selection classical baseline separate."])
     s.text(16, 9, "54 validation subjects  |  480 comparable pairs", 10, bold=True)
@@ -488,12 +468,11 @@ def benchmark_chart(data):
         dot["fill"] = dot["stroke"]
         s.text(439, y-4, f"{row['mean']:.4f} ± {row['sd']:.4f}", 9.5, align="right")
     s.text(250, 314, "Validation C-index", 10, align="center")
-    dot = s.circle(19, 344, 3.5, color="fusion")
+    dot = s.circle(19, 35, 3.5, color="fusion")
     dot["fill"] = dot["stroke"]
-    s.text(28, 339, "Mean ± sample SD", 9.5)
-    s.circle(177, 344, 2.5, color="white")
-    s.text(186, 339, "Seeds 20260727 / 28 / 29", 9.5)
-    s.text(16, 357, "SD là độ biến thiên giữa 3 seeds; không phải confidence interval.", 9.5)
+    s.text(28, 30, "Mean ± sample SD", 9.5)
+    s.circle(177, 35, 2.5, color="white")
+    s.text(186, 30, "Seeds 20260727 / 28 / 29", 9.5)
     s.save()
 
 
@@ -521,7 +500,8 @@ def main():
     provenance_file.write_text(json.dumps({"figures": {**previous, **PROVENANCE},
         "authoring": "Native draw.io XML is saved before vector exports. PDF/SVG rendering uses the same scene.",
         "style": {"width_mm": 160, "font": "Arial / DejaVu Sans", "text_color": INK,
-                  "colors": COLORS, "volume_primitive": "Three-face native editable cuboid stencil"}},
+                  "colors": COLORS, "volume_primitive": "Three-face native editable cuboid stencil",
+                  "annotation_policy": "Explanatory footer notes are in LaTeX captions; axes, marker legends and internal labels remain in drawings."}},
         ensure_ascii=False, indent=2), encoding="utf-8")
 if __name__ == "__main__":
     main()

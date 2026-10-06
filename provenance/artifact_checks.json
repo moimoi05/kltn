@@ -1,56 +1,36 @@
 {
-  "pdf_sha256": "2be113930387fbe51d6fc2af52de993e03da2488827cc343d0902382c4745dd4",
+  "pdf_sha256": "ea725bde7e92c0cecd10b3b2eafc7980aceb9eca826e939f4c4a97ee840c20d8",
   "total_pages": 70,
   "changed_pages_since_full_visual_review": [
+    9,
     10,
     11,
-    12,
     13,
     15,
+    16,
+    17,
+    18,
     23,
-    27,
     28,
     30,
-    31,
-    32,
-    33,
-    34,
-    35,
     36,
     37,
-    38,
     39,
     40,
     41,
     42,
     43,
     44,
-    45,
-    46,
-    47,
-    48,
-    49,
     50,
-    51,
     52,
     53,
     54,
     55,
     56,
-    57,
-    58,
-    59,
     60,
     61,
     62,
-    63,
-    64,
-    65,
-    66,
-    67,
-    68,
-    69,
-    70
+    63
   ],
   "checks": {
     "all_used_pdf_fonts_embedded": true,
@@ -140,7 +120,7 @@
       "name": "AAAAAA+ArialMT",
       "extension": "ttf",
       "type": "TrueType",
-      "embedded_bytes": 70236,
+      "embedded_bytes": 68688,
       "used_in_text": true
     },
     {
@@ -156,59 +136,67 @@
       "name": "DDIEWW+CMMI10",
       "extension": "cff",
       "type": "Type1",
-      "embedded_bytes": 4328,
+      "embedded_bytes": 4654,
       "used_in_text": true
     },
     {
-      "xref": 225,
-      "name": "FKPJSN+CMMI9",
+      "xref": 199,
+      "name": "FKPJSN+CMR10",
+      "extension": "cff",
+      "type": "Type1",
+      "embedded_bytes": 2232,
+      "used_in_text": true
+    },
+    {
+      "xref": 226,
+      "name": "PVTTLK+CMMI9",
       "extension": "cff",
       "type": "Type1",
       "embedded_bytes": 4095,
       "used_in_text": true
     },
     {
-      "xref": 227,
-      "name": "PVTTLK+CMR9",
+      "xref": 228,
+      "name": "JAGKKY+CMR9",
       "extension": "cff",
       "type": "Type1",
       "embedded_bytes": 1643,
       "used_in_text": true
     },
     {
-      "xref": 232,
-      "name": "JAGKKY+CMEX10",
+      "xref": 233,
+      "name": "NOMARO+CMEX10",
       "extension": "cff",
       "type": "Type1",
       "embedded_bytes": 2529,
       "used_in_text": true
     },
     {
-      "xref": 233,
-      "name": "NOMARO+CMMI6",
+      "xref": 234,
+      "name": "KPXLOM+CMMI6",
       "extension": "cff",
       "type": "Type1",
       "embedded_bytes": 1355,
       "used_in_text": true
     },
     {
-      "xref": 234,
-      "name": "KPXLOM+CMSY9",
+      "xref": 235,
+      "name": "UTACNV+CMSY9",
       "extension": "cff",
       "type": "Type1",
       "embedded_bytes": 1563,
       "used_in_text": true
     },
     {
-      "xref": 242,
-      "name": "UTACNV+CMMIB10",
+      "xref": 243,
+      "name": "FZDNHS+CMMIB10",
       "extension": "cff",
       "type": "Type1",
       "embedded_bytes": 614,
       "used_in_text": true
     },
     {
-      "xref": 273,
+      "xref": 274,
       "name": "Helvetica",
       "extension": "n/a",
       "type": "Type1",
@@ -216,7 +204,7 @@
       "used_in_text": false
     },
     {
-      "xref": 274,
+      "xref": 275,
       "name": "AAAAAA+Arial-BoldMT",
       "extension": "ttf",
       "type": "TrueType",
@@ -224,23 +212,23 @@
       "used_in_text": true
     },
     {
-      "xref": 278,
+      "xref": 279,
       "name": "AAAAAA+ArialMT",
       "extension": "ttf",
       "type": "TrueType",
-      "embedded_bytes": 69828,
+      "embedded_bytes": 69720,
       "used_in_text": true
     },
     {
-      "xref": 284,
-      "name": "FZDNHS+MSBM10",
+      "xref": 285,
+      "name": "DZGKAF+MSBM10",
       "extension": "cff",
       "type": "Type1",
       "embedded_bytes": 527,
       "used_in_text": true
     },
     {
-      "xref": 328,
+      "xref": 329,
       "name": "TQTHRL+Consolas",
       "extension": "ttf",
       "type": "Type0",
@@ -248,7 +236,7 @@
       "used_in_text": true
     },
     {
-      "xref": 334,
+      "xref": 335,
       "name": "Helvetica",
       "extension": "n/a",
       "type": "Type1",
@@ -256,7 +244,7 @@
       "used_in_text": false
     },
     {
-      "xref": 335,
+      "xref": 336,
       "name": "AAAAAA+Arial-BoldMT",
       "extension": "ttf",
       "type": "TrueType",
@@ -264,15 +252,15 @@
       "used_in_text": true
     },
     {
-      "xref": 339,
+      "xref": 340,
       "name": "AAAAAA+ArialMT",
       "extension": "ttf",
       "type": "TrueType",
-      "embedded_bytes": 67080,
+      "embedded_bytes": 66548,
       "used_in_text": true
     },
     {
-      "xref": 353,
+      "xref": 354,
       "name": "Helvetica",
       "extension": "n/a",
       "type": "Type1",
@@ -280,7 +268,7 @@
       "used_in_text": false
     },
     {
-      "xref": 354,
+      "xref": 355,
       "name": "AAAAAA+Arial-BoldMT",
       "extension": "ttf",
       "type": "TrueType",
@@ -288,19 +276,11 @@
       "used_in_text": true
     },
     {
-      "xref": 358,
+      "xref": 359,
       "name": "AAAAAA+ArialMT",
       "extension": "ttf",
       "type": "TrueType",
-      "embedded_bytes": 69508,
-      "used_in_text": true
-    },
-    {
-      "xref": 378,
-      "name": "DZGKAF+CMR10",
-      "extension": "cff",
-      "type": "Type1",
-      "embedded_bytes": 2232,
+      "embedded_bytes": 67412,
       "used_in_text": true
     },
     {
@@ -308,7 +288,7 @@
       "name": "GJMHKB+CMR8",
       "extension": "cff",
       "type": "Type1",
-      "embedded_bytes": 411,
+      "embedded_bytes": 609,
       "used_in_text": true
     },
     {
@@ -356,7 +336,7 @@
       "name": "AAAAAA+ArialMT",
       "extension": "ttf",
       "type": "TrueType",
-      "embedded_bytes": 69340,
+      "embedded_bytes": 67876,
       "used_in_text": true
     },
     {
@@ -372,7 +352,7 @@
       "name": "AAAAAA+Arial-BoldMT",
       "extension": "ttf",
       "type": "TrueType",
-      "embedded_bytes": 52216,
+      "embedded_bytes": 51692,
       "used_in_text": true
     },
     {
@@ -444,7 +424,7 @@
       "name": "AAAAAA+ArialMT",
       "extension": "ttf",
       "type": "TrueType",
-      "embedded_bytes": 69072,
+      "embedded_bytes": 68424,
       "used_in_text": true
     },
     {
@@ -468,7 +448,7 @@
       "name": "AAAAAA+ArialMT",
       "extension": "ttf",
       "type": "TrueType",
-      "embedded_bytes": 68716,
+      "embedded_bytes": 65796,
       "used_in_text": true
     },
     {
@@ -492,7 +472,7 @@
       "name": "AAAAAA+ArialMT",
       "extension": "ttf",
       "type": "TrueType",
-      "embedded_bytes": 70728,
+      "embedded_bytes": 68900,
       "used_in_text": true
     },
     {
@@ -516,7 +496,7 @@
       "name": "AAAAAA+ArialMT",
       "extension": "ttf",
       "type": "TrueType",
-      "embedded_bytes": 69620,
+      "embedded_bytes": 67632,
       "used_in_text": true
     },
     {
@@ -524,7 +504,7 @@
       "name": "AAAAAA+DejaVuSans",
       "extension": "ttf",
       "type": "TrueType",
-      "embedded_bytes": 36280,
+      "embedded_bytes": 36164,
       "used_in_text": true
     },
     {
@@ -537,18 +517,18 @@
     },
     {
       "xref": 577,
-      "name": "AAAAAA+Arial-BoldMT",
+      "name": "AAAAAA+ArialMT",
       "extension": "ttf",
       "type": "TrueType",
-      "embedded_bytes": 48876,
+      "embedded_bytes": 65796,
       "used_in_text": true
     },
     {
       "xref": 581,
-      "name": "AAAAAA+ArialMT",
+      "name": "AAAAAA+Arial-BoldMT",
       "extension": "ttf",
       "type": "TrueType",
-      "embedded_bytes": 68580,
+      "embedded_bytes": 48876,
       "used_in_text": true
     },
     {
@@ -588,7 +568,7 @@
       "name": "AAAAAA+ArialMT",
       "extension": "ttf",
       "type": "TrueType",
-      "embedded_bytes": 70100,
+      "embedded_bytes": 66112,
       "used_in_text": true
     },
     {
@@ -620,7 +600,7 @@
       "name": "AAAAAA+ArialMT",
       "extension": "ttf",
       "type": "TrueType",
-      "embedded_bytes": 68640,
+      "embedded_bytes": 66308,
       "used_in_text": true
     },
     {
@@ -636,7 +616,7 @@
       "name": "AAAAAA+Arial-BoldMT",
       "extension": "ttf",
       "type": "TrueType",
-      "embedded_bytes": 51984,
+      "embedded_bytes": 50404,
       "used_in_text": true
     },
     {
@@ -660,7 +640,7 @@
       "name": "AAAAAA+Arial-BoldMT",
       "extension": "ttf",
       "type": "TrueType",
-      "embedded_bytes": 50104,
+      "embedded_bytes": 48644,
       "used_in_text": true
     },
     {
@@ -668,7 +648,7 @@
       "name": "AAAAAA+ArialMT",
       "extension": "ttf",
       "type": "TrueType",
-      "embedded_bytes": 67360,
+      "embedded_bytes": 65796,
       "used_in_text": true
     }
   ],
@@ -677,13 +657,13 @@
       "name": "ablation-deltas",
       "pages": 1,
       "width_pt": 453.5433044433594,
-      "height_pt": 346.0,
+      "height_pt": 310.0,
       "minimum_font_pt": 9.5,
       "all_text_black": true,
       "drawio_xml_valid": true,
       "svg_xml_valid": true,
       "unembedded_used_fonts": [],
-      "pdf_sha256": "6cc75e1ea1064cb6238af9d20034e25d9a6326f11c1da7dd05a76c524c6facf4"
+      "pdf_sha256": "72c915ba4399f3f73e7994fc2070ce2e66fc45c581710ebe27a5fa018e3f4206"
     },
     {
       "name": "architecture-evolution",
@@ -695,130 +675,34 @@
       "drawio_xml_valid": true,
       "svg_xml_valid": true,
       "unembedded_used_fonts": [],
-      "pdf_sha256": "a3bdc56abc2c611c8155591156711d3f6650538a7cdf09a6a6e5638109e32f39"
+      "pdf_sha256": "a60c63139207850d3863f5286f8b2f1477a4e3ea6e6d5277c36b5e1e13c2d5c5"
     },
     {
       "name": "cohort-construction",
       "pages": 1,
       "width_pt": 453.5433044433594,
-      "height_pt": 383.0,
-      "minimum_font_pt": 9.5,
+      "height_pt": 367.0,
+      "minimum_font_pt": 10.0,
       "all_text_black": true,
       "drawio_xml_valid": true,
       "svg_xml_valid": true,
       "unembedded_used_fonts": [],
-      "pdf_sha256": "d95715a36811fc7f089759e552209629d1e287452f6162d5a4c3190e762f16be"
+      "pdf_sha256": "b441e869b62931ad19d90df7fb356ecf2a24a72da16cc5ddfe48ae2755d5fee0"
     },
     {
       "name": "cp-parameter-reduction",
       "pages": 1,
       "width_pt": 453.5433044433594,
-      "height_pt": 364.0,
+      "height_pt": 313.0,
       "minimum_font_pt": 9.5,
       "all_text_black": true,
       "drawio_xml_valid": true,
       "svg_xml_valid": true,
       "unembedded_used_fonts": [],
-      "pdf_sha256": "9e79f640ae03fdd1d11019503d676d57d7e10ebb0daabe2095c649f23d095b53"
+      "pdf_sha256": "05e2f0c7ac4602ac16110c873c7a831678c0dc382b9952664b994a18988772ea"
     },
     {
       "name": "final-pipeline",
-      "pages": 1,
-      "width_pt": 453.5433044433594,
-      "height_pt": 515.0,
-      "minimum_font_pt": 9.5,
-      "all_text_black": true,
-      "drawio_xml_valid": true,
-      "svg_xml_valid": true,
-      "unembedded_used_fonts": [],
-      "pdf_sha256": "e8f3635ef3cb8efee5ed887dfa9db9de3df477299490a127bf0f4886697b23ee"
-    },
-    {
-      "name": "full-pairwise-graph",
-      "pages": 1,
-      "width_pt": 453.5433044433594,
-      "height_pt": 337.0,
-      "minimum_font_pt": 9.5,
-      "all_text_black": true,
-      "drawio_xml_valid": true,
-      "svg_xml_valid": true,
-      "unembedded_used_fonts": [],
-      "pdf_sha256": "0ccb668c1baea97ef1cd6a229d13004b9c7d8c290ed7f9abbe31b3d16896ead1"
-    },
-    {
-      "name": "fusion-taxonomy",
-      "pages": 1,
-      "width_pt": 453.5433044433594,
-      "height_pt": 303.0,
-      "minimum_font_pt": 9.5,
-      "all_text_black": true,
-      "drawio_xml_valid": true,
-      "svg_xml_valid": true,
-      "unembedded_used_fonts": [],
-      "pdf_sha256": "83da8a7b2defcfb7c989ae12b6d5498e82b18c6602f3a9f2c35ca475ec6ac004"
-    },
-    {
-      "name": "gated-residual-route",
-      "pages": 1,
-      "width_pt": 453.5433044433594,
-      "height_pt": 406.0,
-      "minimum_font_pt": 9.5,
-      "all_text_black": true,
-      "drawio_xml_valid": true,
-      "svg_xml_valid": true,
-      "unembedded_used_fonts": [],
-      "pdf_sha256": "57e33602b5bceed47830a346811fb801a48ba35ba9be54f97ef3014780293c6f"
-    },
-    {
-      "name": "mci-progression-timeline",
-      "pages": 1,
-      "width_pt": 453.5433044433594,
-      "height_pt": 314.0,
-      "minimum_font_pt": 9.5,
-      "all_text_black": true,
-      "drawio_xml_valid": true,
-      "svg_xml_valid": true,
-      "unembedded_used_fonts": [],
-      "pdf_sha256": "43b7a42d72c780c8ee297ed5e7a98999c1fd1171c1e9fd54a6c23ac6ec7b8212"
-    },
-    {
-      "name": "modality-preprocessing",
-      "pages": 1,
-      "width_pt": 453.5433044433594,
-      "height_pt": 300.0,
-      "minimum_font_pt": 9.5,
-      "all_text_black": true,
-      "drawio_xml_valid": true,
-      "svg_xml_valid": true,
-      "unembedded_used_fonts": [],
-      "pdf_sha256": "4469ec2e52eb040ed60aef33fbeb498ec5e5031c21f9390abecca4031ad80189"
-    },
-    {
-      "name": "mri-hub-topology",
-      "pages": 1,
-      "width_pt": 453.5433044433594,
-      "height_pt": 181.0,
-      "minimum_font_pt": 9.5,
-      "all_text_black": true,
-      "drawio_xml_valid": true,
-      "svg_xml_valid": true,
-      "unembedded_used_fonts": [],
-      "pdf_sha256": "b83b12780c798527b89935bbf85cc66d28ddbb9858b1d230053230c96e78ccc3"
-    },
-    {
-      "name": "outer-vs-cp",
-      "pages": 1,
-      "width_pt": 453.5433044433594,
-      "height_pt": 326.0,
-      "minimum_font_pt": 9.5,
-      "all_text_black": true,
-      "drawio_xml_valid": true,
-      "svg_xml_valid": true,
-      "unembedded_used_fonts": [],
-      "pdf_sha256": "147188e889a2215048017df58822b4642b88be69afd1504a8f290d8b7747cec6"
-    },
-    {
-      "name": "performance-evolution",
       "pages": 1,
       "width_pt": 453.5433044433594,
       "height_pt": 474.0,
@@ -827,43 +711,139 @@
       "drawio_xml_valid": true,
       "svg_xml_valid": true,
       "unembedded_used_fonts": [],
-      "pdf_sha256": "cd2017d18de0c26b995d9967cf7ba5b119cf556a74211bb4a1597656534d0193"
+      "pdf_sha256": "407151b8286eaede757b1036d646d3c004b8d44848b141199f4d45972c544a76"
+    },
+    {
+      "name": "full-pairwise-graph",
+      "pages": 1,
+      "width_pt": 453.5433044433594,
+      "height_pt": 324.0,
+      "minimum_font_pt": 9.5,
+      "all_text_black": true,
+      "drawio_xml_valid": true,
+      "svg_xml_valid": true,
+      "unembedded_used_fonts": [],
+      "pdf_sha256": "0952d2b1d857df662ddd8d825d4805c976abb36c74ab65d5940e5a414765e542"
+    },
+    {
+      "name": "fusion-taxonomy",
+      "pages": 1,
+      "width_pt": 453.5433044433594,
+      "height_pt": 294.0,
+      "minimum_font_pt": 10.0,
+      "all_text_black": true,
+      "drawio_xml_valid": true,
+      "svg_xml_valid": true,
+      "unembedded_used_fonts": [],
+      "pdf_sha256": "1b0f5cf7569c26b6d2682c8029fb774b6270881f0a100dd6c52a04dfb385cb67"
+    },
+    {
+      "name": "gated-residual-route",
+      "pages": 1,
+      "width_pt": 453.5433044433594,
+      "height_pt": 382.0,
+      "minimum_font_pt": 9.5,
+      "all_text_black": true,
+      "drawio_xml_valid": true,
+      "svg_xml_valid": true,
+      "unembedded_used_fonts": [],
+      "pdf_sha256": "a49516c78f5145ba86dd8c80fab21a821eb62310ab8318bc72987e25fa856faa"
+    },
+    {
+      "name": "mci-progression-timeline",
+      "pages": 1,
+      "width_pt": 453.5433044433594,
+      "height_pt": 264.0,
+      "minimum_font_pt": 9.5,
+      "all_text_black": true,
+      "drawio_xml_valid": true,
+      "svg_xml_valid": true,
+      "unembedded_used_fonts": [],
+      "pdf_sha256": "78a82c72db5f5b1661c3c668d961f63b60b0a7e075a04b525457cc46e182c3cb"
+    },
+    {
+      "name": "modality-preprocessing",
+      "pages": 1,
+      "width_pt": 453.5433044433594,
+      "height_pt": 280.0,
+      "minimum_font_pt": 9.5,
+      "all_text_black": true,
+      "drawio_xml_valid": true,
+      "svg_xml_valid": true,
+      "unembedded_used_fonts": [],
+      "pdf_sha256": "708eda9215d437af35449ebbdd8def5aa86ef871255d4df1b6311400dbda3c0a"
+    },
+    {
+      "name": "mri-hub-topology",
+      "pages": 1,
+      "width_pt": 453.5433044433594,
+      "height_pt": 95.0,
+      "minimum_font_pt": 10.0,
+      "all_text_black": true,
+      "drawio_xml_valid": true,
+      "svg_xml_valid": true,
+      "unembedded_used_fonts": [],
+      "pdf_sha256": "b9e511468afb087348aaf341b967cb168a9d476e7661a52cb2c904ec1fbefb00"
+    },
+    {
+      "name": "outer-vs-cp",
+      "pages": 1,
+      "width_pt": 453.5433044433594,
+      "height_pt": 304.0,
+      "minimum_font_pt": 9.5,
+      "all_text_black": true,
+      "drawio_xml_valid": true,
+      "svg_xml_valid": true,
+      "unembedded_used_fonts": [],
+      "pdf_sha256": "5ef97097e9017cb38468b6a5ea1b7a518290fca06e11e73d9271a0b0a8c6f312"
+    },
+    {
+      "name": "performance-evolution",
+      "pages": 1,
+      "width_pt": 453.5433044433594,
+      "height_pt": 458.0,
+      "minimum_font_pt": 9.5,
+      "all_text_black": true,
+      "drawio_xml_valid": true,
+      "svg_xml_valid": true,
+      "unembedded_used_fonts": [],
+      "pdf_sha256": "bc78474c736794a3272f57f7c47d498e3a1f2669ae7468f74600912173071f12"
     },
     {
       "name": "rc-free-routing",
       "pages": 1,
       "width_pt": 453.5433044433594,
-      "height_pt": 372.0,
+      "height_pt": 337.0,
       "minimum_font_pt": 9.5,
       "all_text_black": true,
       "drawio_xml_valid": true,
       "svg_xml_valid": true,
       "unembedded_used_fonts": [],
-      "pdf_sha256": "a7960cbf3f4e68cd301c3b4f8d59a9bea3c18a3f78608f12c5261e1726345792"
+      "pdf_sha256": "7e664ba37ecfcfe3cb79befa5779c314f11eb0c2ec3fe8d8c4122b2ec7570c9e"
     },
     {
       "name": "standardized-benchmark",
       "pages": 1,
       "width_pt": 453.5433044433594,
-      "height_pt": 370.0,
+      "height_pt": 337.0,
       "minimum_font_pt": 9.5,
       "all_text_black": true,
       "drawio_xml_valid": true,
       "svg_xml_valid": true,
       "unembedded_used_fonts": [],
-      "pdf_sha256": "03cd9d65a6e223f57e207ac331a722402c98967b0f3bff0303d67c1aeaff80de"
+      "pdf_sha256": "4c3bd4e9ab6c2238ebb2d4b2ccf01178a6da62efe848ba68f1468f910a5da284"
     },
     {
       "name": "temporal-model",
       "pages": 1,
       "width_pt": 453.5433044433594,
-      "height_pt": 301.0,
+      "height_pt": 283.0,
       "minimum_font_pt": 9.5,
       "all_text_black": true,
       "drawio_xml_valid": true,
       "svg_xml_valid": true,
       "unembedded_used_fonts": [],
-      "pdf_sha256": "43f2c9b1267283e9bf5b417d44f850185f6f50f8eda41dd050a348c774e33898"
+      "pdf_sha256": "f5f0a35a68c6ee240c1fd2724f3a46f22e228fb5065b7499be37b0c6457f836f"
     }
   ],
   "original_sources": [

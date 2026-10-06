@@ -16,7 +16,7 @@ MRI được chọn trong khoảng $[b_i,L_i]$. Các scan gần nhau được nh
 \begin{figure}[tbp]
 \centering
 \includegraphics[width=\textwidth]{image/cohort-construction.pdf}
-\caption[Quy trình xây dựng cohort dọc]{Quy trình xây dựng cohort từ metadata ADNI đến mẫu ba visits và phép chia theo RID. Số người ở các bước là số liệu của cohort đã đóng băng; MRI, radiomics và clinical được liên kết theo cùng định danh visit trước modeling.}
+\caption[Quy trình xây dựng cohort dọc]{Quy trình xây dựng cohort từ metadata ADNI đến mẫu ba visits và phép chia theo RID. Số người ở các bước là số liệu của cohort đã đóng băng; MRI, radiomics và clinical được liên kết theo cùng định danh visit. Scaler, PCA và imputation chỉ fit trên train, rồi áp dụng nguyên vẹn cho validation/test.}
 \label{fig:cohort}
 \end{figure}
 
@@ -44,7 +44,7 @@ Clinical được ghép với MRI bằng quy tắc frozen: cùng RID, đánh gi�
 \begin{figure}[tbp]
 \centering
 \includegraphics[width=\textwidth]{image/modality-preprocessing.pdf}
-\caption[Ba nhánh xử lý modality]{Ba nhánh xử lý tại một visit. Khối 3D biểu diễn nhánh volume MRI; pooling và projection tạo vector $M$ 128 chiều. Radiomics qua PCA 16 chiều và MLP tạo $R$ 64 chiều; 9 giá trị clinical và 9 masks tạo $C$ 64 chiều. Biến đổi thống kê chỉ fit trên training.}
+\caption[Ba nhánh xử lý modality]{Ba nhánh xử lý tại một visit. Khối 3D biểu diễn nhánh volume MRI; pooling và projection tạo vector $M$ 128 chiều. Radiomics qua PCA 16 chiều và MLP tạo $R$ 64 chiều; 9 giá trị clinical và 9 masks tạo $C$ 64 chiều. Các encoder dùng chung trọng số qua ba visits; biến đổi thống kê chỉ fit trên training.}
 \label{fig:modalities}
 \end{figure}
 
@@ -213,7 +213,7 @@ Những bottleneck này giảm chiều input nhưng full reference vẫn tạo o
 \begin{figure}[tbp]
 \centering
 \includegraphics[width=\textwidth]{image/full-pairwise-graph.pdf}
-\caption[Full pairwise graph và sáu routes]{Full pairwise graph với ba interaction MR, MC, RC và sáu directed routes về các modality thành viên. Mỗi pair chỉ được tạo một lần tại cùng patient--visit; hai hướng có adapter và gate riêng. Đây là kiến trúc reference trước khi loại RC.}
+\caption[Full pairwise graph và sáu routes]{Full pairwise graph với ba interaction MR, MC, RC và sáu directed routes về các modality thành viên. Mỗi pair được tạo từ low projections của hai modality, một lần tại cùng patient--visit; hai hướng có adapter và gate riêng. Đây là kiến trúc reference trước khi loại RC.}
 \label{fig:full-pairwise}
 \end{figure}
 
@@ -242,7 +242,7 @@ $A$ và $B$ không bias; bias $b$ của first layer được giữ trong $Oq+b$.
 \begin{figure}[tbp]
 \centering
 \includegraphics[width=\textwidth]{image/outer-vs-cp.pdf}
-\caption[Tensor trọng số 3D và CP-factorized bilinear]{Khối 3D biểu diễn tensor trọng số $\mathcal W\in\mathbb R^{d_h\times d_x\times d_y}$ và tổng các tensor rank-one trong CP. Forward tính hai phép chiếu rank $Q$, tích Hadamard và phép chiếu output, không dựng $\mathcal W$ hay activation outer-product. Post-MLP được giữ nguyên.}
+\caption[Tensor trọng số 3D và CP-factorized bilinear]{Khối 3D biểu diễn tensor trọng số $\mathcal W\in\mathbb R^{d_h\times d_x\times d_y}$ và tổng các tensor rank-one trong CP; đây là phân rã trọng số, không phải dữ liệu bệnh nhân. Forward dùng hai phép chiếu rank $Q$, tích Hadamard và phép chiếu output, không dựng $\mathcal W$ hay activation outer-product. Phiên bản CP đủ ba pair có low dimensions MR/MC/RC là $32\times32$, $32\times16$, $32\times16$ và ranks 8/8/4; post-MLP giữ nguyên.}
 \label{fig:cp-block}
 \end{figure}
 
@@ -284,7 +284,7 @@ Gate MLP có hidden 32 và output một scalar trong $(0,1)$ cho mỗi patient--
 \begin{figure}[tbp]
 \centering
 \includegraphics[width=\textwidth]{image/gated-residual-route.pdf}
-\caption[Giải phẫu một gated residual route]{Giải phẫu một route: pair feature qua directed projection, nhân dynamic gate theo patient--visit và global route scale, cộng vào đường identity của modality đích rồi LayerNorm. Gate nhận modality gốc đã chuẩn hóa và directed pair feature; đường identity giữ nguyên embedding gốc trước phép cộng.}
+\caption[Giải phẫu một gated residual route]{Giải phẫu một route: pair feature qua directed projection, nhân dynamic gate theo patient--visit và global route scale $\lambda$, cộng vào đường identity rồi LayerNorm. Gate nhận modality gốc đã chuẩn hóa và directed pair feature; identity giữ nguyên embedding gốc, không thêm projection. Scalar $\lambda$ không ràng buộc dấu và khởi tạo bằng 0.1.}
 \label{fig:route}
 \end{figure}
 
@@ -327,23 +327,23 @@ Hình~\ref{fig:overall} liên kết toàn bộ các bước. Tại mỗi visit, 
 \begin{figure}[tbp]
 \centering
 \includegraphics[width=\textwidth]{image/final-pipeline.pdf}
-\caption[Kiến trúc tổng thể của framework cuối]{Kiến trúc tổng thể của Longitudinal Learning with Tensor Fusion. Khối 3D biểu diễn MRI và xử lý không gian; các embedding sau pooling là vector. Ba encoders, CP MR/MC và residual routing tạo visit representation; T-LSTM và attention tổng hợp ba visits rồi xuất raw Cox log-risk. Không có direct RC interaction.}
+\caption[Kiến trúc tổng thể của framework cuối]{Kiến trúc tổng thể của Longitudinal Learning with Tensor Fusion. Khối 3D biểu diễn MRI và xử lý không gian; các embedding sau pooling là vector. Ba encoders, CP MR/MC và residual routing tạo visit representation; T-LSTM và attention tổng hợp ba visits. Head xuất raw Cox log-risk, không qua sigmoid; huấn luyện dùng Cox partial likelihood với Breslow ties. Không có direct RC interaction.}
 \label{fig:overall}
 \end{figure}
 
 \begin{table}[H]
 \centering
 \small
-\caption[Shape theo từng bước của kiến trúc RC-Free]{Shape theo từng bước của kiến trúc RC-Free cuối. $B$ là số người trong batch, $T=3$; mọi phép biến đổi theo visit dùng chung trọng số.}
+\caption[Shape theo từng bước của kiến trúc RC-Free]{Shape từng bước của RC-Free ($B$: batch bệnh nhân, $T=3$).}
 \label{tab:pipeline-shapes}
-\begin{tabularx}{\textwidth}{@{}L{5.5cm} Y@{}}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ll@{}}
 \toprule
 \textbf{Bước / tensor} & \textbf{Shape hoặc phép biến đổi} \\
 \midrule
 MRI sequence & $[B,3,1,144,144,144]$ \\
 CNN pooling / MRI projection & $[B,3,512]\to[B,3,128]$ \\
 Radiomics: đầu vào PCA / MLP & $[B,3,16]\to[B,3,128]\to[B,3,64]$ \\
-Clinical: values + masks; MLP $18\to64\to64$ & Hai $[B,3,9]\to[B,3,18]\to[B,3,64]$ \\
+Clinical + masks / MLP & Hai $[B,3,9]\to[B,3,18]\to[B,3,64]$ \\
 Low projections $\widetilde M,\widetilde R,\widetilde C$ & $[B,3,32]$, $[B,3,32]$, $[B,3,16]$ \\
 CP MR/MC: $u,v,q=u\odot v$ & Mỗi tensor $[B,3,8]$ ở từng pair \\
 CP output / post-MLP & $[B,3,8]\to[B,3,128]\to[B,3,64]$ \\
@@ -353,12 +353,12 @@ Gate / global route scale & Mỗi gate $[B,3,1]$; mỗi $\lambda$ là scalar $[]
 $M_{\rm out},R_{\rm out},C_{\rm out}$ & $[B,3,128]$, $[B,3,64]$, $[B,3,64]$ \\
 Concatenate / shared readout & $[B,3,256]\to[B,3,128]$ \\
 Khoảng thời gian / visit mask & Mỗi tensor $[B,3]$ \\
-T-LSTM hidden / cell tại một visit & Chuỗi $[B,3,128]$; hidden/cell $[B,128]$ \\
-Attention scores / weights & $[B,3,128]\to[B,3,64]\to[B,3,1]$; squeeze $[B,3]$ \\
-Weighted subject representation & $[B,128]$ \\
-Cox hidden / output / raw log-risk & $[B,128]\to[B,64]\to[B,1]\to[B]$ \\
+T-LSTM: hidden / cell & Chuỗi $[B,3,128]$; hidden/cell $[B,128]$ \\
+Attention / squeeze & $[B,3,128]\to[B,3,64]\to[B,3,1]\to[B,3]$ \\
+Weighted context & $[B,128]$ \\
+Cox head / raw log-risk & $[B,128]\to[B,64]\to[B,1]\to[B]$ \\
 \bottomrule
-\end{tabularx}
+\end{tabular*}
 \end{table}
 
 \section{Mô hình thời gian và temporal attention}
@@ -383,7 +383,7 @@ Mô hình dùng một layer unidirectional, hidden 128. Thời gian tác động
 \begin{figure}[tbp]
 \centering
 \includegraphics[width=\textwidth]{image/temporal-model.pdf}
-\caption[T-LSTM và temporal attention]{Ba visit embeddings và khoảng cách MRI đi qua T-LSTM. Mỗi hidden state được chấm điểm bởi additive attention; tổng có trọng số tạo subject representation cho Cox head. Visit mask điều khiển temporal aggregation, khác với masks cho từng giá trị clinical.}
+\caption[T-LSTM và temporal attention]{Ba visit embeddings và khoảng cách MRI đi qua T-LSTM: $\Delta t_1=0$, còn $\Delta t_2,\Delta t_3$ là khoảng cách giữa MRI liên tiếp tính bằng năm. Additive attention chấm điểm các hidden states rồi lấy tổng có trọng số làm subject representation cho Cox head. Visit mask điều khiển temporal aggregation, khác với masks cho từng giá trị clinical.}
 \label{fig:temporal}
 \end{figure}
 

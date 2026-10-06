@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <mxfile host="app.diagrams.net" agent="Codex" version="native-xml">
   <diagram id="modality-preprocessing" name="modality-preprocessing">
-    <mxGraphModel grid="0" page="1" pageScale="1" pageWidth="453.5433" pageHeight="300" background="#FFFFFF" math="0">
+    <mxGraphModel grid="0" page="1" pageScale="1" pageWidth="453.5433" pageHeight="280" background="#FFFFFF" math="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -121,9 +121,6 @@
             <mxPoint x="374" y="237" as="sourcePoint" />
             <mxPoint x="391" y="237" as="targetPoint" />
           </mxGeometry>
-        </mxCell>
-        <mxCell id="i24" parent="1" vertex="1" value="Cùng encoder dùng cho cả 3 visits; chỉ train quyết định tham số tiền xử lý." style="html=1;fontFamily=Arial;fontColor=#000000;whiteSpace=wrap;text;strokeColor=none;fillColor=none;fontSize=9.5;fontStyle=0;align=left;verticalAlign=top;spacing=0;">
-          <mxGeometry x="15" y="285" width="313.055419921875" height="11.78" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

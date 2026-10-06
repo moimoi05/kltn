@@ -2,74 +2,50 @@
   "date": "2026-10-06",
   "reviewer": "Primary document editor",
   "pdf": "Nguyen_Phuong_Nam_Thesis_RCFree_Revised.pdf",
-  "pdf_sha256": "2be113930387fbe51d6fc2af52de993e03da2488827cc343d0902382c4745dd4",
+  "pdf_sha256": "ea725bde7e92c0cecd10b3b2eafc7980aceb9eca826e939f4c4a97ee840c20d8",
   "total_pages": 70,
   "render_scale": 1.35,
   "render_dpi": 97.2,
   "all_pages_visually_reviewed": true,
   "unresolved_visual_defects": [],
   "pages_changed_since_previous_release": [
+    9,
     10,
     11,
-    12,
     13,
     15,
+    16,
+    17,
+    18,
     23,
-    27,
     28,
     30,
-    31,
-    32,
-    33,
-    34,
-    35,
     36,
     37,
-    38,
     39,
     40,
     41,
     42,
     43,
     44,
-    45,
-    46,
-    47,
-    48,
-    49,
     50,
-    51,
     52,
     53,
     54,
     55,
     56,
-    57,
-    58,
-    59,
     60,
     61,
     62,
-    63,
-    64,
-    65,
-    66,
-    67,
-    68,
-    69,
-    70
+    63
   ],
   "targeted_full_page_reinspections": [
-    13,
-    31,
-    33,
-    34,
     37,
     41,
     42,
+    52,
     54,
-    64,
-    70
+    60
   ],
   "grayscale_pages_reviewed_and_accepted": [
     37,
@@ -142,22 +118,22 @@
       "pdf_page": 9,
       "page_label": "vi",
       "accepted": true,
-      "method": "Pixel-identical render to previously accepted contact sheet; target pages also reinspected",
-      "render_sha256": "6aac228ee6f27c0cfc2fe49e4a5e05ecc31df3c2ebde0de675d166a1fc8ecc08"
+      "method": "Current contact/full-page inspection",
+      "render_sha256": "3909d9fe7a8c8e5b001f45a4edf7583736376913ea2339c596198558cb46ae4a"
     },
     {
       "pdf_page": 10,
       "page_label": "vii",
       "accepted": true,
-      "method": "Pixel-identical render to previously accepted contact sheet; target pages also reinspected",
-      "render_sha256": "2cd5b4d24cd514716fc1199c69bd99e5a01f4f3989c20f6069d3e27bcbc97014"
+      "method": "Current contact/full-page inspection",
+      "render_sha256": "730edcae7a85306d00f67bac2652a7bedba28a68a0fc57b68d4615f9bbe80514"
     },
     {
       "pdf_page": 11,
       "page_label": "viii",
       "accepted": true,
-      "method": "Pixel-identical render to previously accepted contact sheet; target pages also reinspected",
-      "render_sha256": "f5cd609c4b4fe8819af9b1eb6d6200e647e28d378749605d016b663e771b6f23"
+      "method": "Current contact/full-page inspection",
+      "render_sha256": "30a6806d747b68fd77fcfc32cea659708abf72bb57587a86eca62bc333ec7635"
     },
     {
       "pdf_page": 12,
@@ -170,8 +146,8 @@
       "pdf_page": 13,
       "page_label": "x",
       "accepted": true,
-      "method": "Pixel-identical render to previously accepted contact sheet; target pages also reinspected",
-      "render_sha256": "868936f8ba71881aa81862ed03531121bae632cc57cbcee3352ef51031ce8af4"
+      "method": "Current contact/full-page inspection",
+      "render_sha256": "bcfa2a065c0480f95b5521873b0cf6ed8762503405e723465d70252ed05e5a7e"
     },
     {
       "pdf_page": 14,
@@ -184,56 +160,56 @@
       "pdf_page": 15,
       "page_label": "2",
       "accepted": true,
-      "method": "Pixel-identical render to previously accepted contact sheet; target pages also reinspected",
-      "render_sha256": "1faec4e450df36c1c219ef348c8bf1195f412d6bb4f8df9772bd769b562b101d"
+      "method": "Current contact/full-page inspection",
+      "render_sha256": "04ba734671079fb247286bfd4e6758684f199e63cc4272052b5f239125a2b68e"
     },
     {
       "pdf_page": 16,
       "page_label": "3",
       "accepted": true,
-      "method": "Pixel-identical render to previously accepted contact sheet; target pages also reinspected",
-      "render_sha256": "6f34206d0f44cc02a34cd6c850892939e3ab185efa9818068084f5ad69f07c3b"
+      "method": "Current contact/full-page inspection",
+      "render_sha256": "7cb035f107eb8303e4191a9769988960f5017c24d89bcd427b3f35a0dabaa225"
     },
     {
       "pdf_page": 17,
       "page_label": "4",
       "accepted": true,
       "method": "Current contact/full-page inspection",
-      "render_sha256": "7ca32af32be3ee5b92265f5e52b25e55269bfb797aacdafc8a7796af7f6827c3"
+      "render_sha256": "3e6b655fb851ed89446fd209e9e1065ee475c9d3722607e0574527eb7edaac1e"
     },
     {
       "pdf_page": 18,
       "page_label": "5",
       "accepted": true,
       "method": "Current contact/full-page inspection",
-      "render_sha256": "146d5c7f30db9302449d8ad34ef43e7729765cd29b3f5c216ce4d2a5cc3ba0c5"
+      "render_sha256": "271863cd556ac0ad0d92f2138fc4ddaaab8311a02f0cef954831bf14a1aa7a7e"
     },
     {
       "pdf_page": 19,
       "page_label": "6",
       "accepted": true,
-      "method": "Current contact/full-page inspection",
+      "method": "Pixel-identical render to previously accepted contact sheet; target pages also reinspected",
       "render_sha256": "594e11baf09e9b46403392e7b64412fa74ea36436ac025d7394f576893bd9c2c"
     },
     {
       "pdf_page": 20,
       "page_label": "7",
       "accepted": true,
-      "method": "Current contact/full-page inspection",
+      "method": "Pixel-identical render to previously accepted contact sheet; target pages also reinspected",
       "render_sha256": "bced518bfde3a49f32388fb4faf6976371800d397265da3c9564ac23315f4fe7"
     },
     {
       "pdf_page": 21,
       "page_label": "8",
       "accepted": true,
-      "method": "Current contact/full-page inspection",
+      "method": "Pixel-identical render to previously accepted contact sheet; target pages also reinspected",
       "render_sha256": "b4a74438bf6b272b1ae89d24c5da66e1c6883116fba62f0de3494950427f5272"
     },
     {
       "pdf_page": 22,
       "page_label": "9",
       "accepted": true,
-      "method": "Current contact/full-page inspection",
+      "method": "Pixel-identical render to previously accepted contact sheet; target pages also reinspected",
       "render_sha256": "14457d613b0b78a667eb811cd3e800d1e73f8b9f09d1e37cd38238fcbd32c92f"
     },
     {
@@ -241,34 +217,34 @@
       "page_label": "10",
       "accepted": true,
       "method": "Current contact/full-page inspection",
-      "render_sha256": "daed6144d5954df87bb99d83d07d5d5be5201ec3351587bf795a0536d0093674"
+      "render_sha256": "8da0ef91266c7a5ab7e721f6427d9045790c98c3b6fb2e6c4dc08487056d115a"
     },
     {
       "pdf_page": 24,
       "page_label": "11",
       "accepted": true,
-      "method": "Current contact/full-page inspection",
+      "method": "Pixel-identical render to previously accepted contact sheet; target pages also reinspected",
       "render_sha256": "bfdf8554a3e9afd1c1a58ea00cff239789161cfdfdf9e7746c1f534479643b0f"
     },
     {
       "pdf_page": 25,
       "page_label": "12",
       "accepted": true,
-      "method": "Current contact/full-page inspection",
+      "method": "Pixel-identical render to previously accepted contact sheet; target pages also reinspected",
       "render_sha256": "a3edf23b7fb07e74aec01e6cd51f6df21f994ff50547e320b9d5cff826c47145"
     },
     {
       "pdf_page": 26,
       "page_label": "13",
       "accepted": true,
-      "method": "Current contact/full-page inspection",
+      "method": "Pixel-identical render to previously accepted contact sheet; target pages also reinspected",
       "render_sha256": "b4c23779ec0782a06c366c5e430309f15ab9c04f5b5e326b4b320259cf886b7a"
     },
     {
       "pdf_page": 27,
       "page_label": "14",
       "accepted": true,
-      "method": "Current contact/full-page inspection",
+      "method": "Pixel-identical render to previously accepted contact sheet; target pages also reinspected",
       "render_sha256": "f4af9e20729e6a84f6867814fea3e92144569ad397871accec879a9269781d28"
     },
     {
@@ -276,7 +252,7 @@
       "page_label": "15",
       "accepted": true,
       "method": "Current contact/full-page inspection",
-      "render_sha256": "53b976ec442da8fcb2e13991a43af8fd007b72fa1cc23825ce1cf20b780dd1bf"
+      "render_sha256": "a7a19e73223a5ab1b58bfa6a252bf93d4c1dae6d7b9e04863533dab103941bf4"
     },
     {
       "pdf_page": 29,
@@ -289,8 +265,8 @@
       "pdf_page": 30,
       "page_label": "17",
       "accepted": true,
-      "method": "Pixel-identical render to previously accepted contact sheet; target pages also reinspected",
-      "render_sha256": "22e0a3623d77f23c357fd6ab12ffe81b534af3ed4c3ef505b055f99bef0e0eaf"
+      "method": "Current contact/full-page inspection",
+      "render_sha256": "118cf5eb4ebd51585492bc28f5642f59ef1ebde61998723915d2a554c77f0371"
     },
     {
       "pdf_page": 31,
@@ -310,7 +286,7 @@
       "pdf_page": 33,
       "page_label": "20",
       "accepted": true,
-      "method": "Current contact/full-page inspection",
+      "method": "Pixel-identical render to previously accepted contact sheet; target pages also reinspected",
       "render_sha256": "e971dfb0e05d7cd45c362038a6a9aabcdc6f9af833329c2c065ea0631a5633f5"
     },
     {
@@ -331,21 +307,21 @@
       "pdf_page": 36,
       "page_label": "23",
       "accepted": true,
-      "method": "Pixel-identical render to previously accepted contact sheet; target pages also reinspected",
-      "render_sha256": "ad53a14e2ae44af9f38707fe4e1eb52c713245ee1830ef75d3f805589e5f82f2"
+      "method": "Current contact/full-page inspection",
+      "render_sha256": "e05ec4fab0f224e4cb683122c1bd682a313b1afd687aa3d321f4d55ab4a6dc90"
     },
     {
       "pdf_page": 37,
       "page_label": "24",
       "accepted": true,
       "method": "Current contact/full-page inspection",
-      "render_sha256": "74c1105193dcdaf82cd84e553bb63faf2aebd22054dbb23eee20f0fa76e8186d"
+      "render_sha256": "8f07087d6c02632acd86ad3103c7fd60e9be3ae28d1dec261e3a60e7aa1a623b"
     },
     {
       "pdf_page": 38,
       "page_label": "25",
       "accepted": true,
-      "method": "Current contact/full-page inspection",
+      "method": "Pixel-identical render to previously accepted contact sheet; target pages also reinspected",
       "render_sha256": "7c1b10f62500f76dfaf9209b63ba0f912f9dea493fc9b8c02f468d485013633e"
     },
     {
@@ -353,76 +329,76 @@
       "page_label": "26",
       "accepted": true,
       "method": "Current contact/full-page inspection",
-      "render_sha256": "89bd117c0c277980abc9557617be0ce10a7cd87d7457443139d4defe63f55996"
+      "render_sha256": "cf12a706feffe32c05f8a4f0e6edea7bc46bb048e2d1b838f4470b70277e1bee"
     },
     {
       "pdf_page": 40,
       "page_label": "27",
       "accepted": true,
       "method": "Current contact/full-page inspection",
-      "render_sha256": "92468691dbd3052fd228ecee160a90a69804c588040cabdcceed292e8df04c2f"
+      "render_sha256": "fc0358855842dc2f2d1c6ceec748d5915a642a915c2b0d5c48e318261729f25d"
     },
     {
       "pdf_page": 41,
       "page_label": "28",
       "accepted": true,
       "method": "Current contact/full-page inspection",
-      "render_sha256": "cb5c7cdafd80ba0bff0aaf029b67b6e1c4f6491696388913ff26375fde387c7c"
+      "render_sha256": "5155d3e119e436ea485aa927a58cec60cf2515b304f120e1af6a6234ef3a81e4"
     },
     {
       "pdf_page": 42,
       "page_label": "29",
       "accepted": true,
       "method": "Current contact/full-page inspection",
-      "render_sha256": "bacefac3c9d5b7d64141dd855b059e26c0eecd15b4d453605de97232319cdca2"
+      "render_sha256": "42e47dc17064940654de6b0193e244e759ca6d56f68d48437932cf7713fcd675"
     },
     {
       "pdf_page": 43,
       "page_label": "30",
       "accepted": true,
       "method": "Current contact/full-page inspection",
-      "render_sha256": "39ab3871973285e18cec112cc7dce2f3d4f42e3bd80bb6dc1ace514dd175e9c7"
+      "render_sha256": "240c7e47d23564bdb6afe53a9226b284823a062c323cf6cbcdc60b25212cb5e9"
     },
     {
       "pdf_page": 44,
       "page_label": "31",
       "accepted": true,
       "method": "Current contact/full-page inspection",
-      "render_sha256": "683262bf28cfbbaea03e459c32d86a6ef321230ff17e8c7ae1478149e5ccc756"
+      "render_sha256": "052715e36e045d0f3e7fea54d63a335d7fcd929defa8355de7dc682a8026cbfc"
     },
     {
       "pdf_page": 45,
       "page_label": "32",
       "accepted": true,
-      "method": "Current contact/full-page inspection",
+      "method": "Pixel-identical render to previously accepted contact sheet; target pages also reinspected",
       "render_sha256": "ce199062182691ecdd589501ca1674ddca67cc9c3abce3067db6d33b0cc298a1"
     },
     {
       "pdf_page": 46,
       "page_label": "33",
       "accepted": true,
-      "method": "Current contact/full-page inspection",
+      "method": "Pixel-identical render to previously accepted contact sheet; target pages also reinspected",
       "render_sha256": "18ea80e7e4d90744ecd1f473e22f453b5ab4c8df2f839f921036ffa6e24390e4"
     },
     {
       "pdf_page": 47,
       "page_label": "34",
       "accepted": true,
-      "method": "Current contact/full-page inspection",
+      "method": "Pixel-identical render to previously accepted contact sheet; target pages also reinspected",
       "render_sha256": "717a31dae2fb653a305a085b080e1911ba876dc6f7c20de6dde0cc795863488b"
     },
     {
       "pdf_page": 48,
       "page_label": "35",
       "accepted": true,
-      "method": "Current contact/full-page inspection",
+      "method": "Pixel-identical render to previously accepted contact sheet; target pages also reinspected",
       "render_sha256": "97da4488cc22db78f8fe8b58c66e14e9e782c94bfd87028366a48080a9497329"
     },
     {
       "pdf_page": 49,
       "page_label": "36",
       "accepted": true,
-      "method": "Current contact/full-page inspection",
+      "method": "Pixel-identical render to previously accepted contact sheet; target pages also reinspected",
       "render_sha256": "0f0532148de575c882a4725d5640cf8f618afd90ae01cbc742f396e4aa7aa66b"
     },
     {
@@ -430,13 +406,13 @@
       "page_label": "37",
       "accepted": true,
       "method": "Current contact/full-page inspection",
-      "render_sha256": "abc18eb3bf820cd6bab729826ea194fda59ed2f4b1fcceea77eed0e1b38aeccf"
+      "render_sha256": "c71172d6c137e95abc6431f1f090f97bc9ed44aaac4a43df423cbe09a890ab07"
     },
     {
       "pdf_page": 51,
       "page_label": "38",
       "accepted": true,
-      "method": "Current contact/full-page inspection",
+      "method": "Pixel-identical render to previously accepted contact sheet; target pages also reinspected",
       "render_sha256": "ae689ef3bf86677f6627f33a3a626335269af0802168eeb3eb81216b75c4ec1d"
     },
     {
@@ -444,55 +420,55 @@
       "page_label": "39",
       "accepted": true,
       "method": "Current contact/full-page inspection",
-      "render_sha256": "1db77de6b05de4e607821e9f90ccbd4cb811db9f3763845f3b0e7efb44f8d63f"
+      "render_sha256": "c3362b0ee690fd5e66b39eb0b27510d38cc5d0e29b9d8a4e6e471e6f1dec6e2d"
     },
     {
       "pdf_page": 53,
       "page_label": "40",
       "accepted": true,
       "method": "Current contact/full-page inspection",
-      "render_sha256": "a62de90a4c08689e6aaf3b5e61f68af26b034b998623c741d6b0cf7445f1f143"
+      "render_sha256": "41a3257125091f049869bd5c1338d258e24f0745da854147a20df4c7f7135ed4"
     },
     {
       "pdf_page": 54,
       "page_label": "41",
       "accepted": true,
       "method": "Current contact/full-page inspection",
-      "render_sha256": "6c661ad17b1568e962ad2503f0debd5c878c1fb440d7a2f78534950556ee6292"
+      "render_sha256": "8ac2fca1cc0423d975cbe1533bf4e320dd9f9a5b458d2c578c2e9db052fc60af"
     },
     {
       "pdf_page": 55,
       "page_label": "42",
       "accepted": true,
       "method": "Current contact/full-page inspection",
-      "render_sha256": "99004bbc56cf2175dff8896695e97e70ecb7a836547ba76474e8ee8d28633b0e"
+      "render_sha256": "ff55f2d8c1d1531a5de9298c8147038b88713b2b634af5482e0e80c9c9397fe1"
     },
     {
       "pdf_page": 56,
       "page_label": "43",
       "accepted": true,
       "method": "Current contact/full-page inspection",
-      "render_sha256": "b3fa41106a1c4a18f81d9d1673d840f9087699e73293cfb1ef4e69b432c4db27"
+      "render_sha256": "42469f7fbacd8d600455f3e2b23dd111a00738ecb8980df343334ec98278fc8d"
     },
     {
       "pdf_page": 57,
       "page_label": "44",
       "accepted": true,
-      "method": "Current contact/full-page inspection",
+      "method": "Pixel-identical render to previously accepted contact sheet; target pages also reinspected",
       "render_sha256": "b703165a2b586300c4ec1bca6bb40cb268f9f3bd95cb324f9b10d60266e2acb7"
     },
     {
       "pdf_page": 58,
       "page_label": "45",
       "accepted": true,
-      "method": "Current contact/full-page inspection",
+      "method": "Pixel-identical render to previously accepted contact sheet; target pages also reinspected",
       "render_sha256": "374f6c2ae5488df821ebd53f9233495cf19e0980e3cb80324ad3b28cb1406de1"
     },
     {
       "pdf_page": 59,
       "page_label": "46",
       "accepted": true,
-      "method": "Current contact/full-page inspection",
+      "method": "Pixel-identical render to previously accepted contact sheet; target pages also reinspected",
       "render_sha256": "fdad19ffda1fd27b22007e0a559b54d515ac2960f694d4d99569aba6aff2bd2a"
     },
     {
@@ -500,76 +476,76 @@
       "page_label": "47",
       "accepted": true,
       "method": "Current contact/full-page inspection",
-      "render_sha256": "18dddf731eed564238e2808325a38a60cef8810f9e0823c0b300c9453585bdd1"
+      "render_sha256": "6e7df586a8a1f44dd024c833e3a17b1503a2f9c5babcfb09ebd3dcba001c585d"
     },
     {
       "pdf_page": 61,
       "page_label": "48",
       "accepted": true,
       "method": "Current contact/full-page inspection",
-      "render_sha256": "e2120c7e158385fe93aeb90f275451c54c80933d82436b3546833592e0a10e92"
+      "render_sha256": "59d321fc145a9e014b066fda8b8cb99e3a19a5d6c2d171e195af36ef64b52402"
     },
     {
       "pdf_page": 62,
       "page_label": "49",
       "accepted": true,
       "method": "Current contact/full-page inspection",
-      "render_sha256": "35a18a40520293ed68553fa491af80847ec2cd8b62563ba3efe7ec93810e7039"
+      "render_sha256": "fea83d82d65d025a82ce18b06961fe7603ab13565b163755d6c80a6ba4d23ba3"
     },
     {
       "pdf_page": 63,
       "page_label": "50",
       "accepted": true,
       "method": "Current contact/full-page inspection",
-      "render_sha256": "71730c209476958646e7dc2480208cfd62c0fbd81721808db9bbd46421c0de37"
+      "render_sha256": "b09d7688f0c9a761813af02ef26ea69768fb1169e32d1dc5b1021b61d9de77c4"
     },
     {
       "pdf_page": 64,
       "page_label": "51",
       "accepted": true,
-      "method": "Current contact/full-page inspection",
+      "method": "Pixel-identical render to previously accepted contact sheet; target pages also reinspected",
       "render_sha256": "2ae897be943675eb1c124f4490eefc63f3251021c630d043b1b7e3f0431e7fd8"
     },
     {
       "pdf_page": 65,
       "page_label": "52",
       "accepted": true,
-      "method": "Current contact/full-page inspection",
+      "method": "Pixel-identical render to previously accepted contact sheet; target pages also reinspected",
       "render_sha256": "7b20fdaf5c88ffa1f0308ec7da0bf59e3a8f88e82a31452fbac1bbe978b53b4e"
     },
     {
       "pdf_page": 66,
       "page_label": "53",
       "accepted": true,
-      "method": "Current contact/full-page inspection",
+      "method": "Pixel-identical render to previously accepted contact sheet; target pages also reinspected",
       "render_sha256": "2d3108fdc7221ad678f06540bfe2b959ae585e5e86bf2d79a1245d0d24b9c733"
     },
     {
       "pdf_page": 67,
       "page_label": "54",
       "accepted": true,
-      "method": "Current contact/full-page inspection",
+      "method": "Pixel-identical render to previously accepted contact sheet; target pages also reinspected",
       "render_sha256": "f55e31ba97e3f325fef91a7c66e639aaa662f3eca613e80c3da76f9cf42f507b"
     },
     {
       "pdf_page": 68,
       "page_label": "55",
       "accepted": true,
-      "method": "Current contact/full-page inspection",
+      "method": "Pixel-identical render to previously accepted contact sheet; target pages also reinspected",
       "render_sha256": "df414fdd9d8dfbf83455dd4321070d61a2fcdcf03c5a335d83e83c3907cad6eb"
     },
     {
       "pdf_page": 69,
       "page_label": "56",
       "accepted": true,
-      "method": "Current contact/full-page inspection",
+      "method": "Pixel-identical render to previously accepted contact sheet; target pages also reinspected",
       "render_sha256": "7fed49a166380056715415b453cbe39562ddeb03dc5cffac4b6c47c1fbce2148"
     },
     {
       "pdf_page": 70,
       "page_label": "57",
       "accepted": true,
-      "method": "Current contact/full-page inspection",
+      "method": "Pixel-identical render to previously accepted contact sheet; target pages also reinspected",
       "render_sha256": "4809b0a17a2b421f578c0656a3a3535de9f5b182044bce0ba996e7eb4128c406"
     }
   ]

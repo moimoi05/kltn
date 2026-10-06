@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="160mm" height="118.886mm" viewBox="0 0 453.5433 337">
+<svg xmlns="http://www.w3.org/2000/svg" width="160mm" height="114.300mm" viewBox="0 0 453.5433 324">
 <rect width="100%" height="100%" fill="white"/>
 <text x="227" y="15.82" font-family="Arial, DejaVu Sans, sans-serif" font-size="10.5" font-weight="700" text-anchor="middle" fill="#000000">Full reference: 3 pair blocks, 6 directed routes</text>
 <rect x="188" y="36" width="78" height="42" rx="4" fill="#E7F0FA" stroke="#567DA3" stroke-width="1"/>
@@ -40,5 +40,4 @@
 <text x="227" y="177.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#000000">M/R/C là identity paths.</text>
 <text x="227" y="189.76" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#000000">Mỗi arrow là đóng góp</text>
 <text x="227" y="201.54" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#000000">projected × gate × λ.</text>
-<text x="227" y="329.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#000000">Pair features được xây dựng từ low projections của hai modality tương ứng.</text>
 </svg>

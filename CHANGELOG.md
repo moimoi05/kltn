@@ -1,5 +1,14 @@
 # CHANGELOG — 05–06/10/2026
 
+## Chỉnh theo ba comment PDF — 06/10/2026
+
+- Hạ nhãn MR/MC sát các mũi tên trong Hình 5.1; khoảng cách từ đáy chữ đến mũi tên còn khoảng 6,36 pt. Thu gọn khoảng trắng của hình.
+- Bảng 3.5 dùng hai cột không ngắt dòng; caption và mỗi bước đều nằm trên một dòng, giữ nguyên 36 biểu thức shape và cỡ chữ đọc được.
+- Rà đủ 16 hình, bỏ các ghi chú diễn giải ở chân 15 hình; hình evolution vốn không có footer. Thông tin riêng được chuyển vào caption, nội dung trùng được bỏ; trục, giá trị, nhãn nội bộ và marker legends vẫn đầy đủ.
+- Kiểm tra trực quan 29 trang thay đổi, tái sử dụng 41 trang có render giống hệt bản đã duyệt; kiểm tra riêng PDF37/41/42/52/54/60 và tám trang thang xám. Bản cuối vẫn 70 trang, toàn bộ chữ trong hình màu đen.
+- Reviewer độc lập đối chiếu source với commit d8b7b1c; bibliography và dữ liệu chart đóng băng không đổi byte. Không phát hiện lỗi còn lại.
+- ZIP giải nén mới biên dịch thành công bằng script đi kèm; cả 70 trang có text và render giống hệt PDF đã duyệt. Gói source và PDF được kiểm tra CRC/checksum trước khi đồng bộ GitHub.
+
 ## Chữ đen, khối 3D và bảng shape — 06/10/2026
 
 - Chuyển toàn bộ chữ của 16 hình sang đen trong PDF, SVG và native drawio; giữ bold/emphasis và màu pastel cho nền/đường nét. Kiểm tra tự động đã phát hiện lỗi trước sửa và pass sau sửa.

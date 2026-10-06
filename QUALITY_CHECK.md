@@ -29,6 +29,8 @@ Detailed evidence is in `provenance/LITERATURE_AUDIT.md`, `METHOD_IMPLEMENTATION
 - [x] The user's remote audit is attributed in `TENSOR_SHAPE_AUDIT.md` and `REMOTE_SHAPE_AUDIT_20261006.md`: P10 MRI128³/channels-last, pre-dropout GAP512, official per-seed PCA38/69/2, hidden64; CrossFormer144³/stride6, channel-first stem followed by channel-last stages. Source contracts/tests and persisted artifact widths are distinguished from forward hooks. Config/version/source commit and config hash are recorded.
 - [x] Generator/renderer refactor passed syntax and direct/package-import checks, plus scene-state/export-hash equivalence. No frozen chart-data or bibliography byte changed during this follow-up.
 
+The PDF annotation follow-up additionally checked all 16 figures: explanatory footer notes were removed from 15 figures (architecture evolution had none), with unique scientific information retained in captions. Plot axes, ticks, internal labels and marker legends remain. MR/MC labels in Figure 5.1 sit 6.36 pt above the arrow lines. Table 3.5 has a one-line caption and unbreakable rows; its 36 ordered tensor shapes are unchanged. Independent source review found no unresolved issue; details are in `provenance/pdf_comment_checks.json`.
+
 ## Bibliography and comparison-table verification
 
 - [x] 57 unique entries, all used: 51 international journal/conference publications and 6 explicitly labeled arXiv research preprints. No internal-report or software-documentation-only bibliography entry remains.
@@ -51,7 +53,7 @@ Build logs are preserved in `provenance/build/`. Automated findings are in `qa_r
 ## Page-by-page visual review
 
 - [x] All 70 pages accepted through contact/full-page inspection or pixel-identical comparison to previously accepted sheets: covers/front matter, TOC/lists, every body page, equations, tables, figures and bibliography. The unchanged-page comparison is preserved in `provenance/visual_reuse_check.json`.
-- [x] List of tables (PDF13), MRI stages (31), encoder audit text (33), phase/P10/CrossFormer tables (34), 3D CP (37), pipeline (41), final-step table (42), benchmark (54) and first/last bibliography pages (64/70) were additionally inspected at full-page scale. Route labels remain parenthesized in diagrams, text, captions and equation indices, including `M + (MR→M) + (MC→M)`.
+- [x] This annotation follow-up inspected all 29 changed pages in current contacts and reused 41 pixel-identical previously accepted pages. 3D CP (PDF37), pipeline (41), one-line final-step table (42), ablation/caption (52), relocated benchmark legend (54) and MR/MC labels (60) were additionally inspected at full-page scale. Route labels remain parenthesized in diagrams, text, captions and equation indices, including `M + (MR→M) + (MC→M)`.
 - [x] Table names and numbers are readable; main model names remain on one line where practical. Captions, margins, page numbers and section transitions are consistent.
 - [x] Detailed CP/gate/RC-Free/pipeline drawings and all four result charts were inspected in grayscale on final PDF37/39/40/41/50/52/54/56. Labels, arrows, point markers, signed values and error bars preserve meaning without relying on color.
 - [x] Final pipeline and routing show all three modalities, no active RC pair and correct128/64/64→256→128→temporal→Cox dimensions. No connector crosses a box interior or clips a label.

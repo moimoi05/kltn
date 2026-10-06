@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="160mm" height="130.528mm" viewBox="0 0 453.5433 370">
+<svg xmlns="http://www.w3.org/2000/svg" width="160mm" height="118.886mm" viewBox="0 0 453.5433 337">
 <rect width="100%" height="100%" fill="white"/>
 <text x="16" y="17.4" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="start" fill="#000000">54 validation subjects  |  480 comparable pairs</text>
 <text x="439" y="37.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="700" text-anchor="end" fill="#000000">Mean ± SD</text>
@@ -76,11 +76,10 @@
 <text x="301.96296296296305" y="268.08" font-family="Arial, DejaVu Sans, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#000000"></text>
 <text x="439" y="267.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="end" fill="#000000">0.8347 ± 0.0313</text>
 <text x="250" y="322.4" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#000000">Validation C-index</text>
-<circle cx="19" cy="344" r="3.5" fill="#86759D" stroke="#86759D" stroke-width="1"/>
-<text x="19" y="348.08" font-family="Arial, DejaVu Sans, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#000000"></text>
-<text x="28" y="346.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="start" fill="#000000">Mean ± sample SD</text>
-<circle cx="177" cy="344" r="2.5" fill="#FFFFFF" stroke="#A2ADB7" stroke-width="1"/>
-<text x="177" y="348.08" font-family="Arial, DejaVu Sans, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#000000"></text>
-<text x="186" y="346.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="start" fill="#000000">Seeds 20260727 / 28 / 29</text>
-<text x="16" y="364.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="start" fill="#000000">SD là độ biến thiên giữa 3 seeds; không phải confidence interval.</text>
+<circle cx="19" cy="35" r="3.5" fill="#86759D" stroke="#86759D" stroke-width="1"/>
+<text x="19" y="39.08" font-family="Arial, DejaVu Sans, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#000000"></text>
+<text x="28" y="37.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="start" fill="#000000">Mean ± sample SD</text>
+<circle cx="177" cy="35" r="2.5" fill="#FFFFFF" stroke="#A2ADB7" stroke-width="1"/>
+<text x="177" y="39.08" font-family="Arial, DejaVu Sans, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#000000"></text>
+<text x="186" y="37.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="start" fill="#000000">Seeds 20260727 / 28 / 29</text>
 </svg>

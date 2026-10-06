@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <mxfile host="app.diagrams.net" agent="Codex" version="native-xml">
   <diagram id="fusion-taxonomy" name="fusion-taxonomy">
-    <mxGraphModel grid="0" page="1" pageScale="1" pageWidth="453.5433" pageHeight="303" background="#FFFFFF" math="0">
+    <mxGraphModel grid="0" page="1" pageScale="1" pageWidth="453.5433" pageHeight="294" background="#FFFFFF" math="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -72,9 +72,6 @@
               <mxPoint x="127" y="259.5" />
             </Array>
           </mxGeometry>
-        </mxCell>
-        <mxCell id="i11" parent="1" vertex="1" value="Thesis kết hợp CP cho pairwise interaction và gated residual cho routing." style="html=1;fontFamily=Arial;fontColor=#000000;whiteSpace=wrap;text;strokeColor=none;fillColor=none;fontSize=9.5;fontStyle=0;align=left;verticalAlign=top;spacing=0;">
-          <mxGeometry x="13" y="288" width="309.752685546875" height="11.78" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

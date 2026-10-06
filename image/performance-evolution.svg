@@ -1,100 +1,99 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="160mm" height="167.217mm" viewBox="0 0 453.5433 474">
+<svg xmlns="http://www.w3.org/2000/svg" width="160mm" height="161.572mm" viewBox="0 0 453.5433 458">
 <rect width="100%" height="100%" fill="white"/>
-<text x="16" y="17.4" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="start" fill="#000000">1  MRI Only: cùng protocol, khác initialization</text>
-<polyline points="50,83.0 438,83.0" fill="none" stroke="#CFD5DB" stroke-width="0.6" stroke-linejoin="round"/>
-<text x="42" y="86.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="end" fill="#000000">0.70</text>
-<polyline points="50,56.333333333333314 438,56.333333333333314" fill="none" stroke="#CFD5DB" stroke-width="0.6" stroke-linejoin="round"/>
-<text x="42" y="60.31333333333331" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="end" fill="#000000">0.80</text>
-<polyline points="50,34.999999999999986 438,34.999999999999986" fill="none" stroke="#CFD5DB" stroke-width="0.6" stroke-linejoin="round"/>
-<text x="42" y="38.97999999999998" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="end" fill="#000000">0.88</text>
-<polyline points="50,34 50,83" fill="none" stroke="#5C6B79" stroke-width="0.8" stroke-linejoin="round"/>
-<circle cx="152.0" cy="74.11111111111111" r="3.7" fill="#6590A5" stroke="#6590A5" stroke-width="1"/>
-<text x="152.0" y="78.19111111111111" font-family="Arial, DejaVu Sans, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#000000"></text>
-<rect x="132.0" y="56.111111111111114" width="40" height="13" rx="0" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1"/>
-<text x="152.0" y="66.12611111111111" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="700" text-anchor="middle" fill="#000000"></text>
-<text x="152.0" y="65.09111111111112" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#000000">0.7333</text>
-<text x="152.0" y="97.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#000000">MRI Only</text>
-<text x="152.0" y="109.76" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#000000">MedicalNet</text>
-<circle cx="334.0" cy="59.66666666666666" r="3.7" fill="#6590A5" stroke="#6590A5" stroke-width="1"/>
-<text x="334.0" y="63.746666666666655" font-family="Arial, DejaVu Sans, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#000000"></text>
-<rect x="314.0" y="41.66666666666666" width="40" height="13" rx="0" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1"/>
-<text x="334.0" y="51.68166666666665" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="700" text-anchor="middle" fill="#000000"></text>
-<text x="334.0" y="50.646666666666654" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#000000">0.7875</text>
-<text x="334.0" y="97.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#000000">MRI Only</text>
-<text x="334.0" y="109.76" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#000000">Random ResNet</text>
-<text x="16" y="123.4" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="start" fill="#000000">2  Longitudinal MRI: Cox batch 6</text>
-<polyline points="50,189.0 438,189.0" fill="none" stroke="#CFD5DB" stroke-width="0.6" stroke-linejoin="round"/>
-<text x="42" y="192.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="end" fill="#000000">0.70</text>
-<polyline points="50,162.33333333333331 438,162.33333333333331" fill="none" stroke="#CFD5DB" stroke-width="0.6" stroke-linejoin="round"/>
-<text x="42" y="166.3133333333333" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="end" fill="#000000">0.80</text>
-<polyline points="50,141.0 438,141.0" fill="none" stroke="#CFD5DB" stroke-width="0.6" stroke-linejoin="round"/>
-<text x="42" y="144.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="end" fill="#000000">0.88</text>
-<polyline points="50,140 50,189" fill="none" stroke="#5C6B79" stroke-width="0.8" stroke-linejoin="round"/>
-<circle cx="152.0" cy="180.11111111111111" r="3.7" fill="#6590A5" stroke="#6590A5" stroke-width="1"/>
-<text x="152.0" y="184.19111111111113" font-family="Arial, DejaVu Sans, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#000000"></text>
-<rect x="132.0" y="162.11111111111111" width="40" height="13" rx="0" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1"/>
-<text x="152.0" y="172.12611111111113" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="700" text-anchor="middle" fill="#000000"></text>
-<text x="152.0" y="171.0911111111111" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#000000">0.7333</text>
-<text x="152.0" y="203.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#000000">Longitudinal</text>
-<text x="152.0" y="215.76" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#000000">MRI</text>
-<circle cx="334.0" cy="166.77777777777777" r="3.7" fill="#FFFFFF" stroke="#A2ADB7" stroke-width="1"/>
-<text x="334.0" y="170.85777777777778" font-family="Arial, DejaVu Sans, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#000000"></text>
-<rect x="314.0" y="148.77777777777777" width="40" height="13" rx="0" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1"/>
-<text x="334.0" y="158.7927777777778" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="700" text-anchor="middle" fill="#000000"></text>
-<text x="334.0" y="157.75777777777776" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#000000">0.7833</text>
-<text x="334.0" y="203.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#000000">Longitudinal MRI</text>
-<text x="334.0" y="215.76" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#000000">+ attention*</text>
-<text x="16" y="229.4" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="start" fill="#000000">3  Multimodal Concat.: Cox batch 8</text>
-<polyline points="50,295.0 438,295.0" fill="none" stroke="#CFD5DB" stroke-width="0.6" stroke-linejoin="round"/>
-<text x="42" y="298.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="end" fill="#000000">0.70</text>
-<polyline points="50,268.3333333333333 438,268.3333333333333" fill="none" stroke="#CFD5DB" stroke-width="0.6" stroke-linejoin="round"/>
-<text x="42" y="272.31333333333333" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="end" fill="#000000">0.80</text>
-<polyline points="50,247.0 438,247.0" fill="none" stroke="#CFD5DB" stroke-width="0.6" stroke-linejoin="round"/>
-<text x="42" y="250.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="end" fill="#000000">0.88</text>
-<polyline points="50,246 50,295" fill="none" stroke="#5C6B79" stroke-width="0.8" stroke-linejoin="round"/>
-<circle cx="243.0" cy="265.0" r="3.7" fill="#6590A5" stroke="#6590A5" stroke-width="1"/>
-<text x="243.0" y="269.08" font-family="Arial, DejaVu Sans, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#000000"></text>
-<rect x="223.0" y="247.0" width="40" height="13" rx="0" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1"/>
-<text x="243.0" y="257.01500000000004" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="700" text-anchor="middle" fill="#000000"></text>
-<text x="243.0" y="255.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#000000">0.8125</text>
-<text x="243.0" y="309.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#000000">Multimodal</text>
-<text x="243.0" y="321.76" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#000000">Concat.</text>
-<text x="16" y="335.4" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="start" fill="#000000">4  Pairwise family: Cox batch 6</text>
-<polyline points="50,401.0 438,401.0" fill="none" stroke="#CFD5DB" stroke-width="0.6" stroke-linejoin="round"/>
-<text x="42" y="404.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="end" fill="#000000">0.70</text>
-<polyline points="50,374.3333333333333 438,374.3333333333333" fill="none" stroke="#CFD5DB" stroke-width="0.6" stroke-linejoin="round"/>
-<text x="42" y="378.31333333333333" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="end" fill="#000000">0.80</text>
-<polyline points="50,353.0 438,353.0" fill="none" stroke="#CFD5DB" stroke-width="0.6" stroke-linejoin="round"/>
-<text x="42" y="356.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="end" fill="#000000">0.88</text>
-<polyline points="50,352 50,401" fill="none" stroke="#5C6B79" stroke-width="0.8" stroke-linejoin="round"/>
-<circle cx="106.5" cy="366.8333333333333" r="3.7" fill="#86759D" stroke="#86759D" stroke-width="1"/>
-<text x="106.5" y="370.9133333333333" font-family="Arial, DejaVu Sans, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#000000"></text>
-<rect x="86.5" y="348.8333333333333" width="40" height="13" rx="0" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1"/>
-<text x="106.5" y="358.84833333333336" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="700" text-anchor="middle" fill="#000000"></text>
-<text x="106.5" y="357.81333333333333" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#000000">0.8281</text>
-<text x="106.5" y="415.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#000000">Dynamic</text>
-<text x="106.5" y="427.76" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#000000">Pairwise</text>
-<circle cx="197.5" cy="363.77777777777777" r="3.7" fill="#86759D" stroke="#86759D" stroke-width="1"/>
-<text x="197.5" y="367.85777777777776" font-family="Arial, DejaVu Sans, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#000000"></text>
-<rect x="177.5" y="345.77777777777777" width="40" height="13" rx="0" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1"/>
-<text x="197.5" y="355.7927777777778" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="700" text-anchor="middle" fill="#000000"></text>
-<text x="197.5" y="354.7577777777778" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#000000">0.8396</text>
-<text x="197.5" y="415.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#000000">MedicalNet</text>
-<text x="197.5" y="427.76" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#000000">Pairwise</text>
-<circle cx="288.5" cy="368.5" r="3.7" fill="#86759D" stroke="#86759D" stroke-width="1"/>
-<text x="288.5" y="372.58" font-family="Arial, DejaVu Sans, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#000000"></text>
-<rect x="268.5" y="350.5" width="40" height="13" rx="0" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1"/>
-<text x="288.5" y="360.51500000000004" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="700" text-anchor="middle" fill="#000000"></text>
-<text x="288.5" y="359.48" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#000000">0.8219</text>
-<text x="288.5" y="415.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#000000">CP</text>
-<text x="288.5" y="427.76" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#000000">Pairwise</text>
-<circle cx="379.5" cy="363.22222222222223" r="3.7" fill="#86759D" stroke="#86759D" stroke-width="1"/>
-<text x="379.5" y="367.3022222222222" font-family="Arial, DejaVu Sans, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#000000"></text>
-<rect x="359.5" y="345.22222222222223" width="40" height="13" rx="0" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1"/>
-<text x="379.5" y="355.2372222222223" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="700" text-anchor="middle" fill="#000000"></text>
-<text x="379.5" y="354.20222222222225" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#000000">0.8417</text>
-<text x="379.5" y="415.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#000000">RC-Free</text>
-<text x="379.5" y="427.76" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#000000">Pairwise</text>
-<text x="16" y="451.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="start" fill="#000000">Y: validation C-index. Tất cả điểm: seed 20260727; không nối các protocol.</text>
-<text x="16" y="468.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="start" fill="#000000">* Attention: best-observed; artifact hoàn tất còn hạn chế, ký hiệu rỗng.</text>
+<text x="16" y="14.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="start" fill="#000000">Validation C-index</text>
+<text x="16" y="33.4" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="start" fill="#000000">1  MRI Only: cùng protocol, khác initialization</text>
+<polyline points="50,99.0 438,99.0" fill="none" stroke="#CFD5DB" stroke-width="0.6" stroke-linejoin="round"/>
+<text x="42" y="102.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="end" fill="#000000">0.70</text>
+<polyline points="50,72.33333333333331 438,72.33333333333331" fill="none" stroke="#CFD5DB" stroke-width="0.6" stroke-linejoin="round"/>
+<text x="42" y="76.31333333333332" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="end" fill="#000000">0.80</text>
+<polyline points="50,50.999999999999986 438,50.999999999999986" fill="none" stroke="#CFD5DB" stroke-width="0.6" stroke-linejoin="round"/>
+<text x="42" y="54.97999999999998" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="end" fill="#000000">0.88</text>
+<polyline points="50,50 50,99" fill="none" stroke="#5C6B79" stroke-width="0.8" stroke-linejoin="round"/>
+<circle cx="152.0" cy="90.11111111111111" r="3.7" fill="#6590A5" stroke="#6590A5" stroke-width="1"/>
+<text x="152.0" y="94.19111111111111" font-family="Arial, DejaVu Sans, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#000000"></text>
+<rect x="132.0" y="72.11111111111111" width="40" height="13" rx="0" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1"/>
+<text x="152.0" y="82.12611111111111" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="700" text-anchor="middle" fill="#000000"></text>
+<text x="152.0" y="81.09111111111112" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#000000">0.7333</text>
+<text x="152.0" y="113.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#000000">MRI Only</text>
+<text x="152.0" y="125.76" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#000000">MedicalNet</text>
+<circle cx="334.0" cy="75.66666666666666" r="3.7" fill="#6590A5" stroke="#6590A5" stroke-width="1"/>
+<text x="334.0" y="79.74666666666666" font-family="Arial, DejaVu Sans, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#000000"></text>
+<rect x="314.0" y="57.66666666666666" width="40" height="13" rx="0" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1"/>
+<text x="334.0" y="67.68166666666666" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="700" text-anchor="middle" fill="#000000"></text>
+<text x="334.0" y="66.64666666666666" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#000000">0.7875</text>
+<text x="334.0" y="113.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#000000">MRI Only</text>
+<text x="334.0" y="125.76" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#000000">Random ResNet</text>
+<text x="16" y="139.4" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="start" fill="#000000">2  Longitudinal MRI: Cox batch 6</text>
+<polyline points="50,205.0 438,205.0" fill="none" stroke="#CFD5DB" stroke-width="0.6" stroke-linejoin="round"/>
+<text x="42" y="208.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="end" fill="#000000">0.70</text>
+<polyline points="50,178.33333333333331 438,178.33333333333331" fill="none" stroke="#CFD5DB" stroke-width="0.6" stroke-linejoin="round"/>
+<text x="42" y="182.3133333333333" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="end" fill="#000000">0.80</text>
+<polyline points="50,157.0 438,157.0" fill="none" stroke="#CFD5DB" stroke-width="0.6" stroke-linejoin="round"/>
+<text x="42" y="160.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="end" fill="#000000">0.88</text>
+<polyline points="50,156 50,205" fill="none" stroke="#5C6B79" stroke-width="0.8" stroke-linejoin="round"/>
+<circle cx="152.0" cy="196.11111111111111" r="3.7" fill="#6590A5" stroke="#6590A5" stroke-width="1"/>
+<text x="152.0" y="200.19111111111113" font-family="Arial, DejaVu Sans, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#000000"></text>
+<rect x="132.0" y="178.11111111111111" width="40" height="13" rx="0" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1"/>
+<text x="152.0" y="188.12611111111113" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="700" text-anchor="middle" fill="#000000"></text>
+<text x="152.0" y="187.0911111111111" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#000000">0.7333</text>
+<text x="152.0" y="219.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#000000">Longitudinal</text>
+<text x="152.0" y="231.76" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#000000">MRI</text>
+<circle cx="334.0" cy="182.77777777777777" r="3.7" fill="#FFFFFF" stroke="#A2ADB7" stroke-width="1"/>
+<text x="334.0" y="186.85777777777778" font-family="Arial, DejaVu Sans, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#000000"></text>
+<rect x="314.0" y="164.77777777777777" width="40" height="13" rx="0" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1"/>
+<text x="334.0" y="174.7927777777778" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="700" text-anchor="middle" fill="#000000"></text>
+<text x="334.0" y="173.75777777777776" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#000000">0.7833</text>
+<text x="334.0" y="219.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#000000">Longitudinal MRI</text>
+<text x="334.0" y="231.76" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#000000">+ attention*</text>
+<text x="16" y="245.4" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="start" fill="#000000">3  Multimodal Concat.: Cox batch 8</text>
+<polyline points="50,311.0 438,311.0" fill="none" stroke="#CFD5DB" stroke-width="0.6" stroke-linejoin="round"/>
+<text x="42" y="314.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="end" fill="#000000">0.70</text>
+<polyline points="50,284.3333333333333 438,284.3333333333333" fill="none" stroke="#CFD5DB" stroke-width="0.6" stroke-linejoin="round"/>
+<text x="42" y="288.31333333333333" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="end" fill="#000000">0.80</text>
+<polyline points="50,263.0 438,263.0" fill="none" stroke="#CFD5DB" stroke-width="0.6" stroke-linejoin="round"/>
+<text x="42" y="266.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="end" fill="#000000">0.88</text>
+<polyline points="50,262 50,311" fill="none" stroke="#5C6B79" stroke-width="0.8" stroke-linejoin="round"/>
+<circle cx="243.0" cy="281.0" r="3.7" fill="#6590A5" stroke="#6590A5" stroke-width="1"/>
+<text x="243.0" y="285.08" font-family="Arial, DejaVu Sans, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#000000"></text>
+<rect x="223.0" y="263.0" width="40" height="13" rx="0" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1"/>
+<text x="243.0" y="273.01500000000004" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="700" text-anchor="middle" fill="#000000"></text>
+<text x="243.0" y="271.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#000000">0.8125</text>
+<text x="243.0" y="325.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#000000">Multimodal</text>
+<text x="243.0" y="337.76" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#000000">Concat.</text>
+<text x="16" y="351.4" font-family="Arial, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="start" fill="#000000">4  Pairwise family: Cox batch 6</text>
+<polyline points="50,417.0 438,417.0" fill="none" stroke="#CFD5DB" stroke-width="0.6" stroke-linejoin="round"/>
+<text x="42" y="420.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="end" fill="#000000">0.70</text>
+<polyline points="50,390.3333333333333 438,390.3333333333333" fill="none" stroke="#CFD5DB" stroke-width="0.6" stroke-linejoin="round"/>
+<text x="42" y="394.31333333333333" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="end" fill="#000000">0.80</text>
+<polyline points="50,369.0 438,369.0" fill="none" stroke="#CFD5DB" stroke-width="0.6" stroke-linejoin="round"/>
+<text x="42" y="372.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="end" fill="#000000">0.88</text>
+<polyline points="50,368 50,417" fill="none" stroke="#5C6B79" stroke-width="0.8" stroke-linejoin="round"/>
+<circle cx="106.5" cy="382.8333333333333" r="3.7" fill="#86759D" stroke="#86759D" stroke-width="1"/>
+<text x="106.5" y="386.9133333333333" font-family="Arial, DejaVu Sans, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#000000"></text>
+<rect x="86.5" y="364.8333333333333" width="40" height="13" rx="0" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1"/>
+<text x="106.5" y="374.84833333333336" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="700" text-anchor="middle" fill="#000000"></text>
+<text x="106.5" y="373.81333333333333" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#000000">0.8281</text>
+<text x="106.5" y="431.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#000000">Dynamic</text>
+<text x="106.5" y="443.76" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#000000">Pairwise</text>
+<circle cx="197.5" cy="379.77777777777777" r="3.7" fill="#86759D" stroke="#86759D" stroke-width="1"/>
+<text x="197.5" y="383.85777777777776" font-family="Arial, DejaVu Sans, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#000000"></text>
+<rect x="177.5" y="361.77777777777777" width="40" height="13" rx="0" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1"/>
+<text x="197.5" y="371.7927777777778" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="700" text-anchor="middle" fill="#000000"></text>
+<text x="197.5" y="370.7577777777778" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#000000">0.8396</text>
+<text x="197.5" y="431.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#000000">MedicalNet</text>
+<text x="197.5" y="443.76" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#000000">Pairwise</text>
+<circle cx="288.5" cy="384.5" r="3.7" fill="#86759D" stroke="#86759D" stroke-width="1"/>
+<text x="288.5" y="388.58" font-family="Arial, DejaVu Sans, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#000000"></text>
+<rect x="268.5" y="366.5" width="40" height="13" rx="0" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1"/>
+<text x="288.5" y="376.51500000000004" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="700" text-anchor="middle" fill="#000000"></text>
+<text x="288.5" y="375.48" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#000000">0.8219</text>
+<text x="288.5" y="431.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#000000">CP</text>
+<text x="288.5" y="443.76" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#000000">Pairwise</text>
+<circle cx="379.5" cy="379.22222222222223" r="3.7" fill="#86759D" stroke="#86759D" stroke-width="1"/>
+<text x="379.5" y="383.3022222222222" font-family="Arial, DejaVu Sans, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#000000"></text>
+<rect x="359.5" y="361.22222222222223" width="40" height="13" rx="0" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1"/>
+<text x="379.5" y="371.2372222222223" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="700" text-anchor="middle" fill="#000000"></text>
+<text x="379.5" y="370.20222222222225" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#000000">0.8417</text>
+<text x="379.5" y="431.98" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#000000">RC-Free</text>
+<text x="379.5" y="443.76" font-family="Arial, DejaVu Sans, sans-serif" font-size="9.5" font-weight="400" text-anchor="middle" fill="#000000">Pairwise</text>
 </svg>
