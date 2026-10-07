@@ -1,4 +1,14 @@
-# CHANGELOG — 05–06/10/2026
+# CHANGELOG — 05–07/10/2026
+
+## Bìa và chữ đậm/chữ thường theo mẫu Trang — 07/10/2026
+
+- Đối chiếu PDF cuối và source Nguyễn Phương Trang. Giữ khung kép ở cả ba bìa; logo chỉ ở bìa tiếng Anh đầu tiên. Bỏ dòng mã sinh viên và dòng sinh viên lặp; giữ tên tác giả và tên giảng viên gốc.
+- Viết hoa tên đề tài; bìa tiếng Việt dùng bản dịch tương ứng. Chỉ in đậm nhãn Major/Ngành/Supervisor, còn dấu hai chấm, ngành và tên giảng viên dùng Regular; tên trường, tác giả, đề tài, loại khóa luận và năm dùng Semibold.
+- Căn giữa tiêu đề hai tóm tắt, cảm ơn và cam đoan; khớp cỡ tiêu đề chương, lề A4 và số La Mã iii của trang tóm tắt. Caption hình/bảng và bibliography dùng Regular13pt; đầu bảng, nhãn cấu trúc và mọi dòng kết quả tốt nhất vẫn đậm.
+- Bỏ hai wrapper in đậm trong câu văn Chương2/5, giữ nguyên từng từ và citation. Chapters1/3/4, 57 references, số liệu, 16 hình và source hình không đổi byte.
+- PDF vẫn67 trang:13 mở đầu,47 nội dung chính,7 tài liệu tham khảo. Đã duyệt riêng từng trang; QA nguồn/build/font/glyph/link/geometry, bìa và trọng số chữ đều pass. Bằng chứng hiện hành ở `provenance/layout_reference_check.json`, `visual_review.json` và `typography_check.json`.
+
+- Gói source giải nén mới biên dịch độc lập và tái tạo text/render cả67 trang; QA, CRC và checksum PDF trong ZIP được kiểm tra trước khi đồng bộ GitHub.
 
 ## Font, mục lục và link tham khảo theo bản Trang — 06/10/2026
 

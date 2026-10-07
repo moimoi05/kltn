@@ -1,0 +1,585 @@
+{
+  "date": "2026-10-07",
+  "reference_pdf_sha256": "685ef383dde16fd5502d9c71f2ccda760a6db9f98afec399881ba213ea2642a4",
+  "revised_pdf_sha256": "91be90ecadf2438747be749ca3d8d4c2191b3990589c4bf55dbb7ab503325feb",
+  "covers": [
+    {
+      "pdf_page": 1,
+      "frames_match_reference": true,
+      "no_student_id_or_duplicate_student_row": true,
+      "logo_pattern_matches": true,
+      "labels_bold": true,
+      "values_regular": true,
+      "title_uppercase_semibold": true
+    },
+    {
+      "pdf_page": 2,
+      "frames_match_reference": true,
+      "no_student_id_or_duplicate_student_row": true,
+      "logo_pattern_matches": true,
+      "labels_bold": true,
+      "values_regular": true,
+      "title_uppercase_semibold": true
+    },
+    {
+      "pdf_page": 3,
+      "frames_match_reference": true,
+      "no_student_id_or_duplicate_student_row": true,
+      "logo_pattern_matches": true,
+      "labels_bold": true,
+      "values_regular": true,
+      "title_uppercase_semibold": true
+    }
+  ],
+  "front_matter": [
+    {
+      "pdf_page": 4,
+      "text": "TÓM TẮT",
+      "font": "LibertinusSerif-Semibold",
+      "size_pt": 15.541679382324219,
+      "center_x_pt": 311.8188018798828,
+      "matches": true
+    },
+    {
+      "pdf_page": 5,
+      "text": "ABSTRACT",
+      "font": "LibertinusSerif-Semibold",
+      "size_pt": 15.541679382324219,
+      "center_x_pt": 311.8188171386719,
+      "matches": true
+    },
+    {
+      "pdf_page": 6,
+      "text": "LỜI CẢM ƠN",
+      "font": "LibertinusSerif-Semibold",
+      "size_pt": 15.541679382324219,
+      "center_x_pt": 311.81105041503906,
+      "matches": true
+    },
+    {
+      "pdf_page": 7,
+      "text": "LỜI CAM ĐOAN",
+      "font": "LibertinusSerif-Semibold",
+      "size_pt": 15.541679382324219,
+      "center_x_pt": 311.8188018798828,
+      "matches": true
+    }
+  ],
+  "caption_labels": [
+    {
+      "pdf_page": 15,
+      "caption_start": "Hình 1.1: Bài toán tiên lượng tiến triển MCI với ba visit. Mốc dựbáo 𝑝là ngày MRI thứ",
+      "font": "LibertinusSerif-Regular",
+      "size_pt": 12.951432228088379,
+      "matches": true
+    },
+    {
+      "pdf_page": 16,
+      "caption_start": "Bảng 1.1: Câu hỏi nghiên cứu định hướng các thực nghiệm.",
+      "font": "LibertinusSerif-Regular",
+      "size_pt": 12.951432228088379,
+      "matches": true
+    },
+    {
+      "pdf_page": 23,
+      "caption_start": "Hình 2.1: Các chiến lược fusion liên quan đến khóa luận. Concatenation là điểm xuất",
+      "font": "LibertinusSerif-Regular",
+      "size_pt": 12.951432228088379,
+      "matches": true
+    },
+    {
+      "pdf_page": 25,
+      "caption_start": "Bảng 2.1: Các nghiên cứu liên quan và vịtrí của khóa luận. Hai công trình cuối có tác",
+      "font": "LibertinusSerif-Regular",
+      "size_pt": 12.951432228088379,
+      "matches": true
+    },
+    {
+      "pdf_page": 28,
+      "caption_start": "Hình 3.1: Quy trình xây dựng cohort từmetadata ADNI đến mẫu ba visits và phép chia",
+      "font": "LibertinusSerif-Regular",
+      "size_pt": 12.951432228088379,
+      "matches": true
+    },
+    {
+      "pdf_page": 30,
+      "caption_start": "Hình 3.2: Ba nhánh xửlý tại một visit. Khối 3D biểu diễn nhánh volume MRI; pooling",
+      "font": "LibertinusSerif-Regular",
+      "size_pt": 12.951432228088379,
+      "matches": true
+    },
+    {
+      "pdf_page": 31,
+      "caption_start": "Bảng 3.1: Shape MRI encoder: feature map [𝐵, 𝐶, 𝐷, 𝐻, 𝑊] và chuỗi pooled/embedding",
+      "font": "LibertinusSerif-Regular",
+      "size_pt": 12.951432228088379,
+      "matches": true
+    },
+    {
+      "pdf_page": 33,
+      "caption_start": "Hình 3.3: Tiến hóa của framework theo các câu hỏi thực nghiệm. CP thay cách tham số",
+      "font": "LibertinusSerif-Regular",
+      "size_pt": 12.951432228088379,
+      "matches": true
+    },
+    {
+      "pdf_page": 34,
+      "caption_start": "Bảng 3.2: Giao diện shape theo giai đoạn phát triển. Chiều feature tính cho một visit;",
+      "font": "LibertinusSerif-Regular",
+      "size_pt": 12.951432228088379,
+      "matches": true
+    },
+    {
+      "pdf_page": 34,
+      "caption_start": "Bảng 3.3: Shape các encoder đối chứng. 𝑁là batch volume CNN; 𝐵là batch bệnh nhân.",
+      "font": "LibertinusSerif-Regular",
+      "size_pt": 12.951432228088379,
+      "matches": true
+    },
+    {
+      "pdf_page": 36,
+      "caption_start": "Hình 3.4: Full pairwise graph với ba interaction MR, MC, RC và sáu directed routes về",
+      "font": "LibertinusSerif-Regular",
+      "size_pt": 12.951432228088379,
+      "matches": true
+    },
+    {
+      "pdf_page": 37,
+      "caption_start": "Hình 3.5: Khối 3D biểu diễn tensor trọng sốW ∈R𝑑ℎ×𝑑𝑥×𝑑𝑦và tổng các tensor rank-",
+      "font": "LibertinusSerif-Regular",
+      "size_pt": 12.951432228088379,
+      "matches": true
+    },
+    {
+      "pdf_page": 37,
+      "caption_start": "Bảng 3.4: Cấu hình CP của full reference và kiến trúc cuối.",
+      "font": "LibertinusSerif-Regular",
+      "size_pt": 12.951432228088379,
+      "matches": true
+    },
+    {
+      "pdf_page": 39,
+      "caption_start": "Hình 3.6: Giải phẫu một route: pair feature qua directed projection, nhân dynamic",
+      "font": "LibertinusSerif-Regular",
+      "size_pt": 12.951432228088379,
+      "matches": true
+    },
+    {
+      "pdf_page": 40,
+      "caption_start": "Hình 3.7: Residual routing của RC-Free Pairwise Fusion theo ba hàng modality đích.",
+      "font": "LibertinusSerif-Regular",
+      "size_pt": 12.951432228088379,
+      "matches": true
+    },
+    {
+      "pdf_page": 41,
+      "caption_start": "Hình 3.8: Kiến trúc tổng thểcủa Longitudinal Learning with Tensor Fusion. Khối 3D",
+      "font": "LibertinusSerif-Regular",
+      "size_pt": 12.951432228088379,
+      "matches": true
+    },
+    {
+      "pdf_page": 42,
+      "caption_start": "Bảng 3.5: Shape từng bước của RC-Free (𝐵: batch bệnh nhân, 𝑇= 3).",
+      "font": "LibertinusSerif-Regular",
+      "size_pt": 12.951432228088379,
+      "matches": true
+    },
+    {
+      "pdf_page": 43,
+      "caption_start": "Hình 3.9: Ba visit embeddings và khoảng cách MRI đi qua T-LSTM: Δ𝑡1 = 0, còn Δ𝑡2, Δ𝑡3",
+      "font": "LibertinusSerif-Regular",
+      "size_pt": 12.951432228088379,
+      "matches": true
+    },
+    {
+      "pdf_page": 46,
+      "caption_start": "Bảng 4.1: Các giao thức phải phân biệt khi đọc tiến trình thực nghiệm.",
+      "font": "LibertinusSerif-Regular",
+      "size_pt": 12.951432228088379,
+      "matches": true
+    },
+    {
+      "pdf_page": 47,
+      "caption_start": "Bảng 4.2: Validation của các representation dữliệu bảng. Dòng in đậm đạt C-index cao",
+      "font": "LibertinusSerif-Regular",
+      "size_pt": 12.951432228088379,
+      "matches": true
+    },
+    {
+      "pdf_page": 48,
+      "caption_start": "Bảng 4.3: Milestone MRI-only trên seed 20260727; dòng in đậm có C-index cao nhất.",
+      "font": "LibertinusSerif-Regular",
+      "size_pt": 12.951432228088379,
+      "matches": true
+    },
+    {
+      "pdf_page": 50,
+      "caption_start": "Hình 4.1: Các milestone validation theo tiến trình nghiên cứu ởseed 20260727, tách",
+      "font": "LibertinusSerif-Regular",
+      "size_pt": 12.951432228088379,
+      "matches": true
+    },
+    {
+      "pdf_page": 52,
+      "caption_start": "Bảng 4.4: Ablation validation ởseed 20260727; Δ được tính so với full CP. Dòng in đậm",
+      "font": "LibertinusSerif-Regular",
+      "size_pt": 12.951432228088379,
+      "matches": true
+    },
+    {
+      "pdf_page": 52,
+      "caption_start": "Hình 4.2: Thay đổi validation C-index khi bỏhoặc cốđịnh từng thành phần so với full",
+      "font": "LibertinusSerif-Regular",
+      "size_pt": 12.951432228088379,
+      "matches": true
+    },
+    {
+      "pdf_page": 53,
+      "caption_start": "Bảng 4.5: C-index validation chuẩn hóa: mean ± sample SD (𝑛= 3). Hai dòng in đậm",
+      "font": "LibertinusSerif-Regular",
+      "size_pt": 12.951432228088379,
+      "matches": true
+    },
+    {
+      "pdf_page": 54,
+      "caption_start": "Hình 4.3: Benchmark validation trên ba seed: mean và sample SD của năm deep model.",
+      "font": "LibertinusSerif-Regular",
+      "size_pt": 12.951432228088379,
+      "matches": true
+    },
+    {
+      "pdf_page": 55,
+      "caption_start": "Bảng 4.6: Sốtham sốphép biến đổi song tuyến đầu tiên, gồm bias. CP ranks MR/MC/RC",
+      "font": "LibertinusSerif-Regular",
+      "size_pt": 12.951432228088379,
+      "matches": true
+    },
+    {
+      "pdf_page": 55,
+      "caption_start": "Hình 4.4: Giảm tham sốtừfull outer-product sang CP: 98,384% ởcác lớp song tuyến",
+      "font": "LibertinusSerif-Regular",
+      "size_pt": 12.951432228088379,
+      "matches": true
+    },
+    {
+      "pdf_page": 57,
+      "caption_start": "Bảng 4.7: Kết luận cho các câu hỏi nghiên cứu, giới hạn ởevidence validation hiện có.",
+      "font": "LibertinusSerif-Regular",
+      "size_pt": 12.951432228088379,
+      "matches": true
+    },
+    {
+      "pdf_page": 59,
+      "caption_start": "Hình 5.1: Topology cuối được lựa chọn qua validation và ablation: mô hình giữđủ",
+      "font": "LibertinusSerif-Regular",
+      "size_pt": 12.951432228088379,
+      "matches": true
+    }
+  ],
+  "frozen_inputs": [
+    {
+      "path": "chapters/chapter1.tex",
+      "sha256": "8a404d05bcde13a2b121dc38b9f1d2e72ba23333440f4843eb4a53f76a7a80d3",
+      "unchanged": true
+    },
+    {
+      "path": "chapters/chapter3.tex",
+      "sha256": "4d12bddabf39a6aaafba76852423b414a1f535f8fdd288a2627670bfe6cd8aad",
+      "unchanged": true
+    },
+    {
+      "path": "chapters/chapter4.tex",
+      "sha256": "35bbea33bc13ab72d6b1731c30ff1dabe6f6c0b064ddd1726990a7255af0a4ba",
+      "unchanged": true
+    },
+    {
+      "path": "figures_source/ablation-deltas.drawio",
+      "sha256": "6ec694b5b815ed274a0a0f89bf9659a4f3b62f08848aaab5721882fe504dd2c7",
+      "unchanged": true
+    },
+    {
+      "path": "figures_source/architecture-evolution.drawio",
+      "sha256": "fd75072f841b393c80ab4baf00a99e3cdec4d596c41b34d0846fd2b87ed8dec9",
+      "unchanged": true
+    },
+    {
+      "path": "figures_source/cohort-construction.drawio",
+      "sha256": "2f46a48b6c9fde2e44f9ceab4d13f57dff4c9bc1e50d8cad9d2262d9794a5b87",
+      "unchanged": true
+    },
+    {
+      "path": "figures_source/cp-parameter-reduction.drawio",
+      "sha256": "dad3349fee3ec3d77790673c591c2940b8438462e24bc63672e08b3e744766f1",
+      "unchanged": true
+    },
+    {
+      "path": "figures_source/figure_provenance.json",
+      "sha256": "011143e10d091ecda861b7cff5c188aa18ff37b184e3f9a3cee70733a045e24f",
+      "unchanged": true
+    },
+    {
+      "path": "figures_source/final-pipeline.drawio",
+      "sha256": "ae463a2542dea7c082ec6f96b6012c7c2b0a83412074f1317bed446de3448291",
+      "unchanged": true
+    },
+    {
+      "path": "figures_source/full-pairwise-graph.drawio",
+      "sha256": "7a5fdbe4c9507f1ddb9211752ae73896692a625d3222554b2a2a444414d64e56",
+      "unchanged": true
+    },
+    {
+      "path": "figures_source/fusion-taxonomy.drawio",
+      "sha256": "53c544cf93714193652f63ff37bd585d73bfebd73833976eefb1cc33e1a1dd99",
+      "unchanged": true
+    },
+    {
+      "path": "figures_source/gated-residual-route.drawio",
+      "sha256": "286dae9d5d113f28374ccb1c463d7b52c78cb59c0aeb45dee4c3ec4e9b1fe86c",
+      "unchanged": true
+    },
+    {
+      "path": "figures_source/generate_figures.py",
+      "sha256": "011c1b091d8d2182d490b509659029895183f068e25bbdb3d758ff1b12f58c87",
+      "unchanged": true
+    },
+    {
+      "path": "figures_source/mci-progression-timeline.drawio",
+      "sha256": "fec3867ea0aa38d1f9cf59f96ae55daac803e553b9ee49b58231b39d4e339ccb",
+      "unchanged": true
+    },
+    {
+      "path": "figures_source/modality-preprocessing.drawio",
+      "sha256": "44f3ee6f7634ec9e8a2fc88f09b0402733f594364e342e98413ef87166f05e56",
+      "unchanged": true
+    },
+    {
+      "path": "figures_source/mri-hub-topology.drawio",
+      "sha256": "cfbd2edbbc1fd9a36bcb3c53bba6f0e93fe155c39a6d41ed53d3d41ea5a20212",
+      "unchanged": true
+    },
+    {
+      "path": "figures_source/outer-vs-cp.drawio",
+      "sha256": "e63cc897ada5f05925e654ad2856715abfce820d9941905a6b9a3e671d86a00d",
+      "unchanged": true
+    },
+    {
+      "path": "figures_source/performance-evolution.drawio",
+      "sha256": "0bd3af0335077ec43771e1108db332a37afc3cca1295b252f567cfa4ab5e0876",
+      "unchanged": true
+    },
+    {
+      "path": "figures_source/rc-free-routing.drawio",
+      "sha256": "ebcacfaf979f277445490c2cae5474a564c4374cd013d1d9ee7e0dd2f3d3aac0",
+      "unchanged": true
+    },
+    {
+      "path": "figures_source/results_data.json",
+      "sha256": "86c39d22511437d6c4d812d08ddf16c699cc0f0c79ddd30030a2d7e266bc3caf",
+      "unchanged": true
+    },
+    {
+      "path": "figures_source/scene_renderer.py",
+      "sha256": "5d6fac17094a5f711757cd4d60519a8a789cd18b2d7b000cf0a52df345dc98f6",
+      "unchanged": true
+    },
+    {
+      "path": "figures_source/standardized-benchmark.drawio",
+      "sha256": "a0030861bbb2fc98f60f1ec50444227d764c3e5b4be59d7ee3734fc9bd771afe",
+      "unchanged": true
+    },
+    {
+      "path": "figures_source/temporal-model.drawio",
+      "sha256": "ffd3cbe6b79924e141e749752a9e357eb0838f2caf0f3b8902dca38d88f9fe4d",
+      "unchanged": true
+    },
+    {
+      "path": "image/ablation-deltas.pdf",
+      "sha256": "72c915ba4399f3f73e7994fc2070ce2e66fc45c581710ebe27a5fa018e3f4206",
+      "unchanged": true
+    },
+    {
+      "path": "image/ablation-deltas.svg",
+      "sha256": "1cb3ce5af8fa8252a2d03fe9825aee8f5cda3a0803ebf4436b29daff51d19acf",
+      "unchanged": true
+    },
+    {
+      "path": "image/architecture-evolution.pdf",
+      "sha256": "a60c63139207850d3863f5286f8b2f1477a4e3ea6e6d5277c36b5e1e13c2d5c5",
+      "unchanged": true
+    },
+    {
+      "path": "image/architecture-evolution.svg",
+      "sha256": "da3e46f6e0dcfd7551bfb122ccd1b1e6197e9225e4de4d852fa582b5227499f2",
+      "unchanged": true
+    },
+    {
+      "path": "image/cohort-construction.pdf",
+      "sha256": "b441e869b62931ad19d90df7fb356ecf2a24a72da16cc5ddfe48ae2755d5fee0",
+      "unchanged": true
+    },
+    {
+      "path": "image/cohort-construction.svg",
+      "sha256": "c865b861d3df347b1eca831b4544e86afbfca1e24cb4b0c3d798e3b6c7ae0c30",
+      "unchanged": true
+    },
+    {
+      "path": "image/cp-parameter-reduction.pdf",
+      "sha256": "05e2f0c7ac4602ac16110c873c7a831678c0dc382b9952664b994a18988772ea",
+      "unchanged": true
+    },
+    {
+      "path": "image/cp-parameter-reduction.svg",
+      "sha256": "6ff5347eafcc3c335dfea2d0c127777f78251e70bf030493263352ff5fbba445",
+      "unchanged": true
+    },
+    {
+      "path": "image/final-pipeline.pdf",
+      "sha256": "407151b8286eaede757b1036d646d3c004b8d44848b141199f4d45972c544a76",
+      "unchanged": true
+    },
+    {
+      "path": "image/final-pipeline.svg",
+      "sha256": "de550ab961c036b5c6b89e9c6a0ea0c1120e33fa2a6339c19e871011a549bd31",
+      "unchanged": true
+    },
+    {
+      "path": "image/full-pairwise-graph.pdf",
+      "sha256": "0952d2b1d857df662ddd8d825d4805c976abb36c74ab65d5940e5a414765e542",
+      "unchanged": true
+    },
+    {
+      "path": "image/full-pairwise-graph.svg",
+      "sha256": "f9e3f3eb1d5befc8f71b52fbd716d480495a2e14465d0b95d8b10c22b8fb8cb8",
+      "unchanged": true
+    },
+    {
+      "path": "image/fusion-taxonomy.pdf",
+      "sha256": "1b0f5cf7569c26b6d2682c8029fb774b6270881f0a100dd6c52a04dfb385cb67",
+      "unchanged": true
+    },
+    {
+      "path": "image/fusion-taxonomy.svg",
+      "sha256": "5e70fbc2f7987c921a9ba3a3b4dbc854d8d9c337cec6a84a37d81a78776f0581",
+      "unchanged": true
+    },
+    {
+      "path": "image/gated-residual-route.pdf",
+      "sha256": "a49516c78f5145ba86dd8c80fab21a821eb62310ab8318bc72987e25fa856faa",
+      "unchanged": true
+    },
+    {
+      "path": "image/gated-residual-route.svg",
+      "sha256": "edf15a2a71c634e9bd88907f2da4388d2c9c63a7f2b9b73bb40c4b8b67f6a024",
+      "unchanged": true
+    },
+    {
+      "path": "image/mci-progression-timeline.pdf",
+      "sha256": "78a82c72db5f5b1661c3c668d961f63b60b0a7e075a04b525457cc46e182c3cb",
+      "unchanged": true
+    },
+    {
+      "path": "image/mci-progression-timeline.svg",
+      "sha256": "d4dd8ee729b910f78ae61e05bbdebc06332a91a4d3b1e57a3b6164138d547a8f",
+      "unchanged": true
+    },
+    {
+      "path": "image/modality-preprocessing.pdf",
+      "sha256": "708eda9215d437af35449ebbdd8def5aa86ef871255d4df1b6311400dbda3c0a",
+      "unchanged": true
+    },
+    {
+      "path": "image/modality-preprocessing.svg",
+      "sha256": "163f232ce6f32a4fe8fc1047bb48aa4feff70154d27c929a13b2b99dc98a9a6f",
+      "unchanged": true
+    },
+    {
+      "path": "image/mri-hub-topology.pdf",
+      "sha256": "b9e511468afb087348aaf341b967cb168a9d476e7661a52cb2c904ec1fbefb00",
+      "unchanged": true
+    },
+    {
+      "path": "image/mri-hub-topology.svg",
+      "sha256": "cc0e7d139e7e609304b05e6b170cbef045c0c6b977a2fc5d3495a974f317166e",
+      "unchanged": true
+    },
+    {
+      "path": "image/outer-vs-cp.pdf",
+      "sha256": "5ef97097e9017cb38468b6a5ea1b7a518290fca06e11e73d9271a0b0a8c6f312",
+      "unchanged": true
+    },
+    {
+      "path": "image/outer-vs-cp.svg",
+      "sha256": "7c18a80d9fe849e411b7631c62bd22698ade6544282ff9924d9623d391c44309",
+      "unchanged": true
+    },
+    {
+      "path": "image/performance-evolution.pdf",
+      "sha256": "bc78474c736794a3272f57f7c47d498e3a1f2669ae7468f74600912173071f12",
+      "unchanged": true
+    },
+    {
+      "path": "image/performance-evolution.svg",
+      "sha256": "f47ddd85131d6b0e93a4f4cfd0c9a774a0e13c75eb59df76d6c1526544933bdf",
+      "unchanged": true
+    },
+    {
+      "path": "image/rc-free-routing.pdf",
+      "sha256": "7e664ba37ecfcfe3cb79befa5779c314f11eb0c2ec3fe8d8c4122b2ec7570c9e",
+      "unchanged": true
+    },
+    {
+      "path": "image/rc-free-routing.svg",
+      "sha256": "a88ca3dcfc045c7747df94a6d3e9af86eb19ff13308c950af6633d65fb208acd",
+      "unchanged": true
+    },
+    {
+      "path": "image/standardized-benchmark.pdf",
+      "sha256": "4c3bd4e9ab6c2238ebb2d4b2ccf01178a6da62efe848ba68f1468f910a5da284",
+      "unchanged": true
+    },
+    {
+      "path": "image/standardized-benchmark.svg",
+      "sha256": "92b2de6ce64ce2de41499debebf3f6815fafb3ca4f81d297d8c2ebffb1e04833",
+      "unchanged": true
+    },
+    {
+      "path": "image/temporal-model.pdf",
+      "sha256": "f5f0a35a68c6ee240c1fd2724f3a46f22e228fb5065b7499be37b0c6457f836f",
+      "unchanged": true
+    },
+    {
+      "path": "image/temporal-model.svg",
+      "sha256": "56382e486387b11853bf9c5712c1edfcb739dd4968a32d7d3b0dd8e30795c69c",
+      "unchanged": true
+    },
+    {
+      "path": "image/UET.png",
+      "sha256": "f224dd9ad4372af892aefbb78264ceda498da8688efec60a457a215ea1f85d2f",
+      "unchanged": true
+    },
+    {
+      "path": "references.bib",
+      "sha256": "513316bf2cee90e714106bda731bd545acd982f1766cb76df1d5517c1f73793f",
+      "unchanged": true
+    },
+    {
+      "path": "thesisrefs.bst",
+      "sha256": "bc27b5fbe47eee359a53c399a3b6d4a5052f4623763eb2585dda29528df56f49",
+      "unchanged": true
+    }
+  ],
+  "checks": {
+    "covers_match_reference_structure_and_weight": true,
+    "four_front_matter_headings_centered_large_semibold": true,
+    "roman_numbering_starts_iii_like_reference": true,
+    "all_sixteen_figure_and_fourteen_table_labels_regular_13pt": true,
+    "bibliography_regular_or_italic_13pt": true,
+    "chapters/chapter2.tex_prose_unchanged_except_bold_markup": true,
+    "chapters/chapter5.tex_prose_unchanged_except_bold_markup": true,
+    "all_frozen_research_inputs_byte_identical": true,
+    "performance_winners_including_ties_retained": true,
+    "font_color_citation_link_targets_pass": true
+  },
+  "pass": true
+}

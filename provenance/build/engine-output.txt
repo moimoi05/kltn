@@ -1,19 +1,21 @@
 note: Running TeX ...
-warning: main.bbl:478: Underfull \hbox (badness 1348) in paragraph at lines 470--478
+warning: main.bbl:219: Underfull \hbox (badness 1057) in paragraph at lines 212--219
+warning: main.bbl:450: Underfull \hbox (badness 4013) in paragraph at lines 442--450
+warning: main.bbl:450: Underfull \hbox (badness 1552) in paragraph at lines 442--450
 note: Running BibTeX on main.aux ...
 note: Rerunning TeX because bibtex was run ...
-warning: main.bbl:450: Underfull \hbox (badness 1348) in paragraph at lines 442--450
-note: Rerunning TeX because "main.aux" changed ...
-warning: main.bbl:450: Underfull \hbox (badness 1348) in paragraph at lines 442--450
-note: Running xdvipdfmx ...
+warning: main.bbl:219: Underfull \hbox (badness 1057) in paragraph at lines 212--219
+warning: main.bbl:450: Underfull \hbox (badness 4013) in paragraph at lines 442--450
+warning: main.bbl:450: Underfull \hbox (badness 1552) in paragraph at lines 442--450
 warning: warnings were issued by the TeX engine; use --print and/or --keep-logs for details.
-note: Writing `main.log` (43.2216796875 KiB)
+note: Running xdvipdfmx ...
 note: Writing `main.out` (13.2578125 KiB)
-note: Writing `main.aux` (32.1796875 KiB)
-note: Writing `main.pdf` (1.8925905227661133 MiB)
-note: Writing `main.lot` (2.6357421875 KiB)
-note: Writing `main.toc` (5.9462890625 KiB)
-note: Writing `main.lof` (2.0458984375 KiB)
+note: Writing `main.toc` (5.9482421875 KiB)
+note: Writing `main.log` (43.494140625 KiB)
 note: Writing `main.blg` (196 B)
+note: Writing `main.aux` (32.1875 KiB)
+note: Writing `main.lof` (2.0458984375 KiB)
 note: Writing `main.bbl` (24.0947265625 KiB)
+note: Writing `main.lot` (2.6357421875 KiB)
+note: Writing `main.pdf` (1.8918962478637695 MiB)
 PDF created: Nguyen_Phuong_Nam_Thesis_RCFree_Revised.pdf

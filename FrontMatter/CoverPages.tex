@@ -1,88 +1,106 @@
-\begin{titlepage}
-\begin{tikzpicture}[overlay,remember picture]
-  \draw[line width=3pt] ($(current page.north west)+(2.0cm,-2.0cm)$) rectangle ($(current page.south east)+(-1.5cm,1.8cm)$);
-  \draw[line width=1pt] ($(current page.north west)+(2.15cm,-2.15cm)$) rectangle ($(current page.south east)+(-1.65cm,1.95cm)$);
-\end{tikzpicture}
-\begin{center}
-  \vspace*{0.1cm}
-  {\large\bfseries VIETNAM NATIONAL UNIVERSITY, HANOI\\UNIVERSITY OF ENGINEERING AND TECHNOLOGY}
-
-  \vspace{1.1cm}
-  \includegraphics[width=0.25\textwidth]{UET.png}
-
-  \vspace{0.5cm}
-  {\Large\bfseries NGUYEN PHUONG NAM}
-
-  \vspace{1.2cm}
-  {\Large\bfseries\ThesisTitle}
-
-  \vspace{2.0cm}
-  {\large\bfseries BACHELOR THESIS\\Major: Artificial Intelligence}
-
-  \vfill
-  {\large\bfseries HA NOI -- 2026}
-\end{center}
-\end{titlepage}
+% Three covers follow the final Trang reference PDF, including its double frame.
+\newcommand{\ThesisCoverFrame}{%
+  \begin{tikzpicture}[overlay,remember picture]
+    \draw[line width=3pt] ($(current page.north west)+(2.0cm,-2.0cm)$) rectangle ($(current page.south east)+(-1.5cm,1.8cm)$);
+    \draw[line width=1pt] ($(current page.north west)+(2.15cm,-2.15cm)$) rectangle ($(current page.south east)+(-1.65cm,1.95cm)$);
+  \end{tikzpicture}%
+}
 
 \begin{titlepage}
-\begin{tikzpicture}[overlay,remember picture]
-  \draw[line width=3pt] ($(current page.north west)+(2.0cm,-2.0cm)$) rectangle ($(current page.south east)+(-1.5cm,1.8cm)$);
-  \draw[line width=1pt] ($(current page.north west)+(2.15cm,-2.15cm)$) rectangle ($(current page.south east)+(-1.65cm,1.95cm)$);
-\end{tikzpicture}
+\setlength{\parskip}{0.5em}
+\ThesisCoverFrame
 \begin{center}
-  \vspace*{0.1cm}
-  {\large\bfseries ĐẠI HỌC QUỐC GIA HÀ NỘI\\TRƯỜNG ĐẠI HỌC CÔNG NGHỆ}
-
-  \vspace{1.1cm}
-  \includegraphics[width=0.25\textwidth]{UET.png}
-
-  \vspace{0.5cm}
-  {\Large\bfseries NGUYỄN PHƯƠNG NAM}
-
-  \vspace{1.2cm}
-  {\Large\bfseries\ThesisTitle}
-
-  \vspace{1.4cm}
-  {\large\bfseries KHÓA LUẬN TỐT NGHIỆP CỬ NHÂN\\Ngành: Trí tuệ nhân tạo}
-
-  \vspace{1.0cm}
-  \begin{flushleft}
-  \textbf{Sinh viên:} Nguyễn Phương Nam\quad\textbf{Mã sinh viên:} 23020406\\[0.35cm]
-  \textbf{Cán bộ hướng dẫn:} GS. Nguyễn Linh Trung\\[0.35cm]
-  \textbf{Cán bộ đồng hướng dẫn:} TS. Nguyễn Thành Trung
-  \end{flushleft}
-
-  \vfill
-  {\large\bfseries HÀ NỘI -- 2026}
-\end{center}
-\end{titlepage}
-
-\begin{titlepage}
-\begin{tikzpicture}[overlay,remember picture]
-  \draw[line width=3pt] ($(current page.north west)+(2.0cm,-2.0cm)$) rectangle ($(current page.south east)+(-1.5cm,1.8cm)$);
-  \draw[line width=1pt] ($(current page.north west)+(2.15cm,-2.15cm)$) rectangle ($(current page.south east)+(-1.65cm,1.95cm)$);
-\end{tikzpicture}
-\begin{center}
-  \vspace*{0.3cm}
-  {\large\bfseries VIETNAM NATIONAL UNIVERSITY, HANOI\\UNIVERSITY OF ENGINEERING AND TECHNOLOGY}
-
-  \vspace{2.2cm}
-  {\Large\bfseries NGUYEN PHUONG NAM}
-
-  \vspace{1.4cm}
-  {\Large\bfseries\ThesisTitle}
+  \vspace*{0cm}
+  \large
+  \textbf{VIETNAM NATIONAL UNIVERSITY, HANOI\\UNIVERSITY OF ENGINEERING AND TECHNOLOGY}
 
   \vspace{1.5cm}
-  {\large\bfseries BACHELOR THESIS\\Major: Artificial Intelligence}
+  \includegraphics[width=0.3\textwidth]{UET.png}
 
-  \vspace{1.2cm}
+  \vspace{0.5cm}
+  \Large
+  \textbf{NGUYEN PHUONG NAM}
+
+  \vspace{1.5cm}
+  \Large
+  \textbf{\MakeUppercase{\ThesisTitle}}
+
+  \vspace{2.5cm}
+  \large
+  \textbf{BACHELOR THESIS}\\
+  \textbf{Major}: Artificial Intelligence
+
+  \vfill
+  \textbf{HA NOI - 2026}
+\end{center}
+\end{titlepage}
+
+\begin{titlepage}
+\setlength{\parskip}{0.5em}
+\ThesisCoverFrame
+\begin{center}
+  \vspace*{0cm}
+  \large
+  \textbf{ĐẠI HỌC QUỐC GIA HÀ NỘI\\TRƯỜNG ĐẠI HỌC CÔNG NGHỆ}
+
+  \vspace{3cm}
+  \Large
+  \textbf{NGUYỄN PHƯƠNG NAM}
+
+  \vspace{1.5cm}
+  \Large
+  \textbf{\MakeUppercase{\ThesisTitleVN}}
+
+  \vspace{1.5cm}
+  \large
+  \textbf{KHÓA LUẬN TỐT NGHIỆP CỬ NHÂN}\\
+  \textbf{Ngành}: Trí tuệ nhân tạo
+
+  \vspace{1cm}
   \begin{flushleft}
-  \textbf{Student ID:} 23020406\\[0.35cm]
-  \textbf{Supervisor:} Prof. Nguyen Linh Trung\\[0.35cm]
-  \textbf{Co-supervisor:} Dr. Nguyen Thanh Trung
+  \hspace*{0.2cm}%
+  \begin{tabular}{@{}l@{\hspace{0.4cm}}l@{}}
+    \textbf{Cán bộ hướng dẫn}: & GS. Nguyễn Linh Trung\\[0.7cm]
+    \textbf{Cán bộ đồng hướng dẫn}: & TS. Nguyễn Thành Trung
+  \end{tabular}
   \end{flushleft}
 
   \vfill
-  {\large\bfseries HA NOI -- 2026}
+  \textbf{HÀ NỘI - 2026}
+\end{center}
+\end{titlepage}
+
+\begin{titlepage}
+\setlength{\parskip}{0.5em}
+\ThesisCoverFrame
+\begin{center}
+  \vspace*{0cm}
+  \large
+  \textbf{VIETNAM NATIONAL UNIVERSITY, HANOI\\UNIVERSITY OF ENGINEERING AND TECHNOLOGY}
+
+  \vspace{3cm}
+  \Large
+  \textbf{NGUYEN PHUONG NAM}
+
+  \vspace{1.5cm}
+  \Large
+  \textbf{\MakeUppercase{\ThesisTitle}}
+
+  \vspace{1.5cm}
+  \large
+  \textbf{BACHELOR THESIS}\\
+  \textbf{Major}: Artificial Intelligence
+
+  \vspace{1cm}
+  \begin{flushleft}
+  \hspace*{0.2cm}%
+  \begin{tabular}{@{}l@{\hspace{0.4cm}}l@{}}
+    \textbf{Supervisor}: & Prof. Nguyen Linh Trung\\[0.7cm]
+    \textbf{Co-Supervisor}: & Dr. Nguyen Thanh Trung
+  \end{tabular}
+  \end{flushleft}
+
+  \vfill
+  \textbf{HA NOI - 2026}
 \end{center}
 \end{titlepage}

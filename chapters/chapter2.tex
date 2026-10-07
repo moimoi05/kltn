@@ -82,7 +82,7 @@ CP decomposition biểu diễn tensor như tổng các tensor hạng một \cite
 \end{equation}
 Các factor $A$, $B$ và $O$ được học; không cần dựng outer-product tường minh. Lõi trọng số còn $Q(d_x+d_y+d_o)$ tham số. Biểu thức này là cơ sở cho phép thay thế controlled CP của khóa luận; số đếm trong implementation còn tính các bias và được báo cáo riêng ở Chương~\ref{chap:results}.
 
-Low-rank Multimodal Fusion khai thác các factor theo phương thức \cite{liu2018lowrank}, trong khi MUTAN dùng cấu trúc Tucker cho bilinear fusion \cite{benyounes2017mutan}. Các công trình này cung cấp cơ sở về tham số hóa tensor; chúng không chứng minh trực tiếp CP sẽ cải thiện tiên lượng AD. Đặc biệt, trong mô hình của khóa luận, \textbf{CP factorizes the bilinear interaction weight tensor}; dữ liệu MRI/radiomics/lâm sàng của một bệnh nhân không bị phân rã CP trong forward pass.
+Low-rank Multimodal Fusion khai thác các factor theo phương thức \cite{liu2018lowrank}, trong khi MUTAN dùng cấu trúc Tucker cho bilinear fusion \cite{benyounes2017mutan}. Các công trình này cung cấp cơ sở về tham số hóa tensor; chúng không chứng minh trực tiếp CP sẽ cải thiện tiên lượng AD. Đặc biệt, trong mô hình của khóa luận, CP factorizes the bilinear interaction weight tensor; dữ liệu MRI/radiomics/lâm sàng của một bệnh nhân không bị phân rã CP trong forward pass.
 
 \section{Gated residual fusion}
 Ryumina và cộng sự dùng một phương thức neo, gate phụ thuộc đầu vào và residual hiệu chỉnh trong Text Residual Fusion \cite{ryumina2026residual}. Liu và cộng sự đưa skeleton vào nhánh RGB qua gated residual với hệ số scale cố định $\alpha=0.5$ \cite{liu2026motion}. Đây là hai nghiên cứu ở các tác vụ khác với tiên lượng AD, cung cấp cảm hứng thiết kế về điều tiết đóng góp và scaling.

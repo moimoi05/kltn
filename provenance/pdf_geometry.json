@@ -11,8 +11,8 @@
   {
     "pdf_page": 2,
     "page_label": "1",
-    "text_chars": 359,
-    "min_text_font": 12.951432228088379,
+    "text_chars": 293,
+    "min_text_font": 15.541679382324219,
     "outside_page_text": [],
     "replacement_glyph": false,
     "question_citation": false
@@ -20,16 +20,16 @@
   {
     "pdf_page": 3,
     "page_label": "1",
-    "text_chars": 341,
-    "min_text_font": 12.951432228088379,
+    "text_chars": 320,
+    "min_text_font": 15.541679382324219,
     "outside_page_text": [],
     "replacement_glyph": false,
     "question_citation": false
   },
   {
     "pdf_page": 4,
-    "page_label": "i",
-    "text_chars": 1984,
+    "page_label": "iii",
+    "text_chars": 1986,
     "min_text_font": 12.951432228088379,
     "outside_page_text": [],
     "replacement_glyph": false,
@@ -37,7 +37,7 @@
   },
   {
     "pdf_page": 5,
-    "page_label": "ii",
+    "page_label": "iv",
     "text_chars": 2248,
     "min_text_font": 12.951432228088379,
     "outside_page_text": [],
@@ -46,8 +46,8 @@
   },
   {
     "pdf_page": 6,
-    "page_label": "iii",
-    "text_chars": 588,
+    "page_label": "v",
+    "text_chars": 586,
     "min_text_font": 12.951432228088379,
     "outside_page_text": [],
     "replacement_glyph": false,
@@ -55,7 +55,7 @@
   },
   {
     "pdf_page": 7,
-    "page_label": "iv",
+    "page_label": "vi",
     "text_chars": 700,
     "min_text_font": 12.951432228088379,
     "outside_page_text": [],
@@ -64,8 +64,8 @@
   },
   {
     "pdf_page": 8,
-    "page_label": "v",
-    "text_chars": 798,
+    "page_label": "vii",
+    "text_chars": 800,
     "min_text_font": 12.951432228088379,
     "outside_page_text": [],
     "replacement_glyph": false,
@@ -73,8 +73,8 @@
   },
   {
     "pdf_page": 9,
-    "page_label": "vi",
-    "text_chars": 1492,
+    "page_label": "viii",
+    "text_chars": 2041,
     "min_text_font": 12.951432228088379,
     "outside_page_text": [],
     "replacement_glyph": false,
@@ -82,8 +82,8 @@
   },
   {
     "pdf_page": 10,
-    "page_label": "vii",
-    "text_chars": 2563,
+    "page_label": "ix",
+    "text_chars": 2734,
     "min_text_font": 12.951432228088379,
     "outside_page_text": [],
     "replacement_glyph": false,
@@ -91,8 +91,8 @@
   },
   {
     "pdf_page": 11,
-    "page_label": "viii",
-    "text_chars": 664,
+    "page_label": "x",
+    "text_chars": 592,
     "min_text_font": 12.951432228088379,
     "outside_page_text": [],
     "replacement_glyph": false,
@@ -100,7 +100,7 @@
   },
   {
     "pdf_page": 12,
-    "page_label": "ix",
+    "page_label": "xi",
     "text_chars": 1278,
     "min_text_font": 12.951432228088379,
     "outside_page_text": [],
@@ -109,8 +109,8 @@
   },
   {
     "pdf_page": 13,
-    "page_label": "x",
-    "text_chars": 1783,
+    "page_label": "xii",
+    "text_chars": 1785,
     "min_text_font": 12.951432228088379,
     "outside_page_text": [],
     "replacement_glyph": false,
@@ -128,7 +128,7 @@
   {
     "pdf_page": 15,
     "page_label": "2",
-    "text_chars": 1649,
+    "text_chars": 1733,
     "min_text_font": 9.50047492980957,
     "outside_page_text": [],
     "replacement_glyph": false,
@@ -137,8 +137,8 @@
   {
     "pdf_page": 16,
     "page_label": "3",
-    "text_chars": 1922,
-    "min_text_font": 11.81826114654541,
+    "text_chars": 1839,
+    "min_text_font": 12.951432228088379,
     "outside_page_text": [],
     "replacement_glyph": false,
     "question_citation": false
@@ -146,7 +146,7 @@
   {
     "pdf_page": 17,
     "page_label": "4",
-    "text_chars": 1740,
+    "text_chars": 1788,
     "min_text_font": 12.951432228088379,
     "outside_page_text": [],
     "replacement_glyph": false,
@@ -155,7 +155,7 @@
   {
     "pdf_page": 18,
     "page_label": "5",
-    "text_chars": 993,
+    "text_chars": 945,
     "min_text_font": 12.951432228088379,
     "outside_page_text": [],
     "replacement_glyph": false,
@@ -164,7 +164,7 @@
   {
     "pdf_page": 19,
     "page_label": "6",
-    "text_chars": 1610,
+    "text_chars": 1418,
     "min_text_font": 9.454489707946777,
     "outside_page_text": [],
     "replacement_glyph": false,
@@ -173,7 +173,7 @@
   {
     "pdf_page": 20,
     "page_label": "7",
-    "text_chars": 1997,
+    "text_chars": 2050,
     "min_text_font": 7.123326778411865,
     "outside_page_text": [],
     "replacement_glyph": false,
@@ -182,8 +182,8 @@
   {
     "pdf_page": 21,
     "page_label": "8",
-    "text_chars": 1871,
-    "min_text_font": 12.951432228088379,
+    "text_chars": 2010,
+    "min_text_font": 9.454489707946777,
     "outside_page_text": [],
     "replacement_glyph": false,
     "question_citation": false
@@ -191,7 +191,7 @@
   {
     "pdf_page": 22,
     "page_label": "9",
-    "text_chars": 1961,
+    "text_chars": 2048,
     "min_text_font": 12.951432228088379,
     "outside_page_text": [],
     "replacement_glyph": false,
@@ -200,7 +200,7 @@
   {
     "pdf_page": 23,
     "page_label": "10",
-    "text_chars": 1206,
+    "text_chars": 1118,
     "min_text_font": 7.123326778411865,
     "outside_page_text": [],
     "replacement_glyph": false,
@@ -209,7 +209,7 @@
   {
     "pdf_page": 24,
     "page_label": "11",
-    "text_chars": 1931,
+    "text_chars": 2012,
     "min_text_font": 9.454489707946777,
     "outside_page_text": [],
     "replacement_glyph": false,
@@ -218,7 +218,7 @@
   {
     "pdf_page": 25,
     "page_label": "12",
-    "text_chars": 1646,
+    "text_chars": 1649,
     "min_text_font": 11.81826114654541,
     "outside_page_text": [],
     "replacement_glyph": false,
@@ -227,7 +227,7 @@
   {
     "pdf_page": 26,
     "page_label": "13",
-    "text_chars": 1104,
+    "text_chars": 1017,
     "min_text_font": 12.951432228088379,
     "outside_page_text": [],
     "replacement_glyph": false,
@@ -245,7 +245,7 @@
   {
     "pdf_page": 28,
     "page_label": "15",
-    "text_chars": 1292,
+    "text_chars": 1377,
     "min_text_font": 9.454489707946777,
     "outside_page_text": [],
     "replacement_glyph": false,
@@ -254,7 +254,7 @@
   {
     "pdf_page": 29,
     "page_label": "16",
-    "text_chars": 1717,
+    "text_chars": 2020,
     "min_text_font": 9.454489707946777,
     "outside_page_text": [],
     "replacement_glyph": false,
@@ -263,8 +263,8 @@
   {
     "pdf_page": 30,
     "page_label": "17",
-    "text_chars": 1598,
-    "min_text_font": 9.50047492980957,
+    "text_chars": 1678,
+    "min_text_font": 7.8788251876831055,
     "outside_page_text": [],
     "replacement_glyph": false,
     "question_citation": false
@@ -272,8 +272,8 @@
   {
     "pdf_page": 31,
     "page_label": "18",
-    "text_chars": 1740,
-    "min_text_font": 7.8788251876831055,
+    "text_chars": 1732,
+    "min_text_font": 8.627269744873047,
     "outside_page_text": [],
     "replacement_glyph": false,
     "question_citation": false
@@ -281,8 +281,8 @@
   {
     "pdf_page": 32,
     "page_label": "19",
-    "text_chars": 2180,
-    "min_text_font": 9.454489707946777,
+    "text_chars": 2267,
+    "min_text_font": 12.951432228088379,
     "outside_page_text": [],
     "replacement_glyph": false,
     "question_citation": false
@@ -290,7 +290,7 @@
   {
     "pdf_page": 33,
     "page_label": "20",
-    "text_chars": 1384,
+    "text_chars": 1239,
     "min_text_font": 9.454489707946777,
     "outside_page_text": [],
     "replacement_glyph": false,
@@ -299,8 +299,8 @@
   {
     "pdf_page": 34,
     "page_label": "21",
-    "text_chars": 1599,
-    "min_text_font": 9.454489707946777,
+    "text_chars": 1977,
+    "min_text_font": 8.627269744873047,
     "outside_page_text": [],
     "replacement_glyph": false,
     "question_citation": false
@@ -308,7 +308,7 @@
   {
     "pdf_page": 35,
     "page_label": "22",
-    "text_chars": 1236,
+    "text_chars": 1528,
     "min_text_font": 7.123326778411865,
     "outside_page_text": [],
     "replacement_glyph": false,
@@ -317,7 +317,7 @@
   {
     "pdf_page": 36,
     "page_label": "23",
-    "text_chars": 1241,
+    "text_chars": 968,
     "min_text_font": 7.123326778411865,
     "outside_page_text": [],
     "replacement_glyph": false,
@@ -326,8 +326,8 @@
   {
     "pdf_page": 37,
     "page_label": "24",
-    "text_chars": 1524,
-    "min_text_font": 6.5000691413879395,
+    "text_chars": 1324,
+    "min_text_font": 7.123326778411865,
     "outside_page_text": [],
     "replacement_glyph": false,
     "question_citation": false
@@ -335,7 +335,7 @@
   {
     "pdf_page": 38,
     "page_label": "25",
-    "text_chars": 1153,
+    "text_chars": 1848,
     "min_text_font": 9.454489707946777,
     "outside_page_text": [],
     "replacement_glyph": false,
@@ -344,7 +344,7 @@
   {
     "pdf_page": 39,
     "page_label": "26",
-    "text_chars": 1772,
+    "text_chars": 1194,
     "min_text_font": 9.454489707946777,
     "outside_page_text": [],
     "replacement_glyph": false,
@@ -353,8 +353,8 @@
   {
     "pdf_page": 40,
     "page_label": "27",
-    "text_chars": 437,
-    "min_text_font": 9.50047492980957,
+    "text_chars": 1030,
+    "min_text_font": 9.454489707946777,
     "outside_page_text": [],
     "replacement_glyph": false,
     "question_citation": false
@@ -362,15 +362,6 @@
   {
     "pdf_page": 41,
     "page_label": "28",
-    "text_chars": 1310,
-    "min_text_font": 8.627269744873047,
-    "outside_page_text": [],
-    "replacement_glyph": false,
-    "question_citation": false
-  },
-  {
-    "pdf_page": 42,
-    "page_label": "29",
     "text_chars": 994,
     "min_text_font": 9.50047492980957,
     "outside_page_text": [],
@@ -378,10 +369,19 @@
     "question_citation": false
   },
   {
+    "pdf_page": 42,
+    "page_label": "29",
+    "text_chars": 1733,
+    "min_text_font": 8.627269744873047,
+    "outside_page_text": [],
+    "replacement_glyph": false,
+    "question_citation": false
+  },
+  {
     "pdf_page": 43,
     "page_label": "30",
-    "text_chars": 1649,
-    "min_text_font": 8.627269744873047,
+    "text_chars": 1303,
+    "min_text_font": 9.454489707946777,
     "outside_page_text": [],
     "replacement_glyph": false,
     "question_citation": false
@@ -389,8 +389,8 @@
   {
     "pdf_page": 44,
     "page_label": "31",
-    "text_chars": 1328,
-    "min_text_font": 8.627269744873047,
+    "text_chars": 1700,
+    "min_text_font": 7.123326778411865,
     "outside_page_text": [],
     "replacement_glyph": false,
     "question_citation": false
@@ -398,8 +398,8 @@
   {
     "pdf_page": 45,
     "page_label": "32",
-    "text_chars": 1759,
-    "min_text_font": 7.123326778411865,
+    "text_chars": 1601,
+    "min_text_font": 12.951432228088379,
     "outside_page_text": [],
     "replacement_glyph": false,
     "question_citation": false
@@ -407,8 +407,8 @@
   {
     "pdf_page": 46,
     "page_label": "33",
-    "text_chars": 1840,
-    "min_text_font": 9.454489707946777,
+    "text_chars": 1939,
+    "min_text_font": 7.8788251876831055,
     "outside_page_text": [],
     "replacement_glyph": false,
     "question_citation": false
@@ -416,8 +416,8 @@
   {
     "pdf_page": 47,
     "page_label": "34",
-    "text_chars": 1867,
-    "min_text_font": 7.8788251876831055,
+    "text_chars": 2154,
+    "min_text_font": 9.454489707946777,
     "outside_page_text": [],
     "replacement_glyph": false,
     "question_citation": false
@@ -425,7 +425,7 @@
   {
     "pdf_page": 48,
     "page_label": "35",
-    "text_chars": 1988,
+    "text_chars": 1748,
     "min_text_font": 11.81826114654541,
     "outside_page_text": [],
     "replacement_glyph": false,
@@ -434,15 +434,6 @@
   {
     "pdf_page": 49,
     "page_label": "36",
-    "text_chars": 1748,
-    "min_text_font": 11.81826114654541,
-    "outside_page_text": [],
-    "replacement_glyph": false,
-    "question_citation": false
-  },
-  {
-    "pdf_page": 50,
-    "page_label": "37",
     "text_chars": 841,
     "min_text_font": 12.951432228088379,
     "outside_page_text": [],
@@ -450,10 +441,19 @@
     "question_citation": false
   },
   {
+    "pdf_page": 50,
+    "page_label": "37",
+    "text_chars": 1212,
+    "min_text_font": 9.50047492980957,
+    "outside_page_text": [],
+    "replacement_glyph": false,
+    "question_citation": false
+  },
+  {
     "pdf_page": 51,
     "page_label": "38",
-    "text_chars": 1129,
-    "min_text_font": 9.50047492980957,
+    "text_chars": 1781,
+    "min_text_font": 9.454489707946777,
     "outside_page_text": [],
     "replacement_glyph": false,
     "question_citation": false
@@ -461,8 +461,8 @@
   {
     "pdf_page": 52,
     "page_label": "39",
-    "text_chars": 1864,
-    "min_text_font": 9.454489707946777,
+    "text_chars": 1107,
+    "min_text_font": 9.50047492980957,
     "outside_page_text": [],
     "replacement_glyph": false,
     "question_citation": false
@@ -470,8 +470,8 @@
   {
     "pdf_page": 53,
     "page_label": "40",
-    "text_chars": 1026,
-    "min_text_font": 9.50047492980957,
+    "text_chars": 1921,
+    "min_text_font": 11.81826114654541,
     "outside_page_text": [],
     "replacement_glyph": false,
     "question_citation": false
@@ -479,8 +479,8 @@
   {
     "pdf_page": 54,
     "page_label": "41",
-    "text_chars": 1800,
-    "min_text_font": 12.951432228088379,
+    "text_chars": 1453,
+    "min_text_font": 9.50047492980957,
     "outside_page_text": [],
     "replacement_glyph": false,
     "question_citation": false
@@ -488,7 +488,7 @@
   {
     "pdf_page": 55,
     "page_label": "42",
-    "text_chars": 1309,
+    "text_chars": 988,
     "min_text_font": 9.50047492980957,
     "outside_page_text": [],
     "replacement_glyph": false,
@@ -497,8 +497,8 @@
   {
     "pdf_page": 56,
     "page_label": "43",
-    "text_chars": 842,
-    "min_text_font": 11.81826114654541,
+    "text_chars": 367,
+    "min_text_font": 12.951432228088379,
     "outside_page_text": [],
     "replacement_glyph": false,
     "question_citation": false
@@ -506,15 +506,6 @@
   {
     "pdf_page": 57,
     "page_label": "44",
-    "text_chars": 858,
-    "min_text_font": 9.50047492980957,
-    "outside_page_text": [],
-    "replacement_glyph": false,
-    "question_citation": false
-  },
-  {
-    "pdf_page": 58,
-    "page_label": "45",
     "text_chars": 1543,
     "min_text_font": 11.81826114654541,
     "outside_page_text": [],
@@ -522,10 +513,19 @@
     "question_citation": false
   },
   {
+    "pdf_page": 58,
+    "page_label": "45",
+    "text_chars": 1580,
+    "min_text_font": 12.951432228088379,
+    "outside_page_text": [],
+    "replacement_glyph": false,
+    "question_citation": false
+  },
+  {
     "pdf_page": 59,
     "page_label": "46",
-    "text_chars": 1809,
-    "min_text_font": 12.951432228088379,
+    "text_chars": 1894,
+    "min_text_font": 10.000499725341797,
     "outside_page_text": [],
     "replacement_glyph": false,
     "question_citation": false
@@ -533,8 +533,8 @@
   {
     "pdf_page": 60,
     "page_label": "47",
-    "text_chars": 1666,
-    "min_text_font": 10.000499725341797,
+    "text_chars": 1952,
+    "min_text_font": 12.951432228088379,
     "outside_page_text": [],
     "replacement_glyph": false,
     "question_citation": false
@@ -542,7 +542,7 @@
   {
     "pdf_page": 61,
     "page_label": "48",
-    "text_chars": 1953,
+    "text_chars": 1930,
     "min_text_font": 12.951432228088379,
     "outside_page_text": [],
     "replacement_glyph": false,
@@ -551,8 +551,8 @@
   {
     "pdf_page": 62,
     "page_label": "49",
-    "text_chars": 2707,
-    "min_text_font": 11.81826114654541,
+    "text_chars": 2117,
+    "min_text_font": 12.951432228088379,
     "outside_page_text": [],
     "replacement_glyph": false,
     "question_citation": false
@@ -560,8 +560,8 @@
   {
     "pdf_page": 63,
     "page_label": "50",
-    "text_chars": 2674,
-    "min_text_font": 11.81826114654541,
+    "text_chars": 2185,
+    "min_text_font": 12.951432228088379,
     "outside_page_text": [],
     "replacement_glyph": false,
     "question_citation": false
@@ -569,8 +569,8 @@
   {
     "pdf_page": 64,
     "page_label": "51",
-    "text_chars": 2615,
-    "min_text_font": 11.81826114654541,
+    "text_chars": 2352,
+    "min_text_font": 12.951432228088379,
     "outside_page_text": [],
     "replacement_glyph": false,
     "question_citation": false
@@ -578,8 +578,8 @@
   {
     "pdf_page": 65,
     "page_label": "52",
-    "text_chars": 2751,
-    "min_text_font": 11.81826114654541,
+    "text_chars": 2324,
+    "min_text_font": 12.951432228088379,
     "outside_page_text": [],
     "replacement_glyph": false,
     "question_citation": false
@@ -587,8 +587,8 @@
   {
     "pdf_page": 66,
     "page_label": "53",
-    "text_chars": 2913,
-    "min_text_font": 11.81826114654541,
+    "text_chars": 2345,
+    "min_text_font": 12.951432228088379,
     "outside_page_text": [],
     "replacement_glyph": false,
     "question_citation": false
@@ -596,8 +596,8 @@
   {
     "pdf_page": 67,
     "page_label": "54",
-    "text_chars": 1289,
-    "min_text_font": 11.81826114654541,
+    "text_chars": 1691,
+    "min_text_font": 12.951432228088379,
     "outside_page_text": [],
     "replacement_glyph": false,
     "question_citation": false

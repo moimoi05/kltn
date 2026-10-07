@@ -1,8 +1,8 @@
 {
-  "date": "2026-10-06",
+  "date": "2026-10-07",
   "reference_pdf": "D:\\KLTN\\_Nguyen_Phuong_Trang_Undergraduate_thesis_final_final_final.pdf",
   "reference_pdf_sha256": "685ef383dde16fd5502d9c71f2ccda760a6db9f98afec399881ba213ea2642a4",
-  "revised_pdf_sha256": "cabaa631ee424931441f833717aec7b7acd29a13d4721cea44ce84c608f4b269",
+  "revised_pdf_sha256": "91be90ecadf2438747be749ca3d8d4c2191b3990589c4bf55dbb7ab503325feb",
   "pages": 67,
   "main_family": "Libertinus Serif",
   "bold_weight": "Semibold",
@@ -11,7 +11,7 @@
   "navigation_pages": [
     {
       "pdf_page": 9,
-      "colored_span_count": 43,
+      "colored_span_count": 45,
       "colored_text_rgb_values": [
         255
       ],
@@ -19,7 +19,7 @@
     },
     {
       "pdf_page": 10,
-      "colored_span_count": 66,
+      "colored_span_count": 68,
       "colored_text_rgb_values": [
         255
       ],
@@ -27,7 +27,7 @@
     },
     {
       "pdf_page": 11,
-      "colored_span_count": 17,
+      "colored_span_count": 13,
       "colored_text_rgb_values": [
         255
       ],

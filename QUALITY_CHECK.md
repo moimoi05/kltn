@@ -1,11 +1,11 @@
-# Final thesis QA — 06/10/2026
+# Final thesis QA — 07/10/2026
 
 Reviewed artifact: `Nguyen_Phuong_Nam_Thesis_RCFree_Revised.pdf`.
 
 ## Scope and document structure
 
-- [x] Official title matches all three covers, both abstracts, title macro, PDF metadata and README: **Longitudinal Learning with Tensor Fusion for Predicting Progression of Alzheimer’s Disease**.
-- [x] Five chapters, with **67 total PDF pages**: 13 front matter, 48 main content and 6 bibliography. The complete document meets the 70-page ceiling.
+- [x] Official English title matches the two English covers, both abstracts, title macro, PDF metadata and README: **Longitudinal Learning with Tensor Fusion for Predicting Progression of Alzheimer’s Disease**. The Vietnamese cover uses the equivalent title from `\ThesisTitleVN`; cover titles are uppercase.
+- [x] Five chapters, with **67 total PDF pages**: 13 front matter, 47 main content and 7 bibliography. The complete document meets the 70-page ceiling.
 - [x] Section5.1 is four connected paragraphs without the seven previous subheadings; Section5.2 groups six limitations into three simpler points. The figure/caption, chapter introduction and Sections5.3/5.4 are retained. An independent read-only review confirmed that the shorter text preserves essential scientific qualifications; measurements are in `provenance/discussion_revision.json`.
 - [x] Each chapter has at least one figure; distribution 1/1/9/4/1, total 16. Methodology includes cohort, preprocessing, architecture evolution, full graph, full/CP, gated residual, RC-Free routes, overall pipeline and temporal model.
 - [x] Experimental chronology, controlled comparisons and exploratory milestones are distinguished. Historical test scores are excluded from selection tables and charts.
@@ -44,7 +44,7 @@ The PDF annotation follow-up additionally checked all 16 figures: explanatory fo
 
 - [x] Tectonic 0.17.0+20260731 completed the XeTeX/BibTeX build and stabilized references.
 - [x] No LaTeX/BibTeX error, undefined citation/reference, duplicate label, missing image, overfull box, missing glyph or oversized float.
-- [x] One mild Underfull hbox message remains (badness1348 in a bibliography paragraph). The page was inspected and accepted; it does not show overflow, overlap or unreadable spacing. System-font path warnings are portability notices; used PDF fonts are embedded.
+- [x] Three Underfull hbox messages remain (badness1057/4013/1552 in bibliography paragraphs). Their rendered pages were inspected and accepted; there is no overflow, overlap or unreadable spacing. System-font path warnings are portability notices; used PDF fonts are embedded.
 - [x] No TODO/FIXME, resizebox or old experiment code as the final narrative name.
 - [x] 16 native `.drawio` files and 16 SVG files parse; 16 figure PDFs are single-page vectors. Their minimum label size is 9.5 pt at the supplied 160 mm width. Figures are included at text width without shrinking tables as images.
 - [x] Fonts used in extracted PDF text are embedded. No replacement glyph, unresolved `[?]` citation or text outside the page bounds was found across 67 pages.
@@ -53,10 +53,20 @@ The PDF annotation follow-up additionally checked all 16 figures: explanatory fo
 
 Build logs are preserved in `provenance/build/`. Automated findings are in `qa_report.json` and `provenance/artifact_checks.json`.
 
+## Reference cover and font-weight verification
+
+- [x] Compared the final Trang PDF rather than relying only on the older source ZIP. All three covers retain its two frame rectangles and line widths; only the first English cover contains the UET logo. The two inner covers omit the student ID and duplicate student row.
+- [x] Institutions, author, uppercase thesis title, degree and location/year are Semibold. Major/Ngành and supervisor labels are Semibold; colons, field values and supervisor names are Regular. Nam's original supervisor names are retained.
+- [x] Abstracts, acknowledgements and declaration headings are centered Semibold at15.54pt. Chapter labels/titles use26.86/32.22pt; sections/subsections retain18.65/15.54pt. Body text is Regular13pt with selective structured emphasis; two isolated bold prose phrases are now regular without wording changes.
+- [x] All16 figure labels and14 table labels are Regular12.95pt, matching the reference13pt setting. Bibliography entries are Regular/Italic13pt. Table headers and best-result rows, including both tied winners, remain bold. Acronym table entries/header are regular.
+- [x] A4 margins match the reference (left30mm, right20mm, top20mm, bottom25mm), and the first abstract is numbered iii. TOC chapter entries/page numbers are bold; lower-level entries, leaders and list entries retain the reference weight hierarchy.
+
+Current PDF/font/cover checks and frozen-input hashes are in `provenance/layout_reference_check.json` and `provenance/typography_check.json`.
+
 ## Page-by-page visual review
 
-- [x] All 67 pages changed after the font update and were inspected in current contact sheets: covers/front matter, TOC/lists, every body page, equations, tables, figures and bibliography. No current page relies on a previous pixel-identical render. The comparison and frozen-input checks are in `provenance/visual_reuse_check.json`.
-- [x] TOC (PDF9), Table3.5/equations (PDF43) and the first bibliography page (PDF62) were additionally inspected at full-page scale. Chapters1/2/4/5, all front matter, bibliography metadata, figure assets and chart data are byte-identical to release613d74d. Chapter3 changes only by a float barrier that keeps preceding figures clear of Table3.5; its caption and all17 rows fit without shrinking, and all36 tensor shapes are unchanged. Route labels remain parenthesized in diagrams, text, captions and equation indices, including `M + (MR→M) + (MC→M)`.
+- [x] All67 current pages were individually inspected as rendered PNGs: parent reviewer pages1–13/41–67, delegated reference reviewer pages14–40. No current page relies on a previous render. The comparison and frozen-input checks are in `provenance/visual_reuse_check.json`.
+- [x] Covers/front matter, TOC(PDF9), Table3.5/equations(PDF42), benchmark(PDF53) and bibliography(PDF61–67) were inspected at full-page scale. Chapters1/3/4, bibliography metadata, all figure assets and chart data are byte-identical to release1a8dd18. Chapters2/5 preserve all prose and citations, with only two bold wrappers removed. Table3.5's caption and all17 rows fit without shrinking, and all36 tensor shapes are unchanged. Route labels remain parenthesized in diagrams, text, captions and equation indices, including `M + (MR→M) + (MC→M)`.
 - [x] Table names and numbers are readable; main model names remain on one line where practical. Captions, margins, page numbers and section transitions are consistent.
 - [x] The accepted grayscale review of CP/gate/RC-Free/pipeline drawings and all four result charts on release d254105 PDF37/39/40/41/50/52/54/56 is reused for the byte-identical figure assets. Whole-page renders have changed with the manuscript font and were separately inspected. Labels, arrows, point markers, signed values and error bars preserve meaning without relying on color.
 - [x] Final pipeline and routing show all three modalities, no active RC pair and correct128/64/64→256→128→temporal→Cox dimensions. No connector crosses a box interior or clips a label.
@@ -66,7 +76,7 @@ The per-page acceptance record and final-PDF checksum are in `provenance/visual_
 ## Package reproduction
 
 - [x] ZIP extracted into a fresh directory with no previous root-level auxiliary/bibliography build files, then built using the supplied `build.ps1` and portable Tectonic with `FONTCONFIG_FILE` unset. Automatic Windows font configuration succeeded.
-- [x] The extracted source passed the same automated source/build checks. All 67 rebuilt pages have identical extracted text and pixel-identical renders to the visually accepted PDF.
+- [x] The extracted source passed the same automated source/build checks. All67 rebuilt pages have identical extracted text and pixel-identical renders to the visually accepted PDF.
 - [x] Final ZIP CRC checked; compiled inputs are unchanged from the tested extraction. The PDF inside the ZIP is byte-identical to the PDF delivered beside it. Only QA/documentation records were finalized after the reproduction build.
 
 See `provenance/package_build_check.json`. Rebuilt-PDF byte hashes can differ because compilation timestamps change; page text and renders were directly compared and matched.

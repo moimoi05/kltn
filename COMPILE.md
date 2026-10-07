@@ -37,6 +37,8 @@ The manuscript matches the Trang reference thesis: Libertinus Serif Regular/Ital
 
 Navigation labels and all hyperlinks use blue `#0000FF`, matching the reference's table of contents. Dot leaders, page numbers and figure text remain black. Font, color, reference-content and link-target checks are recorded in `provenance/typography_check.json`.
 
+The three double-framed cover pages follow the final reference PDF: only the first has a logo, titles are uppercase, and inner covers omit student IDs. Field labels are Semibold while their values are Regular. `\ThesisTitleVN` supplies the Vietnamese cover title. Centered front-matter headings, regular13pt captions/bibliography, chapter sizes and A4 margins (30/20/20/25mm left/right/top/bottom) follow the reference; selective body emphasis and winning table rows are retained. Details are in `provenance/layout_reference_check.json`.
+
 ## Output and figure source
 
 `main.pdf` is the compiler output. The build scripts also copy it to `Nguyen_Phuong_Nam_Thesis_RCFree_Revised.pdf`.
