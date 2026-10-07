@@ -46,7 +46,7 @@
   },
   "build": {
     "pdf": "main.pdf",
-    "total_pdf_pages": 67,
+    "total_pdf_pages": 68,
     "main_content_pages": 47,
     "chapter_pdf_pages": {
       "Giới thiệu": 14,

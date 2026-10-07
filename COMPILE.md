@@ -2,7 +2,7 @@
 
 Official title: **Longitudinal Learning with Tensor Fusion for Predicting Progression of Alzheimer’s Disease**.
 
-The source uses XeTeX, `fontspec`, numeric `natbib`, and BibTeX with the packaged `thesisrefs.bst`, a renamed modification of `unsrtnat`. It displays DOI identifiers without repeating their URLs and uses a short clickable label for references without a DOI; full addresses remain in `references.bib`. Biber is not required. All figures are supplied as vector PDF and can be included without running a diagram editor or Python. Build from the directory containing `main.tex`.
+The source uses XeTeX, `fontspec`, numeric `natbib`, and BibTeX with the packaged `thesisrefs.bst`, a renamed modification of `unsrtnat`. It displays DOI identifiers when available; references without a DOI display their full clickable URLs. Biber is not required. All figures are supplied as vector PDF and can be included without running a diagram editor or Python. Build from the directory containing `main.tex`.
 
 ## Windows
 

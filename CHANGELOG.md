@@ -1,5 +1,10 @@
 # CHANGELOG — 05–07/10/2026
 
+## Hiện DOI và URL đầy đủ trong tài liệu tham khảo — 07/10/2026
+
+- Theo góp ý PDF, 39 tài liệu có DOI tiếp tục hiện mã DOI; 18 tài liệu không có DOI nay hiện URL đầy đủ, bấm được thay cho nhãn “Liên kết”.
+- Giữ nguyên nội dung, thứ tự, metadata BibTeX và đích của cả 57 tài liệu. Build/QA đạt; PDF có 68 trang, trong đó bibliography tăng từ 7 lên 8 trang do URL hiển thị đầy đủ.
+
 ## Bìa và chữ đậm/chữ thường theo mẫu Trang — 07/10/2026
 
 - Đối chiếu PDF cuối và source Nguyễn Phương Trang. Giữ khung kép ở cả ba bìa; logo chỉ ở bìa tiếng Anh đầu tiên. Bỏ dòng mã sinh viên và dòng sinh viên lặp; giữ tên tác giả và tên giảng viên gốc.

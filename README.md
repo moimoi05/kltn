@@ -54,7 +54,7 @@ Evidence local và audit remote do người dùng cung cấp được ghi riêng
 
 ## Biên dịch và chỉnh hình
 
-Font nội dung dùng Libertinus Serif giống khóa luận Nguyễn Phương Trang, với Semibold cho chữ đậm và `newtxmath` cho công thức. Mục lục và các liên kết cùng màu xanh `#0000FF`; số trang và dấu chấm dẫn màu đen. Đã kiểm tra dấu tiếng Việt ở cả bốn font variant. 39 tài liệu hiển thị DOI, 18 tài liệu còn lại dùng nhãn “Liên kết”; đủ 57 mục và địa chỉ đích được giữ nguyên. Bằng chứng ở `provenance/typography_check.json`.
+Font nội dung dùng Libertinus Serif giống khóa luận Nguyễn Phương Trang, với Semibold cho chữ đậm và `newtxmath` cho công thức. Mục lục và các liên kết cùng màu xanh `#0000FF`; số trang và dấu chấm dẫn màu đen. Đã kiểm tra dấu tiếng Việt ở cả bốn font variant. 39 tài liệu hiển thị DOI; 18 tài liệu không có DOI hiển thị URL đầy đủ, bấm được. Đủ 57 mục và địa chỉ đích được giữ nguyên. Bằng chứng ở `provenance/typography_check.json`.
 
 Bìa theo PDF cuối của Nguyễn Phương Trang: ba khung kép, logo chỉ ở bìa đầu, tên đề tài viết hoa; bìa tiếng Việt dùng bản dịch tương ứng. Không ghi mã sinh viên hoặc lặp lại dòng sinh viên. Nhãn ngành/giảng viên in đậm, giá trị và tên giảng viên dùng chữ thường. Tiêu đề tóm tắt/cảm ơn/cam đoan căn giữa; caption hình/bảng và bibliography dùng chữ thường13pt, đầu bảng và kết quả tốt nhất vẫn đậm. Lề trang, cỡ tiêu đề và thứ bậc chữ đậm trong mục lục được đối chiếu với mẫu. Bằng chứng ở `provenance/layout_reference_check.json`.
 

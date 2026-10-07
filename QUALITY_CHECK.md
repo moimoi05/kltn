@@ -38,7 +38,7 @@ The PDF annotation follow-up additionally checked all 16 figures: explanatory fo
 - [x] Aghajanian et al., *Longitudinal structural MRI-based deep learning and radiomics features for predicting Alzheimer’s disease progression*, is bibliography [1] and explicitly identified as the direct methodological baseline.
 - [x] CNN/C3D, LSTM/T-LSTM, Transformer/ViT/3D medical-image Transformer, Med3D and actual library roles have literature attribution. Optional prototype/backbone/background scope is qualified; no nonexistent NiBabel paper was invented.
 - [x] Every winner row is bold throughout the performance tables. Benchmark selection uses the mean of three seeds and includes both tied RC-Free rows; the five benchmark scores/means/sample SDs match frozen evidence.
-- [x] Reference metadata and all 57 entries' content/order match release613d74d. The renamed `thesisrefs.bst` retains the original `unsrtnat` copyright/license and changes only URL formatting: 39 DOI-bearing entries omit redundant URLs; the other18 use the short clickable label “Liên kết”. Each entry retains its exact DOI/URL target in the PDF. All reference links use the same blue as the table of contents.
+- [x] Reference metadata and all 57 entries' content/order match release613d74d. The renamed `thesisrefs.bst` retains the original `unsrtnat` copyright/license and changes only URL formatting: 39 DOI-bearing entries omit redundant URLs; the other 18 display full clickable URLs. Each entry retains its exact DOI/URL target in the PDF, and the full DOI/URL strings are visible. All reference links use the same blue as the table of contents.
 
 ## Build and source verification
 
@@ -47,11 +47,11 @@ The PDF annotation follow-up additionally checked all 16 figures: explanatory fo
 - [x] Three Underfull hbox messages remain (badness1057/4013/1552 in bibliography paragraphs). Their rendered pages were inspected and accepted; there is no overflow, overlap or unreadable spacing. System-font path warnings are portability notices; used PDF fonts are embedded.
 - [x] No TODO/FIXME, resizebox or old experiment code as the final narrative name.
 - [x] 16 native `.drawio` files and 16 SVG files parse; 16 figure PDFs are single-page vectors. Their minimum label size is 9.5 pt at the supplied 160 mm width. Figures are included at text width without shrinking tables as images.
-- [x] Fonts used in extracted PDF text are embedded. No replacement glyph, unresolved `[?]` citation or text outside the page bounds was found across 67 pages.
+- [x] Fonts used in extracted PDF text are embedded. No replacement glyph, unresolved `[?]` citation or text outside the page bounds was found across 68 pages.
 - [x] Manuscript text matches the Trang reference's Libertinus Serif Regular/Italic and Semibold/SemiboldItalic mapping, with `newtxmath` and Latin Modern defaults. All four Libertinus faces cover the Vietnamese alphabet and accented Unicode range. TOC/list labels and all colored manuscript/link text use exact blue `#0000FF`; navigation dot leaders and page numbers remain black. Embedded figure fonts are unchanged, consistent with the reference's separate illustration fonts. Detailed checks and font checksums are in `provenance/typography_check.json`.
 - [x] Checksums of 10 primary original files, including the draft ZIP/PDF and research report archives, remain unchanged.
 
-Build logs are preserved in `provenance/build/`. Automated findings are in `qa_report.json` and `provenance/artifact_checks.json`.
+Build logs are preserved in `provenance/build/`. Current automated findings are in `qa_report.json`; current page geometry and DOI/URL visibility/link checks are in `provenance/pdf_geometry.json` and `provenance/typography_check.json`.
 
 ## Reference cover and font-weight verification
 
@@ -61,22 +61,24 @@ Build logs are preserved in `provenance/build/`. Automated findings are in `qa_r
 - [x] All16 figure labels and14 table labels are Regular12.95pt, matching the reference13pt setting. Bibliography entries are Regular/Italic13pt. Table headers and best-result rows, including both tied winners, remain bold. Acronym table entries/header are regular.
 - [x] A4 margins match the reference (left30mm, right20mm, top20mm, bottom25mm), and the first abstract is numbered iii. TOC chapter entries/page numbers are bold; lower-level entries, leaders and list entries retain the reference weight hierarchy.
 
-Current PDF/font/cover checks and frozen-input hashes are in `provenance/layout_reference_check.json` and `provenance/typography_check.json`.
+Cover comparison and frozen-input hashes are in `provenance/layout_reference_check.json`; current PDF/font and DOI/URL checks are in `provenance/typography_check.json`.
 
 ## Page-by-page visual review
 
-- [x] All67 current pages were individually inspected as rendered PNGs: parent reviewer pages1–13/41–67, delegated reference reviewer pages14–40. No current page relies on a previous render. The comparison and frozen-input checks are in `provenance/visual_reuse_check.json`.
-- [x] Covers/front matter, TOC(PDF9), Table3.5/equations(PDF42), benchmark(PDF53) and bibliography(PDF61–67) were inspected at full-page scale. Chapters1/3/4, bibliography metadata, all figure assets and chart data are byte-identical to release1a8dd18. Chapters2/5 preserve all prose and citations, with only two bold wrappers removed. Table3.5's caption and all17 rows fit without shrinking, and all36 tensor shapes are unchanged. Route labels remain parenthesized in diagrams, text, captions and equation indices, including `M + (MR→M) + (MC→M)`.
+- [x] All68 current pages have visual acceptance. Pages1–62 are pixel-identical to previously accepted pages; bibliography pages63–68 were reinspected at full-page scale after displaying full URLs. The comparison and frozen-input checks are in `provenance/visual_reuse_check.json`.
+- [x] Covers/front matter, TOC(PDF9), Table3.5/equations(PDF42), benchmark(PDF53) and bibliography(PDF61–68) were inspected at full-page scale. Chapters1/3/4, bibliography metadata, all figure assets and chart data are byte-identical to release1a8dd18. Chapters2/5 preserve all prose and citations, with only two bold wrappers removed. Table3.5's caption and all17 rows fit without shrinking, and all36 tensor shapes are unchanged. Route labels remain parenthesized in diagrams, text, captions and equation indices, including `M + (MR→M) + (MC→M)`.
 - [x] Table names and numbers are readable; main model names remain on one line where practical. Captions, margins, page numbers and section transitions are consistent.
 - [x] The accepted grayscale review of CP/gate/RC-Free/pipeline drawings and all four result charts on release d254105 PDF37/39/40/41/50/52/54/56 is reused for the byte-identical figure assets. Whole-page renders have changed with the manuscript font and were separately inspected. Labels, arrows, point markers, signed values and error bars preserve meaning without relying on color.
 - [x] Final pipeline and routing show all three modalities, no active RC pair and correct128/64/64→256→128→temporal→Cox dimensions. No connector crosses a box interior or clips a label.
 
 The per-page acceptance record and final-PDF checksum are in `provenance/visual_review.json`. Rendered inspection PNGs remain in the local working directory and are not mixed into the thesis source package.
 
+The bibliography-link PDF comment is recorded in `provenance/pdf_comment_checks.json`: entries with DOI show the DOI, the other entries show their full clickable URL, and the generic “Liên kết” label no longer appears.
+
 ## Package reproduction
 
 - [x] ZIP extracted into a fresh directory with no previous root-level auxiliary/bibliography build files, then built using the supplied `build.ps1` and portable Tectonic with `FONTCONFIG_FILE` unset. Automatic Windows font configuration succeeded.
-- [x] The extracted source passed the same automated source/build checks. All67 rebuilt pages have identical extracted text and pixel-identical renders to the visually accepted PDF.
+- [x] The extracted source passed the same automated source/build checks. All68 rebuilt pages have identical extracted text and pixel-identical renders to the visually accepted PDF.
 - [x] Final ZIP CRC checked; compiled inputs are unchanged from the tested extraction. The PDF inside the ZIP is byte-identical to the PDF delivered beside it. Only QA/documentation records were finalized after the reproduction build.
 
 See `provenance/package_build_check.json`. Rebuilt-PDF byte hashes can differ because compilation timestamps change; page text and renders were directly compared and matched.

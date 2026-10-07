@@ -2,7 +2,7 @@
 %% Local modified copy of unsrtnat.bst for this thesis.
 %% Only format.url is changed: suppress URL output when DOI is present;
 %% otherwise emit \thesisurl{full URL}. The document defines this macro
-%% to show a short link label while retaining the complete destination.
+%% to display the full clickable address.
 %% All other functions and original license/attribution remain unchanged below.
 %%
 %% File: `unsrtnat.bst'
