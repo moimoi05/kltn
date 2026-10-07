@@ -1,8 +1,8 @@
 {
   "date": "2026-10-07",
-  "accepted_prior_release_commit": "7a8117f75922b03d621699770f50878550306464",
-  "prior_pdf_sha256": "91be90ecadf2438747be749ca3d8d4c2191b3990589c4bf55dbb7ab503325feb",
-  "total_prior_pages": 67,
+  "accepted_prior_release_commit": "983828fa7da1ef2701709ff667773fe7ea90e81c",
+  "prior_pdf_sha256": "4ce42b4aaa959144c6d2220a6789128ff44138fd00bed22fbecd7fd05a762d27",
+  "total_prior_pages": 68,
   "total_current_pages": 68,
   "pixel_identical_previously_accepted_pages": [
     1,
@@ -64,20 +64,19 @@
     57,
     58,
     59,
-    60,
-    61,
-    62
+    60
   ],
   "changed_prior_pages_requiring_full_reinspection": [
+    61,
+    62,
     63,
     64,
     65,
     66,
-    67
-  ],
-  "new_pages_requiring_inspection": [
+    67,
     68
   ],
+  "new_pages_requiring_inspection": [],
   "frozen_input_hashes_unchanged": true,
   "current_pages_inspected_individually": [
     61,

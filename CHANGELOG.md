@@ -1,5 +1,12 @@
 # CHANGELOG — 05–07/10/2026
 
+## Rà soát toàn bộ tài liệu tham khảo — 07/10/2026
+
+- Đối chiếu đủ 57 mục với nguồn xuất bản/kho lưu trữ chính thức và ngữ cảnh trích dẫn trong khóa luận; xác nhận tên, tác giả, năm, nơi xuất bản và mức độ liên quan. Cả 57 mục đều được trích dẫn và hỗ trợ nội dung nghiên cứu.
+- Sửa metadata đã phát hiện: bổ sung đầy đủ tiêu đề hướng dẫn Petersen; sửa thứ tự/tên tác giả Weiner và hậu tố Clifford R. Jack, Jr.; chuẩn hóa tiêu đề Folstein; bổ sung trang 807–814 cho Nair; sửa thứ tự nhóm ADNI trong Ding.
+- Kiểm tra live: 39/39 DOI chuyển hướng HTTP302 tới trang xuất bản, 18/18 URL trực tiếp trả HTTP200. PDF có 57 đích nhúng khớp 57 tài liệu; mọi DOI/URL đều được in rõ và bấm được, không còn nhãn “Liên kết”.
+- Dựng lại PDF 68 trang và duyệt trực quan các trang tài liệu tham khảo 61–68. Link được xác minh tại ngày kiểm tra; khả năng truy cập toàn văn vẫn tùy chính sách/trả phí của nhà xuất bản.
+
 ## Hiện DOI và URL đầy đủ trong tài liệu tham khảo — 07/10/2026
 
 - Theo góp ý PDF, 39 tài liệu có DOI tiếp tục hiện mã DOI; 18 tài liệu không có DOI nay hiện URL đầy đủ, bấm được thay cho nhãn “Liên kết”.

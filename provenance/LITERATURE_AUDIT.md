@@ -46,3 +46,19 @@ The [Aghajanian publisher article](https://link.springer.com/article/10.1186/s13
 - Related works distinguish survival, fixed-horizon prediction, cognitive-score regression and diagnostic classification. No ranking is inferred across incompatible study protocols.
 
 `bibliography_verification_20261006.json` records the 57 entries, primary links, publication status and revision scope. `library_source_inventory.json` records direct code imports and requirements, excluding installed `site-packages`, virtual environments and bytecode caches. Duplicate archive/checkout hits are evidence locations, not independent executions. `literature_source_manifest.json` retains the original local-source hashes. Original research figures were redrawn rather than copied from papers.
+
+## Exhaustive reference check — 7 October 2026
+
+All **57** bibliography entries were checked against the primary publisher, conference or repository record and against the thesis passages that cite them. The audit confirmed the article title, author metadata, publication year/venue and DOI or canonical URL; all 57 references are cited and each supports the thesis's AD/MCI context, ADNI/MRI data, radiomics, multimodal/tensor methods, longitudinal or survival methods, model foundations, or implementation. The six arXiv items are explicitly labeled as preprints; the two gated-residual papers are described as architecture inspiration, not as clinical AD evidence. No unrelated or uncited reference remains.
+
+The source contains 39 DOI-bearing entries and 18 entries with a direct URL but no DOI. On the audit date, all 39 DOI resolver requests returned HTTP 302 with a destination, and all 18 direct URLs returned HTTP 200. The compiled bibliography contains 87 PDF link annotations representing exactly 57 unique targets; each target matches its reference's DOI or direct URL, every target is visibly printed, and no generic “Liên kết” label remains. Some publisher landing pages respond to scripted requests with automated-access or subscription controls; that does not break DOI resolution, but it also cannot guarantee permanent uptime or free full-text access.
+
+Metadata corrections applied after the primary-source comparison:
+
+- [2] now includes the full Mild Cognitive Impairment guideline title and subtitle.
+- [3], [5] and [45] render Clifford R. Jack's suffix as “Jr.” in the correct position. [5] also uses the verified author list, including Paul M. Thompson and the Alzheimer's Disease Neuroimaging Initiative, and removes the erroneous Jennifer Salazar name.
+- [23] includes the verified proceedings pages 807–814.
+- [30] uses the exact quoted “Mini-mental state” title.
+- [41] places the Alzheimer's Disease Neuroimaging Initiative in the verified author order.
+
+The current title and author output was visually inspected across bibliography pages 61–68. The PDF has 68 pages; all 57 printed DOI/URL strings are visible and clickable.

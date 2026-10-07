@@ -1,14 +1,14 @@
 # Scientific and requirement review
 
-## Current figure/shape revision — 6 October 2026
+## Current integrated review — 7 October 2026
 
-The current artifact has 70 total pages, including 50 main-content pages, and supersedes the earlier 69-page reference revision recorded below. All pages were accepted by contact/full-page review or identical-render comparison to accepted sheets; the new shape tables and 3D CP/pipeline were inspected at full-page scale. Grayscale review covers the CP/gate/routes/pipeline and all four result charts.
+The current artifact has 68 total pages: 13 front-matter pages, 47 main-content pages and 8 bibliography pages. Pages 1–60 are pixel-identical to the preceding DOI-display release; bibliography pages 61–68 were rebuilt and inspected at full-page scale after reference metadata corrections. All 57 references are cited, relevant, and linked to matching DOI/URL targets. The three-dimensional CP/pipeline and grayscale figure reviews from the preceding approved release remain applicable because their source assets did not change.
 
 All 16 scientific figures use black text in PDF/SVG/native drawio, with volumetric MRI and CP weight tensors drawn as cuboids. Source-derived final ResNet maps use MONAI1.5.2 stem stride1 at144³ and sequential visit processing, pooled512→stack→projection128. The earlier shape audit's wording corrections were integrated: PCA produces16, radiomics MLP produces64, and pooled512 vectors are stacked before MRI projection.
 
 The user's remote audit provides the official P10 per-seed PCA38/69/2, pre-dropout GAP512, hidden64 and channels-last128³ CNN; CrossFormer source contracts/shape tests provide the144³/stride6 stem and its permutation to channels-last stages. These are attributed to supplied remote evidence, with exact configuration/version/hash identifiers in REMOTE_SHAPE_AUDIT_20261006.md. Neither this editor nor the remote audit claimed a new forward-hook measurement. Distinct P05-X fusion internals are not assigned the final ResNet bottlenecks.
 
-The frozen results JSON and references.bib are byte-identical to the previous release. The final RC-Free architecture, winner-row emphasis, 57 references, baseline[1], parenthesized routes and formal-test status remain unchanged. Current build/style/font/geometry/original-source checks pass. A fresh ZIP extraction compiled independently and reproduced all70 pages with identical extracted text and pixel-identical renders; package_build_check.json records that completed check.
+The frozen results JSON and figure assets are unchanged. The bibliography metadata was reconciled against primary records; the final RC-Free architecture, winner-row emphasis, baseline[1], parenthesized routes and formal-test status remain unchanged. Current build/style/font/geometry/original-source checks pass. The exhaustive title/relevance/link audit and reference corrections are recorded in `LITERATURE_AUDIT.md` and `bibliography_verification_20261006.json`; fresh-package reproduction is recorded in `package_build_check.json`.
 
 ## Earlier independent reviews
 

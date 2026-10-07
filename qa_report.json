@@ -45,7 +45,7 @@
     "pass": true
   },
   "build": {
-    "pdf": "main.pdf",
+    "pdf": "Nguyen_Phuong_Nam_Thesis_RCFree_Revised.pdf",
     "total_pdf_pages": 68,
     "main_content_pages": 47,
     "chapter_pdf_pages": {
@@ -62,9 +62,9 @@
     "official_title_matches_metadata": true,
     "overfull_boxes": [],
     "underfull_boxes": [
-      "Underfull \\hbox (badness 1057) in paragraph at lines 212--219",
-      "Underfull \\hbox (badness 4013) in paragraph at lines 442--450",
-      "Underfull \\hbox (badness 1552) in paragraph at lines 442--450"
+      "Underfull \\hbox (badness 1057) in paragraph at lines 215--222",
+      "Underfull \\hbox (badness 4013) in paragraph at lines 445--453",
+      "Underfull \\hbox (badness 1552) in paragraph at lines 445--453"
     ],
     "undefined_build_reference_or_citation": false,
     "bibtex_errors": false,

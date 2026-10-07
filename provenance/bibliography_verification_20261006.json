@@ -35,7 +35,7 @@
     "vaswani2017attention",
     "wang2022crossformer"
   ],
-  "bibliography_sha256": "513316bf2cee90e714106bda731bd545acd982f1766cb76df1d5517c1f73793f",
+  "bibliography_sha256": "a55267ea48c41cea21d54b6df5aebcfdcc49b792786e88269ef418b84ed64b2c",
   "entries": [
     {
       "key": "jack2018niaaa",
@@ -52,7 +52,7 @@
     {
       "key": "petersen2018mci",
       "bibtex_type": "article",
-      "title_bibtex": "Practice Guideline Update Summary: Mild Cognitive Impairment",
+      "title_bibtex": "Practice Guideline Update Summary: Mild Cognitive Impairment: Report of the Guideline Development, Dissemination, and Implementation Subcommittee of the American Academy of Neurology",
       "year": "2018",
       "venue_bibtex": "Neurology",
       "publication_status": "journal or conference publication",
@@ -328,7 +328,7 @@
     {
       "key": "folstein1975mmse",
       "bibtex_type": "article",
-      "title_bibtex": "Mini-Mental State: A Practical Method for Grading the Cognitive State of Patients for the Clinician",
+      "title_bibtex": "{``Mini-mental state''}: A practical method for grading the cognitive state of patients for the clinician",
       "year": "1975",
       "venue_bibtex": "Journal of Psychiatric Research",
       "publication_status": "journal or conference publication",
@@ -721,5 +721,49 @@
       "revision_scope": "new publication verified against primary source on 2026-10-06",
       "role": "Original CANDECOMP background"
     }
-  ]
+  ],
+  "last_rechecked_date": "2026-10-07",
+  "audit_2026_10_07": {
+    "scope": "All 57 references: primary-source metadata, in-text relevance, live link routing, and the compiled PDF annotations/visible labels",
+    "metadata_checked": [
+      "title",
+      "authors",
+      "year",
+      "venue",
+      "pages where applicable",
+      "DOI or canonical URL"
+    ],
+    "all_entries_cited": true,
+    "relevant_to_thesis": true,
+    "doi_resolver_checks": {
+      "tested": 39,
+      "http_302_with_destination": 39,
+      "failed": 0
+    },
+    "direct_url_checks": {
+      "tested": 18,
+      "http_200": 18,
+      "failed": 0
+    },
+    "compiled_pdf": {
+      "pages": 68,
+      "bibliography_pages": "61-68",
+      "annotations": 87,
+      "unique_reference_targets": 57,
+      "missing_or_unexpected_targets": 0,
+      "visible_doi_count": 39,
+      "visible_direct_url_count": 18,
+      "generic_link_labels": "none"
+    },
+    "metadata_corrections": [
+      "petersen2018mci full guideline subtitle",
+      "jack2018niaaa Clifford R. Jack, Jr. suffix formatting",
+      "weiner2015impact verified authors and author order, including Paul M. Thompson and Alzheimer's Disease Neuroimaging Initiative; erroneous Jennifer Salazar removed",
+      "nair2010rectified pages 807--814",
+      "folstein1975mmse exact quoted title",
+      "ding2023progression Alzheimer's Disease Neuroimaging Initiative author order",
+      "jack2008adnimri Clifford R. Jack, Jr. suffix formatting"
+    ],
+    "access_note": "DOI resolvers route to the cited publication records. Some publisher destinations apply automated-request or subscription controls; this check verifies current routing, not permanent uptime or entitlement to full text."
+  }
 }
