@@ -11,15 +11,6 @@ P00:
   status: PASS
   purpose: Validate frozen data, schema, outcome, split, leakage and environment before modeling.
   experiments: [freeze audit, schema audit, outcome audit, leakage audit, environment audit]
-P01:
-  display_name: Tabular Baselines
-  short_name: tabular_baselines
-  kind: core
-  folder: phase_01_tabular
-  package: p01_tabular
-  status: PASS
-  purpose: Establish clinical/radiomics survival baselines before neural MRI models.
-  experiments: [visit-2 vs longitudinal representations, Cox elastic-net, Random Survival Forest]
 P02:
   display_name: MRI Only
   short_name: mri_only

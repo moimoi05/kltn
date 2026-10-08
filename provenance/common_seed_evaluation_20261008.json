@@ -1,0 +1,217 @@
+{
+  "schema_version": 1,
+  "received_date": "2026-10-08",
+  "source": "User-pasted remote Codex evaluation report in this conversation",
+  "verification_scope": "Transcribed and arithmetically checked locally. Checkpoints, predictions, execution logs and remote hashes were not supplied for this new test report; no local test recomputation is claimed.",
+  "seed": 20260727,
+  "split_frozen": true,
+  "validation_comparable_pairs": 480,
+  "test_comparable_pairs": 528,
+  "metric": "strict_pairwise_harrell_c_index",
+  "checkpoint_selection_reported": "validation before configuration lock and test",
+  "test_role": "post-hoc; historically accessed split; not an independent final held-out evaluation",
+  "precision_decimal_places": 6,
+  "status_meaning": "PASS is reported execution status, not a complete provenance guarantee",
+  "attention_caveat": "Repaired historical attention run still has limited closure/provenance in the archived evidence.",
+  "three_seed_validation_source": "Existing frozen figures_source/results_data.json benchmark; kept separately without replacing seed28/29 from a different pasted report.",
+  "records": [
+    {
+      "key": "mri_medicalnet",
+      "name": "MRI Only -- MedicalNet",
+      "epoch": 3,
+      "validation": 0.733333,
+      "test": 0.623106,
+      "group": "mri",
+      "status": "PASS"
+    },
+    {
+      "key": "mri_random",
+      "name": "MRI Only -- Random ResNet",
+      "epoch": 19,
+      "validation": 0.7875,
+      "test": 0.496212,
+      "group": "mri",
+      "status": "PASS"
+    },
+    {
+      "key": "mri_crossformer",
+      "name": "MRI Only -- CrossFormer",
+      "epoch": 8,
+      "validation": 0.764583,
+      "test": 0.49053,
+      "group": "mri",
+      "status": "PASS"
+    },
+    {
+      "key": "longitudinal_tlstm",
+      "name": "Longitudinal MRI -- T-LSTM",
+      "epoch": 32,
+      "validation": 0.733333,
+      "test": 0.492424,
+      "group": "mri",
+      "status": "PASS"
+    },
+    {
+      "key": "longitudinal_attention",
+      "name": "Longitudinal MRI + Attention*",
+      "epoch": 34,
+      "validation": 0.783333,
+      "test": 0.577652,
+      "group": "mri",
+      "status": "PASS"
+    },
+    {
+      "key": "longitudinal_crossformer",
+      "name": "Longitudinal MRI -- CrossFormer",
+      "epoch": 25,
+      "validation": 0.725,
+      "test": 0.606061,
+      "group": "mri",
+      "status": "PASS"
+    },
+    {
+      "key": "simple_fusion",
+      "name": "Simple Multimodal Fusion",
+      "epoch": 29,
+      "validation": 0.8125,
+      "test": 0.723485,
+      "group": "fusion",
+      "status": "PASS"
+    },
+    {
+      "key": "crossformer_concat",
+      "name": "CrossFormer Concatenation",
+      "epoch": 22,
+      "validation": 0.80625,
+      "test": 0.876894,
+      "group": "fusion",
+      "status": "PASS"
+    },
+    {
+      "key": "dynamic_pairwise",
+      "name": "Dynamic Pairwise Fusion",
+      "epoch": 5,
+      "validation": 0.828125,
+      "test": 0.844697,
+      "group": "fusion",
+      "status": "PASS"
+    },
+    {
+      "key": "medicalnet_pairwise",
+      "name": "MedicalNet Pairwise Fusion",
+      "epoch": 35,
+      "validation": 0.839583,
+      "test": 0.763258,
+      "group": "fusion",
+      "status": "PASS"
+    },
+    {
+      "key": "cp_pairwise",
+      "name": "CP Pairwise Fusion",
+      "epoch": 8,
+      "validation": 0.821875,
+      "test": 0.88447,
+      "group": "fusion",
+      "status": "PASS"
+    },
+    {
+      "key": "crossformer_static",
+      "name": "CrossFormer Static Pairwise",
+      "epoch": 9,
+      "validation": 0.804167,
+      "test": 0.861742,
+      "group": "fusion",
+      "status": "PASS"
+    },
+    {
+      "key": "crossformer_dynamic",
+      "name": "CrossFormer Dynamic Pairwise",
+      "epoch": 8,
+      "validation": 0.825,
+      "test": 0.878788,
+      "group": "fusion",
+      "status": "PASS"
+    },
+    {
+      "key": "crossformer_residual",
+      "name": "CrossFormer Gated Residual Pairwise",
+      "epoch": 28,
+      "validation": 0.830208,
+      "test": 0.867424,
+      "group": "fusion",
+      "status": "PASS"
+    },
+    {
+      "key": "no_gate",
+      "name": "CP -- Bỏ gate",
+      "epoch": 12,
+      "validation": 0.820833,
+      "test": 0.867424,
+      "group": "ablation",
+      "status": "PASS"
+    },
+    {
+      "key": "fixed_lambda",
+      "name": "CP -- Cố định $\\lambda$",
+      "epoch": 17,
+      "validation": 0.836458,
+      "test": 0.862689,
+      "group": "ablation",
+      "status": "PASS"
+    },
+    {
+      "key": "no_residual",
+      "name": "CP -- Bỏ identity residual",
+      "epoch": 24,
+      "validation": 0.827083,
+      "test": 0.776515,
+      "group": "ablation",
+      "status": "PASS"
+    },
+    {
+      "key": "no_mr",
+      "name": "CP -- Bỏ MR",
+      "epoch": 10,
+      "validation": 0.816667,
+      "test": 0.842803,
+      "group": "ablation",
+      "status": "PASS"
+    },
+    {
+      "key": "no_mc",
+      "name": "CP -- Bỏ MC",
+      "epoch": 16,
+      "validation": 0.8375,
+      "test": 0.857008,
+      "group": "ablation",
+      "status": "PASS"
+    },
+    {
+      "key": "rcfree",
+      "name": "RC-Free Pairwise Fusion",
+      "epoch": 16,
+      "validation": 0.841667,
+      "test": 0.875,
+      "group": "ablation",
+      "status": "PASS"
+    },
+    {
+      "key": "rcfree_fixed",
+      "name": "RC-Free Fixed-$\\lambda$",
+      "epoch": 12,
+      "validation": 0.833333,
+      "test": 0.850379,
+      "group": "followup",
+      "status": "PASS"
+    },
+    {
+      "key": "paper_adaptation",
+      "name": "CNN--PCA--T-LSTM Adaptation",
+      "epoch": 20,
+      "validation": 0.6625,
+      "test": 0.537879,
+      "group": "baseline",
+      "status": "PASS"
+    }
+  ]
+}

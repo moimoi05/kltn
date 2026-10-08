@@ -1,25 +1,55 @@
 {
-  "pdf_sha256": "82df3e4e4bce1e0ffb34c3f987584714928461d2ca46cd4b3de7802c7420b5d8",
-  "total_pages": 68,
+  "date": "2026-10-08",
+  "pdf_sha256": "ed2751027937dd23b6c9792293de43fc103ada8c2d75ad675bce350d169125bb",
+  "total_pages": 66,
   "changed_pages_since_full_visual_review": [
-    9,
+    4,
+    5,
+    7,
+    10,
+    11,
+    12,
     13,
-    14,
-    15,
-    16,
-    17,
     18,
-    20
+    32,
+    33,
+    34,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66
   ],
   "checks": {
     "all_used_pdf_fonts_embedded": true,
     "sixteen_valid_editable_vector_figures": true,
-    "no_outside_page_text": true,
     "all_figure_text_black": true,
+    "no_outside_page_text": true,
     "no_replacement_glyph_or_question_citation": true,
     "all_ten_original_sources_unchanged": true,
     "at_most_seventy_total_pages": true,
-    "reference_cover_and_weight_checks_pass": true
+    "all_figure_assets_and_frozen_validation_values_unchanged": true,
+    "new_common_seed_table_audit_pass": true,
+    "no_visible_phase_codes": true,
+    "all_retained_reference_metadata_and_targets_match": true
   },
   "pass": true,
   "fonts": [
@@ -28,7 +58,7 @@
       "name": "IHAIZV+LibertinusSerif-Semibold-Identity-H",
       "extension": "cid",
       "type": "Type0",
-      "embedded_bytes": 24917,
+      "embedded_bytes": 25155,
       "used_in_text": false
     },
     {
@@ -36,7 +66,7 @@
       "name": "BZIVMZ+LibertinusSerif-Regular-Identity-H",
       "extension": "cid",
       "type": "Type0",
-      "embedded_bytes": 28494,
+      "embedded_bytes": 28221,
       "used_in_text": false
     },
     {
@@ -44,7 +74,7 @@
       "name": "IXFAWU+LibertinusSerif-Italic-Identity-H",
       "extension": "cid",
       "type": "Type0",
-      "embedded_bytes": 16076,
+      "embedded_bytes": 15625,
       "used_in_text": false
     },
     {
@@ -52,7 +82,7 @@
       "name": "VDVGTR+txsys",
       "extension": "cff",
       "type": "Type1",
-      "embedded_bytes": 2669,
+      "embedded_bytes": 2723,
       "used_in_text": true
     },
     {
@@ -60,7 +90,7 @@
       "name": "CAFSZL+CMR12",
       "extension": "cff",
       "type": "Type1",
-      "embedded_bytes": 5248,
+      "embedded_bytes": 5367,
       "used_in_text": true
     },
     {
@@ -68,19 +98,11 @@
       "name": "DDIEWW+NewTXMI",
       "extension": "cff",
       "type": "Type1",
-      "embedded_bytes": 7665,
+      "embedded_bytes": 7537,
       "used_in_text": true
     },
     {
-      "xref": 151,
-      "name": "FKPJSN+txmiaX",
-      "extension": "cff",
-      "type": "Type1",
-      "embedded_bytes": 269,
-      "used_in_text": true
-    },
-    {
-      "xref": 173,
+      "xref": 161,
       "name": "Helvetica",
       "extension": "n/a",
       "type": "Type1",
@@ -88,7 +110,7 @@
       "used_in_text": false
     },
     {
-      "xref": 174,
+      "xref": 162,
       "name": "AAAAAA+Arial-BoldMT",
       "extension": "ttf",
       "type": "TrueType",
@@ -96,7 +118,7 @@
       "used_in_text": true
     },
     {
-      "xref": 178,
+      "xref": 166,
       "name": "AAAAAA+DejaVuSans-Bold",
       "extension": "ttf",
       "type": "TrueType",
@@ -104,7 +126,7 @@
       "used_in_text": true
     },
     {
-      "xref": 182,
+      "xref": 170,
       "name": "AAAAAA+ArialMT",
       "extension": "ttf",
       "type": "TrueType",
@@ -112,7 +134,7 @@
       "used_in_text": true
     },
     {
-      "xref": 186,
+      "xref": 174,
       "name": "AAAAAA+DejaVuSans",
       "extension": "ttf",
       "type": "TrueType",
@@ -120,15 +142,23 @@
       "used_in_text": true
     },
     {
-      "xref": 221,
-      "name": "PVTTLK+CMR9",
+      "xref": 183,
+      "name": "FKPJSN+txmiaX",
       "extension": "cff",
       "type": "Type1",
-      "embedded_bytes": 2813,
+      "embedded_bytes": 269,
       "used_in_text": true
     },
     {
-      "xref": 223,
+      "xref": 210,
+      "name": "PVTTLK+CMR9",
+      "extension": "cff",
+      "type": "Type1",
+      "embedded_bytes": 3653,
+      "used_in_text": true
+    },
+    {
+      "xref": 212,
       "name": "JAGKKY+txexs",
       "extension": "cff",
       "type": "Type1",
@@ -136,7 +166,7 @@
       "used_in_text": true
     },
     {
-      "xref": 224,
+      "xref": 213,
       "name": "NOMARO+NewTXMI7",
       "extension": "cff",
       "type": "Type1",
@@ -144,7 +174,7 @@
       "used_in_text": true
     },
     {
-      "xref": 232,
+      "xref": 221,
       "name": "KPXLOM+NewTXBMI",
       "extension": "cff",
       "type": "Type1",
@@ -152,7 +182,7 @@
       "used_in_text": true
     },
     {
-      "xref": 263,
+      "xref": 252,
       "name": "Helvetica",
       "extension": "n/a",
       "type": "Type1",
@@ -160,7 +190,7 @@
       "used_in_text": false
     },
     {
-      "xref": 264,
+      "xref": 253,
       "name": "AAAAAA+Arial-BoldMT",
       "extension": "ttf",
       "type": "TrueType",
@@ -168,7 +198,7 @@
       "used_in_text": true
     },
     {
-      "xref": 268,
+      "xref": 257,
       "name": "AAAAAA+ArialMT",
       "extension": "ttf",
       "type": "TrueType",
@@ -176,7 +206,7 @@
       "used_in_text": true
     },
     {
-      "xref": 273,
+      "xref": 262,
       "name": "UTACNV+txsyb",
       "extension": "cff",
       "type": "Type1",
@@ -184,7 +214,7 @@
       "used_in_text": true
     },
     {
-      "xref": 318,
+      "xref": 307,
       "name": "TQTHRL+LMMono12-Regular-Identity-H",
       "extension": "cid",
       "type": "Type0",
@@ -192,7 +222,7 @@
       "used_in_text": false
     },
     {
-      "xref": 324,
+      "xref": 313,
       "name": "Helvetica",
       "extension": "n/a",
       "type": "Type1",
@@ -200,7 +230,7 @@
       "used_in_text": false
     },
     {
-      "xref": 325,
+      "xref": 314,
       "name": "AAAAAA+Arial-BoldMT",
       "extension": "ttf",
       "type": "TrueType",
@@ -208,7 +238,7 @@
       "used_in_text": true
     },
     {
-      "xref": 329,
+      "xref": 318,
       "name": "AAAAAA+ArialMT",
       "extension": "ttf",
       "type": "TrueType",
@@ -216,7 +246,7 @@
       "used_in_text": true
     },
     {
-      "xref": 343,
+      "xref": 332,
       "name": "Helvetica",
       "extension": "n/a",
       "type": "Type1",
@@ -224,7 +254,7 @@
       "used_in_text": false
     },
     {
-      "xref": 344,
+      "xref": 333,
       "name": "AAAAAA+Arial-BoldMT",
       "extension": "ttf",
       "type": "TrueType",
@@ -232,7 +262,7 @@
       "used_in_text": true
     },
     {
-      "xref": 348,
+      "xref": 337,
       "name": "AAAAAA+ArialMT",
       "extension": "ttf",
       "type": "TrueType",
@@ -240,15 +270,15 @@
       "used_in_text": true
     },
     {
-      "xref": 363,
+      "xref": 352,
       "name": "YEUUOC+LMMono10-Regular-Identity-H",
       "extension": "cid",
       "type": "Type0",
-      "embedded_bytes": 4505,
+      "embedded_bytes": 4198,
       "used_in_text": false
     },
     {
-      "xref": 370,
+      "xref": 359,
       "name": "FZDNHS+CMR10",
       "extension": "cff",
       "type": "Type1",
@@ -256,7 +286,7 @@
       "used_in_text": true
     },
     {
-      "xref": 371,
+      "xref": 360,
       "name": "DZGKAF+CMR8",
       "extension": "cff",
       "type": "Type1",
@@ -264,7 +294,7 @@
       "used_in_text": true
     },
     {
-      "xref": 397,
+      "xref": 385,
       "name": "Helvetica",
       "extension": "n/a",
       "type": "Type1",
@@ -272,7 +302,7 @@
       "used_in_text": false
     },
     {
-      "xref": 398,
+      "xref": 386,
       "name": "AAAAAA+ArialMT",
       "extension": "ttf",
       "type": "TrueType",
@@ -280,7 +310,7 @@
       "used_in_text": true
     },
     {
-      "xref": 402,
+      "xref": 390,
       "name": "AAAAAA+Arial-BoldMT",
       "extension": "ttf",
       "type": "TrueType",
@@ -288,7 +318,7 @@
       "used_in_text": true
     },
     {
-      "xref": 420,
+      "xref": 408,
       "name": "Helvetica",
       "extension": "n/a",
       "type": "Type1",
@@ -296,7 +326,7 @@
       "used_in_text": false
     },
     {
-      "xref": 421,
+      "xref": 409,
       "name": "AAAAAA+Arial-BoldMT",
       "extension": "ttf",
       "type": "TrueType",
@@ -304,7 +334,7 @@
       "used_in_text": true
     },
     {
-      "xref": 425,
+      "xref": 413,
       "name": "AAAAAA+ArialMT",
       "extension": "ttf",
       "type": "TrueType",
@@ -312,7 +342,7 @@
       "used_in_text": true
     },
     {
-      "xref": 434,
+      "xref": 422,
       "name": "Helvetica",
       "extension": "n/a",
       "type": "Type1",
@@ -320,7 +350,7 @@
       "used_in_text": false
     },
     {
-      "xref": 435,
+      "xref": 423,
       "name": "AAAAAA+Arial-BoldMT",
       "extension": "ttf",
       "type": "TrueType",
@@ -328,7 +358,7 @@
       "used_in_text": true
     },
     {
-      "xref": 439,
+      "xref": 427,
       "name": "AAAAAA+ArialMT",
       "extension": "ttf",
       "type": "TrueType",
@@ -336,7 +366,7 @@
       "used_in_text": true
     },
     {
-      "xref": 443,
+      "xref": 431,
       "name": "AAAAAA+DejaVuSans",
       "extension": "ttf",
       "type": "TrueType",
@@ -344,7 +374,7 @@
       "used_in_text": true
     },
     {
-      "xref": 447,
+      "xref": 435,
       "name": "AAAAAA+DejaVuSans-Bold",
       "extension": "ttf",
       "type": "TrueType",
@@ -352,7 +382,7 @@
       "used_in_text": true
     },
     {
-      "xref": 463,
+      "xref": 451,
       "name": "Helvetica",
       "extension": "n/a",
       "type": "Type1",
@@ -360,7 +390,7 @@
       "used_in_text": false
     },
     {
-      "xref": 464,
+      "xref": 452,
       "name": "AAAAAA+Arial-BoldMT",
       "extension": "ttf",
       "type": "TrueType",
@@ -368,7 +398,7 @@
       "used_in_text": true
     },
     {
-      "xref": 468,
+      "xref": 456,
       "name": "AAAAAA+ArialMT",
       "extension": "ttf",
       "type": "TrueType",
@@ -376,7 +406,7 @@
       "used_in_text": true
     },
     {
-      "xref": 477,
+      "xref": 465,
       "name": "Helvetica",
       "extension": "n/a",
       "type": "Type1",
@@ -384,7 +414,7 @@
       "used_in_text": false
     },
     {
-      "xref": 478,
+      "xref": 466,
       "name": "AAAAAA+Arial-BoldMT",
       "extension": "ttf",
       "type": "TrueType",
@@ -392,7 +422,7 @@
       "used_in_text": true
     },
     {
-      "xref": 482,
+      "xref": 470,
       "name": "AAAAAA+ArialMT",
       "extension": "ttf",
       "type": "TrueType",
@@ -400,7 +430,7 @@
       "used_in_text": true
     },
     {
-      "xref": 492,
+      "xref": 480,
       "name": "Helvetica",
       "extension": "n/a",
       "type": "Type1",
@@ -408,7 +438,7 @@
       "used_in_text": false
     },
     {
-      "xref": 493,
+      "xref": 481,
       "name": "AAAAAA+Arial-BoldMT",
       "extension": "ttf",
       "type": "TrueType",
@@ -416,7 +446,7 @@
       "used_in_text": true
     },
     {
-      "xref": 497,
+      "xref": 485,
       "name": "AAAAAA+ArialMT",
       "extension": "ttf",
       "type": "TrueType",
@@ -424,7 +454,7 @@
       "used_in_text": true
     },
     {
-      "xref": 511,
+      "xref": 499,
       "name": "Helvetica",
       "extension": "n/a",
       "type": "Type1",
@@ -432,7 +462,7 @@
       "used_in_text": false
     },
     {
-      "xref": 512,
+      "xref": 500,
       "name": "AAAAAA+Arial-BoldMT",
       "extension": "ttf",
       "type": "TrueType",
@@ -440,7 +470,7 @@
       "used_in_text": true
     },
     {
-      "xref": 516,
+      "xref": 504,
       "name": "AAAAAA+ArialMT",
       "extension": "ttf",
       "type": "TrueType",
@@ -448,7 +478,7 @@
       "used_in_text": true
     },
     {
-      "xref": 520,
+      "xref": 508,
       "name": "AAAAAA+DejaVuSans",
       "extension": "ttf",
       "type": "TrueType",
@@ -456,7 +486,7 @@
       "used_in_text": true
     },
     {
-      "xref": 565,
+      "xref": 542,
       "name": "Helvetica",
       "extension": "n/a",
       "type": "Type1",
@@ -464,7 +494,7 @@
       "used_in_text": false
     },
     {
-      "xref": 566,
+      "xref": 543,
       "name": "AAAAAA+ArialMT",
       "extension": "ttf",
       "type": "TrueType",
@@ -472,7 +502,7 @@
       "used_in_text": true
     },
     {
-      "xref": 570,
+      "xref": 547,
       "name": "AAAAAA+Arial-BoldMT",
       "extension": "ttf",
       "type": "TrueType",
@@ -480,7 +510,7 @@
       "used_in_text": true
     },
     {
-      "xref": 580,
+      "xref": 561,
       "name": "AKHCZK+LMSans9-Regular-Identity-H",
       "extension": "cid",
       "type": "Type0",
@@ -488,15 +518,7 @@
       "used_in_text": false
     },
     {
-      "xref": 587,
-      "name": "GJMHKB+txbsys",
-      "extension": "cff",
-      "type": "Type1",
-      "embedded_bytes": 255,
-      "used_in_text": true
-    },
-    {
-      "xref": 589,
+      "xref": 570,
       "name": "Helvetica",
       "extension": "n/a",
       "type": "Type1",
@@ -504,7 +526,7 @@
       "used_in_text": false
     },
     {
-      "xref": 590,
+      "xref": 571,
       "name": "AAAAAA+Arial-BoldMT",
       "extension": "ttf",
       "type": "TrueType",
@@ -512,7 +534,7 @@
       "used_in_text": true
     },
     {
-      "xref": 594,
+      "xref": 575,
       "name": "AAAAAA+ArialMT",
       "extension": "ttf",
       "type": "TrueType",
@@ -520,7 +542,15 @@
       "used_in_text": true
     },
     {
-      "xref": 606,
+      "xref": 583,
+      "name": "GJMHKB+txbsys",
+      "extension": "cff",
+      "type": "Type1",
+      "embedded_bytes": 213,
+      "used_in_text": true
+    },
+    {
+      "xref": 588,
       "name": "Helvetica",
       "extension": "n/a",
       "type": "Type1",
@@ -528,7 +558,7 @@
       "used_in_text": false
     },
     {
-      "xref": 607,
+      "xref": 589,
       "name": "AAAAAA+Arial-BoldMT",
       "extension": "ttf",
       "type": "TrueType",
@@ -536,7 +566,7 @@
       "used_in_text": true
     },
     {
-      "xref": 611,
+      "xref": 593,
       "name": "AAAAAA+ArialMT",
       "extension": "ttf",
       "type": "TrueType",
@@ -544,7 +574,7 @@
       "used_in_text": true
     },
     {
-      "xref": 621,
+      "xref": 603,
       "name": "Helvetica",
       "extension": "n/a",
       "type": "Type1",
@@ -552,7 +582,7 @@
       "used_in_text": false
     },
     {
-      "xref": 622,
+      "xref": 604,
       "name": "AAAAAA+Arial-BoldMT",
       "extension": "ttf",
       "type": "TrueType",
@@ -560,7 +590,7 @@
       "used_in_text": true
     },
     {
-      "xref": 627,
+      "xref": 608,
       "name": "AAAAAA+ArialMT",
       "extension": "ttf",
       "type": "TrueType",
@@ -568,7 +598,7 @@
       "used_in_text": true
     },
     {
-      "xref": 648,
+      "xref": 624,
       "name": "Helvetica",
       "extension": "n/a",
       "type": "Type1",
@@ -576,7 +606,7 @@
       "used_in_text": false
     },
     {
-      "xref": 649,
+      "xref": 625,
       "name": "AAAAAA+Arial-BoldMT",
       "extension": "ttf",
       "type": "TrueType",
@@ -584,7 +614,7 @@
       "used_in_text": true
     },
     {
-      "xref": 653,
+      "xref": 629,
       "name": "AAAAAA+ArialMT",
       "extension": "ttf",
       "type": "TrueType",
@@ -827,6 +857,5 @@
       "path": "Untitled Diagram.drawio",
       "unchanged": true
     }
-  ],
-  "date": "2026-10-08"
+  ]
 }

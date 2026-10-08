@@ -51,11 +51,6 @@
       "member": "phase_05_pairwise_fusion/runs/official/p05_official_20260731T080458Z_seed20260727/final_summary.json",
       "member_sha256": "e07da2cd5218575b0a8134cf501ee16bd4e0d70eb330841f74ed588fe9dc65ad"
     },
-    "classical_table": {
-      "archive": "D:\\KLTN\\week12\\thesis_phase_evolution_bundle_20261005_final.zip",
-      "member": "phase_01_tabular/reports/validation_model_comparison.csv",
-      "member_sha256": "5f6dedfe2b54b22e348909ce78c96c8c694ea15e818c7c3bc68d6bdf0615a567"
-    },
     "cp_architecture": {
       "archive": "D:\\KLTN\\week12\\thesis_phase_evolution_bundle_20261005_final.zip",
       "member": "phase_05_cp/reports/p05cp_architecture.md",
@@ -79,11 +74,10 @@
       "file": "D:\\KLTN\\project\\báo cáo phase 3\\Bao_cao_Phase_3_MRI_Longitudinal_TLSTM_Attention.md",
       "file_sha256": "6cca79e4ea559f52cbcafac57c1d1ab47a1c280edb030f1620a01497b6d775e9"
     },
-    "scikit_survival_metric_v0280": {
-      "documentation_url": "https://scikit-survival.readthedocs.io/en/stable/api/generated/sksurv.metrics.concordance_index_censored.html",
-      "source_url": "https://github.com/sebp/scikit-survival/blob/v0.28.0/sksurv/metrics.py",
-      "accessed": "2026-10-05",
-      "verified_behavior": "_iter_comparable includes event vs censored subject at equal time; simultaneous events are excluded. Risk ties use tolerance1e-8."
+    "common_seed_posthoc_evaluation": {
+      "file": "provenance/common_seed_evaluation_20261008.json",
+      "source_type": "user-provided remote report",
+      "received": "2026-10-08"
     }
   },
   "protocols": {
@@ -188,34 +182,6 @@
         "actual_effective_optimizer_batch": 12,
         "cox_risk_set_scope": "physical minibatch"
       }
-    },
-    "classical": {
-      "artifact_paths": [
-        "phase_01_tabular/reports/selected_candidate.json",
-        "phase_01_tabular/runs/20260730T061549Z_seed20260727_5625bb05/model_metadata.json"
-      ],
-      "deterministic_final_fit": true,
-      "feature_count": 102,
-      "hyperparameters": {
-        "alpha": 0.1,
-        "l1_ratio": 0.5
-      },
-      "input_modalities": "9 clinical values + 9 observedness masks + 16 bin64 PCA radiomics per visit, 3 visits = 102 features",
-      "library": "scikit-survival",
-      "library_version": "0.28.0",
-      "metric_implementation": "sksurv.metrics.concordance_index_censored",
-      "model": "P01-R08",
-      "model_type": "Cox elastic-net (scikit-survival Coxnet)",
-      "parameterization": "102 feature coefficients; model artifact does not report a separate trainable-parameter total",
-      "random_resampling_or_cv": "5-fold stratified CV was used for training-side selection; no neural initialization-seed ensemble",
-      "representation": "R08_CLINICAL_RAD64_LONG",
-      "selection_scope": "R08 was selected after validation evaluation among candidate representations/models; the reported validation C-index is post-selection, not an untouched one-shot comparator",
-      "status": "AUDITED SEPARATELY",
-      "test_evaluated": false,
-      "training_protocol": "5-fold RID-level stratified CV on the 251-subject training split, followed by validation evaluation of candidate representations/models, final candidate selection, and refit on all training subjects",
-      "validation_cindex": 0.8607068607068608,
-      "why_separate": "single deterministic post-selection validation result is not the same uncertainty object as a 3-seed neural-network mean ± sample SD",
-      "tied_time_detail": "Event-censor pairs at equal time are comparable in scikit-survival0.28.0; neural canonical metric excludes all equal-time pairs."
     },
     "test_policy": {
       "formal_final_evaluation": "NOT_STARTED",
@@ -827,181 +793,6 @@
       ]
     }
   ],
-  "classical": {
-    "rows": [
-      {
-        "representation": "R01_CLINICAL_V2",
-        "model_family": "cox",
-        "hyperparameters": "{\"alpha\": 0.1, \"l1_ratio\": 0.5}",
-        "mean_train_cv_cindex": 0.8467703578640103,
-        "std_train_cv_cindex": 0.06278856610839494,
-        "validation_cindex": 0.8378378378378378,
-        "convergence_status": "PASS",
-        "warnings": "",
-        "fit_time_seconds": "0.001014163950458169",
-        "prediction_finite": "True",
-        "feature_count": 18,
-        "source": "classical_table"
-      },
-      {
-        "representation": "R02_CLINICAL_LONG",
-        "model_family": "cox",
-        "hyperparameters": "{\"alpha\": 0.1, \"l1_ratio\": 0.5}",
-        "mean_train_cv_cindex": 0.8544560346073757,
-        "std_train_cv_cindex": 0.06251169049764332,
-        "validation_cindex": 0.8378378378378378,
-        "convergence_status": "PASS",
-        "warnings": "",
-        "fit_time_seconds": "0.0008746318053454161",
-        "prediction_finite": "True",
-        "feature_count": 54,
-        "source": "classical_table"
-      },
-      {
-        "representation": "R03_RAD32_V2",
-        "model_family": "cox",
-        "hyperparameters": "{\"alpha\": 0.1, \"l1_ratio\": 0.5}",
-        "mean_train_cv_cindex": 0.6310714853779044,
-        "std_train_cv_cindex": 0.09262617506828434,
-        "validation_cindex": 0.7442827442827443,
-        "convergence_status": "PASS",
-        "warnings": "",
-        "fit_time_seconds": "0.0007317729759961367",
-        "prediction_finite": "True",
-        "feature_count": 17,
-        "source": "classical_table"
-      },
-      {
-        "representation": "R04_RAD32_LONG",
-        "model_family": "cox",
-        "hyperparameters": "{\"alpha\": 0.01, \"l1_ratio\": 0.05}",
-        "mean_train_cv_cindex": 0.6314737109980996,
-        "std_train_cv_cindex": 0.10557491130232341,
-        "validation_cindex": 0.5821205821205822,
-        "convergence_status": "PASS",
-        "warnings": "",
-        "fit_time_seconds": "0.004405264975503087",
-        "prediction_finite": "True",
-        "feature_count": 51,
-        "source": "classical_table"
-      },
-      {
-        "representation": "R05_RAD64_V2",
-        "model_family": "cox",
-        "hyperparameters": "{\"alpha\": 0.1, \"l1_ratio\": 0.5}",
-        "mean_train_cv_cindex": 0.6417885437986139,
-        "std_train_cv_cindex": 0.0808931920383357,
-        "validation_cindex": 0.7484407484407485,
-        "convergence_status": "PASS",
-        "warnings": "",
-        "fit_time_seconds": "0.0006913249380886555",
-        "prediction_finite": "True",
-        "feature_count": 16,
-        "source": "classical_table"
-      },
-      {
-        "representation": "R06_RAD64_LONG",
-        "model_family": "cox",
-        "hyperparameters": "{\"alpha\": 0.01, \"l1_ratio\": 0.05}",
-        "mean_train_cv_cindex": 0.6304377730033494,
-        "std_train_cv_cindex": 0.10357131654124992,
-        "validation_cindex": 0.5592515592515592,
-        "convergence_status": "PASS",
-        "warnings": "",
-        "fit_time_seconds": "0.004172127926722169",
-        "prediction_finite": "True",
-        "feature_count": 48,
-        "source": "classical_table"
-      },
-      {
-        "representation": "R07_CLINICAL_RAD32_LONG",
-        "model_family": "cox",
-        "hyperparameters": "{\"alpha\": 0.1, \"l1_ratio\": 0.5}",
-        "mean_train_cv_cindex": 0.8543426711540711,
-        "std_train_cv_cindex": 0.050853898570603885,
-        "validation_cindex": 0.8523908523908524,
-        "convergence_status": "PASS",
-        "warnings": "",
-        "fit_time_seconds": "0.001155866077169776",
-        "prediction_finite": "True",
-        "feature_count": 105,
-        "source": "classical_table"
-      },
-      {
-        "representation": "R08_CLINICAL_RAD64_LONG",
-        "model_family": "cox",
-        "hyperparameters": "{\"alpha\": 0.1, \"l1_ratio\": 0.5}",
-        "mean_train_cv_cindex": 0.8549099225670196,
-        "std_train_cv_cindex": 0.05654650179091269,
-        "validation_cindex": 0.8607068607068608,
-        "convergence_status": "PASS",
-        "warnings": "",
-        "fit_time_seconds": "0.0011322351638227701",
-        "prediction_finite": "True",
-        "feature_count": 102,
-        "source": "classical_table"
-      },
-      {
-        "representation": "R01_CLINICAL_V2",
-        "model_family": "rsf",
-        "hyperparameters": "{\"max_depth\": 4, \"max_features\": 0.5, \"min_samples_leaf\": 10, \"n_estimators\": 300}",
-        "mean_train_cv_cindex": 0.8253118374908602,
-        "std_train_cv_cindex": 0.078726132958126,
-        "validation_cindex": 0.7900207900207901,
-        "convergence_status": "PASS",
-        "warnings": "",
-        "fit_time_seconds": "0.4078222450334579",
-        "prediction_finite": "True",
-        "feature_count": 18,
-        "source": "classical_table"
-      },
-      {
-        "representation": "R02_CLINICAL_LONG",
-        "model_family": "rsf",
-        "hyperparameters": "{\"max_depth\": 4, \"max_features\": 0.5, \"min_samples_leaf\": 10, \"n_estimators\": 300}",
-        "mean_train_cv_cindex": 0.8389406256670611,
-        "std_train_cv_cindex": 0.08452466142437004,
-        "validation_cindex": 0.8378378378378378,
-        "convergence_status": "PASS",
-        "warnings": "",
-        "fit_time_seconds": "0.3024399820715189",
-        "prediction_finite": "True",
-        "feature_count": 54,
-        "source": "classical_table"
-      },
-      {
-        "representation": "R07_CLINICAL_RAD32_LONG",
-        "model_family": "rsf",
-        "hyperparameters": "{\"max_depth\": 8, \"max_features\": \"sqrt\", \"min_samples_leaf\": 10, \"n_estimators\": 300}",
-        "mean_train_cv_cindex": 0.8395809943891148,
-        "std_train_cv_cindex": 0.05799469602082147,
-        "validation_cindex": 0.83991683991684,
-        "convergence_status": "PASS",
-        "warnings": "",
-        "fit_time_seconds": "0.2047390309162438",
-        "prediction_finite": "True",
-        "feature_count": 105,
-        "source": "classical_table"
-      },
-      {
-        "representation": "R08_CLINICAL_RAD64_LONG",
-        "model_family": "rsf",
-        "hyperparameters": "{\"max_depth\": 4, \"max_features\": \"sqrt\", \"min_samples_leaf\": 10, \"n_estimators\": 300}",
-        "mean_train_cv_cindex": 0.8388633473552473,
-        "std_train_cv_cindex": 0.0738904631984013,
-        "validation_cindex": 0.8565488565488566,
-        "convergence_status": "PASS",
-        "warnings": "",
-        "fit_time_seconds": "0.1894840239547193",
-        "prediction_finite": "True",
-        "feature_count": 102,
-        "source": "classical_table"
-      }
-    ],
-    "source": "classical_table",
-    "protocol": "classical",
-    "keep_separate_from_neural_errorbars": true
-  },
   "validation_differences": {
     "cp_minus_full_mean": -0.006597222222222143,
     "rcfree_minus_cp_mean": 0.00694444444444442,

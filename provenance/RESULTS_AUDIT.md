@@ -5,9 +5,10 @@ Scope: read-only audit of local project reports, weekly report sources and ZIP m
 ## Authoritative source order
 
 1. Standardized validation report JSON plus checkpoint/split audit (21 September 2026) for canonical deep results and metric convention.
-2. Phase evolution bundle (5 October 2026), including controlled comparisons, ablation JSON, classical CSV, source lineage and exact run summaries.
-3. Scientific phase reports for historical runtime/batching; weekly reports as secondary context.
-4. Original thesis draft is editable content, not an authoritative numeric source.
+2. User-supplied common-seed remote report received 8 October 2026 for the current validation/post-hoc test tables; transcription and arithmetic are checked locally.
+3. Phase-evolution archive for controlled comparisons, ablation, architecture and exact run summaries.
+4. Scientific phase reports for historical runtime/batching; weekly reports as secondary context.
+5. Original thesis draft is editable content, not an authoritative numeric source.
 
 ## Corrections and caveats
 
@@ -15,11 +16,10 @@ Scope: read-only audit of local project reports, weekly report sources and ZIP m
 - P03 and the P05/MedicalNet/CP/RC-Free family use physical Cox risk sets of **6 subjects**, with accumulation 2 and optimizer-effective batch 12. P04 concat uses physical Cox risk sets of **8 subjects**, accumulation 2 and optimizer-effective batch 16. Therefore the historical concat 0.812500 → random pairwise 0.828125 change is not a controlled fusion-only contrast; longitudinal→concat is likewise not a matched-input/batching effect.
 - The repaired Longitudinal MRI + attention value 0.783333 is best-observed with incomplete closure, not an authoritative three-seed result. The earlier attention run aborted due to AMP overflow and is ineligible for selection.
 - The archived `phase_03_mri_longitudinal/reports/model_architecture.md` describes an older ordinary-LSTM scaffold. Later scientific report and phase evolution audit explicitly describe the paper-style T-LSTM. Do not propagate the old scaffold architecture as the final methodology.
-- Neural canonical C-index uses only event-subject i vs subject j with time_i < time_j; higher risk = earlier event, risk ties =0.5, tied survival times excluded. Validation has 480 comparable pairs. P01 uses scikit-survival `concordance_index_censored`, and final representation/family was selected after validation evaluation following train CV. Keep this classical result separate from neural mean±SD; a raw rank does not establish an identical-protocol win.
 - Benchmark replay uses best validation-selected checkpoints, not historical last-checkpoint validation_predictions.json. All fifteen deep seed cells were audited/reused; no retraining was required.
 - Three seeds share the same frozen split. Sample SD measures initialization/training variation, not patient resampling, confidence interval, external validation, or statistical significance.
 - Fixed-λ vs RC-Free mean difference is exactly 0 when recomputed from raw seed values. Some source follow-up comparison fields subtract rounded means and show a spurious 0.0000002222 difference.
-- P07 formal final evaluation remains NOT_STARTED. Weekly post-hoc test reports and a P05-CP post-hoc test artifact exist, but their numbers are excluded from architecture selection and thesis comparison plots. Exact thesis statement: **Formal held-out final evaluation has not yet been performed.**
+- P07 formal final evaluation remains NOT_STARTED. Post-hoc test scores are included in current manuscript tables, with source and history disclosed; they do not select the architecture. Figure exports remain validation-only. Exact thesis statement: **Formal held-out final evaluation has not yet been performed.**
 
 ## Standardized validation values (sample SD, n=3)
 
@@ -54,25 +54,6 @@ Full CP reference = 0.821875000.
 
 No gate and no MR decrease slightly; fixed λ, no residual, no MC and no RC increase at this seed. Thus there is **no evidence to claim every proposed component improves performance**. RC removal was the largest positive exploratory delta, followed by an RC-Free three-seed follow-up. Other ablations remain single-seed.
 
-## Classical/tabular results
-
-| Representation | Family | Features | Train-CV mean | Train-CV SD | Validation C-index |
-|---|---|---:|---:|---:|---:|
-| R01_CLINICAL_V2 | cox | 18 | 0.846770 | 0.062789 | 0.837838 |
-| R02_CLINICAL_LONG | cox | 54 | 0.854456 | 0.062512 | 0.837838 |
-| R03_RAD32_V2 | cox | 17 | 0.631071 | 0.092626 | 0.744283 |
-| R04_RAD32_LONG | cox | 51 | 0.631474 | 0.105575 | 0.582121 |
-| R05_RAD64_V2 | cox | 16 | 0.641789 | 0.080893 | 0.748441 |
-| R06_RAD64_LONG | cox | 48 | 0.630438 | 0.103571 | 0.559252 |
-| R07_CLINICAL_RAD32_LONG | cox | 105 | 0.854343 | 0.050854 | 0.852391 |
-| R08_CLINICAL_RAD64_LONG | cox | 102 | 0.854910 | 0.056547 | 0.860707 |
-| R01_CLINICAL_V2 | rsf | 18 | 0.825312 | 0.078726 | 0.790021 |
-| R02_CLINICAL_LONG | rsf | 54 | 0.838941 | 0.084525 | 0.837838 |
-| R07_CLINICAL_RAD32_LONG | rsf | 105 | 0.839581 | 0.057995 | 0.839917 |
-| R08_CLINICAL_RAD64_LONG | rsf | 102 | 0.838863 | 0.073890 | 0.856549 |
-
-Cox alpha grid =0.001/0.01/0.1, l1_ratio=0.05/0.5; 8 representations×6=48 candidate CV configurations. RSF trained only on four train-CV-selected representations with300 trees, max_depth4/8,min_samples_leaf5/10,max_features sqrt/0.5 (32 candidates). Winner R08 Cox:102 features, alpha0.1,l1_ratio0.5. CV SD is across folds, not neural seeds.
-
 ## Parameters
 
 | Pair | Dimensions dx,dy,H | Rank | Full first bilinear incl. bias | CP incl. O bias |
@@ -93,7 +74,7 @@ Cox alpha grid =0.001/0.01/0.1, l1_ratio=0.05/0.5; 8 representations×6=48 candi
 - performance-evolution.pdf: four protocol panels with no connected cross-panel trend: matched MRI initialization; longitudinal MRI batch6; isolated concat batch8; pairwise batch6 seed20260727. Mark repaired attention hollow/limited or omit it.
 - cp-parameter-reduction.pdf: distinguish first-bilinear98.384% from whole-model0.669%; never imply98% total reduction.
 - ablation-deltas.pdf: plot all six signed deltas against0.821875 baseline, no error bars (one seed).
-- standardized-benchmark.pdf: five neural mean±sample SD values, three individual seed points optional. Classical post-selection metric separately tabulated.
+- standardized-benchmark.pdf: five model means and sample SDs over three seeds on the same split; validation only.
 
 ## Exact source/archive-member map
 
@@ -147,11 +128,6 @@ Cox alpha grid =0.001/0.01/0.1, l1_ratio=0.05/0.5; 8 representations×6=48 candi
 - member: `phase_05_pairwise_fusion/runs/official/p05_official_20260731T080458Z_seed20260727/final_summary.json`
 - member_sha256: `e07da2cd5218575b0a8134cf501ee16bd4e0d70eb330841f74ed588fe9dc65ad`
 
-### classical_table
-- archive: `D:\KLTN\week12\thesis_phase_evolution_bundle_20261005_final.zip`
-- member: `phase_01_tabular/reports/validation_model_comparison.csv`
-- member_sha256: `5f6dedfe2b54b22e348909ce78c96c8c694ea15e818c7c3bc68d6bdf0615a567`
-
 ### cp_architecture
 - archive: `D:\KLTN\week12\thesis_phase_evolution_bundle_20261005_final.zip`
 - member: `phase_05_cp/reports/p05cp_architecture.md`
@@ -179,12 +155,18 @@ Cox alpha grid =0.001/0.01/0.1, l1_ratio=0.05/0.5; 8 representations×6=48 candi
 
 Raw trained checkpoint tensors and validation patient-level predictions are not included in the local thesis evidence ZIP; the numbers and hashes above come from packaged audit/result artifacts. The audit confirms agreement between available artifacts, not an independently re-executed server replay. Formal final held-out evaluation and fully matched concat-versus-pairwise repeat are remaining research work, not document-build blockers.
 
-## Official metric implementation verification
-
-The scikit-survival0.28.0 official [_iter_comparable source](https://github.com/sebp/scikit-survival/blob/v0.28.0/sksurv/metrics.py) was read to verify the classical tied-time caveat: event vs censored at equal time is comparable; two simultaneous events are not. The [API documentation](https://scikit-survival.readthedocs.io/en/stable/api/generated/sksurv.metrics.concordance_index_censored.html) also documents risk-tie tolerance1e-8. Accessed5October2026. No patient-level metric recomputation was performed.
-
 ## Performance-table formatting update — 6 October 2026
 
-Performance comparison tables now bold the entire winning row by validation C-index. The three-seed benchmark uses the arithmetic mean of the original three scores, including all exact ties: RC-Free Pairwise and RC-Free Fixed-λ both have mean 0.8347222222222223 (printed 0.834722), so both rows are bold. Their sample SDs remain different and unchanged. Single-seed tables use their validation C-index. Parameter/configuration tables do not treat the largest count as better performance.
+The three-seed benchmark bolds the entire winning row by the arithmetic mean of the original three scores, including all exact ties: RC-Free Pairwise and RC-Free Fixed-λ both have mean 0.8347222222222223 (printed 0.834722), so both rows are bold. Their sample SDs remain different and unchanged. The current single-seed tables bold the highest validation and post-hoc test cells separately by column. Parameter/configuration tables do not treat the largest count as better performance.
 
 `scripts/qa_performance_tables.py` checks all five benchmark rows against `figures_source/results_data.json`, independently recomputes the mean and sample SD, and verifies whole-row bolding including ties. Independent chapter review also confirmed that the existing numerical results and model names were preserved. Internal result reports are retained as local provenance, not as bibliography references.
+
+## Common-seed evaluation — 8 October 2026
+
+The user supplied a remote Codex report for 22 named models at seed20260727: selected epoch, validation C-index, post-hoc test C-index and execution status. It is transcribed in common_seed_evaluation_20261008.json/.csv. Validation has480 comparable pairs and test528, as stated in that report. The new report does not include patient predictions, checkpoint/config hashes or execution logs; the document editor checked transcription and arithmetic, not remote execution. PASS is not a provenance-completeness guarantee. The repaired attention run retains the archived closure limitation.
+
+The best common-seed validation is RC-Free0.841667, with post-hoc test0.875000. Full CP has validation0.821875 and higher test0.884470: RC-Free−CP is +0.019792 validation and −0.009470 test. Their |test−val| gaps are0.033333 and0.062595. This gap does not estimate stability; fixed-λ, noMR and noMC have smaller gaps than RC-Free. Three-seed validation mean ties with RC-Free Fixed-λ, while MedicalNet Pairwise has lower SD. Selection therefore uses validation and structural simplicity, never an assertion of universal test/stability superiority.
+
+Against the local CNN–PCA–T-LSTM Adaptation, RC-Free gains +0.179167 validation and +0.337121 post-hoc test at the common seed. These are local pipeline comparisons, not comparisons to the original publication's cohort or reported score. The earlier raw three-seed validation evidence is retained unchanged and kept separate from the new six-decimal single-seed report.
+
+qa_common_seed_tables.py checks all22 models across four table groups, derived gains, ablation differences/gaps, epoch transcription where displayed, per-column maximum emphasis and absence of visible phase codes. qa_performance_tables.py independently checks the frozen three-seed values/mean/sampleSD and tied mean emphasis.

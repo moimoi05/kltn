@@ -413,7 +413,7 @@
       ],
       "changes": [
         "Plot three-seed mean ± sample SD (ddof1), alongside individual seed values; SD is not a confidence interval.",
-        "Use standardized validation only, leaving the deterministic post-selection classical baseline separate.",
+        "Three-seed validation is kept separate from the common-seed post-hoc test tables.",
         "Redrawn as native draw.io; unified vector style and physical font sizes.",
         "All labels, chart values and ticks use black text; emphasis uses font weight."
       ],

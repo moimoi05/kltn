@@ -1,14 +1,13 @@
-# Literature audit — final bibliography revision, 6 October 2026
+# Literature audit — active bibliography, 8 October 2026
 
 This record describes attribution and source verification; it is not an experimental result. The original 5 October method checks remain applicable, and 21 further publications plus the baseline metadata were checked against primary publisher/conference/preprint sources on 6 October.
 
 ## Final bibliography policy
 
-The delivered bibliography contains **57 cited research sources**: 38 BibTeX article entries and 19 inproceedings entries. Of these, 51 are journal/conference publications and 6 are explicitly labeled arXiv research preprints. The six preprints are the two user-specified gated-residual papers, Med3D, Layer Normalization, GELU and MONAI. Their status is not converted into a peer-reviewed journal claim.
+The delivered bibliography contains **54 cited research sources**: 35 BibTeX article entries and 19 inproceedings entries. Of these, 48 are journal/conference publications and 6 are explicitly labeled arXiv research preprints. The six preprints are the two user-specified gated-residual papers, Med3D, Layer Normalization, GELU and MONAI. Their status is not converted into a peer-reviewed journal claim.
 
-The annotated internal standardized-validation report and the phase-evolution report have both been removed from the bibliography and chapter citation calls. Their existing local result/source records remain provenance for the thesis's own data. The documentation-only scikit-survival entry was replaced by its [JMLR library paper](https://jmlr.org/papers/v21/20-729.html). The version-specific metric convention is supported separately by a footnote to the [0.28.0 implementation](https://github.com/sebp/scikit-survival/blob/v0.28.0/sksurv/metrics.py), rather than attributed to the 2020 paper.
-
-The [Aghajanian publisher article](https://link.springer.com/article/10.1186/s13195-025-01827-2) is explicitly identified as the methodological baseline and fixed at bibliography **[1]** through `\nocite` before other citations. All 57 keys are used; no internal report, book, @misc, invented library paper or unused bibliography filler remains.
+The annotated internal standardized-validation report and the phase-evolution report have both been removed from the bibliography and chapter citation calls. Their existing local result/source records remain provenance for the thesis's own data.
+The [Aghajanian publisher article](https://link.springer.com/article/10.1186/s13195-025-01827-2) is explicitly identified as the methodological baseline and fixed at bibliography **[1]** through `\nocite` before other citations. All 54 retained keys are used; no internal report, book, @misc, invented library paper or unused bibliography filler remains.
 
 ## New publications and their roles
 
@@ -25,12 +24,9 @@ The [Aghajanian publisher article](https://link.springer.com/article/10.1186/s13
 | `cardoso2022monai` | Actual MONAI ResNet implementation; explicitly labeled preprint | [Publication](https://arxiv.org/abs/2211.02701) |
 | `harris2020numpy` | Array processing in project and preprocessing code | [Publication](https://doi.org/10.1038/s41586-020-2649-2) |
 | `mckinney2010pandas` | Manifest and tabular-data processing | [Publication](https://doi.org/10.25080/Majora-92bf1922-00a) |
-| `pedregosa2011sklearn` | Train-only scaling/PCA and classical pipeline | [Publication](https://jmlr.org/papers/v12/pedregosa11a.html) |
-| `polsterl2020sksurv` | Classical survival library; version-specific metric details separately footnoted | [Publication](https://jmlr.org/papers/v21/20-729.html) |
+| `pedregosa2011sklearn` | Train-only scaling/PCA | [Publication](https://jmlr.org/papers/v12/pedregosa11a.html) |
 | `monod2024torchsurv` | Optional prototype survival backend; final pairwise loss is project implementation | [Publication](https://doi.org/10.21105/joss.07341) |
 | `hunter2007matplotlib` | MRI preprocessing quality-control plotting | [Publication](https://doi.org/10.1109/MCSE.2007.55) |
-| `simon2011coxnet` | Regularized Cox classical baseline | [Publication](https://doi.org/10.18637/jss.v039.i05) |
-| `ishwaran2008rsf` | Random survival forest baseline | [Publication](https://doi.org/10.1214/08-AOAS169) |
 | `katzman2018deepsurv` | Neural Cox background | [Publication](https://doi.org/10.1186/s12874-018-0482-1) |
 | `jack2008adnimri` | ADNI MRI acquisition/methods background | [Publication](https://doi.org/10.1002/jmri.21049) |
 | `baltrusaitis2019multimodal` | Multimodal fusion taxonomy | [Publication](https://doi.org/10.1109/TPAMI.2018.2798607) |
@@ -40,12 +36,12 @@ The [Aghajanian publisher article](https://link.springer.com/article/10.1186/s13
 
 - The user-specified [Ryumina et al.](https://arxiv.org/html/2607.14702v2) motivates input-dependent residual gates, while [Liu et al.](https://arxiv.org/html/2606.11645v1) uses a fixed residual scale. The thesis's learnable, unconstrained route-specific scale and pairwise residual equation are its own adaptation.
 - CNN/C3D and LSTM/T-LSTM foundations are cited where introduced. C3D's video axes are distinguished from the three spatial MRI axes. CrossFormer is cited as the foundation of the project's 3D comparator. UNETR is related background for 3D medical-image Transformers, not a claimed evaluated survival model.
-- PyTorch, MONAI, NumPy, pandas, scikit-learn, scikit-survival, PyRadiomics and the relevant survival-baseline sources are linked to their actual method roles. Matplotlib is evidenced in preprocessing QC code. TorchSurv is an optional prototype backend; the final P05B-derived training objective is implemented in project code.
+- PyTorch, MONAI, NumPy, pandas, scikit-learn and PyRadiomics are linked to their actual method roles. Matplotlib is evidenced in preprocessing QC code. TorchSurv is an optional prototype backend; the final P05B-derived training objective is implemented in project code.
 - NiBabel appears in actual NIfTI preprocessing code and is named in the method. Its official citation is a software release rather than a standalone journal paper, so no unrelated paper is substituted. Utility dependencies such as PyYAML/tqdm/pytest are recorded in the source inventory without padding the bibliography.
 - The PCA journal metadata, Cox pages excluding discussion, Breslow 1974 ties paper, original ReLU and Adam/AdamW references are retained from the earlier audit.
 - Related works distinguish survival, fixed-horizon prediction, cognitive-score regression and diagnostic classification. No ranking is inferred across incompatible study protocols.
 
-`bibliography_verification_20261006.json` records the 57 entries, primary links, publication status and revision scope. `library_source_inventory.json` records direct code imports and requirements, excluding installed `site-packages`, virtual environments and bytecode caches. Duplicate archive/checkout hits are evidence locations, not independent executions. `literature_source_manifest.json` retains the original local-source hashes. Original research figures were redrawn rather than copied from papers.
+`bibliography_verification_20261006.json` records the 54 retained entries, primary links, publication status and revision scope. `library_source_inventory.json` records direct code imports and requirements, excluding installed `site-packages`, virtual environments and bytecode caches. Duplicate archive/checkout hits are evidence locations, not independent executions. `literature_source_manifest.json` retains the original local-source hashes. Original research figures were redrawn rather than copied from papers.
 
 ## Exhaustive reference check — 7 October 2026
 
@@ -62,3 +58,8 @@ Metadata corrections applied after the primary-source comparison:
 - [41] places the Alzheimer's Disease Neuroimaging Initiative in the verified author order.
 
 The current title and author output was visually inspected across bibliography pages 61–68. The PDF has 68 pages; all 57 printed DOI/URL strings are visible and clickable.
+
+
+## Current bibliography — 8 October 2026
+
+The current manuscript has 54 cited sources (35 articles, 19 inproceedings; 48 journal/conference publications and 6 labeled preprints). The remaining metadata is unchanged from the primary-source and live-routing audit on 7 October. There are 37 DOI identifiers and 17 full URLs; current compiled targets/visible strings are checked in typography_check.json. Reference [1] remains the Aghajanian baseline. The earlier 57-reference counts above describe that dated historical audit, not the current release.

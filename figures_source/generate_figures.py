@@ -448,7 +448,7 @@ def ablation_chart(data):
 def benchmark_chart(data):
     s = Scene("standardized-benchmark", 337, chart_sources(data, ["standardized_benchmark", "standardized_audit"]),
         ["Plot three-seed mean ± sample SD (ddof1), alongside individual seed values; SD is not a confidence interval.",
-         "Use standardized validation only, leaving the deterministic post-selection classical baseline separate."])
+         "Three-seed validation is kept separate from the common-seed post-hoc test tables."])
     s.text(16, 9, "54 validation subjects  |  480 comparable pairs", 10, bold=True)
     s.text(439, 30, "Mean ± SD", 9.5, bold=True, align="right")
     xx = lambda value: 158+(value-.60)/.30*184

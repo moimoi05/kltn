@@ -9,7 +9,7 @@
       "chapters/chapter5.tex": 1
     },
     "figure_count": 16,
-    "citation_keys_used": 57,
+    "citation_keys_used": 54,
     "missing_citations": [],
     "unused_bibliography_keys": [],
     "non_paper_bibliography_entries": [],
@@ -31,6 +31,36 @@
     ],
     "values_mean_sample_sd_match_frozen_evidence": true
   },
+  "common_seed_tables": {
+    "seed": 20260727,
+    "distinct_models_checked": 22,
+    "tables": [
+      {
+        "table": "tab:mri-milestones",
+        "rows": 6,
+        "numbers_and_maximum_emphasis_match": true
+      },
+      {
+        "table": "tab:fusion-common-seed",
+        "rows": 8,
+        "numbers_and_maximum_emphasis_match": true
+      },
+      {
+        "table": "tab:baseline-gains",
+        "rows": 5,
+        "numbers_and_maximum_emphasis_match": true
+      },
+      {
+        "table": "tab:ablation",
+        "rows": 7,
+        "numbers_and_maximum_emphasis_match": true
+      }
+    ],
+    "no_visible_phase_codes": true,
+    "posthoc_test_scope_preserved": true,
+    "verification_scope": "Transcription/arithmetic only; remote execution not independently reproduced",
+    "pass": true
+  },
   "figure_style": {
     "figure_pdfs_checked": 16,
     "colored_pdf_text": [],
@@ -45,18 +75,18 @@
     "pass": true
   },
   "build": {
-    "pdf": "Nguyen_Phuong_Nam_Thesis_RCFree_Revised.pdf",
-    "total_pdf_pages": 68,
-    "main_content_pages": 47,
+    "pdf": "main.pdf",
+    "total_pdf_pages": 66,
+    "main_content_pages": 46,
     "chapter_pdf_pages": {
       "Giới thiệu": 14,
       "Cơ sở lý thuyết và nghiên cứu liên quan": 19,
       "Phương pháp": 27,
       "Thực nghiệm, kết quả và phân tích": 45,
-      "Thảo luận, kết luận và hướng phát triển": 58
+      "Thảo luận, kết luận và hướng phát triển": 57
     },
-    "bibliography_pdf_page": 61,
-    "compiled_reference_count": 57,
+    "bibliography_pdf_page": 60,
+    "compiled_reference_count": 54,
     "baseline_is_reference_one": true,
     "pdf_title": "Longitudinal Learning with Tensor Fusion for Predicting Progression of Alzheimer’s Disease",
     "official_title_matches_metadata": true,

@@ -1,3 +1,14 @@
+# 8 October 2026 — Common-seed results and controlled ablation
+
+- Rewrote Results/Discussion and matching abstracts/method/introduction to report22 descriptive model names, validation and post-hoc test at seed20260727.
+- Added component ablations, test−validation gaps, C-index↑ headers, per-column maxima and gains against the local CNN–PCA–T-LSTM Adaptation.
+- Selected RC-Free through validation and simpler topology, while transparently retaining full CP's higher test and MedicalNet's lower three-seed SD. No statistical stability or published-paper superiority is claimed.
+- Preserved raw three-seed validation and all16 accepted vector figure exports. Added provenance for the user-provided remote report and numeric table QA; no model execution or prediction recomputation here.
+- Removed the deleted results section and three newly uncited bibliography entries;54 verified cited sources remain. Font, cover, acknowledgement and centered declaration signature are retained.
+- Repaired abstract/float flow and shortened list-of-table captions. Final build, visual review, fresh ZIP reproduction and Git release checks are recorded in QUALITY_CHECK.md and provenance.
+
+## Previous accepted revisions
+
 # CHANGELOG — 05–08/10/2026
 
 ## Căn giữa dòng ngày trong lời cam đoan — 08/10/2026
@@ -113,7 +124,7 @@
 - Làm rõ physical-minibatch Cox risk sets, gradient accumulation, raw log-risk và khác biệt clinical masks/visit masks.
 - Sửa nhãn MRI initialization bị đảo trong bản cũ: MedicalNet0.733333, random0.787500.
 - Phân biệt concat Cox batch8 với các phase ResNet batch6; không quy mọi delta lịch sử chỉ cho modality/fusion.
-- Tính sample SD chính xác; hai RC-Free variants có mean bằng nhau. Tách classical baseline do validation selection và tied-time concordance khác.
+- Tính sample SD chính xác; hai RC-Free variants có mean bằng nhau.
 - Báo parameter reduction đúng phạm vi: 98.383951% first-layer interaction core, khoảng0.669365% toàn mô hình full→CP.
 - Bỏ historical test metrics khỏi các bảng/chart và narrative selection; công bố lịch sử test và trạng thái formal final evaluation chưa chạy.
 
@@ -144,7 +155,7 @@ Nguồn hình đã tìm gồm `KLTN/pileline.drawio`, `KLTN/Untitled Diagram.dra
 
 ## Bảng, typography và bibliography
 
-- Dùng booktabs/tabularx, tên mô hình ngắn, tách bảng classical, MRI milestones, ablation, benchmark, parameters và research questions.
+- Dùng booktabs/tabularx, tên mô hình ngắn, tách bảng MRI milestones, ablation, benchmark, parameters và research questions.
 - Không shrink cả bảng bằng resizebox; điều chỉnh chiều cột/font hợp lý và kiểm tra bản PDF thực tế.
 - Giữ A4/margins và cỡ chữ13pt từ bản gốc; giảm khoảng trắng đầu chapter, giới hạn TOC tới subsection.
 - Sửa metadata của Cox/PCA/Breslow; bổ sung ReLU, Adam và nguồn nghiên cứu của metric; xác minh paper Aghajanian và hai nguồn gated residual/scaling. Danh mục mở rộng cuối cùng và chính sách bỏ báo cáo nội bộ được ghi trong cập nhật references phía trên.

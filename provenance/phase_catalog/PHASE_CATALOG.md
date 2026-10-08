@@ -7,7 +7,6 @@
 
 ```text
 Data Audit
-  → Tabular Baselines
   → MRI Only
   → Longitudinal MRI
   → Multimodal Concatenation
@@ -24,7 +23,6 @@ là nhánh so sánh/audit; chúng không thay đổi ID lịch sử của luồn
 | Tên hiển thị | ID | Folder | Mục đích | Thực nghiệm chính | Trạng thái hiện tại |
 |---|---|---|---|---|---|
 | **Data Audit** | P00 | `phase_00_audit` | Kiểm tra dữ liệu và môi trường trước modeling. | Audit freeze, schema, outcome, split, leakage và environment; không train model. | PASS |
-| **Tabular Baselines** | P01 | `phase_01_tabular` | Đo tín hiệu survival cơ bản từ clinical/radiomics. | Clinical + missingness mask và radiomics PCA (`bin32/bin64`); visit cuối vs 3 visits; Cox elastic-net và RSF. | PASS; R08 Cox validation C-index `0.860707` |
 | **MRI Only** | P02 | `phase_02_mri_single` | Đo khả năng dự báo từ một MRI visit cuối. | 3D ResNet-18, visit 2; controlled `MedicalNet` vs `random initialization`; P02-C GroupNorm chỉ là optional preparation. | Có official P02-A/P02-B evidence; manifest phase còn `IN_PROGRESS` |
 | **MRI Only — CrossFormer** | P02-D | `phase_02d_crossformer_single` | So sánh backbone nhẹ hơn với MRI-only ResNet. | CrossFormer3D Tiny vs P02-B ResNet-18, chỉ thay backbone, giữ input/head/protocol. | Official closure; validation best `0.764583` |
 | **Longitudinal MRI** | P03 | `phase_03_mri_longitudinal` | Kiểm tra lợi ích của chuỗi 3 MRI và thời gian giữa visits. | Shared ResNet-18 → paper-style T-LSTM → Cox; thử final hidden và masked temporal attention. | T-LSTM official PASS; attention repaired run có provenance limited |
@@ -35,17 +33,16 @@ là nhánh so sánh/audit; chúng không thay đổi ID lịch sử của luồn
 | **Pairwise Fusion — MedicalNet** | P05B | `phase_05b_pairwise_medicalnet` | Đánh giá pretraining MRI trên cùng kiến trúc pairwise. | Giữ toàn bộ P05, chỉ strict-load MedicalNet cho MRI encoder và fine-tune đầy đủ; có validation multi-seed. | Official evidence PASS; 3-seed mean `0.834375` |
 | **Pairwise Fusion — CP-Factorized** | P05-CP | `phase_05_cp` | Giảm kích thước pairwise bilinear mà vẫn giữ protocol. | Thay phép biến đổi pairwise đầu tiên bằng CP factorization, ranks MR/MC/RC = `8/8/4`; so sánh với P05B. | Validation multi-seed complete; mean `0.827778` |
 | **Pairwise Fusion — CrossFormer** | P05-X | `phase_05x_crossformer_pairwise` | So sánh các thiết kế pairwise trên backbone CrossFormer. | XA static pairwise, XB dynamic pairwise, XC dynamic pairwise + gated residual; cùng data/protocol P04-X. | XA/XB/XC official closures; best lần lượt `0.804167/0.825000/0.830208` |
-| **Fusion Ablations** | P06 | `phase_06_ablation` | Xác định thành phần nào thực sự cần trong P05-CP. | A1 bỏ dynamic gate; A2 fixed lambda; A3 bỏ identity residual; A4/A5/A6 bỏ lần lượt MR/MC/RC; A0 là full reference. | Hoàn tất cho seed `20260727`; validation-only |
-| **RC-Free Fixed-Lambda** | P06B / B1 | `phase_06b_targeted` | Kiểm tra bản rút gọn A6 khi cố định lambda. | A6 bỏ RC + giữ MR/MC + 4 dynamic gates + identity residual; fixed lambda `0.1`; chạy 3 seeds. | Validation complete; mean `0.834722`; không test |
+| **Fusion Ablations** | P06 | `phase_06_ablation` | Xác định thành phần nào thực sự cần trong P05-CP. | A1 bỏ dynamic gate; A2 fixed lambda; A3 bỏ identity residual; A4/A5/A6 bỏ lần lượt MR/MC/RC; A0 là full reference. | Hoàn tất cho seed `20260727`; validation và test hậu nghiệm cùng seed trong báo cáo mới |
+| **RC-Free Fixed-Lambda** | P06B / B1 | `phase_06b_targeted` | Kiểm tra bản rút gọn A6 khi cố định lambda. | A6 bỏ RC + giữ MR/MC + 4 dynamic gates + identity residual; fixed lambda `0.1`; chạy 3 seeds. | Validation complete; mean validation `0.834722`; test hậu nghiệm được báo cáo cho seed 20260727 |
 | **Final Test Evaluation** | P07 | `phase_07_final_evaluation` | Đánh giá một checkpoint đã khóa trên test đúng một lần, có ledger. | Chọn final model sau validation, khóa checkpoint/config, ghi test-use ledger và tạo prediction/metric cuối. | Scaffold `NOT_STARTED`; không gán report post-hoc bên ngoài vào P07 |
 | **Paper CNN–PCA–T-LSTM Adaptation** | P10 | `phase_10_paper_cnn_tlstm_reproduction` | Có baseline tham chiếu từ kiến trúc paper, không tuyên bố exact reproduction. | CNN 3D visit 2 → embedding 3 visits → train-only PCA99 → paper T-LSTM + attention; 3 seeds. | Adaptation complete; mean validation `0.741667` |
-| **Standardized Validation Benchmark** | P11 | `phase_11_standardized_benchmark` | Chuẩn hóa so sánh các run đã tồn tại, không tạo architecture mới. | Audit split/preprocessing/checkpoint/test-lock; replay/recompute validation cho P10, P05B, P05-CP, A6, B1 và giữ P01-R08 làm classical comparator. | COMPLETE; không train và không tính test metric |
+| **Standardized Validation Benchmark** | P11 | `phase_11_standardized_benchmark` | Chuẩn hóa so sánh các run đã tồn tại, không tạo architecture mới. | Audit split/preprocessing/checkpoint/test-lock; replay/recompute validation cho P10, P05B, P05-CP, A6, B1. | COMPLETE; không train và không tính test metric |
 
 ## Cách gọi ngắn nên dùng
 
 | Không nên dùng trong trao đổi | Nên dùng |
 |---|---|
-| Phase 1 | **Tabular Baselines** |
 | Phase 2 | **MRI Only** |
 | Phase 3 | **Longitudinal MRI** |
 | Phase 4 | **Multimodal Concatenation** |
@@ -66,3 +63,7 @@ Khi cần truy xuất file hoặc chạy script, dùng thêm ID kỹ thuật tro
   evidence hiện có trong repository.
 - Frozen data vẫn read-only; test chỉ thuộc **Final Test Evaluation (P07)**
   theo policy. Benchmark P11 chỉ dùng metadata/fingerprint và validation.
+
+## Document revision — 8 October 2026
+
+The thesis uses descriptive model names only. Technical IDs below/above are retained solely for archive lookup, not visible manuscript labels. New common-seed post-hoc results are recorded in common_seed_evaluation_20261008.json. Formal final-evaluation scaffold status is unchanged; post-hoc execution does not establish an independent final evaluation.

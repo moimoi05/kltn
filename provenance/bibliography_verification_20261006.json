@@ -1,12 +1,12 @@
 {
   "date": "2026-10-06",
-  "bibliography_entries": 57,
+  "bibliography_entries": 54,
   "all_entries_cited": true,
   "entry_types": {
-    "article": 38,
+    "article": 35,
     "inproceedings": 19
   },
-  "journal_or_conference_publications": 51,
+  "journal_or_conference_publications": 48,
   "explicitly_labeled_arxiv_preprints": 6,
   "internal_report_entries": 0,
   "software_documentation_only_entries": 0,
@@ -21,7 +21,6 @@
     "hatamizadeh2022unetr",
     "hochreiter1997lstm",
     "hunter2007matplotlib",
-    "ishwaran2008rsf",
     "jack2008adnimri",
     "katzman2018deepsurv",
     "lecun1998gradient",
@@ -29,13 +28,11 @@
     "monod2024torchsurv",
     "paszke2019pytorch",
     "pedregosa2011sklearn",
-    "polsterl2020sksurv",
-    "simon2011coxnet",
     "tran2015c3d",
     "vaswani2017attention",
     "wang2022crossformer"
   ],
-  "bibliography_sha256": "a55267ea48c41cea21d54b6df5aebcfdcc49b792786e88269ef418b84ed64b2c",
+  "bibliography_sha256": "3499d36b5947f32fad6777d41d4aa7c72a9c90f0016ff3aa13a6bc236f90a3de",
   "entries": [
     {
       "key": "jack2018niaaa",
@@ -614,18 +611,6 @@
       "role": "Train-only scaling/PCA and classical pipeline"
     },
     {
-      "key": "polsterl2020sksurv",
-      "bibtex_type": "article",
-      "title_bibtex": "Scikit-survival: A Library for Time-to-Event Analysis Built on Top of Scikit-learn",
-      "year": "2020",
-      "venue_bibtex": "Journal of Machine Learning Research",
-      "publication_status": "journal or conference publication",
-      "primary_source": "https://jmlr.org/papers/v21/20-729.html",
-      "doi": null,
-      "revision_scope": "new publication verified against primary source on 2026-10-06",
-      "role": "Classical survival library; version-specific metric details separately footnoted"
-    },
-    {
       "key": "monod2024torchsurv",
       "bibtex_type": "article",
       "title_bibtex": "{TorchSurv}: A Lightweight Package for Deep Survival Analysis",
@@ -648,30 +633,6 @@
       "doi": "10.1109/MCSE.2007.55",
       "revision_scope": "new publication verified against primary source on 2026-10-06",
       "role": "MRI preprocessing quality-control plotting"
-    },
-    {
-      "key": "simon2011coxnet",
-      "bibtex_type": "article",
-      "title_bibtex": "Regularization Paths for Cox's Proportional Hazards Model via Coordinate Descent",
-      "year": "2011",
-      "venue_bibtex": "Journal of Statistical Software",
-      "publication_status": "journal or conference publication",
-      "primary_source": "https://doi.org/10.18637/jss.v039.i05",
-      "doi": "10.18637/jss.v039.i05",
-      "revision_scope": "new publication verified against primary source on 2026-10-06",
-      "role": "Regularized Cox classical baseline"
-    },
-    {
-      "key": "ishwaran2008rsf",
-      "bibtex_type": "article",
-      "title_bibtex": "Random Survival Forests",
-      "year": "2008",
-      "venue_bibtex": "The Annals of Applied Statistics",
-      "publication_status": "journal or conference publication",
-      "primary_source": "https://doi.org/10.1214/08-AOAS169",
-      "doi": "10.1214/08-AOAS169",
-      "revision_scope": "new publication verified against primary source on 2026-10-06",
-      "role": "Random survival forest baseline"
     },
     {
       "key": "katzman2018deepsurv",
@@ -765,5 +726,12 @@
       "jack2008adnimri Clifford R. Jack, Jr. suffix formatting"
     ],
     "access_note": "DOI resolvers route to the cited publication records. Some publisher destinations apply automated-request or subscription controls; this check verifies current routing, not permanent uptime or entitlement to full text."
+  },
+  "revision_2026_10_08": {
+    "scope": "Removed three uncited entries with the deleted results section; retained 54 reference records and their verified metadata unchanged.",
+    "retained_doi_count": 37,
+    "retained_direct_url_count": 17,
+    "last_live_routing_audit": "2026-10-07",
+    "live_checks_not_repeated": true
   }
 }

@@ -100,6 +100,8 @@ def main():
     report = {'source': source_checks(root)}
     from qa_performance_tables import check as check_performance_tables
     report['performance_tables'] = check_performance_tables(root)
+    from qa_common_seed_tables import check as check_common_seed_tables
+    report['common_seed_tables'] = check_common_seed_tables(root)
     from qa_figure_style import check as check_figure_style
     report['figure_style'] = check_figure_style(root)
     pdf = args.pdf or root / 'main.pdf'
