@@ -1,8 +1,8 @@
 {
-  "pdf_sha256": "81d0c9f2ca5a62fc2b34f83a1ce849f970949c1e50f4f3701efe1c090250ec45",
+  "pdf_sha256": "d3d6dec6019c834d8d83c847d1ebb7928601dd2acc999da5132d9f60848206ca",
   "total_pages": 68,
   "changed_pages_since_full_visual_review": [
-    6
+    7
   ],
   "checks": {
     "all_used_pdf_fonts_embedded": true,

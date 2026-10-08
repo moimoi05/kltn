@@ -1,5 +1,10 @@
 # CHANGELOG — 05–08/10/2026
 
+## Căn giữa dòng ngày trong lời cam đoan — 08/10/2026
+
+- Căn giữa “Hà Nội, năm 2026” theo trục ngang của tên “Nguyễn Phương Nam”, đồng thời giữ nguyên mép phải và vị trí khối ký tên.
+- Build/QA đạt; tâm hai dòng lệch dưới 0,01 pt. Chỉ PDF trang 7 thay đổi về ảnh raster; 67 trang còn lại giữ nguyên.
+
 ## Hoàn thiện Lời cảm ơn — 08/10/2026
 
 - Viết lại lời cảm ơn theo giọng trang trọng, ấm áp; ghi đúng GS. TS. Nguyễn Linh Trung và Thượng tá, TS. Nguyễn Thành Trung, Phó Chủ nhiệm Khoa Trang bị, Bệnh viện 108.

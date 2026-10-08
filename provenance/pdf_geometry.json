@@ -60,7 +60,8 @@
     "min_text_font": 12.951432228088379,
     "outside_page_text": [],
     "replacement_glyph": false,
-    "question_citation": false
+    "question_citation": false,
+    "date_author_center_delta_pt": 1.52587890625e-05
   },
   {
     "pdf_page": 8,

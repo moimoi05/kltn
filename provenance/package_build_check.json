@@ -7,7 +7,7 @@
   "pages": 68,
   "all_page_text_identical": true,
   "all_page_renders_identical": true,
-  "rebuilt_pdf_sha256": "00fa06fbd3eca2298419fb42875d15faa46171f2a0807b4ce9ff9e11ab1bc502",
-  "delivered_pdf_sha256": "81d0c9f2ca5a62fc2b34f83a1ce849f970949c1e50f4f3701efe1c090250ec45",
+  "rebuilt_pdf_sha256": "22cfac34fa8db7cb6939808345b5c95b328f54f34a31ce5d21710c1d78f6ac90",
+  "delivered_pdf_sha256": "d3d6dec6019c834d8d83c847d1ebb7928601dd2acc999da5132d9f60848206ca",
   "automated_check_pass": true
 }

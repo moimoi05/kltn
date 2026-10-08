@@ -1,7 +1,7 @@
 {
   "date": "2026-10-08",
-  "accepted_prior_release_commit": "70d5a7424f972b137cee576ca34747808d583397",
-  "prior_pdf_sha256": "1c806272ec067dbb58ffae939ee2dc4916f1c67d0d9d6c5a4a4a75e06ff548ac",
+  "accepted_prior_release_commit": "759ff35d47ad1c37b25d303a47702c498bfcb817",
+  "prior_pdf_sha256": "81d0c9f2ca5a62fc2b34f83a1ce849f970949c1e50f4f3701efe1c090250ec45",
   "total_prior_pages": 68,
   "total_current_pages": 68,
   "pixel_identical_previously_accepted_pages": [
@@ -10,7 +10,7 @@
     3,
     4,
     5,
-    7,
+    6,
     8,
     9,
     10,
@@ -74,12 +74,12 @@
     68
   ],
   "changed_prior_pages_requiring_full_reinspection": [
-    6
+    7
   ],
   "new_pages_requiring_inspection": [],
   "frozen_input_hashes_unchanged": true,
   "current_pages_inspected_individually": [
-    6
+    7
   ],
   "all_current_pages_accepted": true,
   "comparison": "Text and 97.2-dpi raster comparison against the PDF in the prior GitHub release."

@@ -94,3 +94,9 @@ The endpoint proxy, retrospective cohort/clinical availability, repeated validat
 - [x] Build/QA pass: PDF 68 trang, 47 trang nội dung chính; không có lỗi LaTeX, undefined reference/citation, missing glyph hay overfull box. Trang lời cảm ơn (PDF6) đã được xem trực quan và nằm trong trang.
 - [x] So với PDF phát hành trước: chỉ trang 6 thay đổi về text/render; 67 trang còn lại giữ nguyên text và ảnh raster ở 97,2 dpi.
 - [x] ZIP giải nén vào thư mục mới, biên dịch bằng Tectonic và qua cùng automated QA; text/render của cả 68 trang khớp PDF giao cuối.
+
+
+## Dòng ngày trong lời cam đoan — 08/10/2026
+
+- [x] “Hà Nội, năm 2026” được căn giữa trên cùng trục với “Nguyễn Phương Nam”; khối ký tên vẫn neo ở mép phải. Tọa độ PDF cho thấy độ lệch tâm ngang dưới 0,01 pt.
+- [x] Build/QA pass ở 68 trang; trang 7 được kiểm tra trực quan. Chỉ trang 7 đổi ảnh raster; 67 trang khác giống hệt bản phát hành trước.
