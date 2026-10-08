@@ -87,3 +87,10 @@ See `provenance/package_build_check.json`. Rebuilt-PDF byte hashes can differ be
 ## Research limitations retained
 
 The endpoint proxy, retrospective cohort/clinical availability, repeated validation selection, three seeds on one split, historical test access and absence of formal final/external evaluation remain disclosed limitations. They are not unresolved formatting placeholders. See Chapter 5 and `CHANGELOG.md`.
+
+## Lời cảm ơn — cập nhật 08/10/2026
+
+- [x] Ghi nhận GS. TS. Nguyễn Linh Trung; Thượng tá, TS. Nguyễn Thành Trung, Phó Chủ nhiệm Khoa Trang bị, Bệnh viện 108; Cử nhân Nguyễn Phương Trang; tác giả Sepehr Aghajanian; và Lab Avitech. Bổ sung lời tri ân thầy cô, những người đóng góp cho ADNI và gia đình; không đưa địa chỉ email hoặc nội dung thư riêng vào tài liệu.
+- [x] Build/QA pass: PDF 68 trang, 47 trang nội dung chính; không có lỗi LaTeX, undefined reference/citation, missing glyph hay overfull box. Trang lời cảm ơn (PDF6) đã được xem trực quan và nằm trong trang.
+- [x] So với PDF phát hành trước: chỉ trang 6 thay đổi về text/render; 67 trang còn lại giữ nguyên text và ảnh raster ở 97,2 dpi.
+- [x] ZIP giải nén vào thư mục mới, biên dịch bằng Tectonic và qua cùng automated QA; text/render của cả 68 trang khớp PDF giao cuối.

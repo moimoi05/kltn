@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-07",
+  "date": "2026-10-08",
   "fresh_zip_extraction_build_pass": true,
   "compiler": "Tectonic 0.17.0+20260731 / XeTeX + BibTeX",
   "windows_fontconfig_auto_configuration_pass": true,
@@ -7,7 +7,7 @@
   "pages": 68,
   "all_page_text_identical": true,
   "all_page_renders_identical": true,
-  "rebuilt_pdf_sha256": "014eb9b208e7aa54f6b1c1639e4a994dbae0bda5b02809acb3a7425309608cff",
-  "delivered_pdf_sha256": "1c806272ec067dbb58ffae939ee2dc4916f1c67d0d9d6c5a4a4a75e06ff548ac",
+  "rebuilt_pdf_sha256": "00fa06fbd3eca2298419fb42875d15faa46171f2a0807b4ce9ff9e11ab1bc502",
+  "delivered_pdf_sha256": "81d0c9f2ca5a62fc2b34f83a1ce849f970949c1e50f4f3701efe1c090250ec45",
   "automated_check_pass": true
 }

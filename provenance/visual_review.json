@@ -1,31 +1,17 @@
 {
-  "date": "2026-10-07",
+  "date": "2026-10-08",
   "pdf": "Nguyen_Phuong_Nam_Thesis_RCFree_Revised.pdf",
-  "pdf_sha256": "1c806272ec067dbb58ffae939ee2dc4916f1c67d0d9d6c5a4a4a75e06ff548ac",
+  "pdf_sha256": "81d0c9f2ca5a62fc2b34f83a1ce849f970949c1e50f4f3701efe1c090250ec45",
   "total_pages": 68,
   "render_scale": 1.35,
   "render_dpi": 97.2,
   "all_pages_visually_reviewed": true,
   "unresolved_visual_defects": [],
   "pages_changed_since_previous_release": [
-    61,
-    62,
-    63,
-    64,
-    65,
-    66,
-    67,
-    68
+    6
   ],
   "targeted_full_page_reinspections": [
-    61,
-    62,
-    63,
-    64,
-    65,
-    66,
-    67,
-    68
+    6
   ],
   "grayscale_review_reused_for_identical_figure_assets": true,
   "prior_grayscale_release_commit": "d25410513a74d7ff9b0238415c2fe8855e561470",
@@ -36,7 +22,7 @@
       "page_label": "1",
       "accepted": true,
       "reviewer": "Primary document editor",
-      "method": "Pixel and extracted text are identical to the previously accepted release PDF 4ce42b4aaa959144c6d2220a6789128ff44138fd00bed22fbecd7fd05a762d27; visual acceptance reused.",
+      "method": "Extracted text and 97.2-dpi render are identical to the preceding release PDF 1c806272ec067dbb58ffae939ee2dc4916f1c67d0d9d6c5a4a4a75e06ff548ac; visual acceptance reused.",
       "render_sha256": "54c3e1d76db4ad09aeca48ea86346de6dba67350b3739bf69b98591a0521acf1"
     },
     {
@@ -44,7 +30,7 @@
       "page_label": "1",
       "accepted": true,
       "reviewer": "Primary document editor",
-      "method": "Pixel and extracted text are identical to the previously accepted release PDF 4ce42b4aaa959144c6d2220a6789128ff44138fd00bed22fbecd7fd05a762d27; visual acceptance reused.",
+      "method": "Extracted text and 97.2-dpi render are identical to the preceding release PDF 1c806272ec067dbb58ffae939ee2dc4916f1c67d0d9d6c5a4a4a75e06ff548ac; visual acceptance reused.",
       "render_sha256": "84e6cd8c747a65a4fc5b0d70becf9e3abd702f5e6e22f6d1397422cc132478df"
     },
     {
@@ -52,7 +38,7 @@
       "page_label": "1",
       "accepted": true,
       "reviewer": "Primary document editor",
-      "method": "Pixel and extracted text are identical to the previously accepted release PDF 4ce42b4aaa959144c6d2220a6789128ff44138fd00bed22fbecd7fd05a762d27; visual acceptance reused.",
+      "method": "Extracted text and 97.2-dpi render are identical to the preceding release PDF 1c806272ec067dbb58ffae939ee2dc4916f1c67d0d9d6c5a4a4a75e06ff548ac; visual acceptance reused.",
       "render_sha256": "eac261c061cd19eb6d9e1da184f5d4a11821387cdc050be5983fba90ba2708cd"
     },
     {
@@ -60,7 +46,7 @@
       "page_label": "iii",
       "accepted": true,
       "reviewer": "Primary document editor",
-      "method": "Pixel and extracted text are identical to the previously accepted release PDF 4ce42b4aaa959144c6d2220a6789128ff44138fd00bed22fbecd7fd05a762d27; visual acceptance reused.",
+      "method": "Extracted text and 97.2-dpi render are identical to the preceding release PDF 1c806272ec067dbb58ffae939ee2dc4916f1c67d0d9d6c5a4a4a75e06ff548ac; visual acceptance reused.",
       "render_sha256": "6bf3b8989a3293866cfe2c8e1a199dad46e0b1ce0c2a23f20da9b70186db6fbd"
     },
     {
@@ -68,7 +54,7 @@
       "page_label": "iv",
       "accepted": true,
       "reviewer": "Primary document editor",
-      "method": "Pixel and extracted text are identical to the previously accepted release PDF 4ce42b4aaa959144c6d2220a6789128ff44138fd00bed22fbecd7fd05a762d27; visual acceptance reused.",
+      "method": "Extracted text and 97.2-dpi render are identical to the preceding release PDF 1c806272ec067dbb58ffae939ee2dc4916f1c67d0d9d6c5a4a4a75e06ff548ac; visual acceptance reused.",
       "render_sha256": "df094a54118052a57bab277e1f70179297190a863f617f2e61ff6a24698be995"
     },
     {
@@ -76,15 +62,15 @@
       "page_label": "v",
       "accepted": true,
       "reviewer": "Primary document editor",
-      "method": "Pixel and extracted text are identical to the previously accepted release PDF 4ce42b4aaa959144c6d2220a6789128ff44138fd00bed22fbecd7fd05a762d27; visual acceptance reused.",
-      "render_sha256": "a179b0ac27ec5553e14f07d4843696eb9ad65b0da7090ee8c90f370c96bd308a"
+      "method": "Rendered at 97.2 dpi (1.35x) and visually inspected after the acknowledgements revision.",
+      "render_sha256": "96deb182bde0725c8b4bd377f513e30aeed1134d4ea1ca100791e4c9d7f19630"
     },
     {
       "pdf_page": 7,
       "page_label": "vi",
       "accepted": true,
       "reviewer": "Primary document editor",
-      "method": "Pixel and extracted text are identical to the previously accepted release PDF 4ce42b4aaa959144c6d2220a6789128ff44138fd00bed22fbecd7fd05a762d27; visual acceptance reused.",
+      "method": "Extracted text and 97.2-dpi render are identical to the preceding release PDF 1c806272ec067dbb58ffae939ee2dc4916f1c67d0d9d6c5a4a4a75e06ff548ac; visual acceptance reused.",
       "render_sha256": "5856e0534d4215b5de2ce6fbd55be745ab4cb71351fee5fb35f1a8f0fbf564e9"
     },
     {
@@ -92,7 +78,7 @@
       "page_label": "vii",
       "accepted": true,
       "reviewer": "Primary document editor",
-      "method": "Pixel and extracted text are identical to the previously accepted release PDF 4ce42b4aaa959144c6d2220a6789128ff44138fd00bed22fbecd7fd05a762d27; visual acceptance reused.",
+      "method": "Extracted text and 97.2-dpi render are identical to the preceding release PDF 1c806272ec067dbb58ffae939ee2dc4916f1c67d0d9d6c5a4a4a75e06ff548ac; visual acceptance reused.",
       "render_sha256": "a3eadf160d31d777465d758ab0290f22c0b6ae8334c9cb42133181cd5ae3f757"
     },
     {
@@ -100,7 +86,7 @@
       "page_label": "viii",
       "accepted": true,
       "reviewer": "Primary document editor",
-      "method": "Pixel and extracted text are identical to the previously accepted release PDF 4ce42b4aaa959144c6d2220a6789128ff44138fd00bed22fbecd7fd05a762d27; visual acceptance reused.",
+      "method": "Extracted text and 97.2-dpi render are identical to the preceding release PDF 1c806272ec067dbb58ffae939ee2dc4916f1c67d0d9d6c5a4a4a75e06ff548ac; visual acceptance reused.",
       "render_sha256": "20f2c0fba9c85fdc8f1d0f98db11b7bc558fc4568bb3dc61eac1ea5f09cdb7b4"
     },
     {
@@ -108,7 +94,7 @@
       "page_label": "ix",
       "accepted": true,
       "reviewer": "Primary document editor",
-      "method": "Pixel and extracted text are identical to the previously accepted release PDF 4ce42b4aaa959144c6d2220a6789128ff44138fd00bed22fbecd7fd05a762d27; visual acceptance reused.",
+      "method": "Extracted text and 97.2-dpi render are identical to the preceding release PDF 1c806272ec067dbb58ffae939ee2dc4916f1c67d0d9d6c5a4a4a75e06ff548ac; visual acceptance reused.",
       "render_sha256": "70821f4ea012dfc435f6ae55a4bc0198519a8314f0b9ad71fb1d267c3ac7e677"
     },
     {
@@ -116,7 +102,7 @@
       "page_label": "x",
       "accepted": true,
       "reviewer": "Primary document editor",
-      "method": "Pixel and extracted text are identical to the previously accepted release PDF 4ce42b4aaa959144c6d2220a6789128ff44138fd00bed22fbecd7fd05a762d27; visual acceptance reused.",
+      "method": "Extracted text and 97.2-dpi render are identical to the preceding release PDF 1c806272ec067dbb58ffae939ee2dc4916f1c67d0d9d6c5a4a4a75e06ff548ac; visual acceptance reused.",
       "render_sha256": "20e289e019f2086adfe7cd0d1f851239e85dba8598a53b55fe0f769f4cbe2f19"
     },
     {
@@ -124,7 +110,7 @@
       "page_label": "xi",
       "accepted": true,
       "reviewer": "Primary document editor",
-      "method": "Pixel and extracted text are identical to the previously accepted release PDF 4ce42b4aaa959144c6d2220a6789128ff44138fd00bed22fbecd7fd05a762d27; visual acceptance reused.",
+      "method": "Extracted text and 97.2-dpi render are identical to the preceding release PDF 1c806272ec067dbb58ffae939ee2dc4916f1c67d0d9d6c5a4a4a75e06ff548ac; visual acceptance reused.",
       "render_sha256": "bd95dd2879cc26097bc1308a9d097070dbb7b39ba9afe4a2b715c4ab1bd9e54a"
     },
     {
@@ -132,7 +118,7 @@
       "page_label": "xii",
       "accepted": true,
       "reviewer": "Primary document editor",
-      "method": "Pixel and extracted text are identical to the previously accepted release PDF 4ce42b4aaa959144c6d2220a6789128ff44138fd00bed22fbecd7fd05a762d27; visual acceptance reused.",
+      "method": "Extracted text and 97.2-dpi render are identical to the preceding release PDF 1c806272ec067dbb58ffae939ee2dc4916f1c67d0d9d6c5a4a4a75e06ff548ac; visual acceptance reused.",
       "render_sha256": "986f18941731c2c28567d08b7c7b2104a8fde854cd2a31117eec9f165051c8a5"
     },
     {
@@ -140,7 +126,7 @@
       "page_label": "1",
       "accepted": true,
       "reviewer": "Primary document editor",
-      "method": "Pixel and extracted text are identical to the previously accepted release PDF 4ce42b4aaa959144c6d2220a6789128ff44138fd00bed22fbecd7fd05a762d27; visual acceptance reused.",
+      "method": "Extracted text and 97.2-dpi render are identical to the preceding release PDF 1c806272ec067dbb58ffae939ee2dc4916f1c67d0d9d6c5a4a4a75e06ff548ac; visual acceptance reused.",
       "render_sha256": "7740d6554ac2bc21dd5f2238007f671b731a8a94a88bb30079411b09bf1b9ff1"
     },
     {
@@ -148,7 +134,7 @@
       "page_label": "2",
       "accepted": true,
       "reviewer": "Primary document editor",
-      "method": "Pixel and extracted text are identical to the previously accepted release PDF 4ce42b4aaa959144c6d2220a6789128ff44138fd00bed22fbecd7fd05a762d27; visual acceptance reused.",
+      "method": "Extracted text and 97.2-dpi render are identical to the preceding release PDF 1c806272ec067dbb58ffae939ee2dc4916f1c67d0d9d6c5a4a4a75e06ff548ac; visual acceptance reused.",
       "render_sha256": "641d914320673fe7763894f86e0d0929e1c8fb72601f0411b72fa0943fcb8363"
     },
     {
@@ -156,7 +142,7 @@
       "page_label": "3",
       "accepted": true,
       "reviewer": "Primary document editor",
-      "method": "Pixel and extracted text are identical to the previously accepted release PDF 4ce42b4aaa959144c6d2220a6789128ff44138fd00bed22fbecd7fd05a762d27; visual acceptance reused.",
+      "method": "Extracted text and 97.2-dpi render are identical to the preceding release PDF 1c806272ec067dbb58ffae939ee2dc4916f1c67d0d9d6c5a4a4a75e06ff548ac; visual acceptance reused.",
       "render_sha256": "f9f0c763b61f9ff69c7fa475355446a4c14ca6f29219e6ca9e639fa2d496927b"
     },
     {
@@ -164,7 +150,7 @@
       "page_label": "4",
       "accepted": true,
       "reviewer": "Primary document editor",
-      "method": "Pixel and extracted text are identical to the previously accepted release PDF 4ce42b4aaa959144c6d2220a6789128ff44138fd00bed22fbecd7fd05a762d27; visual acceptance reused.",
+      "method": "Extracted text and 97.2-dpi render are identical to the preceding release PDF 1c806272ec067dbb58ffae939ee2dc4916f1c67d0d9d6c5a4a4a75e06ff548ac; visual acceptance reused.",
       "render_sha256": "c6239dfd5164127798e9894904fbffefb3595bbd29a38b46dccc5acf26d8b5a8"
     },
     {
@@ -172,7 +158,7 @@
       "page_label": "5",
       "accepted": true,
       "reviewer": "Primary document editor",
-      "method": "Pixel and extracted text are identical to the previously accepted release PDF 4ce42b4aaa959144c6d2220a6789128ff44138fd00bed22fbecd7fd05a762d27; visual acceptance reused.",
+      "method": "Extracted text and 97.2-dpi render are identical to the preceding release PDF 1c806272ec067dbb58ffae939ee2dc4916f1c67d0d9d6c5a4a4a75e06ff548ac; visual acceptance reused.",
       "render_sha256": "5bf0e81b0f1328fc8071a79de9a69b35bf331d8bbe844e487087b1d910489b54"
     },
     {
@@ -180,7 +166,7 @@
       "page_label": "6",
       "accepted": true,
       "reviewer": "Primary document editor",
-      "method": "Pixel and extracted text are identical to the previously accepted release PDF 4ce42b4aaa959144c6d2220a6789128ff44138fd00bed22fbecd7fd05a762d27; visual acceptance reused.",
+      "method": "Extracted text and 97.2-dpi render are identical to the preceding release PDF 1c806272ec067dbb58ffae939ee2dc4916f1c67d0d9d6c5a4a4a75e06ff548ac; visual acceptance reused.",
       "render_sha256": "ed92f8758ecc3d7ef80dd43506578f69fe74f8f16425493b9f6165c238596b7d"
     },
     {
@@ -188,7 +174,7 @@
       "page_label": "7",
       "accepted": true,
       "reviewer": "Primary document editor",
-      "method": "Pixel and extracted text are identical to the previously accepted release PDF 4ce42b4aaa959144c6d2220a6789128ff44138fd00bed22fbecd7fd05a762d27; visual acceptance reused.",
+      "method": "Extracted text and 97.2-dpi render are identical to the preceding release PDF 1c806272ec067dbb58ffae939ee2dc4916f1c67d0d9d6c5a4a4a75e06ff548ac; visual acceptance reused.",
       "render_sha256": "2e53c6f004f1b8fdc1c1d3487cd48ade4e81e0438382728ded2ec557726380fb"
     },
     {
@@ -196,7 +182,7 @@
       "page_label": "8",
       "accepted": true,
       "reviewer": "Primary document editor",
-      "method": "Pixel and extracted text are identical to the previously accepted release PDF 4ce42b4aaa959144c6d2220a6789128ff44138fd00bed22fbecd7fd05a762d27; visual acceptance reused.",
+      "method": "Extracted text and 97.2-dpi render are identical to the preceding release PDF 1c806272ec067dbb58ffae939ee2dc4916f1c67d0d9d6c5a4a4a75e06ff548ac; visual acceptance reused.",
       "render_sha256": "ffff49a05c5edbbc9266c3333e8731f78fdf108d5f7d703dd5b8fcdacaeb8dfe"
     },
     {
@@ -204,7 +190,7 @@
       "page_label": "9",
       "accepted": true,
       "reviewer": "Primary document editor",
-      "method": "Pixel and extracted text are identical to the previously accepted release PDF 4ce42b4aaa959144c6d2220a6789128ff44138fd00bed22fbecd7fd05a762d27; visual acceptance reused.",
+      "method": "Extracted text and 97.2-dpi render are identical to the preceding release PDF 1c806272ec067dbb58ffae939ee2dc4916f1c67d0d9d6c5a4a4a75e06ff548ac; visual acceptance reused.",
       "render_sha256": "916fbab767646516eade99add2f415299a155faf9b3973e9ecddd092c9905707"
     },
     {
@@ -212,7 +198,7 @@
       "page_label": "10",
       "accepted": true,
       "reviewer": "Primary document editor",
-      "method": "Pixel and extracted text are identical to the previously accepted release PDF 4ce42b4aaa959144c6d2220a6789128ff44138fd00bed22fbecd7fd05a762d27; visual acceptance reused.",
+      "method": "Extracted text and 97.2-dpi render are identical to the preceding release PDF 1c806272ec067dbb58ffae939ee2dc4916f1c67d0d9d6c5a4a4a75e06ff548ac; visual acceptance reused.",
       "render_sha256": "76a5551dd03268ebdcf597b7d36b1be486335b05d11d613f1f9112c1d543562c"
     },
     {
@@ -220,7 +206,7 @@
       "page_label": "11",
       "accepted": true,
       "reviewer": "Primary document editor",
-      "method": "Pixel and extracted text are identical to the previously accepted release PDF 4ce42b4aaa959144c6d2220a6789128ff44138fd00bed22fbecd7fd05a762d27; visual acceptance reused.",
+      "method": "Extracted text and 97.2-dpi render are identical to the preceding release PDF 1c806272ec067dbb58ffae939ee2dc4916f1c67d0d9d6c5a4a4a75e06ff548ac; visual acceptance reused.",
       "render_sha256": "b682f9e62a5c81ab645225613ca0c608490b9383ef70cfc3c945a90b4c4c0368"
     },
     {
@@ -228,7 +214,7 @@
       "page_label": "12",
       "accepted": true,
       "reviewer": "Primary document editor",
-      "method": "Pixel and extracted text are identical to the previously accepted release PDF 4ce42b4aaa959144c6d2220a6789128ff44138fd00bed22fbecd7fd05a762d27; visual acceptance reused.",
+      "method": "Extracted text and 97.2-dpi render are identical to the preceding release PDF 1c806272ec067dbb58ffae939ee2dc4916f1c67d0d9d6c5a4a4a75e06ff548ac; visual acceptance reused.",
       "render_sha256": "7a0525d02594755d25802d4422fda13058bff2131c9b26079cee6055301d1dd5"
     },
     {
@@ -236,7 +222,7 @@
       "page_label": "13",
       "accepted": true,
       "reviewer": "Primary document editor",
-      "method": "Pixel and extracted text are identical to the previously accepted release PDF 4ce42b4aaa959144c6d2220a6789128ff44138fd00bed22fbecd7fd05a762d27; visual acceptance reused.",
+      "method": "Extracted text and 97.2-dpi render are identical to the preceding release PDF 1c806272ec067dbb58ffae939ee2dc4916f1c67d0d9d6c5a4a4a75e06ff548ac; visual acceptance reused.",
       "render_sha256": "179d0ab85cdfcb098da3fed2f65b668b6044c8bce1e4c4e0923161f1a610d8a9"
     },
     {
@@ -244,7 +230,7 @@
       "page_label": "14",
       "accepted": true,
       "reviewer": "Primary document editor",
-      "method": "Pixel and extracted text are identical to the previously accepted release PDF 4ce42b4aaa959144c6d2220a6789128ff44138fd00bed22fbecd7fd05a762d27; visual acceptance reused.",
+      "method": "Extracted text and 97.2-dpi render are identical to the preceding release PDF 1c806272ec067dbb58ffae939ee2dc4916f1c67d0d9d6c5a4a4a75e06ff548ac; visual acceptance reused.",
       "render_sha256": "53ea89293c54018a06238e1d5af597a69a95734dcc8104f955ca41106b17b1e8"
     },
     {
@@ -252,7 +238,7 @@
       "page_label": "15",
       "accepted": true,
       "reviewer": "Primary document editor",
-      "method": "Pixel and extracted text are identical to the previously accepted release PDF 4ce42b4aaa959144c6d2220a6789128ff44138fd00bed22fbecd7fd05a762d27; visual acceptance reused.",
+      "method": "Extracted text and 97.2-dpi render are identical to the preceding release PDF 1c806272ec067dbb58ffae939ee2dc4916f1c67d0d9d6c5a4a4a75e06ff548ac; visual acceptance reused.",
       "render_sha256": "20ba6e0e1d389430b7250bb069ba50de09ad6fedd9b244a9a5b5d17f23ec9078"
     },
     {
@@ -260,7 +246,7 @@
       "page_label": "16",
       "accepted": true,
       "reviewer": "Primary document editor",
-      "method": "Pixel and extracted text are identical to the previously accepted release PDF 4ce42b4aaa959144c6d2220a6789128ff44138fd00bed22fbecd7fd05a762d27; visual acceptance reused.",
+      "method": "Extracted text and 97.2-dpi render are identical to the preceding release PDF 1c806272ec067dbb58ffae939ee2dc4916f1c67d0d9d6c5a4a4a75e06ff548ac; visual acceptance reused.",
       "render_sha256": "3b926719f6976673808a2531759bf4123257a5b21ddc7890ef6ce825dcd830e0"
     },
     {
@@ -268,7 +254,7 @@
       "page_label": "17",
       "accepted": true,
       "reviewer": "Primary document editor",
-      "method": "Pixel and extracted text are identical to the previously accepted release PDF 4ce42b4aaa959144c6d2220a6789128ff44138fd00bed22fbecd7fd05a762d27; visual acceptance reused.",
+      "method": "Extracted text and 97.2-dpi render are identical to the preceding release PDF 1c806272ec067dbb58ffae939ee2dc4916f1c67d0d9d6c5a4a4a75e06ff548ac; visual acceptance reused.",
       "render_sha256": "289e3c599f860fa4d0afe92190fb11f967e4a543cedff44e2d41efe1c0a0d51a"
     },
     {
@@ -276,7 +262,7 @@
       "page_label": "18",
       "accepted": true,
       "reviewer": "Primary document editor",
-      "method": "Pixel and extracted text are identical to the previously accepted release PDF 4ce42b4aaa959144c6d2220a6789128ff44138fd00bed22fbecd7fd05a762d27; visual acceptance reused.",
+      "method": "Extracted text and 97.2-dpi render are identical to the preceding release PDF 1c806272ec067dbb58ffae939ee2dc4916f1c67d0d9d6c5a4a4a75e06ff548ac; visual acceptance reused.",
       "render_sha256": "ac13b5b87c87f85f5dfe1d83c5f1149c2c24725b0d7531cb812c5366ffa5d8ab"
     },
     {
@@ -284,7 +270,7 @@
       "page_label": "19",
       "accepted": true,
       "reviewer": "Primary document editor",
-      "method": "Pixel and extracted text are identical to the previously accepted release PDF 4ce42b4aaa959144c6d2220a6789128ff44138fd00bed22fbecd7fd05a762d27; visual acceptance reused.",
+      "method": "Extracted text and 97.2-dpi render are identical to the preceding release PDF 1c806272ec067dbb58ffae939ee2dc4916f1c67d0d9d6c5a4a4a75e06ff548ac; visual acceptance reused.",
       "render_sha256": "c55fa2362e44bbd07428ac1cd7102f2a30619c9091720bdc2f9066a49b969c85"
     },
     {
@@ -292,7 +278,7 @@
       "page_label": "20",
       "accepted": true,
       "reviewer": "Primary document editor",
-      "method": "Pixel and extracted text are identical to the previously accepted release PDF 4ce42b4aaa959144c6d2220a6789128ff44138fd00bed22fbecd7fd05a762d27; visual acceptance reused.",
+      "method": "Extracted text and 97.2-dpi render are identical to the preceding release PDF 1c806272ec067dbb58ffae939ee2dc4916f1c67d0d9d6c5a4a4a75e06ff548ac; visual acceptance reused.",
       "render_sha256": "24bc902a6a68afe31d46f4efedfbaed258aeff7a96cadb0bf0088a418aa50e9e"
     },
     {
@@ -300,7 +286,7 @@
       "page_label": "21",
       "accepted": true,
       "reviewer": "Primary document editor",
-      "method": "Pixel and extracted text are identical to the previously accepted release PDF 4ce42b4aaa959144c6d2220a6789128ff44138fd00bed22fbecd7fd05a762d27; visual acceptance reused.",
+      "method": "Extracted text and 97.2-dpi render are identical to the preceding release PDF 1c806272ec067dbb58ffae939ee2dc4916f1c67d0d9d6c5a4a4a75e06ff548ac; visual acceptance reused.",
       "render_sha256": "58819c30aa3804218ae683f8c4d714c7274f962cb39a5c1ff40e37404ed22bdb"
     },
     {
@@ -308,7 +294,7 @@
       "page_label": "22",
       "accepted": true,
       "reviewer": "Primary document editor",
-      "method": "Pixel and extracted text are identical to the previously accepted release PDF 4ce42b4aaa959144c6d2220a6789128ff44138fd00bed22fbecd7fd05a762d27; visual acceptance reused.",
+      "method": "Extracted text and 97.2-dpi render are identical to the preceding release PDF 1c806272ec067dbb58ffae939ee2dc4916f1c67d0d9d6c5a4a4a75e06ff548ac; visual acceptance reused.",
       "render_sha256": "6fe726f047ac15043e9e37d56e14bb66a82981fbdf890bff68fe6aebefb2f85a"
     },
     {
@@ -316,7 +302,7 @@
       "page_label": "23",
       "accepted": true,
       "reviewer": "Primary document editor",
-      "method": "Pixel and extracted text are identical to the previously accepted release PDF 4ce42b4aaa959144c6d2220a6789128ff44138fd00bed22fbecd7fd05a762d27; visual acceptance reused.",
+      "method": "Extracted text and 97.2-dpi render are identical to the preceding release PDF 1c806272ec067dbb58ffae939ee2dc4916f1c67d0d9d6c5a4a4a75e06ff548ac; visual acceptance reused.",
       "render_sha256": "20c922d56a56ee17a21069fb80b137cd36506a4fcefc9975dbbfd8eeeb3b55b8"
     },
     {
@@ -324,7 +310,7 @@
       "page_label": "24",
       "accepted": true,
       "reviewer": "Primary document editor",
-      "method": "Pixel and extracted text are identical to the previously accepted release PDF 4ce42b4aaa959144c6d2220a6789128ff44138fd00bed22fbecd7fd05a762d27; visual acceptance reused.",
+      "method": "Extracted text and 97.2-dpi render are identical to the preceding release PDF 1c806272ec067dbb58ffae939ee2dc4916f1c67d0d9d6c5a4a4a75e06ff548ac; visual acceptance reused.",
       "render_sha256": "8df615dc9e65ec3e145c139af74bef1f0c7def0ce7e1536454b1e94d015832e5"
     },
     {
@@ -332,7 +318,7 @@
       "page_label": "25",
       "accepted": true,
       "reviewer": "Primary document editor",
-      "method": "Pixel and extracted text are identical to the previously accepted release PDF 4ce42b4aaa959144c6d2220a6789128ff44138fd00bed22fbecd7fd05a762d27; visual acceptance reused.",
+      "method": "Extracted text and 97.2-dpi render are identical to the preceding release PDF 1c806272ec067dbb58ffae939ee2dc4916f1c67d0d9d6c5a4a4a75e06ff548ac; visual acceptance reused.",
       "render_sha256": "201a87b0804582b236085797bb0aa4072fffcee527c3debe89e5e5df297874f5"
     },
     {
@@ -340,7 +326,7 @@
       "page_label": "26",
       "accepted": true,
       "reviewer": "Primary document editor",
-      "method": "Pixel and extracted text are identical to the previously accepted release PDF 4ce42b4aaa959144c6d2220a6789128ff44138fd00bed22fbecd7fd05a762d27; visual acceptance reused.",
+      "method": "Extracted text and 97.2-dpi render are identical to the preceding release PDF 1c806272ec067dbb58ffae939ee2dc4916f1c67d0d9d6c5a4a4a75e06ff548ac; visual acceptance reused.",
       "render_sha256": "48b3fbdd984459443525568b778074cd76a00668a142605da2c9923232100fa3"
     },
     {
@@ -348,7 +334,7 @@
       "page_label": "27",
       "accepted": true,
       "reviewer": "Primary document editor",
-      "method": "Pixel and extracted text are identical to the previously accepted release PDF 4ce42b4aaa959144c6d2220a6789128ff44138fd00bed22fbecd7fd05a762d27; visual acceptance reused.",
+      "method": "Extracted text and 97.2-dpi render are identical to the preceding release PDF 1c806272ec067dbb58ffae939ee2dc4916f1c67d0d9d6c5a4a4a75e06ff548ac; visual acceptance reused.",
       "render_sha256": "c608a849e07452a38dd0c1e555d87bae5c7868d5a7c00d76aef1046e48a35052"
     },
     {
@@ -356,7 +342,7 @@
       "page_label": "28",
       "accepted": true,
       "reviewer": "Primary document editor",
-      "method": "Pixel and extracted text are identical to the previously accepted release PDF 4ce42b4aaa959144c6d2220a6789128ff44138fd00bed22fbecd7fd05a762d27; visual acceptance reused.",
+      "method": "Extracted text and 97.2-dpi render are identical to the preceding release PDF 1c806272ec067dbb58ffae939ee2dc4916f1c67d0d9d6c5a4a4a75e06ff548ac; visual acceptance reused.",
       "render_sha256": "d8de38aa63532c3c42e26b4d2a3e52d4566021fcc2eb65989d778d44cd172837"
     },
     {
@@ -364,7 +350,7 @@
       "page_label": "29",
       "accepted": true,
       "reviewer": "Primary document editor",
-      "method": "Pixel and extracted text are identical to the previously accepted release PDF 4ce42b4aaa959144c6d2220a6789128ff44138fd00bed22fbecd7fd05a762d27; visual acceptance reused.",
+      "method": "Extracted text and 97.2-dpi render are identical to the preceding release PDF 1c806272ec067dbb58ffae939ee2dc4916f1c67d0d9d6c5a4a4a75e06ff548ac; visual acceptance reused.",
       "render_sha256": "0729c56c9df6eb672fb0195292015bc26c27e77ed56b9f20343fbc057e62914a"
     },
     {
@@ -372,7 +358,7 @@
       "page_label": "30",
       "accepted": true,
       "reviewer": "Primary document editor",
-      "method": "Pixel and extracted text are identical to the previously accepted release PDF 4ce42b4aaa959144c6d2220a6789128ff44138fd00bed22fbecd7fd05a762d27; visual acceptance reused.",
+      "method": "Extracted text and 97.2-dpi render are identical to the preceding release PDF 1c806272ec067dbb58ffae939ee2dc4916f1c67d0d9d6c5a4a4a75e06ff548ac; visual acceptance reused.",
       "render_sha256": "1075c353e42b00d9a23d62522163c5a94cacbe09d382fd721e1b5ea43c30f20d"
     },
     {
@@ -380,7 +366,7 @@
       "page_label": "31",
       "accepted": true,
       "reviewer": "Primary document editor",
-      "method": "Pixel and extracted text are identical to the previously accepted release PDF 4ce42b4aaa959144c6d2220a6789128ff44138fd00bed22fbecd7fd05a762d27; visual acceptance reused.",
+      "method": "Extracted text and 97.2-dpi render are identical to the preceding release PDF 1c806272ec067dbb58ffae939ee2dc4916f1c67d0d9d6c5a4a4a75e06ff548ac; visual acceptance reused.",
       "render_sha256": "02b71435458e87a3e549e052869f8a973c725d9d158e22af532b3dbdae3b55de"
     },
     {
@@ -388,7 +374,7 @@
       "page_label": "32",
       "accepted": true,
       "reviewer": "Primary document editor",
-      "method": "Pixel and extracted text are identical to the previously accepted release PDF 4ce42b4aaa959144c6d2220a6789128ff44138fd00bed22fbecd7fd05a762d27; visual acceptance reused.",
+      "method": "Extracted text and 97.2-dpi render are identical to the preceding release PDF 1c806272ec067dbb58ffae939ee2dc4916f1c67d0d9d6c5a4a4a75e06ff548ac; visual acceptance reused.",
       "render_sha256": "0f0468fd3f27ee975bf0702679f15c6d4fc40b7c85e92ca56e4fe8f7472878fb"
     },
     {
@@ -396,7 +382,7 @@
       "page_label": "33",
       "accepted": true,
       "reviewer": "Primary document editor",
-      "method": "Pixel and extracted text are identical to the previously accepted release PDF 4ce42b4aaa959144c6d2220a6789128ff44138fd00bed22fbecd7fd05a762d27; visual acceptance reused.",
+      "method": "Extracted text and 97.2-dpi render are identical to the preceding release PDF 1c806272ec067dbb58ffae939ee2dc4916f1c67d0d9d6c5a4a4a75e06ff548ac; visual acceptance reused.",
       "render_sha256": "31b097291b9adc021b8c98c4be6d7fc8d53743c4fb56c3191c9db9865cc9559b"
     },
     {
@@ -404,7 +390,7 @@
       "page_label": "34",
       "accepted": true,
       "reviewer": "Primary document editor",
-      "method": "Pixel and extracted text are identical to the previously accepted release PDF 4ce42b4aaa959144c6d2220a6789128ff44138fd00bed22fbecd7fd05a762d27; visual acceptance reused.",
+      "method": "Extracted text and 97.2-dpi render are identical to the preceding release PDF 1c806272ec067dbb58ffae939ee2dc4916f1c67d0d9d6c5a4a4a75e06ff548ac; visual acceptance reused.",
       "render_sha256": "2a99c6ed84870481f701426499b32f03a74970aa9935afe2246a116d39ac8dda"
     },
     {
@@ -412,7 +398,7 @@
       "page_label": "35",
       "accepted": true,
       "reviewer": "Primary document editor",
-      "method": "Pixel and extracted text are identical to the previously accepted release PDF 4ce42b4aaa959144c6d2220a6789128ff44138fd00bed22fbecd7fd05a762d27; visual acceptance reused.",
+      "method": "Extracted text and 97.2-dpi render are identical to the preceding release PDF 1c806272ec067dbb58ffae939ee2dc4916f1c67d0d9d6c5a4a4a75e06ff548ac; visual acceptance reused.",
       "render_sha256": "6ff83e65df420878503bc80d1f6cf558184ef3e6746b80027d570cc5062f7445"
     },
     {
@@ -420,7 +406,7 @@
       "page_label": "36",
       "accepted": true,
       "reviewer": "Primary document editor",
-      "method": "Pixel and extracted text are identical to the previously accepted release PDF 4ce42b4aaa959144c6d2220a6789128ff44138fd00bed22fbecd7fd05a762d27; visual acceptance reused.",
+      "method": "Extracted text and 97.2-dpi render are identical to the preceding release PDF 1c806272ec067dbb58ffae939ee2dc4916f1c67d0d9d6c5a4a4a75e06ff548ac; visual acceptance reused.",
       "render_sha256": "e266068a83296ae5dadf6aeb2ed9457a045d65ef7486b98865605e03f129af12"
     },
     {
@@ -428,7 +414,7 @@
       "page_label": "37",
       "accepted": true,
       "reviewer": "Primary document editor",
-      "method": "Pixel and extracted text are identical to the previously accepted release PDF 4ce42b4aaa959144c6d2220a6789128ff44138fd00bed22fbecd7fd05a762d27; visual acceptance reused.",
+      "method": "Extracted text and 97.2-dpi render are identical to the preceding release PDF 1c806272ec067dbb58ffae939ee2dc4916f1c67d0d9d6c5a4a4a75e06ff548ac; visual acceptance reused.",
       "render_sha256": "aaf9b40854c35312e5aeb684de28cebd985da822c46170b9ce442385e1bb8cda"
     },
     {
@@ -436,7 +422,7 @@
       "page_label": "38",
       "accepted": true,
       "reviewer": "Primary document editor",
-      "method": "Pixel and extracted text are identical to the previously accepted release PDF 4ce42b4aaa959144c6d2220a6789128ff44138fd00bed22fbecd7fd05a762d27; visual acceptance reused.",
+      "method": "Extracted text and 97.2-dpi render are identical to the preceding release PDF 1c806272ec067dbb58ffae939ee2dc4916f1c67d0d9d6c5a4a4a75e06ff548ac; visual acceptance reused.",
       "render_sha256": "e6fadb1bf72c36584356c9b18b3163855959477a3105f1ddfcd894ea083b8aa9"
     },
     {
@@ -444,7 +430,7 @@
       "page_label": "39",
       "accepted": true,
       "reviewer": "Primary document editor",
-      "method": "Pixel and extracted text are identical to the previously accepted release PDF 4ce42b4aaa959144c6d2220a6789128ff44138fd00bed22fbecd7fd05a762d27; visual acceptance reused.",
+      "method": "Extracted text and 97.2-dpi render are identical to the preceding release PDF 1c806272ec067dbb58ffae939ee2dc4916f1c67d0d9d6c5a4a4a75e06ff548ac; visual acceptance reused.",
       "render_sha256": "4c74439ea09e92ac4cbaaf5ee74ac3655835bc33c588fe0c347559f5f5f17d41"
     },
     {
@@ -452,7 +438,7 @@
       "page_label": "40",
       "accepted": true,
       "reviewer": "Primary document editor",
-      "method": "Pixel and extracted text are identical to the previously accepted release PDF 4ce42b4aaa959144c6d2220a6789128ff44138fd00bed22fbecd7fd05a762d27; visual acceptance reused.",
+      "method": "Extracted text and 97.2-dpi render are identical to the preceding release PDF 1c806272ec067dbb58ffae939ee2dc4916f1c67d0d9d6c5a4a4a75e06ff548ac; visual acceptance reused.",
       "render_sha256": "6f73236c6726a5ac5f7752a7696adbbe7cbf599b649c588159db31813dafa418"
     },
     {
@@ -460,7 +446,7 @@
       "page_label": "41",
       "accepted": true,
       "reviewer": "Primary document editor",
-      "method": "Pixel and extracted text are identical to the previously accepted release PDF 4ce42b4aaa959144c6d2220a6789128ff44138fd00bed22fbecd7fd05a762d27; visual acceptance reused.",
+      "method": "Extracted text and 97.2-dpi render are identical to the preceding release PDF 1c806272ec067dbb58ffae939ee2dc4916f1c67d0d9d6c5a4a4a75e06ff548ac; visual acceptance reused.",
       "render_sha256": "067f7c05790f5cdac79b5c7140ca9f2f000947fd11153fbf8fe9cd94b31e876f"
     },
     {
@@ -468,7 +454,7 @@
       "page_label": "42",
       "accepted": true,
       "reviewer": "Primary document editor",
-      "method": "Pixel and extracted text are identical to the previously accepted release PDF 4ce42b4aaa959144c6d2220a6789128ff44138fd00bed22fbecd7fd05a762d27; visual acceptance reused.",
+      "method": "Extracted text and 97.2-dpi render are identical to the preceding release PDF 1c806272ec067dbb58ffae939ee2dc4916f1c67d0d9d6c5a4a4a75e06ff548ac; visual acceptance reused.",
       "render_sha256": "98854db6346bc125718541d5b4dc8cdcea59d1679f43e337f76d90989c01dc67"
     },
     {
@@ -476,7 +462,7 @@
       "page_label": "43",
       "accepted": true,
       "reviewer": "Primary document editor",
-      "method": "Pixel and extracted text are identical to the previously accepted release PDF 4ce42b4aaa959144c6d2220a6789128ff44138fd00bed22fbecd7fd05a762d27; visual acceptance reused.",
+      "method": "Extracted text and 97.2-dpi render are identical to the preceding release PDF 1c806272ec067dbb58ffae939ee2dc4916f1c67d0d9d6c5a4a4a75e06ff548ac; visual acceptance reused.",
       "render_sha256": "067b9984e5b66c87cb9848c3c62f09de1d89865b890221bd9b61be16113df504"
     },
     {
@@ -484,7 +470,7 @@
       "page_label": "44",
       "accepted": true,
       "reviewer": "Primary document editor",
-      "method": "Pixel and extracted text are identical to the previously accepted release PDF 4ce42b4aaa959144c6d2220a6789128ff44138fd00bed22fbecd7fd05a762d27; visual acceptance reused.",
+      "method": "Extracted text and 97.2-dpi render are identical to the preceding release PDF 1c806272ec067dbb58ffae939ee2dc4916f1c67d0d9d6c5a4a4a75e06ff548ac; visual acceptance reused.",
       "render_sha256": "9b472f862df9705a5696b74f5ba53d6744e80c19e2b555b67b8043ce6dd8fd4b"
     },
     {
@@ -492,7 +478,7 @@
       "page_label": "45",
       "accepted": true,
       "reviewer": "Primary document editor",
-      "method": "Pixel and extracted text are identical to the previously accepted release PDF 4ce42b4aaa959144c6d2220a6789128ff44138fd00bed22fbecd7fd05a762d27; visual acceptance reused.",
+      "method": "Extracted text and 97.2-dpi render are identical to the preceding release PDF 1c806272ec067dbb58ffae939ee2dc4916f1c67d0d9d6c5a4a4a75e06ff548ac; visual acceptance reused.",
       "render_sha256": "9d77b9b3aa327eee81c71b5ffde672a66ad48f686a9be432f186d3858f953845"
     },
     {
@@ -500,7 +486,7 @@
       "page_label": "46",
       "accepted": true,
       "reviewer": "Primary document editor",
-      "method": "Pixel and extracted text are identical to the previously accepted release PDF 4ce42b4aaa959144c6d2220a6789128ff44138fd00bed22fbecd7fd05a762d27; visual acceptance reused.",
+      "method": "Extracted text and 97.2-dpi render are identical to the preceding release PDF 1c806272ec067dbb58ffae939ee2dc4916f1c67d0d9d6c5a4a4a75e06ff548ac; visual acceptance reused.",
       "render_sha256": "7a975c96ed305bf666da4932c6abcf23c31aa0356a59cdd46d1dc2145b5f61e2"
     },
     {
@@ -508,7 +494,7 @@
       "page_label": "47",
       "accepted": true,
       "reviewer": "Primary document editor",
-      "method": "Pixel and extracted text are identical to the previously accepted release PDF 4ce42b4aaa959144c6d2220a6789128ff44138fd00bed22fbecd7fd05a762d27; visual acceptance reused.",
+      "method": "Extracted text and 97.2-dpi render are identical to the preceding release PDF 1c806272ec067dbb58ffae939ee2dc4916f1c67d0d9d6c5a4a4a75e06ff548ac; visual acceptance reused.",
       "render_sha256": "d95783e4657c24fb67aa42ce40e365c3aea1e8644d39e3cb21b9d9027e1c4390"
     },
     {
@@ -516,7 +502,7 @@
       "page_label": "48",
       "accepted": true,
       "reviewer": "Primary document editor",
-      "method": "Rendered at 97.2 dpi (1.35x) and visually inspected individually after the full reference-metadata audit.",
+      "method": "Extracted text and 97.2-dpi render are identical to the preceding release PDF 1c806272ec067dbb58ffae939ee2dc4916f1c67d0d9d6c5a4a4a75e06ff548ac; visual acceptance reused.",
       "render_sha256": "7b16306e21793f1d897787915fea896c57520b75335905b720bfb56055bdafe9"
     },
     {
@@ -524,7 +510,7 @@
       "page_label": "49",
       "accepted": true,
       "reviewer": "Primary document editor",
-      "method": "Rendered at 97.2 dpi (1.35x) and visually inspected individually after the full reference-metadata audit.",
+      "method": "Extracted text and 97.2-dpi render are identical to the preceding release PDF 1c806272ec067dbb58ffae939ee2dc4916f1c67d0d9d6c5a4a4a75e06ff548ac; visual acceptance reused.",
       "render_sha256": "186a10c5e5866dc83f4548f890ce5bb1cb055907c15043613a8006f194286c7b"
     },
     {
@@ -532,7 +518,7 @@
       "page_label": "50",
       "accepted": true,
       "reviewer": "Primary document editor",
-      "method": "Rendered at 97.2 dpi (1.35x) and visually inspected individually after the full reference-metadata audit.",
+      "method": "Extracted text and 97.2-dpi render are identical to the preceding release PDF 1c806272ec067dbb58ffae939ee2dc4916f1c67d0d9d6c5a4a4a75e06ff548ac; visual acceptance reused.",
       "render_sha256": "ce1140778e366873370c1a7ac219bbb15d14550e6d3fef1361db5952e2d58876"
     },
     {
@@ -540,7 +526,7 @@
       "page_label": "51",
       "accepted": true,
       "reviewer": "Primary document editor",
-      "method": "Rendered at 97.2 dpi (1.35x) and visually inspected individually after the full reference-metadata audit.",
+      "method": "Extracted text and 97.2-dpi render are identical to the preceding release PDF 1c806272ec067dbb58ffae939ee2dc4916f1c67d0d9d6c5a4a4a75e06ff548ac; visual acceptance reused.",
       "render_sha256": "c238d339344e4b6f7c38d4a62a36e21149f6f1f522562c44d27bbdfa2817e21d"
     },
     {
@@ -548,7 +534,7 @@
       "page_label": "52",
       "accepted": true,
       "reviewer": "Primary document editor",
-      "method": "Rendered at 97.2 dpi (1.35x) and visually inspected individually after the full reference-metadata audit.",
+      "method": "Extracted text and 97.2-dpi render are identical to the preceding release PDF 1c806272ec067dbb58ffae939ee2dc4916f1c67d0d9d6c5a4a4a75e06ff548ac; visual acceptance reused.",
       "render_sha256": "30ba6d46ff1b65391b2aba7df22333b84d8c7979e7db26e186c8cd88c3c50e20"
     },
     {
@@ -556,7 +542,7 @@
       "page_label": "53",
       "accepted": true,
       "reviewer": "Primary document editor",
-      "method": "Rendered at 97.2 dpi (1.35x) and visually inspected individually after the full reference-metadata audit.",
+      "method": "Extracted text and 97.2-dpi render are identical to the preceding release PDF 1c806272ec067dbb58ffae939ee2dc4916f1c67d0d9d6c5a4a4a75e06ff548ac; visual acceptance reused.",
       "render_sha256": "bec7debb86eba1b2d91dbfe72d5a9d1c24ad734dff304b71978611d36e46eae1"
     },
     {
@@ -564,7 +550,7 @@
       "page_label": "54",
       "accepted": true,
       "reviewer": "Primary document editor",
-      "method": "Rendered at 97.2 dpi (1.35x) and visually inspected individually after the full reference-metadata audit.",
+      "method": "Extracted text and 97.2-dpi render are identical to the preceding release PDF 1c806272ec067dbb58ffae939ee2dc4916f1c67d0d9d6c5a4a4a75e06ff548ac; visual acceptance reused.",
       "render_sha256": "23574e397d99fc4ab60131cf802713b06238812095e2a48bf95257969eefab2a"
     },
     {
@@ -572,10 +558,10 @@
       "page_label": "55",
       "accepted": true,
       "reviewer": "Primary document editor",
-      "method": "Rendered at 97.2 dpi (1.35x) and visually inspected individually after the full reference-metadata audit.",
+      "method": "Extracted text and 97.2-dpi render are identical to the preceding release PDF 1c806272ec067dbb58ffae939ee2dc4916f1c67d0d9d6c5a4a4a75e06ff548ac; visual acceptance reused.",
       "render_sha256": "b48a01382ebb1175dd30ceb830f1b0debeee7e54dfb6dd6ebd2c139b68b4e05b"
     }
   ],
-  "prior_pdf_sha256": "4ce42b4aaa959144c6d2220a6789128ff44138fd00bed22fbecd7fd05a762d27",
+  "prior_pdf_sha256": "1c806272ec067dbb58ffae939ee2dc4916f1c67d0d9d6c5a4a4a75e06ff548ac",
   "prior_pdf_pages": 68
 }

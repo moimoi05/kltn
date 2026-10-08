@@ -1,4 +1,12 @@
-# CHANGELOG — 05–07/10/2026
+# CHANGELOG — 05–08/10/2026
+
+## Hoàn thiện Lời cảm ơn — 08/10/2026
+
+- Viết lại lời cảm ơn theo giọng trang trọng, ấm áp; ghi đúng GS. TS. Nguyễn Linh Trung và Thượng tá, TS. Nguyễn Thành Trung, Phó Chủ nhiệm Khoa Trang bị, Bệnh viện 108.
+- Cảm ơn Cử nhân Nguyễn Phương Trang đã hỗ trợ, hướng dẫn và trao đổi; cảm ơn Sepehr Aghajanian đã hồi đáp email về bài báo nền tảng; ghi nhận Lab Avitech đã hỗ trợ tài nguyên máy chủ cho huấn luyện mô hình.
+- Giữ lời cảm ơn các thầy cô, những người đóng góp cho ADNI và gia đình. Không đưa địa chỉ email hay nội dung thư riêng vào khóa luận.
+- Build đạt 68 trang; chỉ trang 6 thay đổi so với bản phát hành trước và đã được kiểm tra trực quan. 67 trang còn lại giống nhau cả phần chữ lẫn ảnh raster ở mức 97,2 dpi. ZIP giải nén mới được biên dịch độc lập, qua automated QA và tái tạo chính xác text/render của cả 68 trang.
+
 
 ## Rà soát toàn bộ tài liệu tham khảo — 07/10/2026
 

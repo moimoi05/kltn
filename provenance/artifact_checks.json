@@ -1,16 +1,8 @@
 {
-  "date": "2026-10-07",
-  "pdf_sha256": "1c806272ec067dbb58ffae939ee2dc4916f1c67d0d9d6c5a4a4a75e06ff548ac",
+  "pdf_sha256": "81d0c9f2ca5a62fc2b34f83a1ce849f970949c1e50f4f3701efe1c090250ec45",
   "total_pages": 68,
   "changed_pages_since_full_visual_review": [
-    61,
-    62,
-    63,
-    64,
-    65,
-    66,
-    67,
-    68
+    6
   ],
   "checks": {
     "all_used_pdf_fonts_embedded": true,
@@ -37,7 +29,7 @@
       "name": "BZIVMZ+LibertinusSerif-Regular-Identity-H",
       "extension": "cid",
       "type": "Type0",
-      "embedded_bytes": 28299,
+      "embedded_bytes": 28494,
       "used_in_text": false
     },
     {
@@ -189,7 +181,7 @@
       "name": "TQTHRL+LMMono12-Regular-Identity-H",
       "extension": "cid",
       "type": "Type0",
-      "embedded_bytes": 7117,
+      "embedded_bytes": 7627,
       "used_in_text": false
     },
     {
@@ -828,5 +820,6 @@
       "path": "Untitled Diagram.drawio",
       "unchanged": true
     }
-  ]
+  ],
+  "date": "2026-10-08"
 }

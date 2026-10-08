@@ -960,57 +960,57 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip103
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 70.
+Package hyperref Info: Option `colorlinks' set `true' on input line 71.
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... none found.
  (main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 141.
+LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 143.
 LaTeX Font Info:    Trying to load font information for OML+ntxmi on input line
- 141.
+ 143.
 
 (omlntxmi.fd
 File: omlntxmi.fd 2015/08/25 Fontinst v1.933 font definitions for OML/ntxmi.
 )
-LaTeX Font Info:    ... okay on input line 141.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 141.
-LaTeX Font Info:    ... okay on input line 141.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 141.
-LaTeX Font Info:    ... okay on input line 141.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 141.
-LaTeX Font Info:    ... okay on input line 141.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 141.
-LaTeX Font Info:    ... okay on input line 141.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 141.
-LaTeX Font Info:    ... okay on input line 141.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 141.
-LaTeX Font Info:    ... okay on input line 141.
-LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 141.
+LaTeX Font Info:    ... okay on input line 143.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 143.
+LaTeX Font Info:    ... okay on input line 143.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 143.
+LaTeX Font Info:    ... okay on input line 143.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 143.
+LaTeX Font Info:    ... okay on input line 143.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 143.
+LaTeX Font Info:    ... okay on input line 143.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 143.
+LaTeX Font Info:    ... okay on input line 143.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 143.
+LaTeX Font Info:    ... okay on input line 143.
+LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 143.
 LaTeX Font Info:    Trying to load font information for U+ntxexa on input line 
-141.
+143.
  (untxexa.fd
 File: untxexa.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
 )
-LaTeX Font Info:    ... okay on input line 141.
-LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 141.
+LaTeX Font Info:    ... okay on input line 143.
+LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 143.
 LaTeX Font Info:    Trying to load font information for LMS+ntxsy on input line
- 141.
+ 143.
  (lmsntxsy.fd
 File: lmsntxsy.fd 2016/07/02 Fontinst v1.933 font definitions for LMS/ntxsy.
 )
-LaTeX Font Info:    ... okay on input line 141.
-LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 141.
+LaTeX Font Info:    ... okay on input line 143.
+LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 143.
 LaTeX Font Info:    Trying to load font information for LMX+ntxexx on input lin
-e 141.
+e 143.
  (lmxntxexx.fd
 File: lmxntxexx.fd 2016/07/03 Fontinst v1.933 font definitions for LMX/ntxexx.
 )
-LaTeX Font Info:    ... okay on input line 141.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 141.
-LaTeX Font Info:    ... okay on input line 141.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 141.
-LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    ... okay on input line 143.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 143.
+LaTeX Font Info:    ... okay on input line 143.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 143.
+LaTeX Font Info:    ... okay on input line 143.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -1021,14 +1021,14 @@ LaTeX Font Info:    ... okay on input line 141.
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
 * h-part:(L,W,R)=(85.35826pt, 455.24411pt, 56.9055pt)
-* v-part:(T,H,B)=(71.13188pt, 688.5567pt, 85.35826pt)
+* v-part:(T,H,B)=(56.9055pt, 717.00946pt, 71.13188pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
 * \textwidth=455.24411pt
-* \textheight=688.5567pt
+* \textheight=717.00946pt
 * \oddsidemargin=13.08827pt
 * \evensidemargin=13.08827pt
-* \topmargin=-38.1381pt
+* \topmargin=-52.36449pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=10.0pt
@@ -1051,11 +1051,11 @@ Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \c@lstlisting=\count369
-LaTeX Info: Redefining \microtypecontext on input line 141.
-Package microtype Info: Applying patch `item' on input line 141.
-Package microtype Info: Applying patch `toc' on input line 141.
-Package microtype Info: Applying patch `eqnum' on input line 141.
-Package microtype Info: Applying patch `footnote' on input line 141.
+LaTeX Info: Redefining \microtypecontext on input line 143.
+Package microtype Info: Applying patch `item' on input line 143.
+Package microtype Info: Applying patch `toc' on input line 143.
+Package microtype Info: Applying patch `eqnum' on input line 143.
+Package microtype Info: Applying patch `footnote' on input line 143.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: No adjustment of tracking.
@@ -1065,7 +1065,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `LibertinusSerif' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-Package hyperref Info: Link coloring ON on input line 141.
+Package hyperref Info: Link coloring ON on input line 143.
 (nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (refcount.sty
@@ -1075,14 +1075,14 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count370
 )
-LaTeX Info: Redefining \ref on input line 141.
-LaTeX Info: Redefining \pageref on input line 141.
-LaTeX Info: Redefining \nameref on input line 141.
+LaTeX Info: Redefining \ref on input line 143.
+LaTeX Info: Redefining \pageref on input line 143.
+LaTeX Info: Redefining \nameref on input line 143.
  (main.out) (main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
 
-Package hyperref Info: Option `pageanchor' set `false' on input line 144.
+Package hyperref Info: Option `pageanchor' set `false' on input line 146.
 
 (FrontMatter/CoverPages
 File: image//UET.png Graphic file (type bmp)
@@ -1090,19 +1090,15 @@ File: image//UET.png Graphic file (type bmp)
  [1
 
 ]
-File: image//UET.png Graphic file (type bmp)
-<image//UET.png>
- [1] [1])
-Package hyperref Info: Option `pageanchor' set `true' on input line 147.
- (FrontMatter/AbstractVN
-LaTeX Font Info:    Calculating math sizes for size <13> on input line 6.
+LaTeX Font Info:    Calculating math sizes for size <15.59996> on input line 62
+.
 LaTeX Font Info:    Trying to load font information for OT1+LibertinusSerif(0) 
-on input line 6.
-LaTeX Font Info:    No file OT1LibertinusSerif(0).fd. on input line 6.
+on input line 62.
+LaTeX Font Info:    No file OT1LibertinusSerif(0).fd. on input line 62.
 
 
 LaTeX Font Warning: Font shape `OT1/LibertinusSerif(0)/m/n' undefined
-(Font)              using `OT1/cmr/m/n' instead on input line 6.
+(Font)              using `OT1/cmr/m/n' instead on input line 62.
 
 (mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
@@ -1113,53 +1109,58 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Trying to load font information for U+ntxmia on input line 
-6.
+62.
  (untxmia.fd
 File: untxmia.fd 2018/04/14 Fontinst v1.933 font definitions for U/ntxmia.
 )
 LaTeX Font Info:    Trying to load font information for U+ntxsym on input line 
-6.
+62.
  (untxsym.fd
 File: untxsym.fd 2015/03/20 Fontinst v1.933 font definitions for U/ntxsym.
 )
 LaTeX Font Info:    Trying to load font information for U+ntxsyc on input line 
-6.
+62.
  (untxsyc.fd
 File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
 )
 
 LaTeX Font Warning: Font shape `OT1/LibertinusSerif(0)/b/n' undefined
-(Font)              using `OT1/LibertinusSerif(0)/m/n' instead on input line 6.
+(Font)              using `OT1/LibertinusSerif(0)/m/n' instead on input line 62
+.
 
+[1] [1])
+Package hyperref Info: Option `pageanchor' set `true' on input line 149.
+ (FrontMatter/AbstractVN
+LaTeX Font Info:    Calculating math sizes for size <13> on input line 6.
+) (FrontMatter/AbstractEN [3
 
-) (FrontMatter/AbstractEN [1
-
-
-]) (FrontMatter/Acknowledgements [2
 
 ])
-(FrontMatter/Declaration [3
+(FrontMatter/Acknowledgements [4
 
-]) (FrontMatter/Acronyms [4
+]) (FrontMatter/Declaration [5
 
-]) (main.toc [5
+])
+(FrontMatter/Acronyms [6
 
-] [6]
-[7])
+]) (main.toc [7
+
+] [8] [9])
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
- [8] (main.lof)
+ [10] (main.lof)
 \tf@lof=\write6
 \openout6 = `main.lof'.
 
- [9
+ [11
 
-] (main.lot)
+]
+(main.lot)
 \tf@lot=\write7
 \openout7 = `main.lot'.
 
- [10
+ [12
 
 ] (chapters/chapter1
 Chương 1.
@@ -1169,8 +1170,6 @@ Chương 1.
 ]
 File: image/mci-progression-timeline.pdf Graphic file (type pdf)
 <use image/mci-progression-timeline.pdf>
-LaTeX Font Info:    Calculating math sizes for size <11.86258> on input line 17
-.
  [2] [3] [4]) (chapters/chapter2 [5]
 Chương 2.
 [6
@@ -1191,10 +1190,10 @@ File: image/cohort-construction.pdf Graphic file (type pdf)
 ] [15]
 File: image/modality-preprocessing.pdf Graphic file (type pdf)
 <use image/modality-preprocessing.pdf>
- [16] [17]
+ [16]
 LaTeX Font Info:    Calculating math sizes for size <10.83347> on input line 56
 .
- [18]
+ [17] [18]
 File: image/architecture-evolution.pdf Graphic file (type pdf)
 <use image/architecture-evolution.pdf>
  [19] [20] [21]
@@ -1209,56 +1208,67 @@ File: image/gated-residual-route.pdf Graphic file (type pdf)
  [25]
 File: image/rc-free-routing.pdf Graphic file (type pdf)
 <use image/rc-free-routing.pdf>
+ [26]
 File: image/final-pipeline.pdf Graphic file (type pdf)
 <use image/final-pipeline.pdf>
- [26] [27] [28]
-[29] [30
-
-]
+ [27] [28]
 File: image/temporal-model.pdf Graphic file (type pdf)
 <use image/temporal-model.pdf>
- [31]) (chapters/chapter4 [32]
-Chương 4.
-[33
 
-] [34] [35] [36]
+[29] [30]) (chapters/chapter4 [31]
+Chương 4.
+[32
+
+] [33] [34] [35]
 File: image//performance-evolution.pdf Graphic file (type pdf)
 <use image//performance-evolution.pdf>
- [37] [38]
+ [36] [37]
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmss' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 File: image//ablation-deltas.pdf Graphic file (type pdf)
 <use image//ablation-deltas.pdf>
- [39] [40]
+ [38] [39] [40]
 File: image//standardized-benchmark.pdf Graphic file (type pdf)
 <use image//standardized-benchmark.pdf>
- [41] [42]
+ [41]
 File: image//cp-parameter-reduction.pdf Graphic file (type pdf)
 <use image//cp-parameter-reduction.pdf>
- [43] [44]) (chapters/chapter5 [45
+ [42] [43]) (chapters/chapter5 [44
 
 ]
 Chương 5.
 File: image//mri-hub-topology.pdf Graphic file (type pdf)
 <use image//mri-hub-topology.pdf>
-[46
+[45
 
-] [47]) [48] (main.bbl [49
+] [46]) [47] (main.bbl [48
 
 
-] [50] [51] [52]
-Underfull \hbox (badness 1348) in paragraph at lines 442--450
-[]\TU/LibertinusSerif(0)/m/n/11.86258 Fabian Pedregosa, Gaël Varoquaux, Alexand
-re Gramfort, Vincent Michel, Bertrand
+] [49] [50]
+Underfull \hbox (badness 1057) in paragraph at lines 215--222
+[]\TU/LibertinusSerif(0)/m/n/13 Ashish Vaswani, Noam Shazeer, Niki Parmar, Jako
+b Uszkoreit, Llion Jones,
  []
 
-[53]) [54] (main.aux)
+[51] [52] [53]
+Underfull \hbox (badness 4013) in paragraph at lines 445--453
+[]\TU/LibertinusSerif(0)/m/n/13 Fabian Pedregosa, Gaël Varoquaux, Alexandre Gra
+mfort, Vincent Michel,
+ []
+
+
+Underfull \hbox (badness 1552) in paragraph at lines 445--453
+\TU/LibertinusSerif(0)/m/n/13 Bertrand Thirion, Olivier Grisel, Mathieu Blondel
+, Peter Prettenhofer, Ron
+ []
+
+[54]) [55] (main.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D36C4CBF727A0C20A7525173C05C76B8;13576.
  )
-Output written on main.xdv (67 pages, 1097824 bytes).
+Output written on main.xdv (68 pages, 1137484 bytes).
