@@ -1,7 +1,7 @@
 {
   "date": "2026-10-08",
-  "accepted_prior_release_commit": "759ff35d47ad1c37b25d303a47702c498bfcb817",
-  "prior_pdf_sha256": "81d0c9f2ca5a62fc2b34f83a1ce849f970949c1e50f4f3701efe1c090250ec45",
+  "accepted_prior_release_commit": "180d0c005582c9b0ae3c240b49fb0cd64a68cc62",
+  "prior_pdf_sha256": "d3d6dec6019c834d8d83c847d1ebb7928601dd2acc999da5132d9f60848206ca",
   "total_prior_pages": 68,
   "total_current_pages": 68,
   "pixel_identical_previously_accepted_pages": [
@@ -11,19 +11,12 @@
     4,
     5,
     6,
+    7,
     8,
-    9,
     10,
     11,
     12,
-    13,
-    14,
-    15,
-    16,
-    17,
-    18,
     19,
-    20,
     21,
     22,
     23,
@@ -74,13 +67,27 @@
     68
   ],
   "changed_prior_pages_requiring_full_reinspection": [
-    7
+    9,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    20
   ],
   "new_pages_requiring_inspection": [],
   "frozen_input_hashes_unchanged": true,
   "current_pages_inspected_individually": [
-    7
+    9,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    20
   ],
   "all_current_pages_accepted": true,
-  "comparison": "Text and 97.2-dpi raster comparison against the PDF in the prior GitHub release."
+  "comparison": "Page text and 97.2-dpi pixels compared against the previous GitHub PDF; all changed pages were inspected individually."
 }

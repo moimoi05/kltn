@@ -120,7 +120,7 @@
   {
     "pdf_page": 14,
     "page_label": "1",
-    "text_chars": 1746,
+    "text_chars": 1974,
     "min_text_font": 12.951432228088379,
     "outside_page_text": [],
     "replacement_glyph": false,
@@ -129,7 +129,7 @@
   {
     "pdf_page": 15,
     "page_label": "2",
-    "text_chars": 1733,
+    "text_chars": 1634,
     "min_text_font": 9.50047492980957,
     "outside_page_text": [],
     "replacement_glyph": false,
@@ -138,7 +138,7 @@
   {
     "pdf_page": 16,
     "page_label": "3",
-    "text_chars": 1839,
+    "text_chars": 2532,
     "min_text_font": 12.951432228088379,
     "outside_page_text": [],
     "replacement_glyph": false,
@@ -147,7 +147,7 @@
   {
     "pdf_page": 17,
     "page_label": "4",
-    "text_chars": 1788,
+    "text_chars": 1819,
     "min_text_font": 12.951432228088379,
     "outside_page_text": [],
     "replacement_glyph": false,
@@ -156,7 +156,7 @@
   {
     "pdf_page": 18,
     "page_label": "5",
-    "text_chars": 945,
+    "text_chars": 1821,
     "min_text_font": 12.951432228088379,
     "outside_page_text": [],
     "replacement_glyph": false,
@@ -174,7 +174,7 @@
   {
     "pdf_page": 20,
     "page_label": "7",
-    "text_chars": 2050,
+    "text_chars": 2108,
     "min_text_font": 7.123326778411865,
     "outside_page_text": [],
     "replacement_glyph": false,

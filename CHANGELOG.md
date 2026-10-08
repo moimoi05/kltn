@@ -170,3 +170,10 @@ Kết quả kiểm tra source, citation, labels, logs, số trang và kiểm tra
 - Chưa có đồng nhất mọi baseline, missingmodality/external validation, controlledranksweep hoặc latency/memory benchmark.
 
 Source/report gốc và dữ liệu giữ nguyên; không huấn luyện lại và không sửa frozen preprocessing.
+
+## Viết lại Chương 1 bằng tiếng Việt dễ hiểu — 08/10/2026
+
+1. DONE: Viết lại các mục 1.1–1.6 theo cách diễn đạt trực tiếp, dễ theo dõi và có câu ghép tự nhiên hơn; giữ nguyên nội dung nghiên cứu, trích dẫn, phương pháp, kết quả và giới hạn đã công bố.
+2. DONE: Giải thích rõ $L$ là ngày kết thúc khoảng chọn mẫu, được tính bằng ngày khám ban đầu cộng 18 tháng theo lịch; phân biệt $L$ với $p$, ngày MRI thứ ba dùng làm mốc bắt đầu theo dõi. Kiểm tra các chương sau: Chương 2 nhắc lại định nghĩa để người đọc dễ tra cứu; Chương 3 đã định nghĩa $L_i$ cùng mốc tương ứng.
+3. DONE: Build và automated QA pass; PDF có 68 trang. Tám trang 9, 13–18 và 20 được kiểm tra trực quan sau khi sửa; 60 trang còn lại khớp văn bản và ảnh raster 97,2 dpi với PDF đã duyệt trước đó.
+4. DONE: ZIP 121 mục đã qua CRC; bản giải nén sạch biên dịch và qua QA, toàn bộ 68 trang khớp text/render. Đã xác nhận độ ổn định input biên dịch và PDF trong ZIP trùng PDF giao; các byte phát hành này được kiểm tra trước khi đồng bộ GitHub.

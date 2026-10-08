@@ -100,3 +100,16 @@ The endpoint proxy, retrospective cohort/clinical availability, repeated validat
 
 - [x] “Hà Nội, năm 2026” được căn giữa trên cùng trục với “Nguyễn Phương Nam”; khối ký tên vẫn neo ở mép phải. Tọa độ PDF cho thấy độ lệch tâm ngang dưới 0,01 pt.
 - [x] Build/QA pass ở 68 trang; trang 7 được kiểm tra trực quan. Chỉ trang 7 đổi ảnh raster; 67 trang khác giống hệt bản phát hành trước.
+
+## Viết lại Chương 1 bằng tiếng Việt dễ hiểu — 08/10/2026
+
+- [x] Các mục 1.1–1.6 đã được diễn đạt trực tiếp và dễ theo dõi hơn; giữ nguyên lập luận khoa học, số liệu, trích dẫn và phạm vi nghiên cứu.
+- [x] $L$ được định nghĩa là ngày khám ban đầu cộng 18 tháng theo lịch; $p$ được phân biệt là ngày MRI thứ ba và mốc bắt đầu theo dõi. Đã rà các chương sau: Chương 2 giải thích lại hai mốc, còn Chương 3 định nghĩa $L_i$ trong quy tắc chọn mẫu.
+- [x] Tectonic build và `qa_thesis.py` pass: PDF 68 trang, 47 trang nội dung chính; không có lỗi LaTeX, tham chiếu/trích dẫn chưa định nghĩa, thiếu glyph hay overfull box.
+- [x] Kiểm tra trực quan đủ tám trang bị ảnh hưởng (PDF9, 13–18, 20); 60 trang còn lại khớp văn bản và pixel raster 97,2 dpi với bản đã duyệt trước đó.
+
+## Kiểm tra tái tạo gói cho bản viết lại Chương 1 — 08/10/2026
+
+- [x] ZIP 121 mục qua CRC; bản trích xuất sạch build và automated QA pass.
+- [x] Văn bản và ảnh render của cả 68 trang khớp PDF được duyệt; PDF trong ZIP trùng byte với PDF giao.
+- [x] Input biên dịch ổn định kể từ lần build thư mục giải nén sạch.

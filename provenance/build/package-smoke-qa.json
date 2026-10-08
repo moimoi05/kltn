@@ -45,7 +45,7 @@
     "pass": true
   },
   "build": {
-    "pdf": "main.pdf",
+    "pdf": "Nguyen_Phuong_Nam_Thesis_RCFree_Revised.pdf",
     "total_pdf_pages": 68,
     "main_content_pages": 47,
     "chapter_pdf_pages": {
